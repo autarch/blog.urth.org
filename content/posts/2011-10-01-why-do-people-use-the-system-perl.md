@@ -77,7 +77,7 @@ I think official packages are a good step toward a solution, if not _the_ soluti
 **szabgab.com, on 2011-10-03 00:06, said:**  
 Alex, I'd be happy to run such poll on perlpolls.com but I need help in putting together 2-4 questions with reasonable answers to select from.
 
-I'll also need help in distribution the poll to corporate users. </p>
+I'll also need help in distribution the poll to corporate users.
 
 **Zbigniew Lukasiak, on 2011-10-03 02:37, said:**  
 The question is how these additional perls would live together with the system perl - and in particular can they use the same name for the executable? With vi and vim you can set it globally with <http://linux.die.net/man/8/alternatives> - but we need to set it per 'task', if you run a system utility you want it to use the system perl - but for your own web apps you want your alternative perl. I think the only sane solution here is to use different names for these perls - just like the smoke testers do.

@@ -84,7 +84,9 @@ My goal is to make Emplacken a tool that reads config scripts, maybe generates s
 **Richard Huxton, on 2010-12-22 09:43, said:**  
 Regarding Pg::DatabaseManager, you can enforce having only a single row for the "Version" table with something like:
 
-<pre>CREATE UNIQUE INDEX only_one_version_allowed ON "Version" ((true));</pre>
+```sql
+CREATE UNIQUE INDEX only_one_version_allowed ON "Version" ((true));
+```
 
 This creates an expression index on (true) which prevents any subsequent rows being inserted.
 

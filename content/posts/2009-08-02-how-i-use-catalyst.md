@@ -19,9 +19,9 @@ It is **absolutely crucial** that your configuration file be available **outside
 
 Unfortunately, ConfigLoader's config handling is very tightly integrated into its web components. First, it gets things conceptually wrong by combining all sorts of config into one massive hash. When you call `$c->config` you can find configuration items for ...
 
-  * Configuration info from your config file
-  * Configuration info set in a call to `MyApp->config(...)`
-  * Configuration info for the current controller and its parents
+* Configuration info from your config file
+* Configuration info set in a call to `MyApp->config(...)`
+* Configuration info for the current controller and its parents
 
 When you use ConfigLoader, your config file can contain both non-web things like database connections, as well configuration specific to your app, and configuration for plugins you use.
 
@@ -37,7 +37,8 @@ This module also includes _logic_ for determining various application configurat
 
 I then use this module to generate configuration data for various parts of my application. In my webapp class, I use it to feed configuration data into Catalyst. That looks something like this:
 
-<pre class="lang:perl">package R2;
+```perl
+package R2;
 
 use R2::Config;
 
@@ -57,7 +58,7 @@ __PACKAGE__->config(
     name => 'R2',
     %{ $Config->catalyst_config() },
 );
-</pre>
+```
 
 Most of the configuration passed to Catalyst is not user-settable. For example, I don't want people installing an app to have control over how the Catalyst Session plugin is configured! This is part of the application internals, and users have no business messing with it.
 
@@ -75,21 +76,25 @@ You might argue that the Model bit is solving a problem, which is that we need t
 
 What is wrong with something like this?
 
-<pre class="lang:perl">package MojoMojo;
+```perl
+package MojoMojo;
 
 has schema => (
     is      => 'ro',
     lazy    => 1,
     default => sub { MojoMojo::Schema->connect() },
 );
-</pre>
-
+```
 Then later in our controllers we can write:
 
-<pre class="lang:perl">$c->schema()->resultset('Person')->find(...);
-</pre>
+```perl
+$c->schema()->resultset('Person')->find(...);
+```
 
-If we've done our work on configuration handling as I described above, then `MojoMojo::Schema` knows just where to look for connection info. All that the model API adds is a useless layer of redirection (aka confusion) and a useless 'DBIC::' prefix to our resultset names.
+If we've done our work on configuration handling as I described above, then
+`MojoMojo::Schema` knows just where to look for connection info. All that the
+model API adds is a useless layer of redirection (aka confusion) and a useless
+'DBIC::' prefix to our resultset names.
 
 (Nosy readers might point out that the R2 code does have a Model class. That was an experiment which must die.)
 

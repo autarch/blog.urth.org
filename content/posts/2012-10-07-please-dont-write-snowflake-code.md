@@ -9,13 +9,15 @@ url: /2012/10/07/please-dont-write-snowflake-code/
 
 Rocky has his own unique coding style. It's not too out there. There are some truly [oddball styles on CPAN][4]. But there a few oddities that stand out. First, he puts various `use` lines _before_ the package declaration. He also uses prototypes completely pointlessly (prototypes on methods do absolutely nothing). He also likes to combine several statements onto one line, like:
 
-    use strict; use warnings;
-    
+```perl
+use strict; use warnings;
+```
 
 or
 
-    use strict; use vars qw(@ISA); @ISA = @CMD_ISA;
-    
+```perl
+use strict; use vars qw(@ISA); @ISA = @CMD_ISA;
+```
 
 Besides the prototype issue, none of these are wrong (and the prototype thing is arguably intended as documentation). The code works as written, and the meaning is more or less clear.
 

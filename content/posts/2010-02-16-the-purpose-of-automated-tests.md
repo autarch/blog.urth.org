@@ -9,7 +9,8 @@ Recently, there was a [question on stackoverflow][1] that asked whether or not o
 
 Here's an example class:
 
-<pre class="lang:perl">package Process;
+```perl
+package Process;
 
 use Moose;
 has pid => (
@@ -21,15 +22,16 @@ has stdout => (
     is  => 'rw',
     isa => 'FileHandle',
 );
-</pre>
+```
 
 Given that class definition, is there any value to writing tests like this?
 
-<pre class="lang:perl">can_ok( Process, 'new' );
+```perl
+can_ok( Process, 'new' );
 can_ok( Process, 'pid' );
 can_ok( Process, 'stdout' );
 throws_ok { Process->new() } qr/.../, 'Process requires a pid';
-</pre>
+```
 
 Let's look at why automated tests are useful.
 

@@ -25,29 +25,32 @@ How could she do this with a proper REST API? Remember, Jane is not allowed to _
 
 The site root will return a JSON document something like this:
 
-<pre class="lang:js">{ regions:
+```json
+{ regions:
   [ { name: "North America",
       uri:  "http://www.vegguide.org/region/1" },
     { name: "South America",
       uri:  "http://www.vegguide.org/region/28" } }
   ]
 }
-</pre>
+```
 
 Then her client can go to the URI for North America, which will return a similar JSON document:
 
-<pre class="lang:js">{ regions:
+```json
+{ regions:
   [ { name: "Canada",
       uri:  "http://www.vegguide.org/region/19" },
     { name: "USA",
       uri:  "http://www.vegguide.org/region/2" } }
   ]
 }
-</pre>
+```
 
 Her client can pick USA and so on until it finally gets to [the URI for Chicago][6], which returns:
 
-<pre class="lang:js">{ entries:
+```json
+{ entries:
   [ { name: "Soul Vegetarian East",
       uri:  "http://www.vegguide.org/entry/46",
       rating: 4.3 },
@@ -56,7 +59,7 @@ Her client can pick USA and so on until it finally gets to [the URI for Chicago]
     rating: 3.9 },
   ]
 }
-</pre>
+```
 
 Now the client has the data it wants and can do its thing.
 

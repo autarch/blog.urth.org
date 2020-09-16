@@ -13,12 +13,13 @@ The benchmark has two classes with semantically identical methods doing argument
 
 Here's what the benchmark came up with:
 
-<pre class="highlight:false nums:false show-plain-default:true">Rate   MXMS failure   MXPV failure   MXMS success   MXPV success
+```
+Rate   MXMS failure   MXPV failure   MXMS success   MXPV success
 MXMS failure  262/s             --           -41%           -81%           -94%
 MXPV failure  448/s            71%             --           -68%           -90%
 MXMS success 1393/s           431%           211%             --           -69%
 MXPV success 4545/s          1634%           915%           226%             --
-</pre>
+```
 
 First, as I pointed out, there's a big difference between success and failure. I can only assume that throwing an exception is expensive in Perl. Second, the difference between MXMS and MXPV is much greater in the success case. This makes sense if simply throwing an exception is costly.
 

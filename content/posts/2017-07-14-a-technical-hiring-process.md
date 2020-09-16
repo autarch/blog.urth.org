@@ -15,13 +15,9 @@ A few folks have asked me about this presentation or the hiring process I've fol
 
 The hiring process starts before you receive any resumes! Step one is to get everyone involved in the hiring to agree on what you want. And I'm not talking about the job title, I'm talking about how you will evaluate the candidate. You can think of this in terms of something like a user story ...
 
-> <p style="text-align: left;">
->   We want to hire a developer to work on our back-end systems, including REST APIs and batch processing systems. We are also looking for someone to help lead the introduction of Dev Ops deployment and CI tools. The systems are written in a mix of Shell, Befunge, and Ook. We have a number of developers with expertise in these languages and can train someone on this, but experience with REST APIs and batch processing is important. Experience with Dev Ops tools like Ansible or Puppet would be very helpful.
-> </p>
+> We want to hire a developer to work on our back-end systems, including REST APIs and batch processing systems. We are also looking for someone to help lead the introduction of Dev Ops deployment and CI tools. The systems are written in a mix of Shell, Befunge, and Ook. We have a number of developers with expertise in these languages and can train someone on this, but experience with REST APIs and batch processing is important. Experience with Dev Ops tools like Ansible or Puppet would be very helpful.
 > 
-> <p style="text-align: left;">
->   This developer will work closely with front-end developers and product management to coordinate on new features and bug fixes. They will also work with sales in a sales engineering role to understand customer requests and help sales scope quotes for implementation of these requests.
-> </p>
+> This developer will work closely with front-end developers and product management to coordinate on new features and bug fixes. They will also work with sales in a sales engineering role to understand customer requests and help sales scope quotes for implementation of these requests.
 
 You don't have to actually write this out, but you see the idea. From this write up the hiring team can get a sense of what we're looking for. We want someone with strong back-end development skills who we think can learn unusual languages quickly. They should have experience on web apps. They also need excellent communication skills and have to be able to work productively with non-technical people. Finally, they should also bring Dev Ops skills to the company.
 

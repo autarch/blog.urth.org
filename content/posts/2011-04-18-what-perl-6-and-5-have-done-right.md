@@ -103,17 +103,18 @@ Which currently* lists Perl in the top 10, tied with PHP, and higher than Java. 
 
 * At the time of writing, here are Github's language rankings:
 
-<pre>19% JavaScript
-   17% Ruby
-    9% Python
-    8% C
-    7% Perl
-    7% PHP
-    6% Shell
-    6% Java
-    4% C++
-    2% VimL
-</pre>
+```
+19% JavaScript
+17% Ruby
+ 9% Python
+ 8% C
+ 7% Perl
+ 7% PHP
+ 6% Shell
+ 6% Java
+ 4% C++
+ 2% VimL
+```
 
 **John, on 2011-04-18 22:35, said:**  
 6 has helped 5 pick up modern new features, and 5 has helped 6 by continuing to grow the Perl community while 6's implementation matures. It's win-win.

@@ -17,14 +17,15 @@ So how exactly can I allow both strings and `Path::Class::File` objects as an ar
 
 In an ideal world, string-ishness would be represented as a method on an object, like `as_string()`. Unfortunately, Perl's builtin types are not objects, so that's right out. The only way that I know of to check if something can act as a string _intentionally_ is the following hideous bit of code:
 
-    if (
-        defined $val
-        && ( !ref $val
-            || ( blessed $val && overload::Method( $val, q{""} ) ) )
-        ) {
-        ...;
-    }
-    
+```perl
+if (
+    defined $val
+    && ( !ref $val
+        || ( blessed $val && overload::Method( $val, q{""} ) ) )
+    ) {
+    ...;
+}
+```
 
 That's a disgusting mouthful of gibberish. The turd cherry on top of that shit sundae of code is that the only way to accomodate overloading is to explicitly check for it. This completely violates the purpose of overloading, making things transparently act like builtin types!
 
@@ -71,40 +72,44 @@ The easiest fix is to simply turn that crazy code into a function that you'd cal
 
 From:
 
-    if ( defined $val
-        && ( !ref $val || ( blessed $val && overload::Method( $val, q{""} ) ) ) )
-    {
-        ...;
-    }
-    
+```perl
+if ( defined $val
+    && ( !ref $val || ( blessed $val && overload::Method( $val, q{""} ) ) ) )
+{
+    ...;
+}
+```
 
 To something like:
 
-    if ( is_stringish( $val ) )
+```perl
+if ( is_stringish( $val ) )
+{
+    ...;
+}
+
+sub is_stringish {
+    my $val = shift;
+
+    if ( defined $val
+        && ( !ref $val || ( blessed $val && overload::Method( $val, q{""} ) ) ) )
     {
-        ...;
+        return 'Is Stringish';
     }
-    
-    sub is_stringish {
-        my $val = shift;
-    
-        if ( defined $val
-            && ( !ref $val || ( blessed $val && overload::Method( $val, q{""} ) ) ) )
-        {
-            return 'Is Stringish';
-        }
-        else 
-        {
-            return;
-        }
+    else 
+    {
+        return;
     }
-    
+}
+```
 
 If you'd do this, then after using such a function, you won't have to worry or care about the crazy code you have to write to make this happen.
 
 **Dave, on 2011-01-28 13:40, said:**  
 defensive programming is about protecting your resources; not defending against general bad programming. if the developer using your API passes a HASH that doesn't stringify to a filename he needs to debug his program. you just have to see that passing in a nasty object won't give the developer access to something that can damage the system. first: decide what you will do if the filename is bad and put it in the documentation. second: use an operation to trigger stringification early on so that you aren't carrying around stray objects:
 
+```perl
 my $filename = shift . ";
+```
 
 thats a good idea in many cases because it doesn't hold the object for the life of your new object. it also prevents the user from being able to change the filename, the filename becoming invalid later on or memory being tied down where it is not needed.

@@ -9,8 +9,9 @@ I created a new website as a fun little personal project, [She Said What?!][1]
 
 It was a fun experiment both in minimal web design, and also in minimal code. I can update it from the command line just by typing:
 
-<pre class="highlight:false">ssw 'A quote goes here|and commentary goes here'
-</pre>
+```
+ssw 'A quote goes here|and commentary goes here'
+```
 
 This adds a quote to the quote "database", which is just a directory of timestamped flat files on my desktop. Then it regenerates the site as static HTML and pushes it to the live server.
 

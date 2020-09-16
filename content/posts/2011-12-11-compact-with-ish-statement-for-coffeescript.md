@@ -9,67 +9,74 @@ I've been playing with [CoffeeScript][1] (CS) lately, and I really like it. Java
 
 CS doesn't provide anything like JS's `with` block. That makes sense, because `with` in JS is completely insane and broken. But sometimes you want to be able to say "given this object, call a bunch of methods on it". You can of course write something like this:
 
-<pre class="lang:javascript">foo = new Foo
+```js
+foo = new Foo
 foo.bar(42)
 foo.baz(84, "x")
-</pre>
+```
 
 Or in CS:
 
-<pre class="highlight:false">foo = new Foo
+```
+foo = new Foo
 foo.bar 42
 foo.baz 84, "x"
-</pre>
+```
 
 If you want a more Dee Ess Ell style, you can reach for this in JS:
 
-<pre class="lang:javascript">foo = new Foo
+```js
+foo = new Foo
 with (foo) {
     bar(42)
     baz(84, "x")
 }
-</pre>
+```
 
 In typical JS fashion, `with` is a nightmare. Douglas Crockford has a [good write up on why it's broken][2].
 
 The other alternative in JS is to use method chaining:
 
-<pre class="lang:javascript">foo = new Foo
+```js
+foo = new Foo
 foo
     .bar(42)
     .baz(84, "x")
-</pre>
+```
 
 Unfortunately, because of CS's parsing rules, method chaining is kind of fugly, requiring explicit parentheses. Also, method chaining requires explicit cooperation from the methods being called.
 
 So I came up with this alternative in CS:
 
-<pre class="highlight:false">foo = new Foo
+```
+foo = new Foo
 (->
   @bar 42
   @baz 84, "x"
 ).call foo
-</pre>
+```
 
 This creates an anonymous function and then invokes the `Function.call` method on it. The `call` method takes its first argument and makes it the method's invocant, so inside the function `this` is now equal to that argument (`foo` in the example above).
 
 I think this syntax could make for a nice alternative to method chaining when you want to call methods on the same object repeatedly. The only thing I don't like is that the invocant ends up at the end of the block. I really wish I could write something like this:
 
-<pre class="highlight:false">foo = new Foo
+```
+foo = new Foo
 using foo ->
   @bar 42
   @baz 84, "x"
-</pre>
+```
 
 I could get pretty close by defining my own `using` function:
 
-<pre class="highlight:false">using = (invocant, method) -> method.call invocant
+```
+using = (invocant, method) -> method.call invocant
 
 foo = new Foo
 using foo, ->
   @bar 42
   @baz 84, "x"
-</pre>
+```
 
 But then I need to have that function around everywhere I want to use it, which is a hassle. For now, I think I'll try using the `(anon).call` version and see how I like it.
 

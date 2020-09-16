@@ -13,13 +13,13 @@ Nonetheless, the documentation for each of these tools has large sections showin
 
 Here are the things we'll look at for each tool:
 
-  * <span style="font-size: 1.0625rem;">The language it's written in and how easy it is to install the tool.</span>
-  * Maturity and current status.
-  * How to add individual hooks/plugins/programs to be run by the orchestrater.
-  * What it ships with in terms of support for various code quality tools.
-  * How to add support for new code quality tools. Do you have to write code, configuration, or both?
-  * Speed of execution. Since in most scenarios with lots of files and code quality tools being run, this is mostly dominated by the meta tool's parallel execution capabilities.
-  * Additional features like caching, support for incremental enforcement of linting, etc.
+* The language it's written in and how easy it is to install the tool.
+* Maturity and current status.
+* How to add individual hooks/plugins/programs to be run by the orchestrater.
+* What it ships with in terms of support for various code quality tools.
+* How to add support for new code quality tools. Do you have to write code, configuration, or both?
+* Speed of execution. Since in most scenarios with lots of files and code quality tools being run, this is mostly dominated by the meta tool's parallel execution capabilities.
+* Additional features like caching, support for incremental enforcement of linting, etc.
 
 ## Tidyall
 
@@ -49,22 +49,26 @@ Its first release was in 2014, and it appears to be actively developed and widel
 
 What do I mean by "supported by many other tools"? Well, that gets to one of the most terricleverifying aspects of it. With pre-commit, you add new tools to your config by referring to a github repo. For example, if I wanted to add [yamllint][21], I'd add this config:
 
-<pre class="wp-block-preformatted">repos:
+```yaml
+repos:
     repo: https://github.com/adrienverge/yamllint
     rev: v1.23.0
     hooks:
-        - yamllint</pre>
+        - yamllint
+```
 
 Once you do this, pre-commit will clone the remote repo and save it locally for you. That means that if the config lives in the repo for the tool itself, it automatically installs the tool. It also install that tool's deps based on the remote repo's language. You can even run `pre-commit autoupdate` later to update one or more plugins to the latest tag on the remote repo's master branch.
 
 The actual config for how to execute this tool lives in the external repo. For example, check out the [yamllint config][22]:
 
-<pre class="wp-block-preformatted">- id: yamllint
+```yaml
+- id: yamllint
   name: yamllint
   description: This hook runs yamllint.
   entry: yamllint
   language: python
-  types: [file, yaml]</pre>
+  types: [file, yaml]
+```
 
 This config tells pre-commit how to execute yamllint, and on what types of file. The `language: python` bit tells pre-commit that this plugin needs python. The pre-commit tool supports many languages, including Perl, Go, Ruby, JS (Node), Rust, and more. And not only does pre-commit know how to _execute_ these plugins, but it also knows how to install their dependencies and how to sequester those deps into a virtualenv-like system. So for Ruby it will use [rbenv][23] and install all of the gems a tool depends on in an rbenv for just that tool.
 
@@ -152,9 +156,10 @@ Unlike all the other tools except tidyall, it's **not** a hook manager. It's ent
 
 It's entirely config driven, but it doesn't use YAML. You're welcome. It uses TOML so a config file looks like this:
 
-<pre class="wp-block-preformatted">[commands.golangci-lint]
+```toml
+[commands.golangci-lint]
 type = "lint"
-include = "**<em>/*</em>.go"
+include = "**/*.go"
 run_mode = "root"
 chdir = true
 cmd = [
@@ -168,9 +173,10 @@ lint_failure_exit_codes = [1]
 
 [commands.goimports]
 type = "tidy"
-include = "*<em>/*</em>*.go"
+include = "*/**.go"
 cmd = ["goimports", "-w"]
-ok_exit_codes = [0] </pre>
+ok_exit_codes = [0]
+```
 
 Rather than specifying commands as shell, you actually break them out into an array where the first element is the executable and the rest are arguments to pass. So you don't need to think about shell interpolation. You can define commands as linters, tidiers, or both. You also tell it whether to run the command on each file, each directory, or just once from the project root. Each command needs to define the exit codes that indicate a non-error result and whether output to `stderr` indicates a failure (but you should really try to get everything to just use exit codes because).
 

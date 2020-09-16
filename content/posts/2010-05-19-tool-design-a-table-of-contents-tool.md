@@ -48,13 +48,14 @@ Concrete input handlers will take a document in a given format and find the inte
 
 Instead of requiring that people instantiate a concrete class which implements the filtering role, I will define a type coercion from a code reference to an object. Callers of the module can provide a simple code reference as a filter:
 
-<pre class="lang:perl">sub {
+```perl
+sub {
     my $node = shift;
        return 0 if $node->className() =~ /\bskip-toc\b/;
        return 1 if $node->tagName() =~ /H[2-5]/ || $node->tagName() eq 'IMG';
        return 0;
 }
-</pre>
+```
 
 Internally, we'll take the code reference and wrap it with an object which implements the filter role's API.
 
@@ -82,7 +83,8 @@ Finally, we can offer a few different styles of output for the table of contents
 
 Given all that, our API might look something like this:
 
-<pre class="lang:perl">my $generator = Text::TOC::HTML->new(
+```perl
+my $generator = Text::TOC::HTML->new(
     filter         => 'single-document',
     link_generator => undef,
     style          => 'unordered-list',
@@ -95,9 +97,9 @@ for my $file ( $generator->files() ) {
     open my $fh, '>', $file;
     print {$fh} $generator->document_for_file($file);
 }
-</pre>
+```
 
-The "single-document" filter will find second- through fourth-level headings. My assumption is that a single document only has one <h1> tag, which is the document's title. There's no reason to put this in the table of contents.
+The "single-document" filter will find second- through fourth-level headings. My assumption is that a single document only has one `<h1>` tag, which is the document's title. There's no reason to put this in the table of contents.
 
 If we were generating a table of contents for multiple documents, we _would_ want to include the first-level heading, necessitating a different filter.
 
@@ -107,7 +109,8 @@ For a multi-document table, I'll need a code reference that does something smart
 
 Instead, I'll probably just take a code reference:
 
-<pre class="lang:perl">my $link_gen = sub {
+```perl
+my $link_gen = sub {
     my $file   = shift;
     my $anchor = shift;
     return 'file://' . $file->absolute() . '/#' . $anchor->name();
@@ -125,7 +128,7 @@ for my $file ( $generator->files() ) {
     open my $fh, '>', $file;
     print {$fh} $generator->document_for_file($file);
 }
-</pre>
+```
 
 This shortcut API isn't set in stone, but it's a good start for something useful, and it gives me some good clues about the low-level API.
 

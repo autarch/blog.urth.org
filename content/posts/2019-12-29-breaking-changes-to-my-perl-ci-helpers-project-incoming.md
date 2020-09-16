@@ -9,22 +9,24 @@ I'm working on what I plan to be the next version of [my Perl CI Helpers project
 
 Fortunately, I've been tagging releases and you can easily pin your consumption of the project to a specific tag! If you want to pin to the last release, you can do this in your config like this:
 
-    resources:
-      repositories:
-        - repository: ci-perl-helpers
-          type: github
-          name: houseabsolute/ci-perl-helpers
-          <strong>ref: refs/tags/v0.0.15</strong>
-          endpoint: houseabsolute/ci-perl-helpers
-    stages:
-       template: templates/build.yml@ci-perl-helpers
-       parameters:
-         <strong>image_version: v0.0.15</strong>
-       template: templates/test.yml@ci-perl-helpers
-       parameters:
-         <strong>image_version: v0.0.15</strong>
-         coverage: codecov
-         include_threaded_perls: 'true'
+<pre><code>
+resources:
+  repositories:
+    - repository: ci-perl-helpers
+      type: github
+      name: houseabsolute/ci-perl-helpers
+      <strong>ref: refs/tags/v0.0.15</strong>
+      endpoint: houseabsolute/ci-perl-helpers
+stages:
+   template: templates/build.yml@ci-perl-helpers
+   parameters:
+     <strong>image_version: v0.0.15</strong>
+   template: templates/test.yml@ci-perl-helpers
+   parameters:
+     <strong>image_version: v0.0.15</strong>
+     coverage: codecov
+     include_threaded_perls: 'true'
+</code></pre>
 
 The highlighted lines are what is required to fully pin the helpers.
 

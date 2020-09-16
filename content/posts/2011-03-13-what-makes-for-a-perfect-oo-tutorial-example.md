@@ -11,14 +11,14 @@ My first draft used Person and Employee as my example classes, where Employee is
 
 I brought this up on the #moose IRC channel, and we had a really interesting discussion. Mostly it consisted of people coming up with various ideas and me shooting them down. The rejected suggestions included:
 
-  * Person/Employee
-  * Number/Integer
-  * Real/Complex (numbers)
-  * Window/ScrollableWindow
-  * Animal/Moose
-  * CD/Single
-  * Assessment/Survey (in the context of teaching assessments)
-  * Others I'm probably forgetting
+* Person/Employee
+* Number/Integer
+* Real/Complex (numbers)
+* Window/ScrollableWindow
+* Animal/Moose
+* CD/Single
+* Assessment/Survey (in the context of teaching assessments)
+* Others I'm probably forgetting
 
 Let's go through my criteria and talk about why each of these examples was rejected.
 
@@ -60,9 +60,10 @@ The shapes example is useful for illustrating some technical ideas, but it's too
 
 This is a complex idea perhaps best illustrated by an example:
 
-    my $number = Number->new(3.9);
-    $number->add(0.1);
-    
+```perl
+my $number = Number->new(3.9);
+$number->add(0.1);
+```
 
 Under the system proposed by Date and Darwen, the `$number` object would automatically become an Integer object when that is appropriate.
 

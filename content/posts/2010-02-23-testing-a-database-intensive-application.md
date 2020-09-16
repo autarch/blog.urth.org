@@ -45,34 +45,36 @@ Our alternative approach has been to allow each test to essentially data-mine a 
 If you destroy the row in the process is isn't a huge deal, because the next time through they won't match any more, and you'll select another one (or ten, or a hundred).
 
 **publius-ovidius, on 2010-02-23 11:57, said:**  
-That's why I take a different approach. I'm using PostgreSQL for a personal project and <tt>Test::Class::Most</tt> to drive the test suite. I have a testing package [that handles my test database for me](http://blogs.perl.org/users/ovid/2010/02/sanity-checking-my-postgresql-tests.html). I never have to think about it. I call the constructor and I'm guaranteed to have a clean database every time because it truncates every changed table. I've also tried "mocking up database interaction" and it's been far too painful for me.
+That's why I take a different approach. I'm using PostgreSQL for a personal project and `Test::Class::Most</tt> to drive the test suite. I have a testing package [that handles my test database for me](http://blogs.perl.org/users/ovid/2010/02/sanity-checking-my-postgresql-tests.html). I never have to think about it. I call the constructor and I'm guaranteed to have a clean database every time because it truncates every changed table. I've also tried "mocking up database interaction" and it's been far too painful for me.
 
-In fact, with <tt>Test::Class::Most</tt>, my base test class looks (sort of) like:
+In fact, with `Test::Class::Most</tt>, my base test class looks (sort of) like:
 
-<tt>package Test::Class::Veure;<br /> use Test::Class::Most;<br /> use Testing::Veure;</p> 
+```perl
+package Test::Class::Veure;
+use Test::Class::Most;
+use Testing::Veure;
 
-<p>
-  sub setup : Tests(setup) {<br /> &nbsp;&nbsp;&nbsp;&nbsp;my $test = shift;<br /> &nbsp;&nbsp;&nbsp;&nbsp;$test->{__veure__} = Testing::Veure->new;<br /> }</tt>
-</p>
+sub setup : Tests(setup) {
+    my $test = shift;
+    $test->{__veure__} = Testing::Veure->new;
+}
+```
 
-<p>
-  My actual test classes then just look like this:
-</p>
+My actual test classes then just look like this:
 
-<p>
-  <tt>package Tests::For::Veure::Schema::Result::User;<br /> use Test::Class::Most parent => 'Test::Class::Veure';</p> 
-  
-  <p>
-    sub start_testing : Tests {<br /> &nbsp;&nbsp;&nbsp;&nbsp;# bunch 'o tests<br /> }</tt>
-  </p>
-  
-  <p>
-    With that, I get all of my tests functions, strict, warnings, and a clean database every test. So far, testing has been an absolute breeze with this strategy. So far I've worked on many large code bases and I've yet to find one which extensively mocks up the database interaction. It takes more time to get the core db testing class working, but it's worth the effort.
-  </p>
-  
-  <p>
-    Cheers,<br /> Ovid
-  </p>
+```perl
+package Tests::For::Veure::Schema::Result::User;
+use Test::Class::Most parent => 'Test::Class::Veure';
+
+sub start_testing : Tests {
+    # bunch 'o tests
+}
+```
+
+With that, I get all of my tests functions, strict, warnings, and a clean database every test. So far, testing has been an absolute breeze with this strategy. So far I've worked on many large code bases and I've yet to find one which extensively mocks up the database interaction. It takes more time to get the core db testing class working, but it's worth the effort.
+
+Cheers,  
+Ovid
 
 **groditi, on 2010-02-23 13:16, said:**  
 I have run into this issue many a times too. Generally, I am one for the fixtures camp, but my solution has so far been slightly mixed, allow me to explain:

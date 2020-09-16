@@ -36,11 +36,9 @@ Next year's conference will be in Madison, WI. This is both closer to home and i
 
 ### Image Credit
 
-#### "<span class="title">My Go board</span>" _by <span class="creator">Matt Ryall</span>_
+#### "My Go board" _by Matt Ryall
 
-<p class="info">
-  Licensed under <a class="license" href="https://creativecommons.org/licenses/by/2.0">CC-BY 2.0</a>
-</p>
+Licensed under [CC-BY 2.0](https://creativecommons.org/licenses/by/2.0)
 
 [Original source][8]{.foreign_landing_url} via [Flickr][9]{.provider}
 

@@ -7,11 +7,12 @@ url: /2010/10/15/datetime-project-rulez0rz/
 ---
 I wanted to turn all the dates in my Changes file into the YYYY-MM-DD format (in this case from things like "Aug 27, 2008"). Here's my one-liner:
 
-<pre class="highlight:false">perl -MDateTime::Format::Natural -pi -e \
+```
+perl -MDateTime::Format::Natural -pi -e \
     '$f = DateTime::Format::Natural->new;
      s/^([\d\.]+\s+)(\w+.+)$/$1 . $f->parse_datetime($2)->ymd/e' \
     Changes
-</pre>
+```
 
 The DateTime project is pretty badass, if I do say so myself. Note that most of the credit here should go to Steven Schubiger for [DateTime::Format::Natural][1]
 

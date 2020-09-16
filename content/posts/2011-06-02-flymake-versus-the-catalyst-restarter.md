@@ -7,7 +7,8 @@ url: /2011/06/02/flymake-versus-the-catalyst-restarter/
 ---
 I recently started using flymake-mode in emacs, which does a "make on the fly" for the buffer you're currently editing. For Perl, that basically means checking the code by running `perl -c` on it. If it sees any errors or warnings, it highlights this in the buffer. This is pretty handy for catching typos, although I've seen some weird false positive. Anyway, it's a great tool, except that it does its checking by creating a file in the same directory as the one you're editing. So if you're editing `MyApp/lib/MyApp.pm`, flymake will create (and delete) a `MyApp/lib/MyApp_flymake.pm`. Catalyst's Restarter watches the lib directory for file changes, and restarted the dev server on each change. Combined with flymake, this means a lot of useless restarting. Fortunately, it's easy enough to get flymake to create its files elsewhere. Here's a snippet that includes some code off the [FlymakeRuby page on the Emacs Wiki][1]:
 
-<pre class="lang:lisp">(defun flymake-perl-init ()
+```lisp
+(defun flymake-perl-init ()
   (let* ((temp-file (flymake-init-create-temp-buffer-copy
                      'flymake-create-temp-intemp))
          (local-file (file-relative-name
@@ -16,13 +17,14 @@ I recently started using flymake-mode in emacs, which does a "make on the fly" f
     (list "/home/autarch/perl5/perlbrew/perls/current/bin/perl"
           (list "-MProject::Libs" "-wc" local-file)))
 )
-</pre>
+```
 
 You can change the perl path to just be
 
 `perl` or `/usr/bin/perl`. Obviously, I'm using perlbrew. I got most of this bit from [Damien Krotkine's post on perlbrew and flymake][2], but I replaced the use of "flymake-create-temp-inplace" with "flymake-create-temp-intemp", defined below.
 
-<pre class="lang:lisp">(defun flymake-create-temp-intemp (file-name prefix)
+```lisp
+(defun flymake-create-temp-intemp (file-name prefix)
   "Return file name in temporary directory for checking
    FILE-NAME. This is a replacement for
    `flymake-create-temp-inplace'. The difference is that it gives
@@ -48,12 +50,13 @@ You can change the perl path to just be
          )
     (flymake-log 3 "create-temp-intemp: file=%s temp=%s" file-name temp-name)
     temp-name))
-</pre>
+```
 
 This is the bit from the Emacs Wiki (thanks, whoever wrote this!). It tells flymake to make its files in a temp directory.
 
-<pre class="lang:lisp">(setq temporary-file-directory "~/.emacs.d/tmp/")
-</pre>
+```lisp
+(setq temporary-file-directory "~/.emacs.d/tmp/")
+```
 
 You can set this to whatever you want. And poof, flymake is no longer making the Catalyst Restarter work so hard.
 

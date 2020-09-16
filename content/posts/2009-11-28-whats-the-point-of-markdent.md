@@ -255,10 +255,12 @@ Would that handler automatically recognise HTML links also, or only Markdown lin
 **Dave Rolsky, on 2009-11-29 09:13, said:**  
 Aristotle, you could recognize all links pretty easily. For HTML links you'd write something like ...
 
-    if ( $event->isa('Markdent::Event::StartHTMLTag')
-         && exists $event->attributes()->{href} ) {
-        $self->_add_link( $event->attributes()->{href} );
-    }
+```perl
+if ( $event->isa('Markdent::Event::StartHTMLTag')
+     && exists $event->attributes()->{href} ) {
+    $self->_add_link( $event->attributes()->{href} );
+}
+```
 
 **Aristotle Pagaltzis, on 2009-11-29 12:42, said:**  
 Right. IMO that’s thinking about Markdown at the wrong level (as most people do)… Gruber made it a point not to invent syntax for all possible HTML tags, and to just let it be written as HTML tags. Essentially, Markdown should be thought of as shorthand HTML, wherein you can structurally imply tags using formatting. In that view, to think of `*this*` as different from `<em>this</em>` is mistaken as they are interchangeable equivalents.

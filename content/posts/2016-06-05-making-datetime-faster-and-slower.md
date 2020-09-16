@@ -11,40 +11,45 @@ I've been working on a branch of [DateTime][7] that uses PCC. Parameter validati
 
 I wrote a simple benchmark to compare the speed of `DateTime->new` with PCC vs PV:
 
-    use strict;
-    use warnings;
-    
-    use Benchmark qw( timethese );
-    use DateTime;
-    use DateTime::Format::Pg;
-    
-    timethese(
-        100000,
-        {
-            constructor => sub {
-                DateTime->new(
-                    year      => 2016, month  => 2,  day    => 14,
-                    hour      => 12,   minute => 23, second => 44,
-                    locale    => 'fr',
-                    time_zone => 'UTC',
-                    formatter => 'DateTime::Format::Pg',
-                );
-            },
+```perl
+use strict;
+use warnings;
+
+use Benchmark qw( timethese );
+use DateTime;
+use DateTime::Format::Pg;
+
+timethese(
+    100000,
+    {
+        constructor => sub {
+            DateTime->new(
+                year      => 2016, month  => 2,  day    => 14,
+                hour      => 12,   minute => 23, second => 44,
+                locale    => 'fr',
+                time_zone => 'UTC',
+                formatter => 'DateTime::Format::Pg',
+            );
         },
-    );
+    },
+);
+```
 
 Running it with master produces:
 
-<pre class="crayon:false">autarch@houseabsolute:~/projects/DateTime.pm (master $%=)$ perl -Mblib ./bench.pl 
+<pre>$ perl -Mblib ./bench.pl 
 Benchmark: timing 100000 iterations of constructor...
-constructor:  6 wallclock secs ( 6.11 usr +  0.00 sys =  6.11 CPU) @ <strong>16366.61/s</strong> (n=100000)
+constructor:  6 wallclock secs ( 6.11 usr +  0.00 sys =  6.11 CPU)
+    @ <strong>16366.61/s</strong> (n=100000)
 </pre>
 
 And with the `use-pcc` branch:
 
-<pre class="crayon:false">autarch@houseabsolute:~/projects/DateTime.pm (use-pcc $%=)$ perl -I ../Specio/lib/ -I ../Params-CheckCompiler/lib/ -Mblib ./bench.pl 
+<pre>$ perl -I ../Specio/lib/ -I ../Params-CheckCompiler/lib/ \
+    -Mblib ./bench.pl 
 Benchmark: timing 100000 iterations of constructor...
-constructor:  5 wallclock secs ( 5.34 usr +  0.01 sys =  5.35 CPU) @ <strong>18691.59/s</strong> (n=100000)
+constructor:  5 wallclock secs ( 5.34 usr +  0.01 sys =  5.35 CPU)
+    @ <strong>18691.59/s</strong> (n=100000)
 </pre>
 
 So we can see that's there's a speedup of about 14%, which is pretty good!
@@ -53,7 +58,7 @@ I figured that this should be reflected in the speed of the entire test suite, s
 
 After some profiling, I finally realized that while using PCC with Specio sped up run time noticeably, it also adds an additional compile time hit. It's Moose all over again, though not nearly as bad.
 
-For further comparison, I used the [Test2::Harness][9] release's `yath` test harness script and told it to preload DateTime. Now the test suite runs slightly faster in the `use-pcc` branch, about 4% or so.</a>
+For further comparison, I used the [Test2::Harness][9] release's `yath` test harness script and told it to preload DateTime. Now the test suite runs slightly faster in the `use-pcc` branch, about 4% or so.
 
 So where does that leave things?
 
