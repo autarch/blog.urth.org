@@ -32,7 +32,7 @@ I'm not against overloading at all. I just find Perl 5's implementation broken. 
 Did your correspondent just try to make "not knowing another language before (or after) Perl" a badge of distinction? Or a claim of authority? "I don't know any languages other than Perl, therefore my opinion on questions of Perl style overrules yours." Wow!
 
 **Peter Rabbitson, on 2014-07-25 04:05, said:**  
-Dave! You are a terrible programmer!!! The <a href="http://blog.urth.org/2010/10/16/whats-wrong-with-perl-5s-overloading" rel="nofollow">shit sundae you posted back in 2010</a> is woefully incomplete. Here is <a href="https://github.com/dbsrgits/sql-abstract/blob/e8d729d48/lib/SQL/Abstract.pm#L93-L127" rel="nofollow">how "real non-Java programmers" do it</a>. 
+Dave! You are a terrible programmer!!! The [shit sundae you posted back in 2010](http://blog.urth.org/2010/10/16/whats-wrong-with-perl-5s-overloading) is woefully incomplete. Here is [how "real non-Java programmers" do it](https://github.com/dbsrgits/sql-abstract/blob/e8d729d48/lib/SQL/Abstract.pm#L93-L127). 
 
 I am appaled by your lack of knowledge on the simplest of subjects, we are \*NEVER\* working together on anything!!!
 

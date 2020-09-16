@@ -57,9 +57,9 @@ App::perlbrew is a much better alternative to relying on ancient vendor Perls.
 **Matthew Musgrove, on 2010-11-10 16:39, said:**  
 RHEL 6.0 was released today and includes Perl 5.10.1.
 
-<a href="http://www.redhat.com/about/news/prarchive/2010/new-standard.html" rel="nofollow ugc">http://www.redhat.com/about/news/prarchive/2010/new-standard.html</a>
+<http://www.redhat.com/about/news/prarchive/2010/new-standard.html>
 
-<a href="http://www.redhat.com/rhel/server/details/" rel="nofollow ugc">http://www.redhat.com/rhel/server/details/</a>
+<http://www.redhat.com/rhel/server/details/>
 
 **Stephen, on 2010-11-10 19:11, said:**  
 Because that's what businesses will be building on. "Obsolete" is just another word for "stable".

@@ -60,7 +60,7 @@ Next year's conference will be in Madison, WI. This is both closer to home and i
 How did he do against the ELF AI?
 
 **Dave Rolsky, on 2018-07-29 21:04, said:**  
-He lost. This AI is stronger than any human, so I didn't expect him to win. You can <a href="https://research.fb.com/facebook-open-sources-elf-opengo/" rel="nofollow">read more about the AI online</a>.
+He lost. This AI is stronger than any human, so I didn't expect him to win. You can [read more about the AI online](https://research.fb.com/facebook-open-sources-elf-opengo/).
 
 **Ien Cheng, on 2018-08-01 15:24, said:**  
 Nice writeup Dave! Meeting In-seong and fellow AYD members was top of my Congress highlights too.

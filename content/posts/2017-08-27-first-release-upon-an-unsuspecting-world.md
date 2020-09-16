@@ -37,7 +37,7 @@ Except I just ran `h2xs -X Foo` now and the Changes just contains this:
 **Andy Lester, on 2017-08-30 09:32, said:**  
 I think it's my fault. When I wrote Module::Starter I needed something to put in the stock Changes file. I think I made up that sentence myself. My big concern was that I didn't want the author in the boilerplate to be A. U. Thor.
 
-It's in Module::Starter 0.02 from 2004. <a href="http://backpan.perl.org/authors/id/P/PE/PETDANCE/Module-Starter-0.02.tar.gz" rel="nofollow ugc">http://backpan.perl.org/authors/id/P/PE/PETDANCE/Module-Starter-0.02.tar.gz</a>
+It's in Module::Starter 0.02 from 2004. <http://backpan.perl.org/authors/id/P/PE/PETDANCE/Module-Starter-0.02.tar.gz>
 
 **Andy Lester, on 2017-08-30 09:37, said:**  
 I checked Perl 5.005 (1997) and 5.8.6 (2004) and it's not in either of those.

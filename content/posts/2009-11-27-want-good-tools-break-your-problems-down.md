@@ -55,7 +55,7 @@ The same goes for the Perl DateTime Project. I wrote the core pieces, but there 
 ## Comments
 
 **Zbigniew Lukasiak, on 2009-11-28 05:41, said:**  
-On a bigger scale I like to view CPAN as this kind of 'small pieces loosely joined' attitude. Nothingmuch also had a few interesting points in this subject: <a href="http://blog.woobling.org/2009/07/reducing-scope.html" rel="nofollow ugc">http://blog.woobling.org/2009/07/reducing-scope.html</a>
+On a bigger scale I like to view CPAN as this kind of 'small pieces loosely joined' attitude. Nothingmuch also had a few interesting points in this subject: <http://blog.woobling.org/2009/07/reducing-scope.html>
 
 **xilun, on 2009-11-29 18:19, said:**  
 Not only this is a good design, this is indeed a classic design, and even a must for people dealing with compilers (format conversion is similar to a simple compilation). I encourage people to read the dragon book.

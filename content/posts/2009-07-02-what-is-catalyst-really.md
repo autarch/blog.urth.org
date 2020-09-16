@@ -96,6 +96,6 @@ Dave said:
 
 Good point, I had the same impression when I first ran through the tutorial.
 
-Ashley Pond has some good newbie-friendly non-database model examples in his <a href="http://sedition.com/a/2733" rel="nofollow">10 Catalyst models in 10 days</a> articles.
+Ashley Pond has some good newbie-friendly non-database model examples in his [10 Catalyst models in 10 days](http://sedition.com/a/2733) articles.
 
 Larry

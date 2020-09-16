@@ -36,7 +36,7 @@ But is that worth 7x? Probably not. I suppose if someone were to offer me a deal
 Perhaps you should get those PDFs up on some on-demand book publisher (even CafePress does that these days).
 
 **Dave Rolsky, on 2009-02-15 18:39, said:**  
-I think it'd be better to simply make generating nice PDFs part of the release process, so we could put them in the tarball and up on <a href="http://moose.perl.org" rel="nofollow ugc">http://moose.perl.org</a>
+I think it'd be better to simply make generating nice PDFs part of the release process, so we could put them in the tarball and up on <http://moose.perl.org>
 
 That way people can print them out if they want, but the online version stays up to date.
 
@@ -50,7 +50,7 @@ Glad that you liked the pdf rendition of the manual. :-)
 
 _Re: Manual + Cookbook._ As a first pass, I only included the Manual::*  
 sections, but nothing precludes me of adding the cookbook pods in the next  
-edition. Or anyone else, for what matters: the recipe is now <a href="http://github.com/yanick/pod-manual/blob/d6be8bddb9e1e085a569a97b01daee44015b9d7a/examples/moose.pl" rel="nofollow">available on Github</a>.
+edition. Or anyone else, for what matters: the recipe is now [available on Github](http://github.com/yanick/pod-manual/blob/d6be8bddb9e1e085a569a97b01daee44015b9d7a/examples/moose.pl).
 
 _Re: making manual creation a part of the distribution process._ Ah, you  
 anticipated my true end-goal. :-) Pod::Manual is still a very young and rough  

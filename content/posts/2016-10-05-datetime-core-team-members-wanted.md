@@ -93,4 +93,4 @@ On different projects i use both GH issues and CPAN RT. CPAN RT feels clunky in 
 **Jay Hannah, on 2016-10-13 11:01, said:**  
 Hmm, did I join the wrong mailing list for these questions?
 
-<a href="http://www.nntp.perl.org/group/perl.datetime/2016/10.html" rel="nofollow ugc">http://www.nntp.perl.org/group/perl.datetime/2016/10.html</a>
+<http://www.nntp.perl.org/group/perl.datetime/2016/10.html>

@@ -188,7 +188,7 @@ Both turned out to be a nightmare, since they involved editing existing plugins.
 **j1n3l0.myopenid.com, on 2010-11-01 18:00, said:**  
 I really like the first thing on your TODO list. It would be a massive project but it sounds like the sort of thing a lot of perl developers would be interested in ... myself included ;)
 
-A feature I would like to see as well would be **the ability to tag** modules (_a la_ flicker, twitter, etc) by both the author and users to assist searching by functionality. That should help users find modules like <a href="http://search.cpan.org/~drolsky/Moose-1.18/" rel="nofollow">Moose</a> which, though great at its job, cannot be found when you search for <a href="http://search.cpan.org/" rel="nofollow">CPAN</a> for OOP :)
+A feature I would like to see as well would be **the ability to tag** modules (_a la_ flicker, twitter, etc) by both the author and users to assist searching by functionality. That should help users find modules like [Moose](http://search.cpan.org/~drolsky/Moose-1.18/) which, though great at its job, cannot be found when you search for [CPAN](http://search.cpan.org/) for OOP :)
 
 **Peter Rabbitson, on 2010-11-02 07:39, said:**  
  _... Modern Perl, probably Catalyst, Moose, and DBIC..._ 
@@ -201,7 +201,7 @@ Why not Fey::ORM? ;)
 **Olaf Alders, on 2010-11-02 14:11, said:**  
 The CPAN project is a very good idea. Toronto.pm is just starting to build an open API for CPAN data. We actually just started work over this past weekend. I had put this example together using Moose before I read your post:
 
-<a href="http://github.com/CPAN-API/cpan-api/wiki/JSON" rel="nofollow ugc">http://github.com/CPAN-API/cpan-api/wiki/JSON</a>
+<http://github.com/CPAN-API/cpan-api/wiki/JSON>
 
 Our plan is to have something that is free, open and distributed. A web service which will not only return metadata, but will eventually allow module tagging, up-voting, down-voting etc. Something which can function as a back end for a CPAN web site, command line client, iPhone app, Android app etc.
 

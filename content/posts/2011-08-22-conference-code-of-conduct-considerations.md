@@ -45,11 +45,11 @@ I'd like to see a standard policy adopted for all Perl events. At the very least
 **Barbie, on 2011-08-23 05:06, said:**  
 I've already added something to my Perl Jam book [1], which is available on GitHub [2]. I've started with the two YAPC::NA pieces, but would be interested to expand these further, particularly regarding the methods of reporting and what processes organisers should follow.
 
-[1] <a href="http://perljam.info" rel="nofollow ugc">http://perljam.info</a>  
-[2] <a href="https://github.com/barbie/perl-jam" rel="nofollow ugc">https://github.com/barbie/perl-jam</a>
+[1] <http://perljam.info>  
+[2] <https://github.com/barbie/perl-jam>
 
 **brian d foy, on 2011-08-23 11:50, said:**  
-The US Army has a <a href="http://www.sexualassault.army.mil/files/r600_20_chapter7.pdf" rel="nofollow">well-defined process for dealing with sexual harassment</a> (lest some people forget, this is the root of the current code of conduct stuff). It defines it, tells people how to deal with it, and so on. I've had to go through the process a couple of times as a leader, and I received lots more training on it. The first step is always direct approach. It's not harassment until you tell someone to stop and they keep doing it.
+The US Army has a [well-defined process for dealing with sexual harassment](http://www.sexualassault.army.mil/files/r600_20_chapter7.pdf) (lest some people forget, this is the root of the current code of conduct stuff). It defines it, tells people how to deal with it, and so on. I've had to go through the process a couple of times as a leader, and I received lots more training on it. The first step is always direct approach. It's not harassment until you tell someone to stop and they keep doing it.
 
 For those with corporate jobs, talk to your HR people. They should have all the tools anyone would need to help YAPC form a good policy.
 

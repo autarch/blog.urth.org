@@ -93,7 +93,7 @@ Chloro also supports the idea of "repeatable groups". For example, a contact mig
 ## Comments
 
 **Robert 'phaylon' Sedlacek, on 2011-04-04 16:41, said:**  
-I'm also trying to find a good way to solve this problem in ReUI (<a href="https://github.com/phaylon/ReUI" rel="nofollow ugc">https://github.com/phaylon/ReUI</a>). The way I've gone is to have a UI widget tree (usually of the fully page, but it could be the form alone). Validation happens as an event. The forms capture the events and passes a result-collecting subevent on to it's children. Fields can populate results or errors, and decide if and how the events should be passed on. The validation result is then used when the tree is rendered to display errors. Form actions can happen via success callbacks or by extending an action object (e.g. a Submit button) with a certain role (e.g. a (not-yet-implemented) DBIC::Create).
+I'm also trying to find a good way to solve this problem in ReUI (<https://github.com/phaylon/ReUI>). The way I've gone is to have a UI widget tree (usually of the fully page, but it could be the form alone). Validation happens as an event. The forms capture the events and passes a result-collecting subevent on to it's children. Fields can populate results or errors, and decide if and how the events should be passed on. The validation result is then used when the tree is rendered to display errors. Form actions can happen via success callbacks or by extending an action object (e.g. a Submit button) with a certain role (e.g. a (not-yet-implemented) DBIC::Create).
 
 **Sebastian Willert, on 2011-04-04 18:15, said:**  
 I love this concept. It has everything I love about Data::FormValidator (or better: lacks everything I hate about the competitors) and combines it with a nice helping of Modern Perl goodness. If Chloro will also support or enable a concise way to programmatically create form classes (e.g. take base form A and merge in these fields and rules), it might finally be the one form library to pry DFV from my warm, living hands ;)
@@ -107,7 +107,7 @@ Thanks for your great work!
 @Sebastian: I should also clarify the field() sugar is just that, sugar. There's a metaclass API in the background that you can use, just like how Moose works with has().
 
 **Leo, on 2011-04-05 02:28, said:**  
-You might be interested in <a href="https://github.com/jjl/Spark-Form" rel="nofollow ugc">https://github.com/jjl/Spark-Form</a> - I've not used it yet - but sounded interesting from a London.pm technical talk.
+You might be interested in <https://github.com/jjl/Spark-Form> - I've not used it yet - but sounded interesting from a London.pm technical talk.
 
 **Zbigniew Lukasiak, on 2011-04-05 02:34, said:**  
 So I understand that Form is application scope - and Form::ResultSet is request scope. If someone wants to write some custom processing of the parameters (like converting a few fields into a DateTime) - would he put that additional code into a class in application scope or request scope?
@@ -122,7 +122,7 @@ So I understand that Form is application scope - and Form::ResultSet is request 
 In my opinion dealing with parameters is request scope work - that is it is convenient to write code like $self->day in all the calculations instead of passing $day as a method parameter everywhere. That is the main difficulty in writing form handlers - if you have application scope, immutable $form - then you cannot have $form->day.
 
 **Oliver Charles, on 2011-04-05 12:01, said:**  
-I've only had a brief look, but it seems you're thoughts are inline with my thoughts that made me write Data::TreeValidator - <a href="http://search.cpan.org/~cycles/Data-TreeValidator-0.03/lib/Data/TreeValidator.pm#WHY" rel="nofollow ugc">http://search.cpan.org/~cycles/Data-TreeValidator-0.03/lib/Data/TreeValidator.pm#WHY</a>?
+I've only had a brief look, but it seems you're thoughts are inline with my thoughts that made me write Data::TreeValidator - <http://search.cpan.org/~cycles/Data-TreeValidator-0.03/lib/Data/TreeValidator.pm#WHY>?
 
 **Phillip, on 2011-04-07 09:44, said:**  
 When is it going to hit CPAN? :)

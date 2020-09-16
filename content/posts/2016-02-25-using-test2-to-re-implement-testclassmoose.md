@@ -201,6 +201,6 @@ The future of testing in Perl 5 is looking bright! And Perl 6 isn't being left b
 **Timm Murray, on 2016-02-29 06:48, said:**  
 There was a proposal on the old testanything.org web site that would have handled forking streams:
 
-<a href="http://web.archive.org/web/20110611083912/http://testanything.org/wiki/index.php/Test_Groups" rel="nofollow ugc">http://web.archive.org/web/20110611083912/http://testanything.org/wiki/index.php/Test_Groups</a>
+<http://web.archive.org/web/20110611083912/http://testanything.org/wiki/index.php/Test_Groups>
 
 Not the prettiest output, but it should work.

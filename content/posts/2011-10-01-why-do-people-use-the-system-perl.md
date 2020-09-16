@@ -60,7 +60,7 @@ Yes!
 But I believe we need to take a step further and provide the whole CPAN in the pre-packaged form (PPA in case of Ubuntu, and I hope there is some similar solution for RedHat world).  
 Maintaining ~25k packages may sound like an impossible task, but thanks to the wonderful dh-make-perl it can be automated and the only hard part is to deploy the whole infrastructure once (again, don't know much aboud RedHat tools).
 
-PS: <a href="http://blogs.perl.org/users/vyacheslav_matjukhin/2011/05/proposal-for-corporate-people-who-are-stuck-with-old-system-perl.html" rel="nofollow">I proposed this plan</a> some time ago, but unfortunately nobody commented back then.
+PS: [I proposed this plan](http://blogs.perl.org/users/vyacheslav_matjukhin/2011/05/proposal-for-corporate-people-who-are-stuck-with-old-system-perl.html) some time ago, but unfortunately nobody commented back then.
 
 **mikegrb, on 2011-10-02 20:20, said:**  
 I always used the system perl, even for development, until perlbrew came along. Ease was the primary reason and perlbrew eliminated that reason. Perlbrew isn't the answer for production usage though. Gabor made a great point about people tied to vendors, especially with support contracts for things like RHEL. I'd think even then though with an alternate Perl in /opt and the system perl left untouched you'd be okay but who knows. I very much like the idea of official perl.org packages and can definitely see it allowing organizations to upgrade to more recent perl versions quicker.
@@ -80,7 +80,7 @@ Alex, I'd be happy to run such poll on perlpolls.com but I need help in putting 
 I'll also need help in distribution the poll to corporate users. </p>
 
 **Zbigniew Lukasiak, on 2011-10-03 02:37, said:**  
-The question is how these additional perls would live together with the system perl - and in particular can they use the same name for the executable? With vi and vim you can set it globally with <a href="http://linux.die.net/man/8/alternatives" rel="nofollow ugc">http://linux.die.net/man/8/alternatives</a> - but we need to set it per 'task', if you run a system utility you want it to use the system perl - but for your own web apps you want your alternative perl. I think the only sane solution here is to use different names for these perls - just like the smoke testers do.
+The question is how these additional perls would live together with the system perl - and in particular can they use the same name for the executable? With vi and vim you can set it globally with <http://linux.die.net/man/8/alternatives> - but we need to set it per 'task', if you run a system utility you want it to use the system perl - but for your own web apps you want your alternative perl. I think the only sane solution here is to use different names for these perls - just like the smoke testers do.
 
 **Bron Gondwana, on 2011-10-03 02:47, said:**  
 Why have we kept using the system perl? If you have multiple perls on the system then you need to worry about multiple module trees and compatibility between them. You need to worry about "something was run with the wrong perl and did weird things".

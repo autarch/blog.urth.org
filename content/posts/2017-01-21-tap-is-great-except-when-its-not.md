@@ -123,4 +123,4 @@ use Test2::Bundle::More;<br />
 use Test::More::Hooks;`
 
 **Dave Rolsky, on 2017-01-24 07:58, said:**  
-You should ask this at <a href="irc://irc.perl.org/#perl-qa" rel="nofollow">irc://irc.perl.org/#perl-qa</a>.
+You should ask this at <irc://irc.perl.org/#perl-qa>.

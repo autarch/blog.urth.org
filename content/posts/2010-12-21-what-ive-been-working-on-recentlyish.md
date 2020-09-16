@@ -88,12 +88,12 @@ Regarding Pg::DatabaseManager, you can enforce having only a single row for the 
 
 This creates an expression index on (true) which prevents any subsequent rows being inserted.
 
-<a href="http://www.postgresql.org/docs/9.0/static/indexes-expressional.html" rel="nofollow ugc">http://www.postgresql.org/docs/9.0/static/indexes-expressional.html</a>
+<http://www.postgresql.org/docs/9.0/static/indexes-expressional.html>
 
 **Michael Peters, on 2010-12-22 13:25, said:**  
-For the anti-spam stuff for blogs, etc, I've been happy with Mollom (<a href="http://mollom.com" rel="nofollow ugc">http://mollom.com</a>) using my Net::Mollom module. It's free for small size things. The nice thing about using a service like this is that it can learn as it goes and my spam protection benefits from what it learns from other people's content.
+For the anti-spam stuff for blogs, etc, I've been happy with Mollom (<http://mollom.com>) using my Net::Mollom module. It's free for small size things. The nice thing about using a service like this is that it can learn as it goes and my spam protection benefits from what it learns from other people's content.
 
-Also, for process managment stuff that you had Emplacken doing, you might want to look at Ubic (<a href="http://search.cpan.org/perldoc?Ubic" rel="nofollow ugc">http://search.cpan.org/perldoc?Ubic</a>). I haven't used it myself, but it looks pretty nice.
+Also, for process managment stuff that you had Emplacken doing, you might want to look at Ubic (<http://search.cpan.org/perldoc?Ubic>). I haven't used it myself, but it looks pretty nice.
 
 **Rob N, on 2010-12-24 03:19, said:**  
 If you already have a SpamAssassin instance lying around you might like to take a look at Text::SpamAssassin.

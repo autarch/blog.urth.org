@@ -144,13 +144,13 @@ In all this, the government will not get involved. No copyright means that once 
 As long as such cracking is legal (which it absolutely should be), I imagine that eventually producers will give up on this sort of silliness.
 
 **Zbigniew Łukasiak, on 2012-05-29 03:18, said:**  
-There is good data backing the part about musicians in 'The Case for Copyright Reform' (<a href="http://www.copyrightreform.eu/" rel="nofollow ugc">http://www.copyrightreform.eu/</a>). It appears that in countries like Sweden and Norway selling copies of music has shrunk in the recent years, probably because of internet and file sharing, but the overall earnings by the industry was mostly constant because people shifted the money from buying discs to buying tickets and the big news is that because of this musicians earn more (and there are more musicians) because they get a bigger share of ticket sales.
+There is good data backing the part about musicians in 'The Case for Copyright Reform' (<http://www.copyrightreform.eu/>). It appears that in countries like Sweden and Norway selling copies of music has shrunk in the recent years, probably because of internet and file sharing, but the overall earnings by the industry was mostly constant because people shifted the money from buying discs to buying tickets and the big news is that because of this musicians earn more (and there are more musicians) because they get a bigger share of ticket sales.
 
 The two articles that support this in a direct way are:
 
-<a href="http://ec.europa.eu/avpolicy/docs/other_actions/col_2009/pub/kth_annex.pdf" rel="nofollow ugc">http://ec.europa.eu/avpolicy/docs/other_actions/col_2009/pub/kth_annex.pdf</a> (the link in 'The Case ...' is dated - this is a new one).
+<http://ec.europa.eu/avpolicy/docs/other_actions/col_2009/pub/kth_annex.pdf> (the link in 'The Case ...' is dated - this is a new one).
 
-<a href="http://www.espen.com/thesis-bjerkoe-sorbo.pdf" rel="nofollow ugc">http://www.espen.com/thesis-bjerkoe-sorbo.pdf</a>
+<http://www.espen.com/thesis-bjerkoe-sorbo.pdf>
 
 **Shawn H Corey, on 2012-05-29 07:29, said:**  
 Copyright never protected the artist or writer, for a simple reason. Only the rich can afford to enforce a copyright. Copyright is used by the big content companies to force artists and writers to accept their terms for payment. Have you ever read a contract offered by them? Artists and writers will make \*more\* money without copyright.

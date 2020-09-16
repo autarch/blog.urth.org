@@ -30,7 +30,7 @@ And that's the story of the war between Go and GitHub, where the only loser was 
 ## Comments
 
 **Greg, on 2019-03-03 17:51, said:**  
-Go modules provides a replace directive that solves this, <a href="https://github.com/golang/go/wiki/Modules#when-should-i-use-the-replace-directive" rel="nofollow ugc">https://github.com/golang/go/wiki/Modules#when-should-i-use-the-replace-directive</a>.
+Go modules provides a replace directive that solves this, <https://github.com/golang/go/wiki/Modules#when-should-i-use-the-replace-directive>.
 
 **Greg, on 2019-03-03 17:53, said:**  
 Actually, dep also provides this functionality with a "source" option.
@@ -59,7 +59,7 @@ That's a clever solution!
 **Kjell, on 2019-03-04 00:53, said:**  
 That is a good solution. Here is giteas docs regarding forking
 
-<a href="https://docs.gitea.io/en-us/hacking-on-gitea/" rel="nofollow ugc">https://docs.gitea.io/en-us/hacking-on-gitea/</a>
+<https://docs.gitea.io/en-us/hacking-on-gitea/>
 
 **Matthew Persico, on 2019-03-04 16:37, said:**  
 The best thing to do is to STOP USING GITHUB AS A FREAKING PACKAGING SYSTEM!. Not directed at you, obviously, but really, can we teach all these whipper snappers that the Internet should be used as a REFERENCE, not as a resource in the critcal path of execution?

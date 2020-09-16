@@ -46,7 +46,7 @@ I have found the "recommended" Moose modules to be stable and install cleanly al
 I think your last paragraph is key. Phrased another way, if your module depends on something that is broken, then your module is broken. But as long as quality is maintained down the whole chain, extra dependencies are just extra installation time and not that expensive.
 
 Vince Veselosky  
-<a href="http://www.webquills.net" rel="nofollow ugc">http://www.webquills.net</a>
+<http://www.webquills.net>
 
 **Dave Rolsky, on 2009-05-02 22:01, said:**  
 Broken dependencies in the chain are annoying, but shit happens. No one purposely depends on a broken module.
@@ -79,7 +79,7 @@ I'm not going to drop a really useful dependency because it doesn't use \_my\_ c
 Otherwise, creating packages for your platform is the only other sane solution.
 
 **Yuval Kogman, on 2009-05-03 10:15, said:**  
-Umm, <a href="http://hackage.haskell.org/" rel="nofollow ugc">http://hackage.haskell.org/</a>
+Umm, <http://hackage.haskell.org/>
 
 I think nowadays Hackage has almost as many uploads per day as CPAN.
 

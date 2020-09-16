@@ -31,7 +31,7 @@ More details on using Moose with Error objects (not Error, that seems to be inco
 **yanick.myopenid.com, on 2009-02-14 15:54, said:**  
 Thanks for the lovely documentation. It's very much appreciated. :-)
 
-I've passed the new Moose::Manual::* through my Pod::Manual machine and generated a pdf version of it (well, two actually: one using LaTeX, one using Prince). The pdfs are at <a href="http://babyl.dyndns.org/techblog/manuals/" rel="nofollow ugc">http://babyl.dyndns.org/techblog/manuals/</a> if you are interested.
+I've passed the new Moose::Manual::* through my Pod::Manual machine and generated a pdf version of it (well, two actually: one using LaTeX, one using Prince). The pdfs are at <http://babyl.dyndns.org/techblog/manuals/> if you are interested.
 
 **sawyer, on 2009-02-15 03:15, said:**  
 I always loved the Moose documentation but now it's even better! Great job! I especially liked Moose::Unsweetened!

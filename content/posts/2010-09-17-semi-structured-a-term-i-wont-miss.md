@@ -20,4 +20,4 @@ So farewell (for now) to "semi-structured", you won't be missed.
 **Stuart, on 2010-09-20 14:28, said:**  
 Funny, I was just reading about the release of Postgres 9 and ...
 
-<a href="http://www.postgresql.org/docs/9.0/static/hstore.html" rel="nofollow ugc">http://www.postgresql.org/docs/9.0/static/hstore.html</a>
+<http://www.postgresql.org/docs/9.0/static/hstore.html>

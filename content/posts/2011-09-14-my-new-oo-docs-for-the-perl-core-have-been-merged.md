@@ -68,7 +68,7 @@ Hi,
 Read the tutorial - good stuff.
 
 Found a typo - have fixed and sent pull request on github, however if you want grab and merge that more directly, its at  
-<a href="https://github.com/nigelm/perl/commit/dc8de09b826f16289322647b89659b0a997e292a" rel="nofollow ugc">https://github.com/nigelm/perl/commit/dc8de09b826f16289322647b89659b0a997e292a</a>
+<https://github.com/nigelm/perl/commit/dc8de09b826f16289322647b89659b0a997e292a>
 
 **Dave Rolsky, on 2011-09-15 09:00, said:**  
 @Nigel: We don't actually use github to manage Perl. See the perlhack for docs on how to submit patches.

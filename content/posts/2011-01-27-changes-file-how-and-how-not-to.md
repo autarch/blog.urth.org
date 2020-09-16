@@ -49,9 +49,9 @@ Lastly, but certainly not leastly, don't be lazy and just copy the output from "
 
 Changes should **SUMMARISE** changes.
 
-Not like this: <a href="http://cpansearch.perl.org/src/CHM/PDL-2.4.7/Changes" rel="nofollow">PDL-2.4.7 Changes</a>
+Not like this: [PDL-2.4.7 Changes](http://cpansearch.perl.org/src/CHM/PDL-2.4.7/Changes)
 
-I mean, between 2.4.7 and 2.4.7_008 there were <a href="https://gist.github.com/798736" rel="nofollow">1300 lines of difference added to the Changes file!</a>. No human wants to read that.
+I mean, between 2.4.7 and 2.4.7_008 there were [1300 lines of difference added to the Changes file!](https://gist.github.com/798736). No human wants to read that.
 
 **Dave Rolsky, on 2011-01-27 10:35, said:**  
 @kent: Abso-freaking-lutely. I didn't mention that sort of abomination because I was too busy picking on poor Dancer ;)
@@ -80,7 +80,7 @@ Hi Arun
 
 Module::Metadata::Changes helps manage a CHANGES file by inputting it and outputting a machine-readable Changelog.ini.
 
-<a href="http://search.cpan.org/~rsavage/Module-Metadata-Changes-1.08/" rel="nofollow ugc">http://search.cpan.org/~rsavage/Module-Metadata-Changes-1.08/</a>
+<http://search.cpan.org/~rsavage/Module-Metadata-Changes-1.08/>
 
 **Alexander Hartmaier (abraxxa), on 2011-01-27 16:58, said:**  
 I'd love to see a standardized Changes file (some dists even use a different filename) which is parsable so CPAN Clients could not only list the installed vs. newest version per dist but also the Changes inbetween the two.  
@@ -118,8 +118,8 @@ Why? Because it would be useful to parse them to publish them as other formats.
 As Dave wrote, "Some of the readers [...] want to know what's new.". What is the current Internet standard to publish "what's new"? RSS!
 
 I've started a few month ago to publish a ChangeLog of one of my distributions also as RSS: the (Module::Build based) dist build process uses RegExp::Grammar to create a Changes.rss which is included in the published archive.  
-<a href="http://cpansearch.perl.org/src/DOLMEN/POE-Component-Schedule-0.95/Changes" rel="nofollow ugc">http://cpansearch.perl.org/src/DOLMEN/POE-Component-Schedule-0.95/Changes</a>  
-<a href="http://cpansearch.perl.org/src/DOLMEN/POE-Component-Schedule-0.95/Changes.rss" rel="nofollow ugc">http://cpansearch.perl.org/src/DOLMEN/POE-Component-Schedule-0.95/Changes.rss</a>  
+<http://cpansearch.perl.org/src/DOLMEN/POE-Component-Schedule-0.95/Changes>  
+<http://cpansearch.perl.org/src/DOLMEN/POE-Component-Schedule-0.95/Changes.rss>  
 The problem now is to automatically publish this RSS with a dist-version independent URL. Search.cpan.org does not do it. Yet?
 
 **Olivier Mengué (dolmen), on 2011-02-06 12:04, said:**  
@@ -129,9 +129,9 @@ The ticketing system is the best place to report any usability issues about the 
 Any improvement idea should be submitted as a ticket, as "wishlist" at least.
 
 I'm now used to see module authors ignore such tickets (see list below) but sometimes they get an answer and CPAN improves.  
-<a href="https://rt.cpan.org/Public/Bug/Display.html?id=46913" rel="nofollow ugc">https://rt.cpan.org/Public/Bug/Display.html?id=46913</a>  
-<a href="https://rt.cpan.org/Public/Bug/Display.html?id=55522" rel="nofollow ugc">https://rt.cpan.org/Public/Bug/Display.html?id=55522</a>  
-<a href="https://rt.cpan.org/Public/Bug/Display.html?id=62480" rel="nofollow ugc">https://rt.cpan.org/Public/Bug/Display.html?id=62480</a>
+<https://rt.cpan.org/Public/Bug/Display.html?id=46913>  
+<https://rt.cpan.org/Public/Bug/Display.html?id=55522>  
+<https://rt.cpan.org/Public/Bug/Display.html?id=62480>
 
 **Dave Rolsky, on 2011-02-06 16:45, said:**  
 @Olivier: Tickets are useful too, but this post was only incidentally about Dancer. Plus I've seen a lot of good discussion and momentum after this post. Dancer has improved their Changes file, Brian Cassidy wrote the CPAN::Changes module, and I suspect other module authors will read this too.

@@ -106,7 +106,7 @@ Let's get as many people involved as possible!
 **rjbs, on 2010-07-02 06:41, said:**  
 The papers really don't say that. Here's a good, free paper on the subject. It's oft-cited and the authors reviewed a bunch of other papers on the topic:
 
-<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.26.5282&#038;rep=rep1&#038;type=pdf" rel="nofollow ugc">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.26.5282&rep=rep1&type=pdf</a>
+[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.26.5282&rep=rep1&type=pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.26.5282&#038;rep=rep1&#038;type=pdf)
 
 I'm not familiar with any papers that specifically analyze the effectiveness of grant payments for skilled labor. Even the papers that I've seen on the "money as a motivator" topic don't actually indicate that money is ever a significant demotivator, just that it sometimes stops helping at some point.
 

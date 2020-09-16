@@ -18,6 +18,7 @@ sub main {
         my $content = $file->slurp_utf8;
         $content =~ s/categories:\n  - Uncategorized\n+//;
 
+        $content =~ s{<a href="(.+?)"[^>]+>([^<]+)</a>}{md_link($1, $2)}ge;
         $content =~ s/&#039;/'/g;
         $content =~ s/&#42;/'/g;
         $content =~ s/&#43;/+/g;
@@ -40,6 +41,11 @@ my $p = DateTime::Format::CLDR->new(
     pattern => 'yyyy-MM-dd HH:mm:ss ZZ',
     locale  => 'en-US',
 );
+
+sub md_link ( $href, $text ) {
+    return "<$href>" if $href eq $text;
+    return "[$text]($href)";
+}
 
 sub format_date ($date) {
     my $dt = $p->parse_datetime($date)

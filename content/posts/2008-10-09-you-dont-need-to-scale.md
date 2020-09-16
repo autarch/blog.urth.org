@@ -39,7 +39,7 @@ For many many (most!) applications I completely agree with you. The interesting 
 
 On RAID5: See, it's not that simple! :-) If you use RAID5 on your database server you will almost certainly be very unhappy with the performance pretty fast. (You want RAID10, always).
 
-On getting a million requests a day: Over on our little local search sites - <a href="http://www.yellowbot.com/-" rel="nofollow ugc">http://www.yellowbot.com/-</a> we easily get a handful of millions "dynamic" requests a day. A bit of users, a bit of search engine crawling, a bit of API requets and it adds up pretty fast. (Of course that's still likely just 50-100 requests a second depending on the traffic patterns).
+On getting a million requests a day: Over on our little local search sites - <http://www.yellowbot.com/-> we easily get a handful of millions "dynamic" requests a day. A bit of users, a bit of search engine crawling, a bit of API requets and it adds up pretty fast. (Of course that's still likely just 50-100 requests a second depending on the traffic patterns).
 
 However, the scaling/performance fun isn't even so much on the front end. It's the background processing of all our data that's harder. There's too much to fit in the 32GB memory that was cheap when we last bought servers. There are too many problems that are relatively harder to parallelize, etc.
 

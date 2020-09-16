@@ -60,7 +60,7 @@ I don't know how access control is managed for "smart" HTTP transport (i.e. the 
 Well, truth to be said much of Git UI was grown rather than designed; Git is an example of application which was build bottoms-up, starting from simple model of/for repository... and unfortunately it shows in some places as hard edges.
 
 **Mark Dominus, on 2011-05-27 18:24, said:**  
-Have you seen this? <a href="http://t-a-w.blogspot.com/2010/02/could-mercurial-please-die-already.html" rel="nofollow ugc">http://t-a-w.blogspot.com/2010/02/could-mercurial-please-die-already.html</a>
+Have you seen this? <http://t-a-w.blogspot.com/2010/02/could-mercurial-please-die-already.html>
 
 "Neither git nor Mercurial are sufficiently better from the other to win on merits alone, and there's really no point in having them both.
 
@@ -100,6 +100,6 @@ To @mjd specifically: monocultures are BAD. That's how we got Windows and its pa
 Please RTFA.
 
 **asjo.koldfront.dk, on 2011-06-20 11:37, said:**  
-How does Gitalist compare to <a href="http://hjemli.net/git/cgit/" rel="nofollow">cgit</a>? I find cgit nicer than gitweb.
+How does Gitalist compare to [cgit](http://hjemli.net/git/cgit/)? I find cgit nicer than gitweb.
 
 (I tried the Example tab on the Gitalist website, but it times out for me currently.)

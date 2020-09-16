@@ -56,7 +56,7 @@ This is essentially why Perl marketing sucks. People tend to think that "marketi
 One of the things I constantly have to say in Perl classes is that "You may not need this or ever use it, but you'll probably run across some code that does". That's one of the reasons something like _Learning Perl_ must partially-ignore "Best Practices". We have to teach people to deal with bad code as well as write good code. If we only showed the latest fad, we'd alienate most of our audience since they have to work with stuff that already exists and they have little power to change drastically.
 
 **Mark A. Stratman, on 2011-03-16 16:18, said:**  
-I've been on about this topic for a while now (e.g. <a href="http://www.nntp.perl.org/group/perl.perl5.porters/2011/03/msg169804.html" rel="nofollow ugc">http://www.nntp.perl.org/group/perl.perl5.porters/2011/03/msg169804.html</a> )
+I've been on about this topic for a while now (e.g. <http://www.nntp.perl.org/group/perl.perl5.porters/2011/03/msg169804.html> )
 
 And been starting to write (and outline a talk), urging for us all to make greater efforts to acknowledge the difference between \*reference\* documents, and \*tutorial\* documents, and the goals of the readers of each.
 

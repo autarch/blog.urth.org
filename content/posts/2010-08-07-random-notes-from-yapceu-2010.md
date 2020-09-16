@@ -46,7 +46,7 @@ I'm not sure how many speakers pay attention to this when submitting proposals. 
 **hanekomu, on 2010-08-08 07:33, said:**  
 At YAPC::Asia 2008 there was also a buffet-style dinner. I liked that a lot (and not just the excellent food) - it was easy to mingle; someone in your current group would start talking to someone else in another group, so conversations would flow pretty well.
 
-See <a href="http://www.flickr.com/photos/u-suke/2494353317/" rel="nofollow ugc">http://www.flickr.com/photos/u-suke/2494353317/</a> for example.
+See <http://www.flickr.com/photos/u-suke/2494353317/> for example.
 
 **brian d foy, on 2010-08-09 08:41, said:**  
 Well, it was Dave and I making the auction too long when we bid up the Italian beer to €440, but we also raised over €700 for YAPC::EU. :)

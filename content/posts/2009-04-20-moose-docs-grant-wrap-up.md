@@ -122,7 +122,7 @@ I just want to join the chorus saying this is really great! Thank you for doing 
 
 **maletin.pip.verisignlabs.com, on 2009-05-01 19:11, said:**  
 great work.  
-i found a typo at <a href="http://search.cpan.org/~drolsky/Moose-0.76/lib/Moose/Cookbook/Basics/Recipe4.pod#DESCRIPTION" rel="nofollow ugc">http://search.cpan.org/~drolsky/Moose-0.76/lib/Moose/Cookbook/Basics/Recipe4.pod#DESCRIPTION</a>  
+i found a typo at <http://search.cpan.org/~drolsky/Moose-0.76/lib/Moose/Cookbook/Basics/Recipe4.pod#DESCRIPTION>  
 "showing how how constraints"
 
 and later there are missing quotes:  

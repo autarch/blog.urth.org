@@ -43,7 +43,7 @@ Since 200, I have been a member of the core team for the Mason templating system
 cheersa
 
 **Fred Moyer, on 2009-03-23 14:17, said:**  
-"Doubling up" on ticketing/tracking systems is one of the things I tell people to watch out for in my ball of mud talk - <a href="http://www.redhotpenguin.com/talks/yapc/2008/" rel="nofollow ugc">http://www.redhotpenguin.com/talks/yapc/2008/</a>.
+"Doubling up" on ticketing/tracking systems is one of the things I tell people to watch out for in my ball of mud talk - <http://www.redhotpenguin.com/talks/yapc/2008/>.
 
 Have you discussed the situation with TechPeople? Seems like you should be making the onerous process part of billable hours so that at the very least you get compensated for your pain. I generally provide consulting clients with an invoice per month with hours broken down (usually takes about an hour to generate). If they ask for more then that, I tell them that those are billable hours, and in some cases they don't mind.
 

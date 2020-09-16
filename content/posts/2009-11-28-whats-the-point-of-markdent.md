@@ -282,7 +282,7 @@ What possible problem can `<em>` cause that `*` can’t? The right way to achiev
 **Shlomi Fish, on 2009-12-01 15:15, said:**  
 Sounds really cool. Thanks for your work on that. I might take a look.
 
-Lately, I've started using <a href="http://www.methods.co.nz/asciidoc/" rel="nofollow">AsciiDoc</a> which is similar-in-spirit to Markdown, but probably more powerful and can also generate DocBook/XML, for some documents, and it's been a mostly pleasant experience. AsciiDoc only has a Python implementation so far, and I don't know how well it can be used as an events-streamer.
+Lately, I've started using [AsciiDoc](http://www.methods.co.nz/asciidoc/) which is similar-in-spirit to Markdown, but probably more powerful and can also generate DocBook/XML, for some documents, and it's been a mostly pleasant experience. AsciiDoc only has a Python implementation so far, and I don't know how well it can be used as an events-streamer.
 
 **Dan Dascalescu, MojoMojo contributor, on 2009-12-02 00:08, said:**  
-This sounds almost like built **for** <a href="http://mojomojo.org" rel="nofollow">MojoMojo</a>!
+This sounds almost like built **for** [MojoMojo](http://mojomojo.org)!

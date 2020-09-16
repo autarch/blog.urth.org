@@ -23,4 +23,4 @@ It doesn't seem that Moose 0.66 has hit CPAN just yet. Is there any place where 
 Thanks!
 
 **Dave Rolsky, on 2009-02-03 16:03, said:**  
-It shouldn't be too much longer, but for the record Moose svn (soon moving to git, I suspect) is at <a href="http://code2.0beta.co.uk/moose/svn" rel="nofollow ugc">http://code2.0beta.co.uk/moose/svn</a>,
+It shouldn't be too much longer, but for the record Moose svn (soon moving to git, I suspect) is at <http://code2.0beta.co.uk/moose/svn>,

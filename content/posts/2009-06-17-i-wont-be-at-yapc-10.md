@@ -26,7 +26,7 @@ I hope everyone has a good time in Pittsburgh.
 ## Comments
 
 **sartak.org, on 2009-06-17 21:02, said:**  
-I wrote a little about how the class will go at <a href="http://blog.sartak.org/2009/06/shawn-m-moose-at-yapc.html" rel="nofollow">my blog</a>. I'm sure Jon and I can make it work.
+I wrote a little about how the class will go at [my blog](http://blog.sartak.org/2009/06/shawn-m-moose-at-yapc.html). I'm sure Jon and I can make it work.
 
 I'm a tiny bit sad we won't get to play Go; maybe at Frozen Perl 2010? :) Anyway. Relax, get plenty of rest, and get well soon!
 

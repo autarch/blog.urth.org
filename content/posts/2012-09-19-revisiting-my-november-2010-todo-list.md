@@ -110,6 +110,6 @@ Finish my donor/volunteer management CRM
 
 Take a look at Civil CRM. No, it's not Perl but it does the job and these days I'm much more interested in that than if I can write it myself :-) 
 
-<a href="http://www.civicrm.org/" rel="nofollow ugc">http://www.civicrm.org/</a>
+<http://www.civicrm.org/>
 
 The Enlightened Perl organisation started using it earlier this year alongside Drupal.

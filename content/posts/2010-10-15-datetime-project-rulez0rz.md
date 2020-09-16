@@ -20,7 +20,7 @@ The DateTime project is pretty badass, if I do say so myself. Note that most of 
 ## Comments
 
 **mirrorkitty.vegas, on 2010-10-15 16:59, said:**  
-It is a pity you had to hose the original content of <a href="http://datetime.perl.org" rel="nofollow">datetime.perl.org</a> to prove it. It is now one of the few perl.org sites where the old look (and content) was better than the new.
+It is a pity you had to hose the original content of [datetime.perl.org](http://datetime.perl.org) to prove it. It is now one of the few perl.org sites where the old look (and content) was better than the new.
 
 **Dave Rolsky, on 2010-10-15 17:26, said:**  
 @mirrorkitty: The content is exactly the same on the new wiki as it was on the old, minus the insane amounts of spam.

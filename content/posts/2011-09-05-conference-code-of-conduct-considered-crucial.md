@@ -51,7 +51,7 @@ Hi, Dave. Unfortunately, you're right that people cannot be assumed to behave we
 
 The focus on sexual harassment is a little singleminded, however. Codes of conduct should not be framed to serve particular interests, or they run the risk of condoning other equally important kinds and contexts of harassment by omission.
 
-I think it does more social good to maintain and uphold a single, inclusive definition of harassment. To that end, perhaps harassment should be defined by reference rather than by value. For example, a code of conduct might refer to <a href="http://en.wikipedia.org/wiki/Harassment" rel="nofollow ugc">http://en.wikipedia.org/wiki/Harassment</a> ... which tries to be comprehensive, inclusive and extensible as new forms of harassment are invented.
+I think it does more social good to maintain and uphold a single, inclusive definition of harassment. To that end, perhaps harassment should be defined by reference rather than by value. For example, a code of conduct might refer to <http://en.wikipedia.org/wiki/Harassment> ... which tries to be comprehensive, inclusive and extensible as new forms of harassment are invented.
 
 **Dave Rolsky, on 2011-09-06 13:55, said:**  
 @Rocco: I think sexual harassment is the focus because that's the issue that has come up a lot in the past year or so. There have been a number of specific incidents related to sexual content in presentations and harassment of female attendees.
@@ -151,7 +151,7 @@ Not to be harsh, but your "I'm not talking unless a code of conduct exists" read
 Thanks for bringing up this important issue. I support such a code of conduct and I was surprised about all of the negative responses to your post since the need seems obvious to me and I've seen these statements at many conferences before. However, those have been activist conferences and I guess the topic is newer in the tech community. From my experience, it's common to have a statement saying that racism, sexism, homophobia, etc., won't be tolerated. I've also personally seen those rules enforced when needed.
 
 By the way, I just saw that YAPC::NA 2012 now has a code of conduct:  
-<a href="http://www.yapcna.org/conference/code-of-conduct" rel="nofollow ugc">http://www.yapcna.org/conference/code-of-conduct</a>
+<http://www.yapcna.org/conference/code-of-conduct>
 
 It falls short but at least it's something.
 

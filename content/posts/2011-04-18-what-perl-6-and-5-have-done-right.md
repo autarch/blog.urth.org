@@ -49,7 +49,7 @@ I would take "hard to get people to migrate" over "does not even exist yet" any 
 I think most users have replaced Perl5 by Python or Ruby already, not Perl6, as Perl5 is not even able to introduce the simplest OOP features into the core. This is the price we have to pay for "strong commitment to backwards compatibility", "there are too many ways to do it" and "keep essential features out of core"
 
 How many modules do exceptions right, e.g.?  
-<a href="http://deps.cpantesters.org/depended-on-by.pl?module=Try%3A%3ATiny" rel="nofollow ugc">http://deps.cpantesters.org/depended-on-by.pl?module=Try%3A%3ATiny</a>
+<http://deps.cpantesters.org/depended-on-by.pl?module=Try%3A%3ATiny>
 
 **Dave Rolsky, on 2011-04-18 15:31, said:**  
 @andre: That's a pretty bold and unsubstantiated statement. Ruby and Python are growing, and I'm sure some Perl 5 folks have left to use those languages, but it's a big jump from "some" to "most".
@@ -97,7 +97,7 @@ re: Moose - my point was that if the Perl core \_already had something\_ that wa
 **CBT, on 2011-04-18 21:23, said:**  
 @andre What evidence are you using to conclude Perl is inactive on Github? The best I could find was this:
 
-<a href="https://github.com/languages" rel="nofollow ugc">https://github.com/languages</a>
+<https://github.com/languages>
 
 Which currently* lists Perl in the top 10, tied with PHP, and higher than Java. I don't know about you, but frankly that seems pretty skewed from the industry as a whole. Even so, by your own suggested measure of the industry, Perl certainly has a sizable footprint.
 
@@ -128,7 +128,7 @@ i'm concerned that perl5 coders will never face external pressure to undertake t
 
 I think your numbers are misleading,
 
-1.) as <a href="https://github.com/gitpan" rel="nofollow ugc">https://github.com/gitpan</a> alone includes 21,976 repos as of now, which is just imported from CPAN (not necessarily active)  
+1.) as <https://github.com/gitpan> alone includes 21,976 repos as of now, which is just imported from CPAN (not necessarily active)  
 (but I don't know how these number are calculated exactly)
 
 2.) I was talking about trends, and a couple of months ago, Perl ranked 3rd on that index ahead of Python and C
@@ -154,13 +154,13 @@ I would be curious to see a study on what percentage of Perl5 developers are goi
 
 there are lots of sources for language popularity, some also look positive (like Alexa stats for perlmonks.org e.g.)
 
-<a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html" rel="nofollow ugc">http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html</a>  
-<a href="http://www.alexa.com/" rel="nofollow ugc">http://www.alexa.com/</a>  
-<a href="http://www.langpop.com/" rel="nofollow ugc">http://www.langpop.com/</a>  
-<a href="https://github.com/languages" rel="nofollow ugc">https://github.com/languages</a>
+<http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html>  
+<http://www.alexa.com/>  
+<http://www.langpop.com/>  
+<https://github.com/languages>
 
 the move to other languages in the web dev area (PHP a couple of years ago, Python and Ruby right now) is pretty evident (and as I do most work still in Perl because of my experience and code base, I don't like this development)
 
 just look at projects like  
-<a href="https://github.com/facebook/tornado" rel="nofollow ugc">https://github.com/facebook/tornado</a>  
+<https://github.com/facebook/tornado>  
 or rails and you might better understand my point of view

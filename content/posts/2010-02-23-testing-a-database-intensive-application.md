@@ -45,7 +45,7 @@ Our alternative approach has been to allow each test to essentially data-mine a 
 If you destroy the row in the process is isn't a huge deal, because the next time through they won't match any more, and you'll select another one (or ten, or a hundred).
 
 **publius-ovidius, on 2010-02-23 11:57, said:**  
-That's why I take a different approach. I'm using PostgreSQL for a personal project and <tt>Test::Class::Most</tt> to drive the test suite. I have a testing package <a href="http://blogs.perl.org/users/ovid/2010/02/sanity-checking-my-postgresql-tests.html" rel="nofollow">that handles my test database for me</a>. I never have to think about it. I call the constructor and I'm guaranteed to have a clean database every time because it truncates every changed table. I've also tried "mocking up database interaction" and it's been far too painful for me.
+That's why I take a different approach. I'm using PostgreSQL for a personal project and <tt>Test::Class::Most</tt> to drive the test suite. I have a testing package [that handles my test database for me](http://blogs.perl.org/users/ovid/2010/02/sanity-checking-my-postgresql-tests.html). I never have to think about it. I call the constructor and I'm guaranteed to have a clean database every time because it truncates every changed table. I've also tried "mocking up database interaction" and it's been far too painful for me.
 
 In fact, with <tt>Test::Class::Most</tt>, my base test class looks (sort of) like:
 
@@ -95,7 +95,7 @@ With large databases, that can be a pain, of course. What I've done is to make a
 
 That's fast and doesn't use much disk space, since only the changes take up room. It's easy to refresh once you automate it, so you can keep your test database current. And there's no more guessing about how things will work against the production database, because in most ways except hardware, it _is_ the production database. (That includes table and index bloat, statistics, everything, which you don't get when doing an SQL-level dump & import.)
 
-With some co-workers and a few of our clients we have an open source project called <a href="http://www.devcamps.org/" rel="nofollow">DevCamps</a> that's centered on this idea of using the "real deal" in development and testing. It's been working well for us.
+With some co-workers and a few of our clients we have an open source project called [DevCamps](http://www.devcamps.org/) that's centered on this idea of using the "real deal" in development and testing. It's been working well for us.
 
 I hate to sound like an infomercial here, but for our use cases, the problem you describe is solved and what a relief it's been.
 

@@ -146,7 +146,7 @@ I think this kind of thing helps keep in mind our need to be uncoupling componen
 We love our web apps, but they are multi-functional, multi-tiered, and each part has it's own bit it needs to adhere to.
 
 **Dan Dascalescu, on 2009-08-07 07:50, said:**  
-The configuration file mishandling is what makes it so awkward to use something like <a href="http://search.cpan.org/perldoc?DBICx::TestDatabase" rel="nofollow">DBICx::TestDatabase</a> with a Catalyst app. You have to use Catalyst::Test and get the context object via `ctx_request('/')`, then set the model with `$c->model('DBIC')->schema(DBICx::TestDatabase->new('MyApp::Schema'))`. <a href="http://wiki.dandascalescu.com/howtos/catalyst/using_dbicx::testdatabase_with_catalyst" rel="nofollow">This</a>, of course, fires up the entire web server stack, which you really don't need if you just want to test your model with a temporary test database.
+The configuration file mishandling is what makes it so awkward to use something like [DBICx::TestDatabase](http://search.cpan.org/perldoc?DBICx::TestDatabase) with a Catalyst app. You have to use Catalyst::Test and get the context object via `ctx_request('/')`, then set the model with `$c->model('DBIC')->schema(DBICx::TestDatabase->new('MyApp::Schema'))`. [This](http://wiki.dandascalescu.com/howtos/catalyst/using_dbicx::testdatabase_with_catalyst), of course, fires up the entire web server stack, which you really don't need if you just want to test your model with a temporary test database.
 
 **Wolfgang, on 2009-08-08 04:09, said:**  
 I just started learning about catalyst a short time ago in a partially completed application. I needed only a short time to stumble right into the traps you mentioned. Now I'm trying to find my way out.

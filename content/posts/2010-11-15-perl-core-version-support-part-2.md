@@ -54,7 +54,7 @@ That "more fun" part is pretty important. Remember, free software is free. I do 
 ## Comments
 
 **Zbigniew Lukasiak, on 2010-11-16 14:45, said:**  
-A propos not paying the developers - apparently Perl is not alone here: <a href="http://www.reddit.com/r/programming/comments/e6d1w/none_of_the_major_unix_vendors_including_apple/" rel="nofollow ugc">http://www.reddit.com/r/programming/comments/e6d1w/none_of_the_major_unix_vendors_including_apple/</a>
+A propos not paying the developers - apparently Perl is not alone here: <http://www.reddit.com/r/programming/comments/e6d1w/none_of_the_major_unix_vendors_including_apple/>
 
 **Dave Rolsky, on 2010-11-16 14:59, said:**  
 @Zbigniew: I don't think Red Hat really should (or should not) be paying core Perl developers. I do think the idea that they'll support Perl past its end of life kind of ridiculous, since they don't have any core Perl devs on staff, but that goes for lots of other tools that Red Hat includes as well.

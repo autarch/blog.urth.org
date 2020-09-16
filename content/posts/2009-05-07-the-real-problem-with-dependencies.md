@@ -72,7 +72,7 @@ to get the current behavior. It would be even nicer if the binary option used th
 It is interesting to compare that dependency chart to other distros.
 
 Here is Gimp on Arch:  
-<a href="http://kmkeen.com/pacgraph/gimp.png" rel="nofollow ugc">http://kmkeen.com/pacgraph/gimp.png</a>
+<http://kmkeen.com/pacgraph/gimp.png>
 
 **Bruno Vecchi, on 2009-05-24 16:44, said:**  
 Another problem with CPAN vs. debian's package management is how it deals with test failure due to absence of external libraries (header files). It's an easy thing to fix if you know what is happening, but the output when a header file is missing is definitely not beginner-friendly in most cases.

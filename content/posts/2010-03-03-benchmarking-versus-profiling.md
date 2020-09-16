@@ -62,7 +62,7 @@ Sure, it's the sort of thing that people pretty commonly waste time fiddling wit
 
 Secondly, and I'm sorry if it wasn't clear in the original article, the white-space trimming merely provided me with a simple example for a series on benchmarking in general: I was planning to do a series on profiling, but the white-space example was serendipitous, and benchmarking is more entry-level as a topic than profiling.
 
-Part two is up at <a href="http://www.illusori.co.uk/perl/2010/03/05/advanced_benchmark_analysis_1.html" rel="nofollow">http://www.illusori.co.uk/perl/2010/03/05/advanced_benchmark_analysis_1.html</a>.
+Part two is up at <http://www.illusori.co.uk/perl/2010/03/05/advanced_benchmark_analysis_1.html>.
 
 Part three, which I hope to post in the next few days, shows that in some situations, making the wrong choice of white-space trim can actually have noticeable performance impact.
 
