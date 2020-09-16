@@ -16,6 +16,8 @@ PygmentsCodeFences = true
 PygmentsUseClasses = true
 PygmentsCodefencesGuessSyntax = true
 
+copyright = 'David Rolsky<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="margin-top: 0.5em" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.'
+
 defaultContentLanguage = "en"
 [languages.en]
   languageCode = "en"
@@ -54,8 +56,6 @@ defaultContentLanguage = "en"
   archive-paginate = 25
 
   dateFormatToUse = "2006-01-02"
-
-  contentCopyright = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="margin-top: 0.5em" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.'
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = true

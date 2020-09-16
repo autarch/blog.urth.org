@@ -4,13 +4,10 @@ author: Dave Rolsky
 type: post
 date: 2019-12-25T15:41:22+00:00
 url: /2019/12/25/please-test-the-tidyall-trial-release/
-categories:
-  - Uncategorized
-
 ---
 Yesterday I released a [trial version of Code-Tidyall][1]. This version contains a change based on [a PR by Kenneth Ölwing][2] that (I hope) prevents tidyall from munging line endings when it processes a file.
 
-The problem the PR fixes can occur when you have a file with Unix line endings and you run tidyall on Windows. Most tidyall plugins that do tidying (as opposed to linting) will open the file and rewrite it using Perl. Specifically, they were using `Path::Tiny`&#8216;s `slurp` and `spew` methods.
+The problem the PR fixes can occur when you have a file with Unix line endings and you run tidyall on Windows. Most tidyall plugins that do tidying (as opposed to linting) will open the file and rewrite it using Perl. Specifically, they were using `Path::Tiny`'s `slurp` and `spew` methods.
 
 These methods open files using the default IO layers, which on Windows includes the `:crlf` layer. That layer will translate CRLF into LF on read and back again on write. But if the file was _already_ just using LF as the line ending, that means that it will get _converted_ to CRLF on write!
 

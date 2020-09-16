@@ -4,11 +4,8 @@ author: Dave Rolsky
 type: post
 date: 2009-04-20T11:18:04+00:00
 url: /2009/04/20/moose-docs-grant-wrap-up/
-categories:
-  - Uncategorized
-
 ---
-The Moose docs grant is finished, so I&#8217;m going to review what exactly was accomplished, and how it differed from the original grant proposal. I&#8217;ll take each section of the original proposal one at a time.
+The Moose docs grant is finished, so I'm going to review what exactly was accomplished, and how it differed from the original grant proposal. I'll take each section of the original proposal one at a time.
 
 ## Write a set of Moose::Intro docs
 
@@ -71,19 +68,19 @@ Yep, did that.
 
 The original proposal called for:
 
-  * Moose::Cookbook::Basics::Recipe8 &#8211; Managing complex relations with trigger 
+  * Moose::Cookbook::Basics::Recipe8 - Managing complex relations with trigger 
     I ended up putting a trigger example into Recipe 3 instead. Recipe 8 remains unwritten, and probably needs a new topic.
 
-  * Moose::Cookbook::Basics::Recipe11 &#8211; BUILD and BUILDARGS 
+  * Moose::Cookbook::Basics::Recipe11 - BUILD and BUILDARGS 
     I wrote this.
 
-  * Moose::Cookbook::Roles::Recipe3 &#8211; Runtime Role Composition 
+  * Moose::Cookbook::Roles::Recipe3 - Runtime Role Composition 
     I wrote this too.
 
-  * Moose::Cookbook::Meta::Recipe6 &#8211; Hooking into the immutabilization system 
+  * Moose::Cookbook::Meta::Recipe6 - Hooking into the immutabilization system 
     This recipe did not get written at all. The core team realized that the immutabilization system is too nasty to document as-is. For Meta Recipe 6, I showed a Meta Method class that enforces method privacy.
 
-  * Moose::Cookbook::Meta::Recipe7 &#8211; Custom meta-instances 
+  * Moose::Cookbook::Meta::Recipe7 - Custom meta-instances 
     I wrote this.
 
 I also ended up writing a new recipe, Basics Recipe 12, which shows how to subclass a non-Moose parent using Moose.
@@ -98,7 +95,7 @@ So the upshot is that while not every class is fully documented, everything that
 
 Doing all this documentation work definitely highlighted some areas of the code that need changing. There are further refactorings to come, especially for the pieces that were deemed to gross to document at all. That includes immutabilization, some aspects of the type system, and some other areas.
 
-I&#8217;d like to thank the Perl Foundation again for sponsoring this work. The grant was motivational for me, because this was a huge amount of work. I might have done some of it over time, but I doubt I would have done all or done it nearly as quickly without the grant.
+I'd like to thank the Perl Foundation again for sponsoring this work. The grant was motivational for me, because this was a huge amount of work. I might have done some of it over time, but I doubt I would have done all or done it nearly as quickly without the grant.
 
 I hope people out there in Perl-land find the new documentation useful. If you have feedback, you can find us on IRC at <irc://irc.perl.org/#moose>, [email the Moose list][1], or file a ticket in the appropriate RT.cpan.org queue.
 
@@ -106,27 +103,27 @@ I hope people out there in Perl-land find the new documentation useful. If you h
 
 ## Comments
 
-### Comment by Shlomi Fish on 2009-04-20 14:01:08 -0500
+**Shlomi Fish, on 2009-04-20 14:01, said:**  
 Sounds like it was a successful grant both for you and for the TPF. All the power to you, and congratulations!
 
-### Comment by hdp on 2009-04-20 20:20:07 -0500
-The new manual is a huge improvement over the old; TPF&#8217;s money and your time were certainly well spent. Thank you.
+**hdp, on 2009-04-20 20:20, said:**  
+The new manual is a huge improvement over the old; TPF's money and your time were certainly well spent. Thank you.
 
-### Comment by Dave Rolsky on 2009-04-20 20:30:20 -0500
+**Dave Rolsky, on 2009-04-20 20:30, said:**  
 What old manual?
 
-### Comment by Bill Ruppert on 2009-04-22 23:38:04 -0500
+**Bill Ruppert, on 2009-04-22 23:38, said:**  
 The new documentation really helped me get started using Moose. Thanks!
 
-### Comment by askbjoernhansen.com on 2009-04-26 23:53:01 -0500
+**askbjoernhansen.com, on 2009-04-26 23:53, said:**  
 I just want to join the chorus saying this is really great! Thank you for doing it.
 
-&#8211; ask
+- ask
 
-### Comment by maletin.pip.verisignlabs.com on 2009-05-01 19:11:35 -0500
+**maletin.pip.verisignlabs.com, on 2009-05-01 19:11, said:**  
 great work.  
 i found a typo at <a href="http://search.cpan.org/~drolsky/Moose-0.76/lib/Moose/Cookbook/Basics/Recipe4.pod#DESCRIPTION" rel="nofollow ugc">http://search.cpan.org/~drolsky/Moose-0.76/lib/Moose/Cookbook/Basics/Recipe4.pod#DESCRIPTION</a>  
-&#8220;showing how how constraints&#8221;
+"showing how how constraints"
 
 and later there are missing quotes:  
-&#8220;container types), such as ArrayRef[\`a]
+"container types), such as ArrayRef[\`a]

@@ -4,15 +4,12 @@ author: Dave Rolsky
 type: post
 date: 2019-04-09T21:58:40+00:00
 url: /2019/04/09/perl-conference-2019-tutorials/
-categories:
-  - Uncategorized
-
 ---
-Once again I&#8217;m doing two tutorials at [The Perl Conference][1] this year!
+Once again I'm doing two tutorials at [The Perl Conference][1] this year!
 
-On Thursday, June 20 I&#8217;ll be offering my [Introduction to Moose][2] course. **This is likely to be the last time I offer this course so sign up now.** If you want learn more about using Moose this is a great opportunity. I&#8217;d also note that most of what I cover applies to Moo, so what you&#8217;ll learn is useful in many situations.
+On Thursday, June 20 I'll be offering my [Introduction to Moose][2] course. **This is likely to be the last time I offer this course so sign up now.** If you want learn more about using Moose this is a great opportunity. I'd also note that most of what I cover applies to Moo, so what you'll learn is useful in many situations.
 
-On Friday, June 21 I&#8217;m bringing back my [Introduction to Go][2] course. This course is aimed at folks who know another language (like Perl, for example) but don&#8217;t know anything about Go. Go is seeing fairly wide adoption for many purposes these days, including devops tools like Docker and Kubernetes, as well as for CLI tools, servers, and more.
+On Friday, June 21 I'm bringing back my [Introduction to Go][2] course. This course is aimed at folks who know another language (like Perl, for example) but don't know anything about Go. Go is seeing fairly wide adoption for many purposes these days, including devops tools like Docker and Kubernetes, as well as for CLI tools, servers, and more.
 
 Both courses cost $165, which is a great deal in my humble opinion.
 

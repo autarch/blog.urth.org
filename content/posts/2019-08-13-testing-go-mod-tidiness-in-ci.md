@@ -4,17 +4,14 @@ author: Dave Rolsky
 type: post
 date: 2019-08-13T09:16:50+00:00
 url: /2019/08/13/testing-go-mod-tidiness-in-ci/
-categories:
-  - Uncategorized
-
 ---
 _Updated August 18 per discussion on [/r/golang][1]. Thanks to user [Bake_Jailey][2] for noting that running_ `go mod tidy` _can do more than just remove unneeded module requirements._
 
-Now that Go modules are a thing, I&#8217;m starting to use them for my Go projects. So far it&#8217;s been a nice improvement from `dep` and before that, `godep`.
+Now that Go modules are a thing, I'm starting to use them for my Go projects. So far it's been a nice improvement from `dep` and before that, `godep`.
 
-With Go modules you end up with two files in your repo, `go.mod` and `go.sum`. The former file stores a list of your dependencies. The go binary will automatically keep these files up to date when you run things like `go build`. Or at least mostly up to date. When you remove a dependency it does not get automatically removed from the `go.mod` file. Instead, you need to run `go mod tidy` to remove unneeded deps from this file. And of course if you haven&#8217;t run `go build` yet, then a new dependency won&#8217;t be added at commit time.
+With Go modules you end up with two files in your repo, `go.mod` and `go.sum`. The former file stores a list of your dependencies. The go binary will automatically keep these files up to date when you run things like `go build`. Or at least mostly up to date. When you remove a dependency it does not get automatically removed from the `go.mod` file. Instead, you need to run `go mod tidy` to remove unneeded deps from this file. And of course if you haven't run `go build` yet, then a new dependency won't be added at commit time.
 
-Unfortunately, `go mod tidy` always exits with a 0, even if it added or removed a dependency. So if you want to test that this file is up to date in CI, you need to do it yourself. Here&#8217;s my little script for doing so:
+Unfortunately, `go mod tidy` always exits with a 0, even if it added or removed a dependency. So if you want to test that this file is up to date in CI, you need to do it yourself. Here's my little script for doing so:
 
 ```bash
 #!/bin/bash

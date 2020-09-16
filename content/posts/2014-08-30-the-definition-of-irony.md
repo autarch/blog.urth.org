@@ -4,9 +4,6 @@ author: Dave Rolsky
 type: post
 date: 2014-08-30T20:21:26+00:00
 url: /2014/08/30/the-definition-of-irony/
-categories:
-  - Uncategorized
-
 ---
     autarch@houseabsolute:~/projects/DateTime-TimeZone (master $>)$ dzil release
     [DZ] beginning to build DateTime-TimeZone

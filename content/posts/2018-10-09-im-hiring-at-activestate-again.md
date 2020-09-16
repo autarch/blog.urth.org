@@ -4,15 +4,12 @@ author: Dave Rolsky
 type: post
 date: 2018-10-09T22:42:16+00:00
 url: /2018/10/09/im-hiring-at-activestate-again/
-categories:
-  - Uncategorized
-
 ---
-I have not one, but two, count &#8217;em two, piping hot positions open on the Build Engineering team I manage here at [ActiveState][1]!
+I have not one, but two, count 'em two, piping hot positions open on the Build Engineering team I manage here at [ActiveState][1]!
 
-The [ActiveState Careers page][2] has two Build Engineer positions open, [one for Linux][3] and [one for Windows][4]. We&#8217;re going to hire two people, but we could hire two of one and not the other. That said, I would **really** love to bring in some Windows build expertise to this team, so if that&#8217;s you please apply today.
+The [ActiveState Careers page][2] has two Build Engineer positions open, [one for Linux][3] and [one for Windows][4]. We're going to hire two people, but we could hire two of one and not the other. That said, I would **really** love to bring in some Windows build expertise to this team, so if that's you please apply today.
 
-Also, in the nearish future (by 2019 ideally) we will be looking for someone else to manage this team (I&#8217;m managing two at the moment). If you have ambitions in that direction this could be a perfect opportunity for you.
+Also, in the nearish future (by 2019 ideally) we will be looking for someone else to manage this team (I'm managing two at the moment). If you have ambitions in that direction this could be a perfect opportunity for you.
 
 While we’d prefer to hire someone in the Vancouver area this position is open to remote candidates anywhere in North America.
 

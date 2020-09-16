@@ -4,31 +4,28 @@ author: Dave Rolsky
 type: post
 date: 2011-01-24T16:14:06+00:00
 url: /2011/01/24/catalystxroutes-sugar-and-power/
-categories:
-  - Uncategorized
-
 ---
-I&#8217;ve just released a new module, [CatalystX::Routes][1], which adds a layer of sugar for declaring Catalyst actions (aka URI mapping, routes, etc).
+I've just released a new module, [CatalystX::Routes][1], which adds a layer of sugar for declaring Catalyst actions (aka URI mapping, routes, etc).
 
 Route declarations work together with the [Catalyst::Action::REST][2] distribution to make it trivial to declare RESTful actions in your controllers.
 
-I&#8217;m very excited about this module for several reasons. First, Catalyst&#8217;s sub attribute-based action declaration is hideous. I cringe every time I look at it. The syntax is also un-Perlishly picky. For example, these two things are not the same:
+I'm very excited about this module for several reasons. First, Catalyst's sub attribute-based action declaration is hideous. I cringe every time I look at it. The syntax is also un-Perlishly picky. For example, these two things are not the same:
 
 ```perl
 sub foo : Chained ('/') : Args (0) { }
 sub foo : Chained('/') : Args(0) { }
 ```
 
-The difference? Well, the first one is a syntax error. Yes, that&#8217;s right, attributes don&#8217;t allow spaces before their parameters.
+The difference? Well, the first one is a syntax error. Yes, that's right, attributes don't allow spaces before their parameters.
 
-So here&#8217;s what some code looks like when converted from &#8220;plain old Catalyst controller&#8221; to `CatalystX::Routes`:
+So here's what some code looks like when converted from "plain old Catalyst controller" to `CatalystX::Routes`:
 
 ```perl
 sub _set_contact : Chained('/account/_set_account')
                  : PathPart('contact') : CaptureArgs(1) { ... }
 ```
 
-becomes &#8230;
+becomes ...
 
 ```perl
 chain_point _set_contact
@@ -46,7 +43,7 @@ sub contact : Chained('_set_contact') : PathPart('')
 sub contact_GET : Private { ... }
 ```
 
-becomes &#8230;
+becomes ...
 
 ```
 get q{}
@@ -70,7 +67,7 @@ get_html q{}
 
 Now when a browser makes a `GET` request for this URI, we will dispatch to the `get_html` action.
 
-The real power of `CatalystX::Routes` goes well beyond making things prettier. Subroutine attributes are parsed by Perl at compile time, and are an entirely separate piece of syntax from other Perl code. In other words, you can&#8217;t write this:
+The real power of `CatalystX::Routes` goes well beyond making things prettier. Subroutine attributes are parsed by Perl at compile time, and are an entirely separate piece of syntax from other Perl code. In other words, you can't write this:
 
 ```perl
 BEGIN {
@@ -117,7 +114,7 @@ for my $type ( qw( donation note ) ) {
 ```
     
 
-That&#8217;s a mouthful, but there are a few key takeaways. First, I was able to define the mid-point of my chain in a variable named `$entity_chain_point`, and then use that variable to declare actions:
+That's a mouthful, but there are a few key takeaways. First, I was able to define the mid-point of my chain in a variable named `$entity_chain_point`, and then use that variable to declare actions:
 
 ```perl
 chain_point $entity_chain_point ...
@@ -133,11 +130,11 @@ chain_point $entity_chain_point
     => path_part $type ...
 ```
 
-And because the subroutines for each action are closures, I&#8217;m able to reuse the same subroutine bodies for different entities.
+And because the subroutines for each action are closures, I'm able to reuse the same subroutine bodies for different entities.
 
-Generating actions programmatically is an incredibly powerful tool for code reuse. I&#8217;ve just been using `CatalystX::Routes` for a day or so, so I&#8217;ve really only scratched the surface, but I&#8217;m quite excited about the possibilities.
+Generating actions programmatically is an incredibly powerful tool for code reuse. I've just been using `CatalystX::Routes` for a day or so, so I've really only scratched the surface, but I'm quite excited about the possibilities.
 
-Let me end with a caveat. This is new code, and I&#8217;ve only made one release. The API may change without warning, at least for now. And for all I know, this will all turn out to have been a horrible idea, and three months from now I&#8217;ll be using subroutine attributes again.
+Let me end with a caveat. This is new code, and I've only made one release. The API may change without warning, at least for now. And for all I know, this will all turn out to have been a horrible idea, and three months from now I'll be using subroutine attributes again.
 
 But I doubt it.
 

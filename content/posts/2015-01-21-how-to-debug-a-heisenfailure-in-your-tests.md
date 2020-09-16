@@ -4,11 +4,8 @@ author: Dave Rolsky
 type: post
 date: 2015-01-21T22:38:47+00:00
 url: /2015/01/21/how-to-debug-a-heisenfailure-in-your-tests/
-categories:
-  - Uncategorized
-
 ---
-Assuming that the failure happens more than once every few thousand test runs, here&#8217;s a handy shell snippet:
+Assuming that the failure happens more than once every few thousand test runs, here's a handy shell snippet:
 
     while prove -bv t/MaxMind/DB/Writer/Tree-freeze-thaw.t ; do reset; done
 

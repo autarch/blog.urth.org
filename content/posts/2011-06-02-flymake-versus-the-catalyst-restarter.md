@@ -4,11 +4,8 @@ author: Dave Rolsky
 type: post
 date: 2011-06-02T14:59:03+00:00
 url: /2011/06/02/flymake-versus-the-catalyst-restarter/
-categories:
-  - Uncategorized
-
 ---
-I recently started using flymake-mode in emacs, which does a &#8220;make on the fly&#8221; for the buffer you&#8217;re currently editing. For Perl, that basically means checking the code by running `perl -c` on it. If it sees any errors or warnings, it highlights this in the buffer. This is pretty handy for catching typos, although I&#8217;ve seen some weird false positive. Anyway, it&#8217;s a great tool, except that it does its checking by creating a file in the same directory as the one you&#8217;re editing. So if you&#8217;re editing `MyApp/lib/MyApp.pm`, flymake will create (and delete) a `MyApp/lib/MyApp_flymake.pm`. Catalyst&#8217;s Restarter watches the lib directory for file changes, and restarted the dev server on each change. Combined with flymake, this means a lot of useless restarting. Fortunately, it&#8217;s easy enough to get flymake to create its files elsewhere. Here&#8217;s a snippet that includes some code off the [FlymakeRuby page on the Emacs Wiki][1]:
+I recently started using flymake-mode in emacs, which does a "make on the fly" for the buffer you're currently editing. For Perl, that basically means checking the code by running `perl -c` on it. If it sees any errors or warnings, it highlights this in the buffer. This is pretty handy for catching typos, although I've seen some weird false positive. Anyway, it's a great tool, except that it does its checking by creating a file in the same directory as the one you're editing. So if you're editing `MyApp/lib/MyApp.pm`, flymake will create (and delete) a `MyApp/lib/MyApp_flymake.pm`. Catalyst's Restarter watches the lib directory for file changes, and restarted the dev server on each change. Combined with flymake, this means a lot of useless restarting. Fortunately, it's easy enough to get flymake to create its files elsewhere. Here's a snippet that includes some code off the [FlymakeRuby page on the Emacs Wiki][1]:
 
 <pre class="lang:lisp">(defun flymake-perl-init ()
   (let* ((temp-file (flymake-init-create-temp-buffer-copy
@@ -23,7 +20,7 @@ I recently started using flymake-mode in emacs, which does a &#8220;make on the 
 
 You can change the perl path to just be
 
-`perl` or `/usr/bin/perl`. Obviously, I&#8217;m using perlbrew. I got most of this bit from [Damien Krotkine&#8217;s post on perlbrew and flymake][2], but I replaced the use of &#8220;flymake-create-temp-inplace&#8221; with &#8220;flymake-create-temp-intemp&#8221;, defined below.
+`perl` or `/usr/bin/perl`. Obviously, I'm using perlbrew. I got most of this bit from [Damien Krotkine's post on perlbrew and flymake][2], but I replaced the use of "flymake-create-temp-inplace" with "flymake-create-temp-intemp", defined below.
 
 <pre class="lang:lisp">(defun flymake-create-temp-intemp (file-name prefix)
   "Return file name in temporary directory for checking
@@ -65,22 +62,22 @@ You can set this to whatever you want. And poof, flymake is no longer making the
 
 ## Comments
 
-### Comment by Erez on 2011-06-02 15:48:00 -0500
-I stopped using Flymake because I&#8217;m using local::lib heavily, and flymake kept throwing errors about not finding libraries in @INC, sadly ignoring those in ~/perl5/lib. I take it this workaround is for the binary, not the libs, so it might not resolve my issue.
+**Erez, on 2011-06-02 15:48, said:**  
+I stopped using Flymake because I'm using local::lib heavily, and flymake kept throwing errors about not finding libraries in @INC, sadly ignoring those in ~/perl5/lib. I take it this workaround is for the binary, not the libs, so it might not resolve my issue.
 
-### Comment by Dave Rolsky on 2011-06-02 17:02:16 -0500
+**Dave Rolsky, on 2011-06-02 17:02, said:**  
 @Eretz: The last line of the first chunk constructs the arguments passed to the Perl binary. You could change that to be smarter.
 
 You might also consider just changing your PERL5LIB env var to include your local libs.
 
-### Comment by dams on 2011-06-07 09:54:52 -0500
+**dams, on 2011-06-07 09:54, said:**  
 Have a look at Project::Libs, it also helps putting local libs in @INC on the fly
 
-### Comment by Dave Rolsky on 2011-06-07 09:56:44 -0500
-@dams: I was actually having the same problems that Erez having, even with Project::Libs. I&#8217;ve since disabled flymake, but I plan to go back and figure out the problem at some point.
+**Dave Rolsky, on 2011-06-07 09:56, said:**  
+@dams: I was actually having the same problems that Erez having, even with Project::Libs. I've since disabled flymake, but I plan to go back and figure out the problem at some point.
 
-### Comment by genehack on 2011-11-23 14:07:10 -0600
-Okay, I think I&#8217;ve finally got something based on Dave&#8217;s code above that works for me. Assumes use of Git in order to find a base project directory, and assumes libraries are found in $BASE/lib: 
+**genehack, on 2011-11-23 14:07, said:**  
+Okay, I think I've finally got something based on Dave's code above that works for me. Assumes use of Git in order to find a base project directory, and assumes libraries are found in $BASE/lib: 
 
     
     (defun flymake-perl-init ()                                                                                                                                                                    

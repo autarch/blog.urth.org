@@ -4,15 +4,12 @@ author: Dave Rolsky
 type: post
 date: 2009-02-13T09:46:42+00:00
 url: /2009/02/13/moose-docs-grant-moving-forward-recipe-revision/
-categories:
-  - Uncategorized
-
 ---
 The [latest release of Moose, 0.69][1], marks another completed deliverable in the [Moose docs grant][2]. For this release, I finished revising every cookbook recipe in the distro.
 
 My goals were to generally improve the text (Stevan is _wordy_ in hist first drafts ;), and also to make sure we are consistent in our terminology and style.
 
-I also ended moving a fair bit of documentation from cookbook recipes over to the manual. Before the manual existed, some &#8220;general doc&#8221; pieces ended up in the cookbook for lack of a better home.
+I also ended moving a fair bit of documentation from cookbook recipes over to the manual. Before the manual existed, some "general doc" pieces ended up in the cookbook for lack of a better home.
 
 In particular, I ended up adding a fair bit of content to [the Best Practices manual][3] based on some writing that used to live in Moose::Cookbook::Style.
 
@@ -22,19 +19,19 @@ In particular, I ended up adding a fair bit of content to [the Best Practices ma
 
 ## Comments
 
-### Comment by matt on 2009-02-13 11:09:23 -0600
+**matt, on 2009-02-13 11:09, said:**  
 just popping in to say thanks for your work, its appreciated
 
-### Comment by John on 2009-02-13 11:14:13 -0600
+**John, on 2009-02-13 11:14, said:**  
 The new documentation is excellent. Fantastic job.
 
-### Comment by james on 2009-02-13 16:26:04 -0600
+**james, on 2009-02-13 16:26, said:**  
 More details on using Moose with Error objects (not Error, that seems to be incompatible with Moose) would be good.
 
-### Comment by yanick.myopenid.com on 2009-02-14 15:54:24 -0600
-Thanks for the lovely documentation. It&#8217;s very much appreciated. :-)
+**yanick.myopenid.com, on 2009-02-14 15:54, said:**  
+Thanks for the lovely documentation. It's very much appreciated. :-)
 
-I&#8217;ve passed the new Moose::Manual::* through my Pod::Manual machine and generated a pdf version of it (well, two actually: one using LaTeX, one using Prince). The pdfs are at <a href="http://babyl.dyndns.org/techblog/manuals/" rel="nofollow ugc">http://babyl.dyndns.org/techblog/manuals/</a> if you are interested.
+I've passed the new Moose::Manual::* through my Pod::Manual machine and generated a pdf version of it (well, two actually: one using LaTeX, one using Prince). The pdfs are at <a href="http://babyl.dyndns.org/techblog/manuals/" rel="nofollow ugc">http://babyl.dyndns.org/techblog/manuals/</a> if you are interested.
 
-### Comment by sawyer on 2009-02-15 03:15:45 -0600
-I always loved the Moose documentation but now it&#8217;s even better! Great job! I especially liked Moose::Unsweetened!
+**sawyer, on 2009-02-15 03:15, said:**  
+I always loved the Moose documentation but now it's even better! Great job! I especially liked Moose::Unsweetened!

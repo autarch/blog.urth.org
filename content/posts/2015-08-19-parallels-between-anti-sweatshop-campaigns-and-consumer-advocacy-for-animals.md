@@ -4,9 +4,6 @@ author: Dave Rolsky
 type: post
 date: 2015-08-19T21:54:36+00:00
 url: /2015/08/19/parallels-between-anti-sweatshop-campaigns-and-consumer-advocacy-for-animals/
-categories:
-  - Uncategorized
-
 ---
 In a discussion group about animal activism on Facebook, someone recently shared an article titled [The Myth of the Ethical Shopper][1]. It’s a really interesting piece about some of the problems with consumer advocacy aimed at encouraging people to buy sweatshop-free products. I highly recommend reading it.
 
@@ -56,34 +53,34 @@ It’s always worthwhile to look at other social justice movements for parallels
 
 ## Comments
 
-### Comment by Jacy on 2015-08-19 20:03:27 -0500
+**Jacy, on 2015-08-19 20:03, said:**  
 Hey Dave,
 
-Thanks for the post. I&#8217;ll respond to a few points:
+Thanks for the post. I'll respond to a few points:
 
 [[First of all, “consumer advocacy” is not a great term to use when discussing contemporary animal advocacy. It’s much too broad.]]
 
-Hm, I still think it&#8217;s a useful term. For animal advocacy, it allows us to refer to tactics like promoting veganism, promoting the reduction of animal product consumption, and buying from suppliers with less cruelty, all in the same umbrella. Although, sure, it&#8217;s a broad umbrella in a sense, it&#8217;s still an umbrella. If we notice, for example, that these tactics all seem to work well in movements similar to animal advocacy, while other tactics don&#8217;t work so well, then we could use this term to make meaningful statements like, &#8220;We should incorporate more consumer advocacy as animal advocates.&#8221;
+Hm, I still think it's a useful term. For animal advocacy, it allows us to refer to tactics like promoting veganism, promoting the reduction of animal product consumption, and buying from suppliers with less cruelty, all in the same umbrella. Although, sure, it's a broad umbrella in a sense, it's still an umbrella. If we notice, for example, that these tactics all seem to work well in movements similar to animal advocacy, while other tactics don't work so well, then we could use this term to make meaningful statements like, "We should incorporate more consumer advocacy as animal advocates."
 
 [[It’s worth noting that this sort of advocacy is not a boycott.]]
 
-This seems like a weird and non-standard use of the term &#8220;boycott.&#8221; I mean, definitions are, in a sense, arbitrary. But I&#8217;d think we should just stick with the standard dictionary definition of boycott, e.g. &#8220;withdraw from commercial or social relations with (a country, organization, or person) as a punishment or protest.&#8221; (just the first one that comes up on Google) Reducing the consumption of animal products definitely seems to me like it fits this definition. Perhaps you think &#8220;animal agriculture&#8221; doesn&#8217;t qualify as an &#8220;organization&#8221;? But that seems, again, like a non-standard use of the term.
+This seems like a weird and non-standard use of the term "boycott." I mean, definitions are, in a sense, arbitrary. But I'd think we should just stick with the standard dictionary definition of boycott, e.g. "withdraw from commercial or social relations with (a country, organization, or person) as a punishment or protest." (just the first one that comes up on Google) Reducing the consumption of animal products definitely seems to me like it fits this definition. Perhaps you think "animal agriculture" doesn't qualify as an "organization"? But that seems, again, like a non-standard use of the term.
 
 [[I don’t think The Myth of the Ethical Shopper speaks to advocacy targeted at reducing animal product consumption in any meaningful way.]]
 
-I still think, even though there are some major differences (most notably, in my view, the supply chain), between the anti-sweatshop and anti-animal-agriculture movements, we should still use the major similarities, e.g. both want to eliminate a certain practice that harms an underrepresented population, to draw meaningful evidence. Perhaps you&#8217;re just saying, &#8220;Once there are so few similarities between two things, we should give the evidence between the two zero weight.&#8221; Whereas I believe, &#8220;Even if there are few similarities between two things, we should give the evidence between the two weight proportional (not necessarily linearly) to those similarities.&#8221; If so, this seems like an epistemological disagreement and we should abstract away from the specific movement comparison.
+I still think, even though there are some major differences (most notably, in my view, the supply chain), between the anti-sweatshop and anti-animal-agriculture movements, we should still use the major similarities, e.g. both want to eliminate a certain practice that harms an underrepresented population, to draw meaningful evidence. Perhaps you're just saying, "Once there are so few similarities between two things, we should give the evidence between the two zero weight." Whereas I believe, "Even if there are few similarities between two things, we should give the evidence between the two weight proportional (not necessarily linearly) to those similarities." If so, this seems like an epistemological disagreement and we should abstract away from the specific movement comparison.
 
-### Comment by Dave Rolsky on 2015-08-19 21:14:12 -0500
+**Dave Rolsky, on 2015-08-19 21:14, said:**  
 > Hm, I still think it’s a useful term. For animal advocacy, it allows us to refer to tactics like promoting veganism, promoting the reduction of animal product consumption, and buying from suppliers with less cruelty, all in the same umbrella.
 
-We&#8217;ll have to agree to disagree. To me it&#8217;s such a broad umbrella that it&#8217;s not useful. Saying “We should incorporate more consumer advocacy as animal advocates&#8221; would only make sense if we thought that all of these tactics were equally effective, which seems unlikely.
+We'll have to agree to disagree. To me it's such a broad umbrella that it's not useful. Saying “We should incorporate more consumer advocacy as animal advocates" would only make sense if we thought that all of these tactics were equally effective, which seems unlikely.
 
 > This seems like a weird and non-standard use of the term “boycott.” I mean, definitions are, in a sense, arbitrary. But I’d think we should just stick with the standard dictionary definition of boycott, e.g. “withdraw from commercial or social relations with (a country, organization, or person) as a punishment or protest.” (just the first one that comes up on Google) Reducing the consumption of animal products definitely seems to me like it fits this definition. Perhaps you think “animal agriculture” doesn’t qualify as an “organization”? But that seems, again, like a non-standard use of the term.
 
-The vast majority of animal advocacy groups who advocate reducing or eliminating animal product consumption do so in order reduce the number of animals suffering on factory farms. When I talk to people and tell them to change their diet, I tell them that this will reduce suffering. I _never_ say &#8220;and it will hurt animal ag, so they&#8217;ll change their practices&#8221;. It&#8217;s possible that some meat reducers would increase consumption if animal ag changed their practices. This seems less likely for ethically motivated vegetarians and vegans.
+The vast majority of animal advocacy groups who advocate reducing or eliminating animal product consumption do so in order reduce the number of animals suffering on factory farms. When I talk to people and tell them to change their diet, I tell them that this will reduce suffering. I _never_ say "and it will hurt animal ag, so they'll change their practices". It's possible that some meat reducers would increase consumption if animal ag changed their practices. This seems less likely for ethically motivated vegetarians and vegans.
 
-Traditionally, boycotts have been talked about as a targeted protest against an industry, company, or government. The goal is to get the target to change their practices. This doesn&#8217;t seem to apply to animal advocacy, where the goal is to put animal ag **out of business entirely**.
+Traditionally, boycotts have been talked about as a targeted protest against an industry, company, or government. The goal is to get the target to change their practices. This doesn't seem to apply to animal advocacy, where the goal is to put animal ag **out of business entirely**.
 
 > Perhaps you’re just saying, “Once there are so few similarities between two things, we should give the evidence between the two zero weight.” Whereas I believe, “Even if there are few similarities between two things, we should give the evidence between the two weight proportional (not necessarily linearly) to those similarities.”
 
-I think in this case it&#8217;s up to you to show that the similarities are significant enough to be given consideration. However, as I said in my post, I do think there are similarities here between anti-sweatshop advocacy and **certain specific consumer-focused tactics employed by some animal advocacy groups.**
+I think in this case it's up to you to show that the similarities are significant enough to be given consideration. However, as I said in my post, I do think there are similarities here between anti-sweatshop advocacy and **certain specific consumer-focused tactics employed by some animal advocacy groups.**

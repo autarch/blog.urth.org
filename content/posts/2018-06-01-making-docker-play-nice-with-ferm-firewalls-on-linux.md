@@ -4,13 +4,10 @@ author: Dave Rolsky
 type: post
 date: 2018-06-01T18:14:28+00:00
 url: /2018/06/01/making-docker-play-nice-with-ferm-firewalls-on-linux/
-categories:
-  - Uncategorized
-
 ---
-I&#8217;ve been using Docker a fair bit for work at ActiveState recently. It&#8217;s quite nice and makes creating and deploying services much simpler.
+I've been using Docker a fair bit for work at ActiveState recently. It's quite nice and makes creating and deploying services much simpler.
 
-However, it can also be incredibly annoying when I&#8217;m using it locally on my desktop. By default, the Docker daemon (dockerd) messes with iptables in order to allow docker images to connect to the interwebs. But if you already have a firewall in place there&#8217;s a good chance that this won&#8217;t work. So every time I want to use Docker I disable my [ferm][1]-based firewall and restart the Docker daemon. Then when I&#8217;m done using Docker I bring the firewall back up. Tedious and unsafe!
+However, it can also be incredibly annoying when I'm using it locally on my desktop. By default, the Docker daemon (dockerd) messes with iptables in order to allow docker images to connect to the interwebs. But if you already have a firewall in place there's a good chance that this won't work. So every time I want to use Docker I disable my [ferm][1]-based firewall and restart the Docker daemon. Then when I'm done using Docker I bring the firewall back up. Tedious and unsafe!
 
 ## Figuring Out What dockerd Does
 
@@ -79,7 +76,7 @@ The next step is to translate this into ferm rules and integrate it into my exis
 
 Since I wanted to make ferm set up the Docker rules, I had to tell dockerd to stop doing it itself when the daemon was started.
 
-Depending on what init system you&#8217;re using, there are two ways pass options to dockerd. If your system is using systemd, the daemon is configured via the `/etc/docker/daemon.json`. This disables the iptables setup:
+Depending on what init system you're using, there are two ways pass options to dockerd. If your system is using systemd, the daemon is configured via the `/etc/docker/daemon.json`. This disables the iptables setup:
 
 <pre class="lang:js decode:true " title="daemon.json" >{
     "iptables": false
@@ -144,10 +141,10 @@ The Docker rules translate to the following ferm config (disclaimer: I am not an
 
 This works. I can enable my firewall with `sudo service ferm restart` and use Docker normally. Containers are able to access the internet. Yay!
 
-One problem, however, is that the easiest way to make this work was to put the docker rules before all my other rules. This probably means my docker containers are a bit more exposed than is ideal. However, I only use Docker to build containers and test them locally, so that&#8217;s okay for now.
+One problem, however, is that the easiest way to make this work was to put the docker rules before all my other rules. This probably means my docker containers are a bit more exposed than is ideal. However, I only use Docker to build containers and test them locally, so that's okay for now.
 
-But the bigger problem is that this will almost certainly break. In the short time I&#8217;ve been using Docker (about 6 months) the way it does networking has changed at least once. A few months back dockerd would set up two virtual interfaces, `docker0` and `docker_gwbridge`. The iptables rules it used were a bit different then as well.
+But the bigger problem is that this will almost certainly break. In the short time I've been using Docker (about 6 months) the way it does networking has changed at least once. A few months back dockerd would set up two virtual interfaces, `docker0` and `docker_gwbridge`. The iptables rules it used were a bit different then as well.
 
-So it seems likely that dockerd might change what it does again and my config will be broken. This is all quite annoying. I&#8217;m not sure what the best solution is, but at the very least it&#8217;d be good to see Docker document exactly what these rules need to be (and better yet, what they&#8217;re doing at a higher level).
+So it seems likely that dockerd might change what it does again and my config will be broken. This is all quite annoying. I'm not sure what the best solution is, but at the very least it'd be good to see Docker document exactly what these rules need to be (and better yet, what they're doing at a higher level).
 
  [1]: http://ferm.foo-projects.org/

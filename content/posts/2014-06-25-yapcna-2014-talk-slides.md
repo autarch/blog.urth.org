@@ -4,9 +4,6 @@ author: Dave Rolsky
 type: post
 date: 2014-06-25T13:40:39+00:00
 url: /2014/06/25/yapcna-2014-talk-slides/
-categories:
-  - Uncategorized
-
 ---
 You can find them here:
 

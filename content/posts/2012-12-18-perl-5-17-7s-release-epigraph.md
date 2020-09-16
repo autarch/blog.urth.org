@@ -4,11 +4,8 @@ author: Dave Rolsky
 type: post
 date: 2012-12-18T22:37:50+00:00
 url: /2012/12/18/perl-5-17-7s-release-epigraph/
-categories:
-  - Uncategorized
-
 ---
-Continuing a tradition that I&#8217;m hoping other release managers will pick up (some have so far, but not all), here&#8217;s some notes about the epigraph I included with the email announcing Perl 5.17.7. The epigraph itself is from R. Scott Bakker&#8217;s _The Darkness That Comes Before_, which is the first in a somewhat grim speculative fiction trilogy called _The Prince of Nothing_. One of the main characters is a sort of intellectual warrior-philopsopher monk (this is bad description but it&#8217;s very hard to summarize this character) who underwent very intense mental and phyisical training as a child. The epigraph is a description of some of that training.
+Continuing a tradition that I'm hoping other release managers will pick up (some have so far, but not all), here's some notes about the epigraph I included with the email announcing Perl 5.17.7. The epigraph itself is from R. Scott Bakker's _The Darkness That Comes Before_, which is the first in a somewhat grim speculative fiction trilogy called _The Prince of Nothing_. One of the main characters is a sort of intellectual warrior-philopsopher monk (this is bad description but it's very hard to summarize this character) who underwent very intense mental and phyisical training as a child. The epigraph is a description of some of that training.
 
 > No thought.  
 > The boy extinguished. Only a place.  
@@ -23,8 +20,8 @@ Continuing a tradition that I&#8217;m hoping other release managers will pick up
 > In his periphery, he could see the spike of the sun ease from the mountain. He felt drunk with exhaustion. In the recoil of his trance, it seemed all he could hear were the twigs arching and bobbing in the wind, pulled by leaves like a million sails no bigger than his hand. Cause everywhere, but amid countless minute happenings—diffuse, useless.  
 > Now I understand. 
 
-Since this release was on Perl&#8217;s 25th birthday, I was looking for an epigraph that at least had something to do with birth. I chose this one because it can be seen as a sort of birth, or perhaps a rebirth of a character. He has achieved enlightenment of his sect&#8217;s teachings.
+Since this release was on Perl's 25th birthday, I was looking for an epigraph that at least had something to do with birth. I chose this one because it can be seen as a sort of birth, or perhaps a rebirth of a character. He has achieved enlightenment of his sect's teachings.
 
-I didn&#8217;t remember it when I first thought of this passage, but the fact that his teacher is called &#8220;the Pragma&#8221; really makes this a nice quote for a Perl release.
+I didn't remember it when I first thought of this passage, but the fact that his teacher is called "the Pragma" really makes this a nice quote for a Perl release.
 
-If you&#8217;re interested in complex, weird, philosophical speculative fiction I highly recommend these novels. However, be forewarned that while the trilogy does tell a somewhat self-contained story, there&#8217;s an even larger story which is being told in further sequels, and the author hasn&#8217;t finished all of those. Supposedly there will be at least 5 (or maybe 6) additional novels, and only two have been released so far.
+If you're interested in complex, weird, philosophical speculative fiction I highly recommend these novels. However, be forewarned that while the trilogy does tell a somewhat self-contained story, there's an even larger story which is being told in further sequels, and the author hasn't finished all of those. Supposedly there will be at least 5 (or maybe 6) additional novels, and only two have been released so far.

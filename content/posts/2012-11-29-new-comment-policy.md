@@ -4,13 +4,10 @@ author: Dave Rolsky
 type: post
 date: 2012-11-29T21:22:35+00:00
 url: /2012/11/29/new-comment-policy/
-categories:
-  - Uncategorized
-
 ---
-Since I have some new blog software, I&#8217;m enacting a new comment policy to go with it.
+Since I have some new blog software, I'm enacting a new comment policy to go with it.
 
-In the past, I&#8217;ve approved basically all non-spam comments. After my last post, the only comment I received was a very rude comment suggesting that it was an attempt to &#8220;defend&#8221; my use of WordPress. I deleted this comment.
+In the past, I've approved basically all non-spam comments. After my last post, the only comment I received was a very rude comment suggesting that it was an attempt to "defend" my use of WordPress. I deleted this comment.
 
 (Aside: see the footer of this site)
 
@@ -20,5 +17,5 @@ Comments are always welcome, whether you agree with anything I write or not. How
 
 ## Comments
 
-### Comment by Sawyer on 2012-12-04 02:46:37 -0600
+**Sawyer, on 2012-12-04 02:46, said:**  
 I wish more websites had such a comment policy.

@@ -4,13 +4,10 @@ author: Dave Rolsky
 type: post
 date: 2016-02-07T20:10:42+00:00
 url: /2016/02/07/hacking-on-perl-6-rakudo-and-roast/
-categories:
-  - Uncategorized
-
 ---
 I found a bug in Perl 6 recently. Really I independently discovered [one that was already reported][1].
 
-Here&#8217;s how to trigger it:
+Here's how to trigger it:
 
     $ perl6 -e 'say <2147483648/3>'
     ===SORRY!===
@@ -23,7 +20,7 @@ Any numerator of 2<sup>31</sup> or greater causes that error. Note that Perl 6 i
 
 So the problem was clearly somewhere in the compiler.
 
-Here&#8217;s a quick guide to how I fixed this.
+Here's a quick guide to how I fixed this.
 
 First, I added a test to the Perl 6 test suite. Unlike many programming languages, the primary test suite for Perl 6 is not in the same repo as the compiler. Instead, [it has its own repo, roast][2]. Roast is The Official Perl 6 Test Suite, and any toolchain which can pass the test suite is a valid Perl 6.
 
@@ -33,7 +30,7 @@ In this particular case, I added a test to `S32-num/rat.t`. The test makes sure 
 
 Running this with the latest Rakudo caused the test to blow up with the same error as my first example. Success! Well, failure, but success at failing the way I wanted it to.
 
-Next I had to figure out where this error was happening. This can be a bit tricky with compiler errors like this. The best way to get a clue to the problem&#8217;s location is to pass `--ll-exception` as a CLI flag:
+Next I had to figure out where this error was happening. This can be a bit tricky with compiler errors like this. The best way to get a clue to the problem's location is to pass `--ll-exception` as a CLI flag:
 
     $ perl6 --ll-exception -e 'say <2147483648/3>'
     Cannot find method 'compile_time_value'
@@ -46,7 +43,7 @@ Next I had to figure out where this error was happening. This can be a bit trick
 
 If we look at the top of the trace we see references to `Perl6/Actions.moarvm:bare_rat_number`. Looking in the rakudo repo, we can find a `src/Perl6/Actions.nqp` file that contains `method bare_rat_number($/) {...}`. This seemed like a pretty good guess at where the error was coming from.
 
-Here&#8217;s the method in full before my patch:
+Here's the method in full before my patch:
 
     method bare_rat_number($/) {
         my $nu := @($<nu>.ast)[0].compile_time_value;
@@ -58,9 +55,9 @@ Here&#8217;s the method in full before my patch:
 
 After doing some dumping of values in the AST with code like `note($<nu>.dump)`, I realized that the numerator could end up being passed in as either a `QAST::Want` or `QAST::WVal` object. What are these and how do they differ? Why is there a break at 2<sup>31</sup>? I have no clue!
 
-However, I could see that while a `QAST::Want` object could be treated as an array, a `QAST::WVal` could not. Fortunately, both objects support a `compile_time_value` method. Looking at this method&#8217;s implementation in `QAST::Want` I could see that it was getting the first array element from the object&#8217;s internals, while `QAST::WVal` implemented this differently. But since they both implement the same method why not just call it and be done with it?
+However, I could see that while a `QAST::Want` object could be treated as an array, a `QAST::WVal` could not. Fortunately, both objects support a `compile_time_value` method. Looking at this method's implementation in `QAST::Want` I could see that it was getting the first array element from the object's internals, while `QAST::WVal` implemented this differently. But since they both implement the same method why not just call it and be done with it?
 
-Here&#8217;s the patched method:
+Here's the patched method:
 
     method bare_rat_number($/) {
         my $nu := $<nu>.ast.compile_time_value;
@@ -72,7 +69,7 @@ Here&#8217;s the patched method:
 
 All the tests passed, so I think I fixed it.
 
-Overall, this wasn&#8217;t too hard. Because much of Perl 6 is either written in Perl 6 or in NQP (a subset of Perl 6), fixing the core can be much easier than with many other languages, especially most dynamic languages which are implemented in C.
+Overall, this wasn't too hard. Because much of Perl 6 is either written in Perl 6 or in NQP (a subset of Perl 6), fixing the core can be much easier than with many other languages, especially most dynamic languages which are implemented in C.
 
  [1]: https://rt.perl.org/Ticket/Display.html?id=126873
  [2]: https://github.com/perl6/roast
