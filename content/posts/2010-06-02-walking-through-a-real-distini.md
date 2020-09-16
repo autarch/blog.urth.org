@@ -15,8 +15,9 @@ Let's walk through a `dist.ini` file from a real project. I'll use the `dist.ini
 
 Here's the whole file:
 
-<pre class="highlight:false">name    = Markdent
-author  = Dave Rolsky &lt;autarch@urth.org>
+```
+name    = Markdent
+author  = Dave Rolsky <autarch@urth.org>
 license = Perl_5
 copyright_holder = Dave Rolsky
 copyright_year   = 2010
@@ -66,46 +67,56 @@ Test::More                           = 0.88
 Tree::Simple::Visitor::ToNestedArray = 0
 
 [@Mercurial]
-</pre>
+```
 
 That's a mouthful. Let's step through it in tiny chunks ...
 
-<pre class="highlight:false">name    = Markdent
-author  = Dave Rolsky &lt;autarch@urth.org>
-</pre>
+```
+name    = Markdent
+author  = Dave Rolsky <autarch@urth.org>
+```
 
 Setting these does several things. First, these values will end up in the generated `Makefile.PL` for the distro. Second, these values are available for plugins which do POD munging, which we'll look at shortly. In particular, the author will end up in the every module's POD.
 
-<pre class="highlight:false">license = Perl_5
-</pre>
+```
+license = Perl_5
+```
 
 The license setting is used for several things. First, the `License` plugin will use it to add a `LICENSE` file to the distro. Second, it is also available to POD mungers.
 
-<pre class="highlight:false">copyright_holder = Dave Rolsky
+```
+copyright_holder = Dave Rolsky
 copyright_year   = 2010
-</pre>
+```
 
 This is another bit for the POD mungers. Together with the license, we'll end up with this POD section in each module:
 
-> =head1 COPYRIGHT AND LICENSE
-> 
-> This software is copyright (c) 2010 by Dave Rolsky.
-> 
-> This is free software; you can redistribute it and/or modify it under
-> 
-> the same terms as the Perl 5 programming language system itself.
+```
+=head1 COPYRIGHT AND LICENSE
 
-<pre class="highlight:false">version = 0.13
-</pre>
+This software is copyright (c) 2010 by Dave Rolsky.
+
+This is free software; you can redistribute it and/or modify it under
+
+the same terms as the Perl 5 programming language system itself.
+```
+
+The distribution version:
+
+```
+version = 0.13
+```
 
 Again, this ends up in both my `Makefile.PL` and my POD.
 
-<pre class="highlight:false">[@Basic]
-</pre>
+```
+[@Basic]
+```
 
 This is a plugin _bundle_, which is a name for a pre-defined set of plugins. The `Basic` bundle contains:
 
-<pre class="highlight:false">[GatherDir]
+```
+[GatherDir]
 [PruneCruft]
 [ManifestSkip]
 [MetaYAML]
@@ -119,59 +130,69 @@ This is a plugin _bundle_, which is a name for a pre-defined set of plugins. The
 [TestRelease]
 [ConfirmRelease]
 [UploadToCPAN]
-</pre>
+```
 
 Whoa, that's a lot. So what do these do?
 
-<pre class="highlight:false">[GatherDir]
-</pre>
+```
+[GatherDir]
+```
 
 This tells dzil that it should include all the files in the current directory (the root of my distro) in the generated distro. I have to include this, or I won't end up with a distro at all!
 
-<pre class="highlight:false">[PruneCruft]
-</pre>
+```
+[PruneCruft]
+```
 
 This prunes the gathered files to remove generated files like a `Build` file, files that start with a dot (.), etc.
 
-<pre class="highlight:false">[ManifestSkip]
-</pre>
+```
+[ManifestSkip]
+```
 
 This prunes the gathered files based on the contents of a `MANIFEST.SKIP` file.
 
-<pre class="highlight:false">[MetaYAML]
-</pre>
+```
+[MetaYAML]
+```
 
 This generates a `META.yml` file for the distro (using version 1.4 of the CPAN Meta format).
 
-<pre class="highlight:false">[License]
-</pre>
+```
+[License]
+```
 
 This plugin generates a `LICENSE` file, based on the value I set for the license earlier.
 
-<pre class="highlight:false">[Readme]
-</pre>
+```
+[Readme]
+```
 
 This one generates a fairly minimal `README`. Arguably, it's so minimal it's useless. It could probably be improved ;)
 
-<pre class="highlight:false">[ExtraTests]
-</pre>
+```
+[ExtraTests]
+```
 
 This looks for tests under my working copy's `xt` directory. This directory can contain subdirectories for three different types of "extra" tests, smoke tests, author tests, and release tests. Each of these directories has its tests rewritten so that they only run under specific circumstances (based on environment variables). The tests are rewritten into the `t` directory.
 
 Typically, I only use `xt/release`. The tests in the release directory are run when `$ENV{RELEASE_TESTING}` is true. The `dzil release` command makes sure this is true, so my release tests are run before I do a release, but _not_ when the module is installed from CPAN. This is perfect for things like POD tests.
 
-<pre class="highlight:false">[ExecDir]
-</pre>
+```
+[ExecDir]
+```
 
 This plugin arranges for a directory's contents to be installed as executables. Well, actually, it just marks the files as executables, and another plugin does something useful with them. By default, it looks for a directory named `bin`.
 
-<pre class="highlight:false">[ShareDir]
-</pre>
+```
+[ShareDir]
+```
 
 Just like `ExecDir` but for "share" files (non-executable content like templates, images, etc).
 
-<pre class="highlight:false">[MakeMaker]
-</pre>
+```
+[MakeMaker]
+```
 
 This generates `Makefile.PL` for the distro. This plugin is pretty smart, and generates a file with lots of conditionals so that it does the best job it can for the version of `ExtUtils::MakeMaker` that is available on the installing user's machine. If you've ever written this sort of conditional crap you know how annoying it is to maintain. Now I don't have to deal with this. As a bonus, future versions of dzil will account for new versions of EUMM, and I'll get a better `Makefile.PL` for free.
 
@@ -179,91 +200,106 @@ This plugin makes use of the information provided by the `ExecDir` and `ShareDir
 
 There is also a `ModuleBuild` plugin, but dzil really makes the difference between the two minimal. Unless I want to integrate a custom `Module::Build` subclass, as I did with [Silki][3], there isn't much difference between EUMM and MB for a project which uses dzil.
 
-<pre class="highlight:false">[Manifest]
-</pre>
+```
+[Manifest]
+```
 
 This plugin creates the `MANIFEST`.
 
-<pre class="highlight:false">[TestRelease]
-</pre>
+```
+[TestRelease]
+```
 
 This runs the tests when I run `dzil release`.
 
-<pre class="highlight:false">[ConfirmRelease]
-</pre>
+```
+[ConfirmRelease]
+```
 
 This prompts me to ask if I'm really sure I want to upload a distro when I run `dzil release`.
 
-<pre class="highlight:false">[UploadToCPAN]
-</pre>
+```
+[UploadToCPAN]
+```
 
 I bet you can figure out what this does.
 
-<pre class="highlight:false">[InstallGuide]
-</pre>
+```
+[InstallGuide]
+```
 
 This generates a nice `INSTALL` file. This plugin is smart. It generates the right instructions regardless of whether the distro is using EUMM or `Module::Build`.
 
-<pre class="highlight:false">[MetaJSON]
-</pre>
+```
+[MetaJSON]
+```
 
 This generates a `META.json` file for the distro (using version 2.0 of the CPAN Meta format).
 
-<pre class="highlight:false">[MetaResources]
+```
+[MetaResources]
 bugtracker.web    = http://rt.cpan.org/NoAuth/Bugs.html?Dist=Markdent
 bugtracker.mailto = bug-markdent@rt.cpan.org
 repository.url    = http://hg.urth.org/hg/Markdent
 repository.web    = http://hg.urth.org/hg/Markdent
 repository.type   = hg
-</pre>
+```
 
 This adds a "resources" section to my `META.*` files. There are some plugins on CPAN which will automate this. For the repository settings, the plugin looks at your working copy to figure out your VCS and remote VCS uris. I might switch over to these plugins in the future, although I think I'd actually have to add Mercurial support first.
 
-<pre class="highlight:false">[PodWeaver]
-</pre>
+```
+[PodWeaver]
+```
 
 I mentioned "POD mungers" several times. `Pod::Weaver` is a POD rewriting module which does all sorts of fancy stuff, though I'm using just using a subset of its default behavior.
 
 First, it looks in my module files for a comment in the form:
 
-<pre class="highlight:false"># ABSTRACT: Some text here
-</pre>
+```
+# ABSTRACT: Some text here
+```
 
 It uses this to generate the "NAME" section in the POD.
 
 It also inserts "VERSION", "AUTHOR", and "COPYRIGHT AND LICENSE" sections. `Pod::Weaver` also lets you do even fancier stuff, like use POD dialects, add custom sections, etc. I'll be investigating this further in the future. Really, this module deserves its own blog entry or three.
 
-<pre class="highlight:false">[KwaliteeTests]
+```
+[KwaliteeTests]
 [NoTabsTests]
 [EOLTests]
-</pre>
+```
 
 These add some release tests for various sanity checks. I never need to customize these tests, so I can let the plugins write them out for me.
 
-<pre class="highlight:false">[Signature]
-</pre>
+```
+[Signature]
+```
 
 This signs the distro using `Module::Signature`.
 
-<pre class="highlight:false">[CheckChangeLog]
-</pre>
+```
+[CheckChangeLog]
+```
 
 This checks my `Changes` file to ensure that I have an entry for the version mentioned in my `dist.ini`. It could be smarter and check for a _date_ as well. I'm sure patches are welcome ;)
 
-<pre class="highlight:false">[Prereq]
+```
+[Prereq]
 ...
-</pre>
+```
 
 This should be obvious. It lists the prerequisites for my distro. There is also an `AutoPrereq` module. I don't use this because it generates a lot of prereqs I think are cruft, like core modules, or multiple modules in the same distro.
 
-<pre class="highlight:false">[Prereq / TestRequires]
+```
+[Prereq / TestRequires]
 ...
-</pre>
+```
 
 Again, this is pretty obvious.
 
-<pre class="highlight:false">[@Mercurial]
-</pre>
+```
+[@Mercurial]
+```
 
 Another plugin bundle. I [wrote some plugins][4] to automate some release tasks for a Mercurial-using project.
 
@@ -300,9 +336,11 @@ Thanks for this post, very helpful.
 **Caleb Cushing ( xenoterracide ), on 2010-06-02 17:31, said:**  
 shouldn't you Filter MetaYAML ? since you're using MetaJSON.
 
-@Filter]  
-bundle = @Basic  
+```
+[@Filter]
+bundle = @Basic
 remove = MetaYAML
+```
 
 **Dave Rolsky, on 2010-06-02 17:34, said:**  
 @Caleb: No, you can include both in a distro. That's probably the best path forward, since that way anything not using CPAN::Meta for meta file handling can find an old-style (v1.4) YAML file, and updated code with see the JSON file.
@@ -310,6 +348,8 @@ remove = MetaYAML
 **Caleb Cushing ( xenoterracide ), on 2010-06-02 17:49, said:**  
 also for Readme I Filter Readme and use
 
+```
 [ReadmeFromPod]
+```
 
 obviously that's just a preference.

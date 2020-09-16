@@ -13,7 +13,8 @@ It's quite common nowadays to receive email consisting of nested multipart messa
 
 Here's a diagram:
 
-<pre class="highlight:false">multipart/mixed
+```
+multipart/mixed
   |
   |-- multipart/alternative
   |     |
@@ -22,11 +23,12 @@ Here's a diagram:
   |
   |-- application/vnd.ms-excel (disposition = attachment)
   |-- image/png                (disposition = attachment)
-</pre>
+```
 
 It can actually be even more complicated. If the HTML body has references to images or CSS, you might get something more like this:
 
-<pre class="highlight:false">multipart/mixed
+```
+multipart/mixed
   |
   |-- multipart/alternative
   |     |
@@ -39,7 +41,7 @@ It can actually be even more complicated. If the HTML body has references to ima
   |
   |-- application/vnd.ms-excel (disposition = attachment)
   |-- image/png                (disposition = attachment)
-</pre>
+```
 
 That's quite a structure!
 
@@ -65,10 +67,12 @@ As an aside, Courriel is a lot less mutable than Email::MIME. While you can muta
 
 Courriel provides a low-level API where all parts are equal and a high-level API on top of it that helps you get stuff done. You can write code like this:
 
-<pre class="lang:perl">my $courriel = Courriel->parse( text => $raw_email );
+
+```perl
+my $courriel = Courriel->parse( text => $raw_email );
 
 print $courriel->subject(), "\n\n", $courriel->plain_body()->content();
-</pre>
+```
 
 Doing this same sort of thing with Email::MIME requires a **lot** more code.
 
@@ -87,7 +91,9 @@ I've already found Courriel useful in simplifying and improving my own code, and
 ## Comments
 
 **sartak.org, on 2011-06-06 18:50, said:**  
-<pre>Courriel-&gt;parse( text =&gt; \$raw_email );</pre>
+```perl
+Courriel->parse( text => \$raw_email );
+```
 
 In 2011, is this really the appropriate default to use in documentation and blog posts? I understand that it's there to avoid unnecessary string copying of gigantic email text, but is that really a bottleneck that most, if any, of your users need to care about? Especially when such an API requires caveats like:
 

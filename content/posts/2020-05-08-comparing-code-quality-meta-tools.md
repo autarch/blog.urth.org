@@ -37,9 +37,9 @@ With tidyall you can have it run in parallel on multiple files at once. This mus
 
 Tidyall has caching built in, though it tends to have some false positives. Notably, it does not include its own version or the plugin's config in the cache key, so it will not re-run when those change. Instead, it only re-runs when the file contents change. It also has support for a caching model designed to work well in CI, so you can cache your cache directory between CI runs, which is neat.
 
-It has no support for incremental linting enforcement. You can, however, build your own on top of its testing tools. Speaking of which, one nice feature it provides is a test module called `<a href="https://metacpan.org/pod/release/DROLSKY/Code-TidyAll-0.78/lib/Test/Code/TidyAll.pm">Test::Code::TidyAll</a>`. This module plays nice with Perl's testing infrastructure and lets you add linting/formatting tests to your project easily. As long as your project is in Perl.
+It has no support for incremental linting enforcement. You can, however, build your own on top of its testing tools. Speaking of which, one nice feature it provides is a test module called [`Test::Code::TidyAll`](https://metacpan.org/pod/release/DROLSKY/Code-TidyAll-0.78/lib/Test/Code/TidyAll.pm). This module plays nice with Perl's testing infrastructure and lets you add linting/formatting tests to your project easily. As long as your project is in Perl.
 
-Also, it has support for [Subversion][18] in addition to Git. So if you're stuck in the early aughties that'll be handy<sup class="modern-footnotes-footnote " data-mfn="1"><a href="javascript:void(0)"  data-mfn-reset>1</a></sup><span class="modern-footnotes-footnote__note" data-mfn="1">I'm making fun of it but let me tell you, when Subversion first came out, it was a <strong>huge</strong> improvement over previous tools like CVS, and I couldn't switch to it fast enough!</span>.
+Also, it has support for [Subversion][18] in addition to Git. So if you're stuck in the early aughties that'll be handy[^1].
 
 ## pre-commit
 
@@ -178,7 +178,8 @@ There are some examples in the project's repo, but this needs to be expanded qui
 
 Probably the best feature is that it has cool Unicode emoji output:
 
-<pre class="wp-block-preformatted">$&gt; precious lint -a
+```
+$> precious lint -a
 💍 Linting all files in the project
 💯 Passed rustfmt: src/vcs.rs
 💯 Passed rustfmt: src/command.rs
@@ -189,7 +190,8 @@ Probably the best feature is that it has cool Unicode emoji output:
 💯 Passed rustfmt: src/basepaths.rs
 💩 Failed rustfmt: src/main.rs
 Diff in /home/autarch/projects/precious/src/main.rs at line 371:
-...</pre>
+...
+```
 
 See, it's got a poo when the file isn't tidy. That's programming!
 
@@ -256,3 +258,5 @@ What happened to Perl::Critic? It's my first stop in code quality.
 
 **Dave Rolsky, on 2020-05-11 09:18, said:**  
 This post was about meta tools that orchestrate the running one or more code quality tools. Perl::Critic is not an orchestrator, it's just a code quality tool to be orchestrated along with many others.
+
+[^1]: I'm making fun of it but let me tell you, when Subversion first came out, it was a <strong>huge</strong> improvement over previous tools like CVS, and I couldn't switch to it fast enough!

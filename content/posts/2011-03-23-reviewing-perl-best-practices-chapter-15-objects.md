@@ -171,5 +171,6 @@ $_ += 2 for $obj->value;
 print $obj->value; # prints 12
 ```
 
-<a href="http://search.cpan.org/perldoc?Lvalue" rel="nofollow ugc">http://search.cpan.org/perldoc?Lvalue</a>
-</p>
+[http://search.cpan.org/perldoc?Lvalue](http://search.cpan.org/perldoc?Lvalue)
+
+

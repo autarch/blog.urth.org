@@ -13,7 +13,8 @@ However, it can also be incredibly annoying when I'm using it locally on my desk
 
 Docker creates a new virtual network interface named `docker0` and then sets up iptables to give this interface access to the internet. I could not find any documentation on what dockerd actually does with iptables. Fortunately, this is easy to figure out by dumping the iptables rules when dockerd is running:
 
-<pre class="height-set:true height:300 lang:default highlight:0 decode:true " title="iptables output when docker is running" >$&gt; sudo iptables -L -n -v
+```
+$> sudo iptables -L -n -v
 
 Chain INPUT (policy ACCEPT 30 packets, 5160 bytes)
  pkts bytes target     prot opt in     out     source               destination         
@@ -48,7 +49,7 @@ Chain DOCKER-USER (1 references)
     0     0 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
 
 
-$&gt; sudo iptables -L -n -v -t nat
+$> sudo iptables -L -n -v -t nat
 
 Chain PREROUTING (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination         
@@ -68,7 +69,7 @@ Chain POSTROUTING (policy ACCEPT 8 packets, 560 bytes)
 Chain DOCKER (2 references)
  pkts bytes target     prot opt in      out     source               destination         
     0     0 RETURN     all  --  docker0 *       0.0.0.0/0            0.0.0.0/0           
-</pre>
+```
 
 The next step is to translate this into ferm rules and integrate it into my existing ferm config.
 
@@ -78,16 +79,18 @@ Since I wanted to make ferm set up the Docker rules, I had to tell dockerd to st
 
 Depending on what init system you're using, there are two ways pass options to dockerd. If your system is using systemd, the daemon is configured via the `/etc/docker/daemon.json`. This disables the iptables setup:
 
-<pre class="lang:js decode:true " title="daemon.json" >{
+```json
+{
     "iptables": false
 }
-</pre>
+```
 
 For other init systems (sysv and upstart) you should edit `/etc/default/docker` and add `--iptables=false` to `DOCKER_OPTS`.
 
 The Docker rules translate to the following ferm config (disclaimer: I am not an iptables or ferm expert so this may be a bit wrong):
 
-<pre class="height-set:true height:300 lang:default highlight:0 decode:true " title="docker rules in ferm" >domain ip {
+```
+domain ip {
     table nat {
         chain DOCKER {
             interface docker0 RETURN;
@@ -135,7 +138,7 @@ The Docker rules translate to the following ferm config (disclaimer: I am not an
         }
     }
 }
-</pre>
+```
 
 ## A Not So Great Solution
 

@@ -11,10 +11,11 @@ First, let's talk about Markdown. Markdown is yet another wiki-esque format for 
 
 For example, if you wanted to list some items in a plain text email, you'd wite something like:
 
-<pre class="highlight:false nums:false">* List item 1
+```markdown
+* List item 1
 * List item 2
 * List item 3
-</pre>
+```
 
 Well, this is how it works in Markdown too. Want to emphasize some text? _Wrap it in asterisks_ or _underscores_.
 
