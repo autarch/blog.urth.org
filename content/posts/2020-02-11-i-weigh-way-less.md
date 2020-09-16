@@ -23,9 +23,7 @@ At the same time, I was developing a number of joint pain issues in my right hip
 
 It was obvious that I had to lose weight before I could do the exercises that would help my joints. So I set about devising a very complex and careful diet program. It went like this ...
 
-```
-Eat less food.
-```
+1. Eat less food.
 
 Yep, it was quite an intellectual accomplishment to come up with this gem! I'd finally cracked the code. Unfortunately, I don't think I can turn this into a best-selling fad diet book and speaking tour, but if there are any agents out there who think otherwise please [contact my manager][1].
 

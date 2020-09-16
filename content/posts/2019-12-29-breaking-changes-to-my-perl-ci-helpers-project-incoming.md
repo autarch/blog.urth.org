@@ -9,8 +9,7 @@ I'm working on what I plan to be the next version of [my Perl CI Helpers project
 
 Fortunately, I've been tagging releases and you can easily pin your consumption of the project to a specific tag! If you want to pin to the last release, you can do this in your config like this:
 
-<pre><code>
-resources:
+<pre><code>resources:
   repositories:
     - repository: ci-perl-helpers
       type: github

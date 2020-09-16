@@ -49,7 +49,7 @@ Params::Util::_SCALARLIKE
 Yes, this would be very useful, but looking at the docs it doesn't seem to exist.
 
 **phaylon, on 2010-10-17 10:45, said:**  
-If overloaded objects and autobox'ed values would get something like ->DOES('Perl::Stringify') it could also make things easier. There's probably some disadvantage about that as well, besides the speed hit.
+If overloaded objects and autobox'ed values would get something like `->DOES('Perl::Stringify')` it could also make things easier. There's probably some disadvantage about that as well, besides the speed hit.
 
 **Cd-MaN, on 2010-10-18 00:19, said:**  
 I would like to preface my comment with that statement that I'm not an expert Perl user.

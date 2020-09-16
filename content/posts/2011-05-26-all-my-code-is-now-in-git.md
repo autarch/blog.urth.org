@@ -19,18 +19,18 @@ Overall, here's my list of plusses and minuses for both hg and git:
 
 Git:
 
-  * + Gitalist and gitolite beat anything available for hg
-  * - You really need something like gitolite to manage access control if you have lots of repos
-  * + The gitg program is way nicer than hgk (gah, Tk)
-  * - git's UI (it's command set, basically) can be really weird
-  * + git is infinitely flexible (rebase, squash, amend, ...)
-  * - git is infinitely flexible (rebase, squash, amend, ...)
+  * \+ Gitalist and gitolite beat anything available for hg
+  * \- You really need something like gitolite to manage access control if you have lots of repos
+  * \+ The gitg program is way nicer than hgk (gah, Tk)
+  * \- git's UI (it's command set, basically) can be really weird
+  * \+ git is infinitely flexible (rebase, squash, amend, ...)
+  * \- git is infinitely flexible (rebase, squash, amend, ...)
 
 Hg:
 
-  * + Much saner UI - I think hg is just better thought out
-  * - Having two types of branches really isn't helpful - pick one, please
-  * + Hg's help/docs is much better. The git docs seem to present things in an entirely random order, instead of helping you do learn common operations first. Compare "hg help pull" to "git help pull" some time.
+  * \+ Much saner UI - I think hg is just better thought out
+  * \- Having two types of branches really isn't helpful - pick one, please
+  * \+ Hg's help/docs is much better. The git docs seem to present things in an entirely random order, instead of helping you do learn common operations first. Compare "hg help pull" to "git help pull" some time.
 
 Both are excellent tools, but for Perl work it's probably best to just choose the one "everyone" is already using.
 

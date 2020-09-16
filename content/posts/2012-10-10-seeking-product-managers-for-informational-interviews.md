@@ -11,4 +11,4 @@ If you work with one who you think is good at their job (or you are one) I'd lov
 
 I promise not to directly solicit people that we interview later on if we decide to hire for this position.
 
-Please email me at <drolsky@maxmind.com> if you can put me in touch with someone to talk to.
+Please email me at <s>dead email address</s> if you can put me in touch with someone to talk to.

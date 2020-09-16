@@ -9,7 +9,7 @@ I often wish that I had an infinite supply of time, motivation, and skill. If I 
 
 Here's my current list, though I'm probably missing some stuff, in no particular order ...
 
-## CPAN Search $NEXT
+## CPAN Search `$NEXT`
 
 I've been thinking about this for quite some time, but I haven't really done much with it. I played with [CPANHQ][1], which had some promise, but has stalled.
 

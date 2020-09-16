@@ -118,7 +118,7 @@ The new documentation really helped me get started using Moose. Thanks!
 **askbjoernhansen.com, on 2009-04-26 23:53, said:**  
 I just want to join the chorus saying this is really great! Thank you for doing it.
 
-- ask
+\- ask
 
 **maletin.pip.verisignlabs.com, on 2009-05-01 19:11, said:**  
 great work.  
