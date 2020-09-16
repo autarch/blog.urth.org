@@ -12,22 +12,28 @@ I&#8217;m going through the Netflix movie rating interface right now rating film
 
 Some of the categories make sense, and some are completely insane. I can&#8217;t figure out how they could possibly be useful in determining what I like. Some good examples &#8230;
 
-  * Parks and Recreation &#8211; NBC TV Shows 
+  * Parks and Recreation &#8211; NBC TV Shows
+
     I don&#8217;t give a flying crap what network the show is on. I can think of several other categories it belongs to that seem more relevant (sitcom, documentary approach sitcom, etc.)
 
-  * 28 Days Later &#8211; Viral Plague Movies 
+  * 28 Days Later &#8211; Viral Plague Movies
+
     Yes, I love those viral plague movies. But bacterial and fungal plague movies suck. Of course, what&#8217;s really silly is that this is obviously a zombie movie, not a plague movie. The mechanism of zombiefication is really not all that relevant.
 
-  * Evil Dead &#8211; Demon Movies 
+  * Evil Dead &#8211; Demon Movies
+
     Not horror, not comedy horror, not indie horror. Demon movies. Yes, because horror movies with non-demon monsters are _so_ different.
 
-  * Lust, Caution &#8211; WWII Movies 
+  * Lust, Caution &#8211; WWII Movies
+
     Ok, yes, technically, this is a movie set during World War II. Of course, when people think of WWII movies they generally think of movies about American involvement in the war, or maybe at a stretch things that happened in Europe. This is a movie set in China, in Chinese, with Chinese actors. I suspect most people think of this as simply a foreign movie or a Chinese movie.
 
-  * Religulous &#8211; Spiritual Documentaries 
+  * Religulous &#8211; Spiritual Documentaries
+
     Uh, WTF?
 
-  * The Blair Witch Project &#8211; Wilderness Survival Movies 
+  * The Blair Witch Project &#8211; Wilderness Survival Movies
+
     Ok, yes, they&#8217;re in the wilderness. And yes, they&#8217;re trying to survive. But again, WTF?
 
 It seems like in many cases, they&#8217;ve identified some incidental feature of the thing in question and decided it is somehow meaningful.

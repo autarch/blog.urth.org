@@ -10,7 +10,7 @@ categories:
 ---
 My last post on [Changes files][1] purported to be both a how-to and how not-to, but I got a bit carried away with the how not-to part. Several comments since that post made excellent points, so here&#8217;s the summary.
 
-Kent Fredric says &#8220;don&#8217;t be lazy and just copy the output from &#8220;git log&#8221; into your Changelog.&#8221; Yes, a thousand times yes! Remember, the Changes file is for end users of your library, and we don&#8217;t care about all the little details. Just give us the summary. (Ok, that&#8217;s the last how not-to.)
+Kent Fredric says &#8220;don&#8217;t be lazy and just copy the output from 'git log' into your Changelog.&#8221; Yes, a thousand times yes! Remember, the Changes file is for end users of your library, and we don&#8217;t care about all the little details. Just give us the summary. (Ok, that&#8217;s the last how not-to.)
 
 RJBS says &#8220;put the latest release at the TOP of the file.&#8221; Yes, we&#8217;re talking to you, Damian. When I open up the Changes file I don&#8217;t want to read about the first release from three years ago.
 

@@ -16,15 +16,17 @@ With Go modules you end up with two files in your repo, `go.mod` and `go.sum`. T
 
 Unfortunately, `go mod tidy` always exits with a 0, even if it added or removed a dependency. So if you want to test that this file is up to date in CI, you need to do it yourself. Here&#8217;s my little script for doing so:
 
-    #!/bin/bash
-    set -e
-    go mod tidy
-    STATUS=$( git status --porcelain go.mod go.sum )
-    if [ ! -z "$STATUS" ]; then
-        echo "Running go mod tidy modified go.mod and/or go.sum"
-        exit 1
-    fi
-    exit 0
+```bash
+#!/bin/bash
+set -e
+go mod tidy
+STATUS=$( git status --porcelain go.mod go.sum )
+if [ ! -z "$STATUS" ]; then
+    echo "Running go mod tidy modified go.mod and/or go.sum"
+    exit 1
+fi
+exit 0
+```
 
 This runs `go mod tidy` and checks to see if it modified either of the files we care about.
 
@@ -32,9 +34,11 @@ Of course, the right way to do this is to add an option to `go mod tidy` to do t
 
 You can add this as a `script` step in your `.travis` file:
 
-    script:
-      - go test -v ./…
-      - check-go-mod.sh
+```yaml
+script:
+  - go test -v ./…
+  - check-go-mod.sh
+```
 
  [1]: https://www.reddit.com/r/golang/comments/cpqmmj/testing_gomod_tidiness_in_ci_house_absolutely/
  [2]: https://www.reddit.com/user/Bake_Jailey/

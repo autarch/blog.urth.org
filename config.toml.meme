@@ -1,0 +1,204 @@
+baseURL = "http://blog.urth.org/"
+languageCode = "en-us"
+title = "House Absolute(ly) Pointless"
+theme = "meme"
+
+hasCJKLanguage = false
+
+copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+pluralizeListTitles = false
+
+summaryLength = 42
+
+enableEmoji = false
+
+footnoteReturnLinkContents = "↩"
+
+enableGitInfo = false
+
+enableRobotsTXT = true
+
+paginate = 10
+
+disablePathToLower = false
+relativeURLs = false
+uglyURLs = false
+
+[frontmatter]
+    lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
+
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = true
+        [markup.goldmark.parser]
+            attribute = true
+            autoHeadingID = true
+            autoHeadingIDType = "github"
+        [markup.goldmark.renderer]
+            hardWraps = false
+            unsafe = true
+            xHTML = false
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = false
+        lineNos = true
+        lineNumbersInTable = true
+        noClasses = false
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 6
+        ordered = true
+
+[author]
+    name = "Dave Rolsky"
+    email = "autarch@urth.org"
+    avatar = "/icons/apple-touch-icon.png"
+
+[mediaTypes."application/atom+xml"]
+    suffixes = ["xml"]
+
+[outputFormats.SectionsAtom]
+    mediaType = "application/atom+xml"
+    baseName = "atom"
+
+[outputFormats.SectionsRSS]
+    mediaType = "application/rss+xml"
+    baseName = "rss"
+
+[outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "search"
+
+[outputs]
+    page = ["HTML"]
+    home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex"]
+    section = ["HTML"]
+    taxonomy = ["HTML"]
+    term = ["HTML"]
+
+[services.rss]
+    limit = 50
+
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+    pre = "internal"
+    post = "home"
+
+[[menu.main]]
+    url = "/posts/"
+    name = "Posts"
+    weight = 2
+    pre = "internal"
+    post = "archive"
+
+[[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 5
+    pre = "internal"
+    post = "user-circle"
+
+[[menu.main]]
+    weight = 6
+    identifier = "theme-switcher"
+
+[[menu.main]]
+    weight = 8
+    identifier = "search"
+    post = "search"
+
+[params]
+    siteDescription = "Unsubstantiated Opinions and Meaningless Blather"
+    siteCreatedTime = "2007-01-01T00:00:00+00:00"
+    categoryBy = "sections"
+
+    enableHeader = true
+    displayHeaderInHome = true
+    headerLayout = "flex"
+    headerBackground = "linear-gradient(90deg, rgba(246,251,255,1) 0%, rgba(238,244,255,1) 50%, rgba(235,235,235,1) 100%)"
+    enableNavToggle = true
+    navHeight = "10em"
+
+    siteBrandSVG = false
+    # Needed to prevent SCSS errors, it seems.
+    siteBrandFontSize = 1
+    siteBrandFontColor = "var(--color-contrast-high)"
+
+    enableDarkMode = true
+    defaultTheme = "light"
+
+    homeLayout = "posts"
+    homeTitle = "Something"
+
+    enableMermaid = true
+    mermaidTheme = 'default'
+    mermaidThemeDark = 'dark'
+
+    enableComments = true
+    enableUtterances = true
+    utterancesRepo = "autarch/blog.urth.org"
+    utterancesIssueTerm = "url"
+    utterancesTheme = "github-light"
+    utterancesThemeDark = "photon-dark"
+    utterancesLabel = ""
+
+    enableGoogleAnalytics = true
+    trackingCodeType = "gtag"
+    trackingID = "UA-1805706-3"
+
+    listDateFormat = "January 2"
+    listDatePosition = "right"
+    groupByMonth = true
+
+    fofPoster = ""
+
+    # Include full content in RSS & Atom
+    includeContent = true
+
+    enableHeadingsAnchor = true
+    anchorIcon = "link"
+    enableAnchorLink = true
+    enableAnchorAutoHide = true
+
+    enableCaption = true
+    captionPrefix = "◎ "
+
+    enablePostShare = true
+    displayPostShare = true
+    shareOnTwitter = true
+    shareOnFacebook = true
+
+    enablePostNav = true
+
+    enableFooter = true
+    displayFooter = true
+    displayFooterInHome = true
+    displayCopyrightSymbol = true
+    displayPoweredBy = true
+
+    customFooter = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="margin-top: 0.5em" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.'
+
+    enableSocials = true
+
+    enableHighlight = true
+    enableOverflowY = true
+    maxHeight = 20
+    enableCopy = true
+    enableCopyAutoHide = true
+
+    enableLunrSearch = true

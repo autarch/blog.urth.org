@@ -123,8 +123,10 @@ Aristotle,
 
 In the example above, you should probably make the table cell an object in it&#8217;s own right. So you would do:
 
-my $cell = $table->cell(7,6);  
+```perl
+my $cell = $table->cell(7,6);
 $cell->set_value($cell->value()+1);
+```
 
 With this interface you can easily extend table cells to contain non-numeric values at a later point. Generally I agree that operator overloading is more trouble than it&#8217;s worth, and methods calls are the most maintainable way to modify the internal state of another object.
 
@@ -158,40 +160,19 @@ The Perl 6 OO design in turn draws on many sources, most notably CLOS, but also 
 ### Comment by Eric Strom on 2011-04-27 16:01:57 -0500
 The general problem with lvalue subroutines is that they do not provide a hook for verifying or post-processing the assigned value. However, by combining tied scalars with lvalue subroutines, it is possible to get around this. I have encapsulated this functionality into the module Lvalue up on CPAN. The module allows you to wrap any object with lvalue functionality, while still using the original object&#8217;s getter and setter methods internally.
 
-<tt><br /> my $obj = NormalObject->new();</p> 
+```perl
+my $obj = NormalObject->new();
 
-<p>
-  $obj->value(5);
-</p>
+$obj->value(5);
+print $obj->value(); # prints 5
 
-<p>
-  print $obj->value(); # prints 5
-</p>
+use Lvalue;
+Lvalue->wrap( $obj );
+$obj->value = 10;
+print $obj->value; # prints 10
+$_ += 2 for $obj->value;
+print $obj->value; # prints 12
+```
 
-<p>
-  use Lvalue;
-</p>
-
-<p>
-  Lvalue->wrap( $obj );
-</p>
-
-<p>
-  $obj->value = 10;
-</p>
-
-<p>
-  print $obj->value; # prints 10
-</p>
-
-<p>
-  $_ += 2 for $obj->value;
-</p>
-
-<p>
-  print $obj->value; # prints 12<br /> </tt>
-</p>
-
-<p>
-  <a href="http://search.cpan.org/perldoc?Lvalue" rel="nofollow ugc">http://search.cpan.org/perldoc?Lvalue</a>
+<a href="http://search.cpan.org/perldoc?Lvalue" rel="nofollow ugc">http://search.cpan.org/perldoc?Lvalue</a>
 </p>

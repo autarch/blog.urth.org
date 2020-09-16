@@ -34,49 +34,53 @@ I **don&#8217;t** care about rendering, mapping fields to a database, building f
 
 With Chloro, forms are defined as classes, and you won&#8217;t be surprised to see that it looks like a Moose class:
 
-    package MyApp::Form::Login;
-    
-    use Moose;
-    use Chloro;
-    
-    field username => (
-        isa      => 'Str',
-        required => 1,
-    );
-    
-    field password => (
-        isa      => 'Str',
-        required => 1,
-    );
-    
-    field remember => (
-        isa     => 'Bool',
-        default => 0,
-    );
-    
+```perl
+package MyApp::Form::Login;
+
+use Moose;
+use Chloro;
+
+field username => (
+    isa      => 'Str',
+    required => 1,
+);
+
+field password => (
+    isa      => 'Str',
+    required => 1,
+);
+
+field remember => (
+    isa     => 'Bool',
+    default => 0,
+);
+```
 
 You&#8217;ll also notice that the field&#8217;s type is defined as a Moose type. Remember, I don&#8217;t care about rendering, so I want to express field definitions in terms of the _back end_. The back end doesn&#8217;t care if the input came from a select, a text box, or a file upload. It just wants a string (or positive integer, or an image file, or &#8230;). Fields can also define custom extractors (a birth&#95;date field that builds itself from a year, month, and day input) and custom validators (end&#95;date must be greater than start_date). With Chloro, form objects are essentially immutable. When you process user input, you get back a `Chloro::ResultSet` object. The form object itself is unaffected. Separating the form from the results is just a cleaner design, and avoids the &#8220;form object as god object&#8221; problem of many existing form libraries.
 
-    my $resultset = $form->process( params => $submitted_params );
-    
-    if ( $resultset->is_valid() ) {
-        # Log the user in
-    }
-    else {
-        # Do something with errors
-    }
-    # Results can be associated with a field, and can also include overall form errors that span multiple fields (like "the two passwords must be the same"). 
-    
-    # Errors that are not specific to just one field
-    my @form_errors = $resultset->form_errors();
-    
-    # Errors keyed by specific field names
-    my %field_errors = $resultset->field_errors();
-    
+```perl
+my $resultset = $form->process( params => $submitted_params );
+
+if ( $resultset->is_valid() ) {
+    # Log the user in
+}
+else {
+    # Do something with errors
+}
+# Results can be associated with a field, and can also include overall form errors that span multiple fields (like "the two passwords must be the same"). 
+
+# Errors that are not specific to just one field
+my @form_errors = $resultset->form_errors();
+
+# Errors keyed by specific field names
+my %field_errors = $resultset->field_errors();
+```
 
 The `Chloro::ResultSet` object can give you back a simple hash reference of data, which you can use to insert or update some data in your database.
 
-    my $login = $resultset->results_as_hash();
+```perl
+my $login = $resultset->results_as_hash();
+```
     
 
 Chloro also supports the idea of &#8220;repeatable groups&#8221;. For example, a contact might have multiple phone numbers. Each phone number consists of a type (cell, home, work), a number, and an optional note. We want to let the user submit 0-N phone numbers, each of which has the same fields. The client side piece is up to you, and you can use some sort of Javascript to make this nice and pretty. On the server side, I want to say &#8220;give me all the phone numbers that were submitted&#8221;. I&#8217;m also working on allowing custom ResultSet roles which can add more structure to the returned data, beyond &#8220;give me a hash reference of all the submitted data&#8221;. This will allow a form to say that its resultset uses certain roles. These resultset roles can be defined on a per-app and per-form basis. I&#8217;ve started converting an existing application over to Chloro, and I&#8217;m pretty happy with it. It&#8217;s definitely not Satan. Maybe Chloro is Satan&#8217;s little sister Satana, but that&#8217;s an improvement in my eyes!
@@ -140,4 +144,4 @@ Why is &#8216;use Moose&#8217; in addition to &#8216;use Chloro&#8217; needed?
 @Alex: You need to use Moose in addition to Chloro so that Chloro can be used in roles as well as classes.
 
 ### Comment by mason on 2012-05-24 09:19:23 -0500
-Did you take a look at Rose::HTML::Form? It gets a lot of stuff right. First of all, each field has a &#8216;type&#8217; which maps to Perl class which is a subclass of Rose::HTML::Form::Field. This sets up a pattern wherein the chief work of form building is building up a library of reusable field classes, which is definitely where you want to be in form development. RHTML Forms are nestable. It doesn&#8217;t suffer from the problem of doing too much. It doesn&#8217;t render, except for providing a very rudimentary serialization which is suitable for scaffolding. It doesn&#8217;t touch the database. The form object is capable of generating <input /> tags just from field declarations. You teach it how to initialize itself from your application object(s). It knows how to parse request parameters and doesn&#8217;t need any help. You teach it how to go from its parse back to an application object(s). It&#8217;s feature complete, but of course it is based on the obsolete Rose::Object system.
+Did you take a look at Rose::HTML::Form? It gets a lot of stuff right. First of all, each field has a &#8216;type&#8217; which maps to Perl class which is a subclass of Rose::HTML::Form::Field. This sets up a pattern wherein the chief work of form building is building up a library of reusable field classes, which is definitely where you want to be in form development. RHTML Forms are nestable. It doesn&#8217;t suffer from the problem of doing too much. It doesn&#8217;t render, except for providing a very rudimentary serialization which is suitable for scaffolding. It doesn&#8217;t touch the database. The form object is capable of generating `<input />` tags just from field declarations. You teach it how to initialize itself from your application object(s). It knows how to parse request parameters and doesn&#8217;t need any help. You teach it how to go from its parse back to an application object(s). It&#8217;s feature complete, but of course it is based on the obsolete Rose::Object system.
