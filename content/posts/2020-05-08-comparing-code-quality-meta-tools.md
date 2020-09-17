@@ -265,4 +265,4 @@ What happened to Perl::Critic? It's my first stop in code quality.
 **Dave Rolsky, on 2020-05-11 09:18, said:**  
 This post was about meta tools that orchestrate the running one or more code quality tools. Perl::Critic is not an orchestrator, it's just a code quality tool to be orchestrated along with many others.
 
-[^1]: I'm making fun of it but let me tell you, when Subversion first came out, it was a <strong>huge</strong> improvement over previous tools like CVS, and I couldn't switch to it fast enough!
+[^1]: I'm making fun of it but let me tell you, when Subversion first came out, it was a **huge** improvement over previous tools like CVS, and I couldn't switch to it fast enough!
