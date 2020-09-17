@@ -130,7 +130,7 @@ So has this helped my climbing? **Enormously.** When it comes to applying brute 
 [^1]: aka snake oil
 [^2]: I always try to weigh myself post-poo for consistency. Did you know that [you can have a pound of poo in your body at once](https://www.healthline.com/health/do-you-lose-weight-when-you-poop#how-much-does-it-weigh?) (or more if you're backed up)? Well, now you do. You're welcome.
 [^3]: "Easy" is a joke in case you weren't sure.
-[^4]: For any climbers reading this ... Previously I'd been able to climb 5.9 pretty consistently, but I couldn't finish 100% of the 5.9's I tried. I had done a few 5.10-'s and one (soft) 5.10+, but mostly I couldn't climb that grade. Now I can flash nearly every 5.9 I try, and I'm pretty capable of 5.10- climbs. I've even flashed a some in the past few months. I've also done some more 5.10+ climbs.
+[^4]: For any climbers reading this ... Previously I'd been able to climb 5.9 pretty consistently, but I couldn't finish 100% of the 5.9's I tried. I had done a few 5.10-'s and one (soft) 5.10+, but mostly I couldn't climb that grade. Now I can flash nearly every 5.9 I try, and I'm pretty capable of 5.10- climbs. I've even flashed some in the past few months. I've also done some more 5.10+ climbs.
 
 ## Conclusion
 
