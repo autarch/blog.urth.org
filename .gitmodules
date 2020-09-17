@@ -1,3 +1,3 @@
 [submodule "themes/jane"]
 	path = themes/jane
-	url = https://github.com/xianmin/hugo-theme-jane
+	url = git@github.com:autarch/hugo-theme-jane.git
