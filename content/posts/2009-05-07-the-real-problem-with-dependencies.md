@@ -56,15 +56,15 @@ The best solution I can see is working with the OS people for the various Linuxe
 
 It would be nice to be able to say
 
-cpan> o conf binary only
+    cpan> o conf binary only
 
 and have CPAN install a binary version for my OS without running any tests. Or
 
-cpan> o conf binary prefered
+    cpan> o conf binary prefered
 
 and have it install a binary version of a module if it exists or build it if it doesn't. Or
 
-cpan> o conf binary never
+    cpan> o conf binary never
 
 to get the current behavior. It would be even nicer if the binary option used the native package management system to get/install the module. Hmm, this shouldn't be too hard to add on Debian/RedHat based systems.
 
