@@ -13,7 +13,7 @@ There are lots problem with any multi-issue group, and the bigger your scope the
 
 But I think the most serious problem is simply recruiting volunteers. I've illustrated that problem with this handy Venn Diagram.
 
-<img loading="lazy" src="/files/import/6-venn-diagram-300x218.png" alt="" title="venn-diagram" width="300" height="218" class="size-medium wp-image-132" srcset="https://blog.urth.org/files/import/6-venn-diagram-300x218.png 300w, https://blog.urth.org/files/import/6-venn-diagram.png 474w" sizes="(max-width: 300px) 100vw, 300px" /> 
+![Venn diagram of intersection of multiple issues](/image/venn-diagram.png)
 
 Each circle represents your potential volunteer base, and the intersections are the potential volunteer base of a hypothetical group, either an AR/anti-abortion group or an AR/pro-abortion group.
 
