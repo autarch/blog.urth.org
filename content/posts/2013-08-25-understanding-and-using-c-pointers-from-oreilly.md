@@ -4,8 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2013-08-25T20:48:25+00:00
 url: /2013/08/25/understanding-and-using-c-pointers-from-oreilly/
-featured_image: /files/2013/08/c-pointers.gif
 ---
+{{< figure src="/image/c-pointers.gif" alt="Cover of Understanding and Using C Pointers from O’Reilly" class="right" >}}
+
 For many years now I've flirted with the idea of finally learning C programming. I'd make attempts which usually consisted of re-reading the Kernighan and Ritchie book _The C Programming Language_, trying to hack on some C code, and then giving up in frustration. I really have no idea why that book is so widely lauded. It teaches the basic syntax of C, but does almost nothing to teach you the core concepts. It basically assumes that you understand the underlying memory model of the system and how C exposes it. That may have been fine in 1978 but for anyone who's coming to C from something like Perl or Java, as opposed to assembly, it's wildly unhelpful.
 
 For years I'd wanted to find a book that would clearly explain pointers and memory management, but nothing seemed to exist. Recently at my day job I was trying to refactor some bits of a C library we created for reading a binary data format (that we also created). As usual, I struggled with my poor C knowledge. I have a free Safari subscription from days as an O'Reilly author so I figured I'd take a look at the C books.

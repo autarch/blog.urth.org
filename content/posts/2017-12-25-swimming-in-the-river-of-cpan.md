@@ -4,8 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2017-12-25T21:00:23+00:00
 url: /2017/12/25/swimming-in-the-river-of-cpan/
-featured_image: /files/2017/12/cpan-river.png
 ---
+{{< figure src="/image/cpan-river.png" alt="CPAN River example from MetaCPAN" class="right" width="300px" >}}
+
 If you've browsed MetaCPAN lately, maybe you've noticed the new "river" indicator that's next to distributions in listings and on individual distribution pages. See the image on the right for an example.
 
 The River of CPAN analogy was first [described by Neil Bowers in 2015][1], though I believe it was created by a group of Perl folks at the 2015 QA Hackathon. The basic idea is that the more dependencies a distribution has, the farther upstream it is. The impact of pollution (API breakage, test failures on install) is dependent on how far upstream a distribution is. Break something that nothing else relies on and there's little harm done. Break something that thousands of distributions rely on and it's a huge mess.

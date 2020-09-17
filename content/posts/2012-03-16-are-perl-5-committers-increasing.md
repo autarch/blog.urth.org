@@ -15,13 +15,11 @@ Instead of looking at each month, I looked at the average number of committers _
 
 Here's the graph I created in Gnumeric:
 
-![45-perl-commiters-per-year.png][1] 
+![graph of perl committers per year](/image/perl-committers-per-year.png)
 
 It _looks_ like there was a big dropoff in committers from 2001 to 2004, and we've seen an upwards trend since then. I'm not sure there's enough data to draw any strong conclusions. My gut feeling that activity was up in the past few years was correct, but we don't yet know whether that's a fluke.
 
 We still haven't reached our historical highs, so I think Nick was right when you look at the overall history of Perl 5. Nevertheless, I'm hopeful that we're in the midst of a positive trend.
-
- [1]: /files/import/45-perl-commiters-per-year.png
 
 ## Comments
 

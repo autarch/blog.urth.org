@@ -4,8 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2018-07-30T01:40:49+00:00
 url: /2018/07/29/my-u-s-go-congress-trip/
-featured_image: /files/2018/07/goban.jpg
 ---
+{{< figure src="/image/goban.jpg" alt="Image of a Goban" class="right" width="300px" >}}
+
 I just finished up my trip to the U.S. Go Congress in Williamsburg, VA. This was my first Go Congress and I find the comparison between this event and programming conferences interesting.
 
 First of all, the Go Congress has nothing to do with Golang the programming language. This is an event for players of Go, the strategy board game, also known as Baduk (Korean) or Weiqi (Chinese).

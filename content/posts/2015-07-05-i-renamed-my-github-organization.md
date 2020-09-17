@@ -13,4 +13,4 @@ The organization formerly known as "autarch-code" is now called ["houseabsolute"
 Am I insane? No, I'm not. Clearly. This is the product of a perfectly sane mind. Trust me.
 
  [1]: https://github.com/houseabsolute
- [2]: http://blog.urth.org/files/2015/07/square-insanity.jpg
+
