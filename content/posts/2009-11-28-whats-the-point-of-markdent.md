@@ -37,187 +37,21 @@ Here's a benchmark comparing three approaches.
   2. Use Text::Markdown
   3. Use Markdent to parse the document once, then use Storable to store the event stream. When generating HTML, thaw the event stream and replay it back to the HTML generator.
 
-<table>
-  <tr>
-    <th>
-    </th>
-    
-    <th>
-      Rate
-    </th>
-    
-    <th>
-      parse from scratch
-    </th>
-    
-    <th>
-      Text::Markdown
-    </th>
-    
-    <th>
-      replay from captured events
-    </th>
-  </tr>
-  
-  <tr>
-    <th>
-      parse from scratch
-    </th>
-    
-    <td>
-      1.07/s
-    </td>
-    
-    <td>
-      -
-    </td>
-    
-    <td>
-      -67%
-    </td>
-    
-    <td>
-      -83%
-    </td>
-  </tr>
-  
-  <tr>
-    <th>
-      Text::Markdown
-    </th>
-    
-    <td>
-      3.22/s
-    </td>
-    
-    <td>
-      202%
-    </td>
-    
-    <td>
-      -
-    </td>
-    
-    <td>
-      -48%
-    </td>
-  </tr>
-  
-  <tr>
-    <th>
-      replay from captured events
-    </th>
-    
-    <td>
-      6.13/s
-    </td>
-    
-    <td>
-      475%
-    </td>
-    
-    <td>
-      91%
-    </td>
-    
-    <td>
-      -
-    </td>
-  </tr>
-</table>
+|                    | Rate   | parse from scratch | Text::Markdown | replay from capture events |
+|--------------------|--------|--------------------|----------------|----------------------------|
+| parse from scratch | 1.07/s | -                  | -67%           | -83% |
+| Text::Markdown     | 3.22/s | 202%               | -              | -48% |
+| replay from captured events | 6.13/s | 475% | 91% | - |
 
 This benchmark is [included in the Markdent distro][3]. One feature to note about this benchmark is that it parses 23 documents from the [mdtest test suite][4]. Those documents are mostly pretty short.
 
 If I benchmark just the largest document in mdtest, the numbers change a bit:
 
-<table>
-  <tr>
-    <th>
-    </th>
-    
-    <th>
-      Rate
-    </th>
-    
-    <th>
-      parse from scratch
-    </th>
-    
-    <th>
-      Text::Markdown
-    </th>
-    
-    <th>
-      replay from captured events
-    </th>
-  </tr>
-  
-  <tr>
-    <th>
-      parse from scratch
-    </th>
-    
-    <td>
-      2.32/s
-    </td>
-    
-    <td>
-      -
-    </td>
-    
-    <td>
-      -58%
-    </td>
-    
-    <td>
-      -84%
-    </td>
-  </tr>
-  
-  <tr>
-    <th>
-      Text::Markdown
-    </th>
-    
-    <td>
-      5.52/s
-    </td>
-    
-    <td>
-      138%
-    </td>
-    
-    <td>
-      -
-    </td>
-    
-    <td>
-      -63%
-    </td>
-  </tr>
-  
-  <tr>
-    <th>
-      replay from captured events
-    </th>
-    
-    <td>
-      14.8/s
-    </td>
-    
-    <td>
-      538%
-    </td>
-    
-    <td>
-      168%
-    </td>
-    
-    <td>
-      -
-    </td>
-  </tr>
-</table>
+|                    | Rate   | parse from scratch | Text::Markdown | replay from capture events |
+|--------------------|--------|--------------------|----------------|----------------------------|
+| parse from scratch | 2.32/s | -                  | -58%           | -84% |
+| Text::Markdown     | 5.52/s | 138%               | -              | -63% |
+| replay from captured events | 14.8/s | 538% | 168% | - |
 
 Markdent probably speeds up on large documents because each new parse requires constructing a number of objects. With 23 documents we construct those objects 23 times. When we parse one document the actual speed of parsing becomes more important, as does the speed of _not_ parsing.
 
