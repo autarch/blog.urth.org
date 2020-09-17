@@ -1,4 +1,4 @@
-baseURL = "http://blog.urth.org/"
+baseURL = "https://blog.urth.org/"
 languageCode = "en-us"
 title = "House Absolute(ly) Pointless"
 preserveTaxonomyNames = true
@@ -85,6 +85,10 @@ defaultContentLanguage = "en"
     enable = true
     id = "dfe133801d52b4a71"
     title = "Search"
+
+  [params.gitInfo]
+    gitRepo = "https://github.com/autarch/blog.urth.org"
+    showCommitMessage = true
 
   [params.social]
     a-email = "mailto:autarch@urth.org"
