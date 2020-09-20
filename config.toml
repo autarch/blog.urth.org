@@ -5,7 +5,7 @@ preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
-disableKinds = ["section", "taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 hasCJKLanguage = false
 paginate = 10
