@@ -11,7 +11,7 @@ Don't worry, I'm not promoting anything. I have no diet plan or supplements[^1] 
 
 At my peak weight some time in the past I weighed 305 pounds (BMI 34.4), according to the scale at my doctor's office. As of recently (I think yesterday) I'm down to around 218 (BMI 24.6) according to my scale at home[^2], so I've lost 87 pounds (+/- the discrepancy between the two scales). I sometimes tell people about how I ended up here and I realized it would be nice to have a more detailed write up to share, so here it is.
 
-If I had to trace this change back to one starting point, I'd say it was a visit with my then-doctor (the now retired Dr. Michael Pleasants, who was an awesome GP), pulled up a line graph showing my weight over time and pointed out that it kept going up and to the right. This is great when graphing usage metrics or profits, but not so great in this context.
+If I had to trace this change back to one starting point, I'd say it was a visit with my then-doctor (the now retired Dr. Michael Pleasants, who was an awesome GP). He pulled up a line graph showing my weight over time and pointed out that it kept going up and to the right. This is great when graphing usage metrics or profits, but not so great in this context.
 
 As an aside, it's amusing to me that I'm such a nerd that the most influential thing he could do was show me a graph. Sure, he'd been telling me to lose weight and exercise for years, but this was data!
 
