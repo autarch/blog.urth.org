@@ -73,13 +73,13 @@ Let's start with the database.
 
 Our entire package database is based on timestamped revisions. When we go to resolve dependencies for a project configuration, that request is always timestamped based on the project's most recent commit. That means the project does not see any data changes that were made after its commit.
 
-So let's say that a project requires `DateTime`. You will always get the same version of `DateTime` no matter how times we solve for your dependencies. But you also get the same version of each of `DateTime`'s dependencies, like `DateTime-Locale` and `DateTime-TimeZone`. And that applies through the entire dependency graph.
+So let's say that a project requires `DateTime`. You will always get the same version of `DateTime` no matter how many times we solve for your dependencies. But you also get the same version of each of `DateTime`'s dependencies, like `DateTime-Locale` and `DateTime-TimeZone`. And that applies through the entire dependency graph.
 
 So if we add a new version of `DateTime-Locale` that breaks your `DateTime` version[^5], your project is unaffected. You can opt into newer versions explicitly, however.
 
 This is actually even more granular than at the version level. We revision every version of every Perl core and distro that we know about[^6]. So all of a distro's dependency data is revisioned. This means that we can freely change that data without every breaking your build, allowing you to opt into changes on your own schedule.
 
-The system supports a lot of static metatadata that cannot be expressed in the Perl ecosystem. We can declare conflicts between distros or conflicts between a distro and a platform. But our platforms are defined very granularly, so we are really defining dependencies or conflicts in terms of platform components such as the kernel version, libc version, CPU architecture, etc.
+The system supports a lot of static metadata that cannot be expressed in the Perl ecosystem. We can declare conflicts between distros or conflicts between a distro and a platform. But our platforms are defined very granularly, so we are really defining dependencies or conflicts in terms of platform components such as the kernel version, libc version, CPU architecture, etc.
 
 And because we can add a new revision to an existing release, we can update this metadata as things change. Take my `DateTime-Locale` example from up above. With CPAN, the only way to fix this is for me to upload a new `DateTime` version that works with the new `DateTime-Locale`. I have no way to tell the CPAN toolchain that every earlier version of `DateTime` _would_ work as long as it doesn't use `DateTime-Locale` past a certain version. But our system supports all sorts of version requirements, including defining minimum and maximum versions for dependencies, and even excluding arbitrary versions in a range.
 
