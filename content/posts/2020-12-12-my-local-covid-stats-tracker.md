@@ -56,6 +56,6 @@ The d3 code is super cargo culted, so I'm sure it's terrible.
 
 The [code is on GitHub](https://github.com/houseabsolute/local-covid-tracker),
 of course. I think it's usable for other people, though PRs to make it better
-are welcome. At some point I may try to add a mouseover handler to share the
+are welcome. At some point I may try to add a mouseover handler to show the
 values for each date, like in [this
 example](https://bl.ocks.org/larsenmtl/e3b8b7c2ca4787f77d78f58d41c3da91).
