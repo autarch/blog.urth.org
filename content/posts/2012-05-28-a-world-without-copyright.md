@@ -27,13 +27,13 @@ Releasing should be an intentional act. For example, if you perform a song in a 
 
 This right to release definitely needs some detail work. You should be able to share your novel with a friend without having that be considered a release. Maybe you just want some feedback. Maybe it's just intended as a private work for the two of you. The line between public "performance" and private sharing is tricky. When in doubt, we should err on the side of the creator's stated intention. If the creator says that she had no intention to release a work, that should count for a lot in a legal case.
 
-Once something is released, that's irrevocable. You can refuse to release changes to that work, but you can't declare an existing work unrelased. That would be tantamount to enforcing copyright law, and those have been abolished.
+Once something is released, that's irrevocable. You can refuse to release changes to that work, but you can't declare an existing work unreleased. That would be tantamount to enforcing copyright laws, and those have been abolished.
 
 ## Entertainment (music, tv/film, novels, art)
 
 Let's start with music. Music has been around a long time, long before the [first copyright law (1710)][2]. If we abolish copyright, I think it's obvious that music won't disappear.
 
-That doesn't answer the question of how musicians can make money in a world without copyright.
+But that doesn't answer the question of how musicians can make money in a world without copyright.
 
 Performers will still be able to make money performing. Copyright has nothing to do with the viability of charging for live performances. Yes, it will now be legal to record the performance and distribute that recording, but I don't think that will hurt concerts. I regularly go to concerts to listen to music for which I have recordings. Concerts are _an experience_ that combines music with the space its in, plus the fact that you're there with other people. Recordings are not a substitute for this experience. If they were, concerts would have died out long ago as recording and playback technology advanced.
 
@@ -59,7 +59,7 @@ If Lady Gaga couldn't make millions and millions of dollars, would she still cre
 
 The biggest impact will probably be all the middlemen, like record companies, agents, marketing companies, Apple's iTunes store, Amazon, etc. Some of these might disappear entirely, but not all. Inasmuch as they provide a valuable service, they'll still exist. An up and coming musician will find value in marketing and advertising if it helps them find an audience willing to fund their next work and attend concerts. The professions that exist entirely to squeeze money out of legal restrictions on copying bits around will disappear.
 
-The picture for film, TV shows (aka serialized films), and novels are similar. The highest paid performers and creators will be paid much less, but these things will all still exist. The higher cost and greater complexity of films and TV shows probably means that studios will still exist in some form. Putting together a crew and managing the creation of a TV show is incredibly complex. It also costs a lot of money to create even one show.
+The picture for film, TV shows (aka serialized films), and novels is similar. The highest paid performers and creators will be paid much less, but these things will all still exist. The higher cost and greater complexity of films and TV shows probably means that studios will still exist in some form. Putting together a crew and managing the creation of a TV show is incredibly complex. It also costs a lot of money to create even one show.
 
 The studios will exist to fund the creation of pilots. Instead of pilots being approved or rejected by a few studio execs, they'll now be put on the Internet for all to see. If people like the pilot, they'll back the Kickstarter(-ish) project for episodes 2-10. If they like those, they'll back episodes 11-20, and so on. The projects will priced at a point that funds the creation of the project itself, as well as providing some additional funds that can be put into further pilots.
 
@@ -71,7 +71,7 @@ But the age of the film star being paid $20 million for six months of work will 
 
 Novels are a no-brainer. They're incredibly cheap to produce. All you need to do is keep one author alive for the length of time it takes to write it. Let's say that time is six months. Can an author raise $15,000 for one novel? $25,000? $50,000? Those all seem quite possible. If you can't raise that much, you can write and hold down a part-time job. You won't be the first author who's had to do that.
 
-What about non-fiction books, films, etc.? Some of these things are still essentially creative. A good documentary film is as much a work of art as it is reporting. Some non-fiction works are mostly functional, like restaurant guides or travel books. If customers find these useful, they will be funded. If they can't be funded, something else will replace them. Maybe nobody wants to fund a travel book, but they're okay with viewing ads on a site like Trip Advisor.
+What about non-fiction books, films, etc.? Some of these things are still essentially creative. A good documentary film is as much a work of art as it is reporting. Some non-fiction works are mostly functional, like restaurant guides or travel books. If customers find these useful, they will be funded. If they can't be funded, something else will replace them. Maybe nobody wants to fund a travel book, but they're okay with viewing ads on a site like Tripadvisor.
 
 ## Art
 
@@ -101,7 +101,7 @@ Even without copyright, software will still be a thriving business.
 
 ## Journalism
 
-Journalism is already struggling in a world _with_ copyright. We can already see journalism moving from "pay to read" to free online sites like Salon, Slate, etc. Many magazines and newspapers publish their content online as well.
+Journalism is already struggling in a world _with_ copyright. We can already see journalism moving from "pay to read" to free online sites like Salon, Slate, etc.[^1] Many magazines and newspapers publish their content online as well.
 
 Again, inasmuch as people find value in this content, they will pay for it one way or another. Either they'll tolerate ads on sites or they'll fund the site directly. I pay $60 a year to subscribe to [Linux Weekly News][5], despite the fact that all of the content they publish is made freely available within a few weeks of initial publication. I do this because I find their content valuable, and I want them to continue creating it.
 
@@ -126,6 +126,8 @@ We may already be moving towards a world without copyright. People who don't bel
  [5]: http://lwn.net
  [6]: http://flattr.com
  [7]: http://www.piratpartiet.se/international/english
+
+[^1]: That was true in 2012 when I first wrote this, but now in 2020 it looks like things are starting to swing back to paid subscriptions with limited (or no) free access. But I stand by what I say next, which is that if people want this content they will fund it somehow.
 
 ## Comments
 
@@ -159,3 +161,4 @@ Copyright never protected the artist or writer, for a simple reason. Only the ri
 One thing you've left out of your comments is that copyright also gives the producer some control over how their creation is used. For instance, a politician (or political group) wants to use an artists song but the artist refuses because of what the politician stands for. Or someone releases free software but with a non-military-use clause. 
 
 Copyright isn't just about money, but about having some control over how your creation is used or what it's used to represent.
+
