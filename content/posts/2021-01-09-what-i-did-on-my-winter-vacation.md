@@ -5,7 +5,9 @@ type: post
 date: 2021-01-09T11:12:57-06:00
 url: /2021/01/09/what-i-did-on-my-winter-vacation
 ---
-TLDR: Helped my father move. Then I shaved all the yaks. Fur everywhere. Very messy.
+
+TLDR: Helped my father move. Then I shaved all the yaks. Fur everywhere. Very
+messy.
 
 Because of the way holidays at ActiveState work, it's very economical in terms
 of vacation days to take the last two weeks of the year off (Christmas and New
@@ -14,6 +16,8 @@ first week of the new year off as well, for a total of three weeks of
 vacation.
 
 So what did I do with all that time?
+
+Answer: Helped me father move, then wrote a lot of Rust and some Perl.
 
 ## Helping My Father Move
 
