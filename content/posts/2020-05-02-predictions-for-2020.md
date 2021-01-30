@@ -27,7 +27,7 @@ At the beginning of the year, I would've given Trump a 95% re-election chance ag
 
 ### Coronavirus
 
-<ol start="7">
+<ol start="8">
   <li>
     Minnesota lifts stay at home order but then reinstates it at least once: 90%
   </li>
@@ -91,7 +91,7 @@ When I talk about Minnesota's stay at home orders, I'm _not_ including social di
 
 ### Personal
 
-<ol start="16">
+<ol start="19">
   <li>
     <span style="font-size: 1.0625rem;">I am still working for ActiveState: 95%</span>
   </li>
