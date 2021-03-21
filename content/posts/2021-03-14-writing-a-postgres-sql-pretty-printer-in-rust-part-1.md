@@ -85,7 +85,7 @@ The libpg_query source has a handy directory containing JSON files describing
 various parts of the AST. For example, the
 [`nodestypes.json`](https://github.com/lfittl/libpg_query/blob/10-latest/srcdata/nodetypes.json)
 file defines all of the possible nodes. Many parts of the AST reference the
-`Node` type, which is basically "any valid bit of SLQL".
+`Node` type, which is basically "any valid bit of SQL".
 
 But the most important file is
 [`struct_defs.json`](https://github.com/lfittl/libpg_query/blob/10-latest/srcdata/struct_defs.json). This
@@ -192,7 +192,7 @@ We need to deserialize this into a Rust struct. For deserialization in Rust
 I'm using [`serde`](https://serde.rs/), which is a powerful Rust framework for
 deserialization that supports many data formats, including JSON.
 
-The particular structure of the JSON above corresponds to what the Serde docs
+The particular structure of the JSON above corresponds to what the serde docs
 call ["the externally tagged enum
 representation"](https://serde.rs/enum-representations.html). In this format,
 the "tags" such as `DeleteStmt` and `RangeVar` are used to indicate which enum
