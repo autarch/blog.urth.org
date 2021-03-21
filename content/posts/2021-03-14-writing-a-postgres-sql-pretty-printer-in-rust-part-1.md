@@ -16,6 +16,13 @@ project](https://github.com/houseabsolute/pg-pretty). I'll cover some things
 I've learned about Rust and Postgres SQL, as well as some things I still don't
 know.
 
+## Series Links
+
+* Part 1: **Introduction to the project and generating Rust with Perl**
+* Part 1.5: [More about enum wrappers and Serde's externally tagged enum
+  representation]({{< relref
+  "2021-03-21-writing-a-postgres-sql-pretty-printer-in-rust-part-1-5" >}})
+
 ## Why?
 
 I really, *really*, **really**, ***really*** cannot stand unformatted code, or
