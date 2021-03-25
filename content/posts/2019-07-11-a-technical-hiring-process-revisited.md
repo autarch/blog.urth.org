@@ -220,7 +220,7 @@ There are probably lots of other things I'm forgetting to mention. If you have f
 
 ## Comments
 
-**Fred Lee, on 2019-07-12 13:34, said:**  
+**Fred Lee, on 2019-07-12 13:34, said:**
 Let me give a little "candidate" insight on your comment about "homework".
 
 I have passed on a few opportunities because of this requirement. My objection is the asymmetry of the investment. For a company to spend $1K flying me to their headquarters, not to mention 4-5 hours of their engineer's time to interview me, they must be sufficiently interested in me to make that investment. I am happy to reciprocate their investment with my own time.
@@ -231,19 +231,19 @@ In other words, when a company asks me to spend a few hours writing code, I have
 
 At the same time, I think it's entirely reasonable to expect someone to be able to write, on a whiteboard, 20-30 lines of code (at least mostly-functional pseudo-code). I've found a fair number of less experienced programmers are able to modify existing code but not able to code something meaningful from scratch. I use this as a filter during interviews. I'll ask someone to code a reasonably simple algorithm and, if they're not able to, I'll instead give them some code and ask them to modify it. How they respond to that situation tells me a lot about what level they may come in at.
 
-**Dave Rolsky, on 2019-07-12 14:09, said:**  
+**Dave Rolsky, on 2019-07-12 14:09, said:**
 Fred, you raise an excellent point about the asymmetric time investment of a homework exercise. I would note that reviewing someone's homework does typically take me anywhere from 30-60 minutes, and we have 2 people do that for each submission, so it's not zero investment on the company's part.
 
 But I disagree that writing 20-30 lines of (pseudo-)code on a whiteboard is at all equivalent to seeing real code of a substantial length. I think there are people who are quite capable of problem-solving with code but are not very good at designing a system. You need to give them a task that involves creating at least a few different packages and creating the interfaces between them to spot that, and you really cannot do that in a live interview.
 
 If I could find a way to figure that out in a way that uses less of a candidate's time, I'd adopt that strategy in a heartbeat!
 
-**Fred Lee, on 2019-07-12 14:32, said:**  
-(BTW I'm having trouble "replying to a reply" with both Chrome and Safari, thus the new post instead of nesting this under your response)  
-One strategy I've seen, I think only once, was a company that would "hire" candidates on a contract basis for a short period of time. That way the coders were compensated for their time doing "homework", the code could actually be used by the company if they desired, and if the contract period was successful they were brought on full-time. If there were questions, you could keep extend the contract period a bit. This also lets you evaluate a few other aspects of the candidate; how well they communicate with their "co-workers" about ambiguous requirements, how well they respond to code reviews, etc...  
+**Fred Lee, on 2019-07-12 14:32, said:**
+(BTW I'm having trouble "replying to a reply" with both Chrome and Safari, thus the new post instead of nesting this under your response)
+One strategy I've seen, I think only once, was a company that would "hire" candidates on a contract basis for a short period of time. That way the coders were compensated for their time doing "homework", the code could actually be used by the company if they desired, and if the contract period was successful they were brought on full-time. If there were questions, you could keep extend the contract period a bit. This also lets you evaluate a few other aspects of the candidate; how well they communicate with their "co-workers" about ambiguous requirements, how well they respond to code reviews, etc...
 I don't recall the duration of the contract period, but I think it was perhaps a week of "part-time" work. In other words you could spend a couple hours per evening contracting. This would seem super-sketchy if it were for an unknown company, but I'd be happy to do that for a reputable company. I'm sure the payroll department didn't love this situation of course!
 
-**Dave Rolsky, on 2019-07-12 14:52, said:**  
+**Dave Rolsky, on 2019-07-12 14:52, said:**
 Yeah, something is weird with the replies. If you switch to text mode it lets you reply. I love software.
 
 I have brought up exactly the solution you propose but it didn't get very far. I think the overhead for doing this can be quite a lot at some companies. I wonder if we could just offer something like an Amazon gift card, which presumably is much easier to deal with since someone at the hiring company can just buy it and expense it.
@@ -254,16 +254,16 @@ OTOH, if we spent $2,000-4,000 (assuming a $200 gift card) that really isn't muc
 
 But then OTGH, people who outright refuse to do the homework have been pretty rare in my experience. And the really excellent candidates who might be most put off by the homework are more likely to have a FOSS project that they can use instead.
 
-Anyway, it's something to think about, for sure! Thanks again for you feedback.
+Anyway, it's something to think about, for sure! Thanks again for your feedback.
 
-**Lazaridis, on 2019-07-14 16:56, said:**  
+**Lazaridis, on 2019-07-14 16:56, said:**
 I believe that the flaw with most hiring-processes is that "artistic-grade" or "philosophy-grade" candidates don't even apply.
 
-**David Hodgkinson, on 2019-07-15 05:50, said:**  
+**David Hodgkinson, on 2019-07-15 05:50, said:**
 As a contractor there are three things I want to know:
 
-What is it?  
-Where is it or is it remote?  
+What is it?
+Where is it or is it remote?
 How much are you paying?
 
 You'd be surprised how many recruiters and companies knock themselves out at that stage. And one more thing:
