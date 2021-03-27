@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2021-03-27T14:36:28-05:00
 url: /2021/03/27/down-the-golang-nil-rabbit-hole
+discuss:
+    - site: "/r/golang"
+      uri: "https://www.reddit.com/r/golang/comments/mem9he/down_the_golang_nil_rabbit_hole/"
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/mem9kp/down_the_golang_nil_rabbit_hole/"
 ---
 
 I'm not sure I have another Rust & Postgres blog post in me right now, so
