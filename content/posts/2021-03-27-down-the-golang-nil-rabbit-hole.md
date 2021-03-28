@@ -107,7 +107,7 @@ syntactic flexibility, means a whole lot of func calls, braces, and parens.
 Under the hood, this is implemented with a metric fork ton of runtime
 reflection using the stdlib's [`reflect`
 package](https://pkg.go.dev/reflect). I don't love this, but absent generics,
-there's no other way to imeplement this sort of API except with code
+there's no other way to implement this sort of API except with code
 generation. And that codegen would have to be fed by a sort-of-Go language
 that was translated to real Go, which seems like a terrible idea.
 
