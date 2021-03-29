@@ -56,7 +56,7 @@ distinguish between public and private IP addresses or networks for access
 control, firewalling, etc.
 
 As I was reading about this I checked out [the Git repo for the `netmask`
-package](https://github.com/rs/node-netmask). It's README says "This module is
+package](https://github.com/rs/node-netmask). Its README says "This module is
 highly inspired by Perl
 [Net::Netmask](http://search.cpan.org/dist/Net-Netmask/) module."
 
