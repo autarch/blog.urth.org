@@ -56,7 +56,7 @@ distinguish between public and private IP addresses or networks for access
 control, firewalling, etc.
 
 As I was reading about this I checked out [the Git repo for the `netmask`
-package](https://github.com/rs/node-netmask). It's README says "This module is
+package](https://github.com/rs/node-netmask). Its README says "This module is
 highly inspired by Perl
 [Net::Netmask](http://search.cpan.org/dist/Net-Netmask/) module."
 
@@ -109,7 +109,7 @@ perl -MNet::CIDR::Lite -E 'my $c = Net::CIDR::Lite->new; $c->add("010.0.0.0/8");
 10.0.0.0-10.255.255.255
 ```
 
-## [`Net-IPAdress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
+## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
 
 {{% notice warning %}}
 **This distribution is affected by this issue.**
