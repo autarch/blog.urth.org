@@ -92,7 +92,7 @@ perl -MNet::Netmask -E 'say Net::Netmask->new(q{010.0.0.0/8})'
 {{% notice warning %}}
 **This distribution is affected by this issue. In addition, this module is no
 longer maintained and the current owner would like to pass maintenance to
-someon else.**
+someone else.**
 {{% /notice %}}
 
 This distribution has 24 direct dependents and 36 total dependents.
@@ -234,4 +234,4 @@ perl -MNet::Patricia -E 'my $p = Net::Patricia->new; $p->add_string("8.0.0.0/8")
 1
 ```
 
-[^1]: One of the most ridiculous SEO-spamming URL paths I've ever seen.
+[^1]: One of the most ridiculous URL paths I've ever seen.
