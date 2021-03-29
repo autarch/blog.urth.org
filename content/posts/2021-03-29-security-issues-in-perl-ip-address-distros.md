@@ -6,6 +6,9 @@ date: 2021-03-29T13:33:39-05:00
 url: /2021/03/29/security-issues-in-perl-ip-address-distros
 ---
 
+_Edit on 2021-03-29 21:40(ish) UTC:_ Added Net-Subnet (appears unaffected) and
+reordered the details to match the list at the top of the post.
+
 {{% notice warning %}}
 **TLDR: Some Perl modules for working with IP addresses and netmasks have bugs
 with potential security applications.** See below for more details on the bug
@@ -14,10 +17,11 @@ and which modules are affected.
 * Net-Netmask: Vulnerable before 2.00000 release. Upgrade now.
 * Net-CIDR-Lite: Affected and unmaintained.
 * Net-IPAdress-Util: Affected.
+* Data-Validate-IP: Depends on exactly how it's used. See below for details.
 * Socket: Appears unaffected.
 * Net-DNS: Appears unaffected.
 * NetAddr-IP: Appears unaffected.
-* Data-Validate-IP: Appears unaffected, but see below.
+* Net-Subnet: Appears unaffected.
 * Net-Patricia: Appears unaffected.
 {{% /notice %}}
 
@@ -57,6 +61,84 @@ Here's the current state of CPAN modules, ordered roughly by their position in
 [The River of CPAN](https://neilb.org/2015/04/20/river-of-cpan.html) (which
 basically means how many modules depend on them).
 
+## [`Net-Netmask`](https://metacpan.org/release/Net-Netmask)
+
+{{% notice info %}}
+**This distribution was vulnerable prior to its 2.0000 release earlier
+today. Great job on the quick response, Joelle Maslak!**
+{{% /notice %}}
+
+This distribution has 22 direct dependents and 30 total dependents.
+
+So for versions before 2.0000 we see this:
+
+```
+perl -MNet::Netmask -E 'say defined Net::Netmask->new2(q{010.0.0.0/8}) ? 1 : 0'
+0
+```
+
+Note the use of the `new2` constructor. The old `new` constructor cannot be
+changed to return `undef` for backwards compatibility reasons. Fortunately,
+it's probably not vulnerable in any exploitable way, as it returns a 0-length
+subnet:
+
+```
+perl -MNet::Netmask -E 'say Net::Netmask->new(q{010.0.0.0/8})'
+0.0.0.0/0
+```
+
+## [`Net-CIDR-Lite`](https://metacpan.org/release/Net-CIDR-Lite)
+
+{{% notice warning %}}
+**This distribution is affected by this issue. In addition, this module is no
+longer maintained and the current owner would like to pass maintenance to
+someon else.**
+{{% /notice %}}
+
+This distribution has 24 direct dependents and 36 total dependents.
+
+```
+perl -MNet::CIDR::Lite -E 'my $c = Net::CIDR::Lite->new; $c->add("010.0.0.0/8"); say $_ for $c->list_range'
+10.0.0.0-10.255.255.255
+```
+
+## [`Net-IPAdress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
+
+{{% notice warning %}}
+**This distribution is affected by this issue.**
+{{% /notice %}}
+
+This distribution has no dependents.
+
+```
+perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
+10.0.0.1
+```
+
+## [`Data-Validate-IP`](https://metacpan.org/release/Data-Validate-IP)
+
+{{% notice info %}}
+**This distribution doesn't misparse octal numbers, but this bug could affect
+code that uses this distro. See below for details.**
+{{% /notice %}}
+
+This distribution has 21 direct dependents and 60 total dependents.
+
+This distribution returns false for any `is_*_ipv4` method that includes an octal
+number. So both `is_private_ipv4('010.0.0.1')` and
+`is_public_ipv4('010.0.0.1')` return false. **Depending on how you're using this
+module, it's *possible* that this could lead to bugs, including bugs with
+security implications.**
+
+I [updated the
+documentation](https://metacpan.org/pod/Data::Validate::IP#USAGE-AND-SECURITY-RECOMMENDATIONS)
+to explicitly recommend that you **always call `is_ipv4()` in addition to
+calling a method like `is_private_ipv4()`**. The `is_ipv4()` method will
+always return false for IP addresses with octal numbers.
+
+While this isn't strictly POSIX-correct, this seems like the safest behavior
+for a module like this. It's better to be too strict if this eliminates a
+potential footgun.
 
 ## [`Socket`](https://metacpan.org/release/Socket)
 
@@ -117,70 +199,20 @@ perl -MNetAddr::IP -E 'say NetAddr::IP->new(q{010.0.0.024})'
 8.0.0.20/32
 ```
 
-## [`Net-Netmask`](https://metacpan.org/release/Net-Netmask)
+## [`Net-Subnet`](https://metacpan.org/release/Net-Subnet)
 
-{{% notice info %}}
-**This distribution was vulnerable prior to its 2.0000 release earlier
-today. Great job on the quick response, Joelle Maslak!**
+{{% notice note %}}
+**This distribution appears to be unaffected by this issue.**
 {{% /notice %}}
 
-This distribution has 22 direct dependents and 30 total dependents.
-
-So for versions before 2.0000 we see this:
+This distribution has 3 direct dependents and 7 total dependents.
 
 ```
-perl -MNet::Netmask -E 'say defined Net::Netmask->new2(q{010.0.0.0/8}) ? 1 : 0'
-0
-```
+perl -MNet::Subnet -E 'my $m = subnet_matcher(q{10.0.0.0/8}); say $m->(q{012.0.0.1}) ? 1 : 0'
+1
 
-Note the use of the `new2` constructor. The old `new` constructor cannot be
-changed to return `undef` for backwards compatibility reasons. Fortunately,
-it's probably not vulnerable in any exploitable way, as it returns a 0-length
-subnet:
-
-```
-perl -MNet::Netmask -E 'say Net::Netmask->new(q{010.0.0.0/8})'
-0.0.0.0/0
-```
-
-## [`Data-Validate-IP`](https://metacpan.org/release/Data-Validate-IP)
-
-{{% notice info %}}
-**This distribution appears to be unaffected by this issue, but see below for
-qualifying details.**
-{{% /notice %}}
-
-This distribution has 21 direct dependents and 60 total dependents.
-
-This distribution returns false for any `is_*_ipv4` method that includes an octal
-number. So both `is_private_ipv4('010.0.0.1')` and
-`is_public_ipv4('010.0.0.1')` return false. Depending on how you're using this
-module, it's *possible* that you this could lead to bugs, including bugs with
-security implications.
-
-I [updated the
-documentation](https://metacpan.org/pod/Data::Validate::IP#USAGE-AND-SECURITY-RECOMMENDATIONS)
-to explicitly recommend that you **always call `is_ipv4()` in addition to
-calling a method like `is_private_ipv4()`**. The `is_ipv4()` method will
-always return false for IP addresses with octal numbers.
-
-While this isn't strictly POSIX-correct, this seems like the safest behavior
-for a module like this. It's better to be too strict if this eliminates a
-potential footgun.
-
-## [`Net-CIDR-Lite`](https://metacpan.org/release/Net-CIDR-Lite)
-
-{{% notice warning %}}
-**This distribution is affected by this issue. In addition, this module is no
-longer maintained and the current owner would like to pass maintenance to
-someon else.**
-{{% /notice %}}
-
-This distribution has 24 direct dependents and 36 total dependents.
-
-```
-perl -MNet::CIDR::Lite -E 'my $c = Net::CIDR::Lite->new; $c->add("010.0.0.0/8"); say $_ for $c->list_range'
-10.0.0.0-10.255.255.255
+perl -MNet::Subnet -E 'my $m = subnet_matcher(q{012.0.0.0/8}); say $m->(q{10.0.0.1}) ? 1 : 0'
+1
 ```
 
 ## [`Net-Patricia`](https://metacpan.org/release/Net-Patricia)
@@ -198,19 +230,5 @@ perl -MNet::Patricia -E 'my $p = Net::Patricia->new; $p->add_string("010.0.0.0/8
 perl -MNet::Patricia -E 'my $p = Net::Patricia->new; $p->add_string("8.0.0.0/8"); say $p->match_string("010.0.0.1") ? 1 : 0'
 1
 ```
-
-## [`Net-IPAdress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
-
-{{% notice warning %}}
-**This distribution is affected by this issue.**
-{{% /notice %}}
-
-This distribution has no dependents.
-
-```
-perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
-10.0.0.1
-```
-
 
 [^1]: One of the most ridiculous SEO-spamming URL paths I've ever seen.
