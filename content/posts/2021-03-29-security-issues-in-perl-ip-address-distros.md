@@ -140,6 +140,9 @@ While this isn't strictly POSIX-correct, this seems like the safest behavior
 for a module like this. It's better to be too strict if this eliminates a
 potential footgun.
 
+**If you are using this distribution, I highly encourage you to audit your use
+of it in a security context!**
+
 ## [`Socket`](https://metacpan.org/release/Socket)
 
 {{% notice note %}}
