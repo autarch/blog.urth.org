@@ -23,7 +23,7 @@ and which modules are affected.
 
 * Net-Netmask: Vulnerable before 2.00000 release. Upgrade now.
 * Net-CIDR-Lite: Affected and unmaintained.
-* Net-IPAdress-Util: Affected.
+* Net-IPAddress-Util: Affected.
 * Data-Validate-IP: Depends on exactly how it's used. See below for details.
 * Socket: Appears unaffected.
 * Net-DNS: Appears unaffected.
@@ -109,7 +109,7 @@ perl -MNet::CIDR::Lite -E 'my $c = Net::CIDR::Lite->new; $c->add("010.0.0.0/8");
 10.0.0.0-10.255.255.255
 ```
 
-## [`Net-IPAdress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
+## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
 
 {{% notice warning %}}
 **This distribution is affected by this issue.**
