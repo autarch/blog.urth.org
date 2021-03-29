@@ -125,8 +125,8 @@ perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
 ## [`Data-Validate-IP`](https://metacpan.org/release/Data-Validate-IP)
 
 {{% notice info %}}
-**This distribution doesn't misparse octal numbers, but this bug could affect
-code that uses this distro. See below for details.**
+**This distribution doesn't misparse octal numbers, but you could be affected
+depending on exactly how your code uses this distro. See below for details.**
 {{% /notice %}}
 
 This distribution has 21 direct dependents and 60 total dependents.
