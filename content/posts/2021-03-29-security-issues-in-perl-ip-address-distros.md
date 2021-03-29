@@ -4,6 +4,13 @@ author: Dave Rolsky
 type: post
 date: 2021-03-29T13:33:39-05:00
 url: /2021/03/29/security-issues-in-perl-ip-address-distros
+discuss:
+    - site: "/r/perl"
+      uri: "https://www.reddit.com/r/perl/comments/mfzxuh/security_issues_in_perl_ip_address_distros/"
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/mg0s73/security_issues_in_perl_ip_address_distros/"
+    - site: "Hacker News"
+      uri: "https://news.ycombinator.com/item?id=26628827"
 ---
 
 _Edit on 2021-03-29 21:40(ish) UTC:_ Added Net-Subnet (appears unaffected) and
