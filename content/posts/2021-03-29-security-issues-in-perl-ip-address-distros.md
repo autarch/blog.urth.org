@@ -16,6 +16,8 @@ discuss:
 _Edit on 2021-03-29 21:40(ish) UTC:_ Added Net-Subnet (appears unaffected) and
 reordered the details to match the list at the top of the post.
 
+_Edit on 2021-03-30 14:50(ish) UTC:_ Added Net-Works (appears unaffected).
+
 {{% notice warning %}}
 **TLDR: Some Perl modules for working with IP addresses and netmasks have bugs
 with potential security applications.** See below for more details on the bug
@@ -28,6 +30,7 @@ and which modules are affected.
 * Socket: Appears unaffected.
 * Net-DNS: Appears unaffected.
 * NetAddr-IP: Appears unaffected.
+* Net-Works: Appears unaffected.
 * Net-Subnet: Appears unaffected.
 * Net-Patricia: Appears unaffected.
 {{% /notice %}}
@@ -208,6 +211,27 @@ This distribution has 36 direct dependents and 110 total dependents.
 perl -MNetAddr::IP -E 'say NetAddr::IP->new(q{010.0.0.024})'
 8.0.0.20/32
 ```
+
+## [`Net-Works`](https://metacpan.org/release/Net-Works)
+
+{{% notice note %}}
+**This distribution appears to be unaffected by this issue.**
+{{% /notice %}}
+
+This distribution has 3 direct dependents and 7 total dependents.
+
+```
+perl -MNet::Works::Network -E 'say Net::Works::Network->new_from_string(string => q{010.0.0.1/8})'
+010.0.0.1/8 is not a valid IP network at /home/autarch/.perlbrew/libs/perl-5.30.1@dev/lib/perl5/Net/Works/Network.pm line 120.
+	Net::Works::Network::new_from_string("Net::Works::Network", "string", "010.0.0.1/8") called at -e line 1
+
+perl -MNet::Works::Address -E 'say Net::Works::Address->new_from_string(string => q{010.0.0.1})'
+010.0.0.1 is not a valid IPv6 address at /home/autarch/.perlbrew/libs/perl-5.30.1@dev/lib/perl5/Net/Works/Util.pm line 70.
+	Net::Works::Util::_validate_ip_string("010.0.0.1", 6) called at /home/autarch/.perlbrew/libs/perl-5.30.1@dev/lib/perl5/Net/Works/Address.pm line 74
+	Net::Works::Address::new_from_string("Net::Works::Address", "string", "010.0.0.1") called at -e line 1
+```
+
+Thanks to Stig Palmquist for checking this one and letting me know.
 
 ## [`Net-Subnet`](https://metacpan.org/release/Net-Subnet)
 
