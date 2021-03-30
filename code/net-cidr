@@ -1,0 +1,44 @@
+#!/usr/bin/env perl
+
+use v5.30;
+use strict;
+use warnings;
+
+use Net::CIDR;
+
+say qq{Net::CIDR::range2cidr('010.0.0.0-010.0.0.255')};
+say $_ for Net::CIDR::range2cidr('010.0.0.0-010.0.0.255');
+print "\n";
+
+say qq{Net::CIDR::cidr2range('010.0.0.0/8')};
+say $_ for Net::CIDR::cidr2range('010.0.0.0/8');
+print "\n";
+
+say qq{Net::CIDR::addr2cidr('010.0.0.1')};
+say $_ for Net::CIDR::addr2cidr('010.0.0.1');
+print "\n";
+
+say qq{Net::CIDR::addrandmask2cidr('010.0.0.1', '255.0.0.0')};
+say $_ for Net::CIDR::addrandmask2cidr('010.0.0.1', '255.0.0.0');
+print "\n";
+
+say qq{Net::CIDR::cidr2octets('010.0.0.0/9')};
+say $_ for Net::CIDR::cidr2octets('010.0.0.0/9');
+print "\n";
+
+say
+    qq{Net::CIDR::cidradd('010.0.0.0/8', Net::CIDR::range2cidr('192.168.0.0-192.168.0.255'))};
+say $_ for Net::CIDR::cidradd(
+    '010.0.0.0/8',
+    Net::CIDR::range2cidr('192.168.0.0-192.168.0.255')
+);
+print "\n";
+
+say qq{Net::CIDR::cidrlookup('10.0.0.1', '010.0.0.0/8')};
+say $_ for Net::CIDR::cidrlookup( '10.0.0.1', '010.0.0.0/8' );
+say qq{Net::CIDR::cidrlookup('10.0.0.1', '010.0.0.0/8')};
+say $_ for Net::CIDR::cidrlookup( '010.0.0.1', '8.0.0.0/8' );
+print "\n";
+
+say Net::CIDR::cidrvalidate('010.0.0.0/8)');
+say Net::CIDR::cidrvalidate('10.0.010.0/31');
