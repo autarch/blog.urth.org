@@ -11,6 +11,10 @@ discuss:
       uri: "https://www.reddit.com/r/programming/comments/mem9kp/down_the_golang_nil_rabbit_hole/"
 ---
 
+_Edit 2021-03-30_: Jeremy Mikkola [wrote about some closely related
+topics](http://jeremymikkola.com/posts/2017_03_29_know_your_nil.html) back in
+2017.
+
 I'm not sure I have another Rust & Postgres blog post in me right now, so
 let's learn something about Go instead.
 
