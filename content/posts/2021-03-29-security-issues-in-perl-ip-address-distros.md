@@ -18,6 +18,9 @@ reordered the details to match the list at the top of the post.
 
 _Edit on 2021-03-30 14:50(ish) UTC:_ Added Net-Works (appears unaffected).
 
+_Edit on 2021-03-30 15:40(ish) UTC:_ Added Net-CIDR (some functions are
+affected).
+
 {{% notice warning %}}
 **TLDR: Some Perl modules for working with IP addresses and netmasks have bugs
 with potential security applications.** See below for more details on the bug
@@ -27,6 +30,7 @@ and which modules are affected.
 * Net-CIDR-Lite: Affected and unmaintained.
 * Net-IPAddress-Util: Affected.
 * Data-Validate-IP: Depends on exactly how it's used. See below for details.
+* Net-CIDR: Depends on exactly how it's used. See below for details.
 * Socket: Appears unaffected.
 * Net-DNS: Appears unaffected.
 * NetAddr-IP: Appears unaffected.
@@ -149,6 +153,40 @@ always return false for IP addresses with octal numbers.
 While this isn't strictly POSIX-correct, this seems like the safest behavior
 for a module like this. It's better to be too strict if this eliminates a
 potential footgun.
+
+**If you are using this distribution, I highly encourage you to audit your use
+of it in a security context!**
+
+## [`Net-CIDR`](https://metacpan.org/release/Net-CIDR)
+
+{{% notice info %}}
+**This distribution is affected, but it has a function to validate CIDR
+strings that you should use before calling any other functions.**
+{{% /notice %}}
+
+This distribution has 17 direct dependents and 25 total dependents.
+
+The distribution provides a number of functions for working with networks and
+IP addresses. Most of these are not affected. However, two are:
+
+```
+perl -MNet::CIDR -E 'say for Net::CIDR::addr2cidr("010.0.0.1")'
+010.0.0.1/32
+010.0.0.0/31
+...
+010.0.0.0/8
+10.0.0.0/7
+8.0.0.0/6
+...
+
+perl -MNet::CIDR -E 'say Net::CIDR::cidrlookup("10.0.0.1", "010.0.0.0/8")'
+1
+```
+
+However, this distribution also contains a `cidrvalidate` function that will
+return false for any CIDR string with a leading 0 in an octet. The
+documentation explicitly tells you to use this before passing the data to
+other functions.
 
 **If you are using this distribution, I highly encourage you to audit your use
 of it in a security context!**
