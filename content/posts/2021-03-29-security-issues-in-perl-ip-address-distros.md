@@ -112,6 +112,8 @@ perl -MNet::CIDR::Lite -E 'my $c = Net::CIDR::Lite->new; $c->add("010.0.0.0/8");
 10.0.0.0-10.255.255.255
 ```
 
+NixOS Linux has a [`patch`](https://github.com/NixOS/nixpkgs/commit/7365de5ace45ac979fae118b1666be38a472bf3c) for this issue.
+
 ## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
 
 {{% notice warning %}}
