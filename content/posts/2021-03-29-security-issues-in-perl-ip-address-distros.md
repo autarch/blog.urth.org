@@ -21,6 +21,8 @@ _Edit on 2021-03-30 14:50(ish) UTC:_ Added Net-Works (appears unaffected).
 _Edit on 2021-03-30 15:40(ish) UTC:_ Added Net-CIDR (some functions are
 affected).
 
+_Edit on 2021-03-31 01:05(ish) UTC:_ Added Net-IPv4Addr (affected).
+
 {{% notice warning %}}
 **TLDR: Some Perl modules for working with IP addresses and netmasks have bugs
 with potential security applications.** See below for more details on the bug
@@ -127,9 +129,19 @@ issue](https://github.com/NixOS/nixpkgs/commit/7365de5ace45ac979fae118b1666be38a
 
 This distribution has no dependents.
 
+## [`Net-CIDR-Lite`](https://metacpan.org/release/Net-CIDR-Lite)
+
+{{% notice warning %}}
+**This distribution is affected by this issue. In addition, this module is
+almost certainly no longer being maintained. Emails to the author bounce.**
+{{% /notice %}}
+
+This distribution has 4 direct dependents and 12 total dependents.
+
 ```
-perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
-10.0.0.1
+perl -MNet::IPv4Addr=:all -E 'say $_ for ipv4_network("010.0.0.1")'
+10.0.0.0
+8
 ```
 
 ## [`Data-Validate-IP`](https://metacpan.org/release/Data-Validate-IP)
