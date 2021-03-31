@@ -129,7 +129,7 @@ issue](https://github.com/NixOS/nixpkgs/commit/7365de5ace45ac979fae118b1666be38a
 
 This distribution has no dependents.
 
-## [`Net-CIDR-Lite`](https://metacpan.org/release/Net-CIDR-Lite)
+## [`Net-IPv4Addr`](https://metacpan.org/release/Net-IPv4Addr)
 
 {{% notice warning %}}
 **This distribution is affected by this issue. In addition, this module is
