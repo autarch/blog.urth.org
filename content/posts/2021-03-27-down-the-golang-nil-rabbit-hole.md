@@ -15,6 +15,11 @@ _Edit 2021-03-30_: Jeremy Mikkola [wrote about some closely related
 topics](http://jeremymikkola.com/posts/2017_03_29_know_your_nil.html) back in
 2017.
 
+_Edit 2021-03-31_: Chris Siebenmann [wrote a response to this
+post](https://utcc.utoronto.ca/~cks/space/blog/programming/GoNilIsTypedSortOf)
+that explains exactly how interface values that are `nil` are typed. It's more
+complicated than I thought!
+
 I'm not sure I have another Rust & Postgres blog post in me right now, so
 let's learn something about Go instead.
 
