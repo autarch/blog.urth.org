@@ -28,7 +28,7 @@ _Edit on 2021-03-31 01:05(ish) UTC:_ Added Net-IPv4Addr (affected).
 with potential security applications.** See below for more details on the bug
 and which modules are affected.
 
-* Net-Netmask: Vulnerable before 2.00000 release. Upgrade now.
+* Net-Netmask: Vulnerable before the 2.00000 release. Upgrade now.
 * Net-CIDR-Lite: Affected and unmaintained.
 * Net-IPAddress-Util: Affected.
 * Data-Validate-IP: Depends on exactly how it's used. See below for details.
