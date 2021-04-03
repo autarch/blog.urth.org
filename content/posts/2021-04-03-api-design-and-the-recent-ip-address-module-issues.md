@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2021-04-03T11:01:20-05:00
 url: /2021/04/03/api-design-and-the-recent-ip-address-module-issues
+discuss:
+    - site: "/r/perl"
+      uri: "https://www.reddit.com/r/perl/comments/mjcxq7/api_design_and_the_recent_ip_address_module_issues/"
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/mjcy1t/api_design_and_the_recent_ip_address_module_issues/"
 ---
 
 Earlier this week, I wrote about [security issues in Perl IP address
