@@ -23,13 +23,16 @@ affected).
 
 _Edit on 2021-03-31 01:05(ish) UTC:_ Added Net-IPv4Addr (affected).
 
+_Edit on 2021-04-05 01:21(ish) UTC:_ Net-CIDR-Lite 0.22 contains a
+remediation.
+
 {{% notice warning %}}
 **TLDR: Some Perl modules for working with IP addresses and netmasks have bugs
 with potential security applications.** See below for more details on the bug
 and which modules are affected.
 
 * Net-Netmask: Vulnerable before the 2.00000 release. Upgrade now.
-* Net-CIDR-Lite: Affected and unmaintained.
+* Net-CIDR-Lite: Vulnerable before the 0.22 release. Upgrade now.
 * Net-IPAddress-Util: Affected.
 * Data-Validate-IP: Depends on exactly how it's used. See below for details.
 * Net-CIDR: Depends on exactly how it's used. See below for details.
@@ -105,21 +108,19 @@ perl -MNet::Netmask -E 'say Net::Netmask->new(q{010.0.0.0/8})'
 
 ## [`Net-CIDR-Lite`](https://metacpan.org/release/Net-CIDR-Lite)
 
-{{% notice warning %}}
-**This distribution is affected by this issue. In addition, this module is no
-longer maintained and the current owner would like to pass maintenance to
-someone else.**
+{{% notice info %}}
+**This distribution was vulnerable prior to its 0.22 release made on
+2021-04-04. Thanks to Stig Palmquist for taking this distro over and releasing
+a fix!**
 {{% /notice %}}
 
 This distribution has 24 direct dependents and 36 total dependents.
 
 ```
 perl -MNet::CIDR::Lite -E 'my $c = Net::CIDR::Lite->new; $c->add("010.0.0.0/8"); say $_ for $c->list_range'
-10.0.0.0-10.255.255.255
+Can't determine ip format at /home/autarch/.perlbrew/libs/perl-5.30.1@dev/lib/perl5/Net/CIDR/Lite.pm line 38.
+	Net::CIDR::Lite::add(Net::CIDR::Lite=HASH(0x55fe55ade740), "010.0.0.0/8") called at -e line 1
 ```
-
-NixOS Linux has a [patch for this
-issue](https://github.com/NixOS/nixpkgs/commit/7365de5ace45ac979fae118b1666be38a472bf3c).
 
 ## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
 
@@ -128,6 +129,11 @@ issue](https://github.com/NixOS/nixpkgs/commit/7365de5ace45ac979fae118b1666be38a
 {{% /notice %}}
 
 This distribution has no dependents.
+
+```
+perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
+10.0.0.1
+```
 
 ## [`Net-IPv4Addr`](https://metacpan.org/release/Net-IPv4Addr)
 
