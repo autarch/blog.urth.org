@@ -26,6 +26,9 @@ _Edit on 2021-03-31 01:05(ish) UTC:_ Added Net-IPv4Addr (affected).
 _Edit on 2021-04-05 01:21(ish) UTC:_ Net-CIDR-Lite 0.22 contains a
 remediation.
 
+_Edit on 2021-04-05 19:30(ish) UTC:_ Net-IPAddress-Util 5.000 contains a
+remediation.
+
 {{% notice warning %}}
 **TLDR: Some Perl modules for working with IP addresses and netmasks have bugs
 with potential security applications.** See below for more details on the bug
@@ -33,8 +36,8 @@ and which modules are affected.
 
 * Net-Netmask: Vulnerable before the 2.00000 release. Upgrade now.
 * Net-CIDR-Lite: Vulnerable before the 0.22 release. Upgrade now.
+* Net-IPAddress-Util: Vulnerable before the 5.000 release. Upgrade now.
 * Net-IPv4Addr: Affected.
-* Net-IPAddress-Util: Affected.
 * Data-Validate-IP: Depends on exactly how it's used. See below for details.
 * Net-CIDR: Depends on exactly how it's used. See below for details.
 * Socket: Appears unaffected.
@@ -123,6 +126,21 @@ Can't determine ip format at /home/autarch/.perlbrew/libs/perl-5.30.1@dev/lib/pe
 	Net::CIDR::Lite::add(Net::CIDR::Lite=HASH(0x55fe55ade740), "010.0.0.0/8") called at -e line 1
 ```
 
+## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
+
+{{% notice info %}}
+**This distribution was vulnerable prior to its 5.000 release made on
+2021-04-04. Thanks to Paul W Bennett for the fix!**
+{{% /notice %}}
+
+This distribution has no dependents.
+
+```
+perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
+8.0.0.1
+```
+
+
 ## [`Net-IPv4Addr`](https://metacpan.org/release/Net-IPv4Addr)
 
 {{% notice warning %}}
@@ -137,20 +155,6 @@ perl -MNet::IPv4Addr=:all -E 'say $_ for ipv4_network("010.0.0.1")'
 10.0.0.0
 8
 ```
-
-## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
-
-{{% notice warning %}}
-**This distribution is affected by this issue.**
-{{% /notice %}}
-
-This distribution has no dependents.
-
-```
-perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
-10.0.0.1
-```
-
 
 ## [`Data-Validate-IP`](https://metacpan.org/release/Data-Validate-IP)
 
