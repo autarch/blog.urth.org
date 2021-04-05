@@ -34,10 +34,10 @@ remediation.
 with potential security applications.** See below for more details on the bug
 and which modules are affected.
 
+* Net-IPv4Addr: Affected.
 * Net-Netmask: Vulnerable before the 2.00000 release. Upgrade now.
 * Net-CIDR-Lite: Vulnerable before the 0.22 release. Upgrade now.
 * Net-IPAddress-Util: Vulnerable before the 5.000 release. Upgrade now.
-* Net-IPv4Addr: Affected.
 * Data-Validate-IP: Depends on exactly how it's used. See below for details.
 * Net-CIDR: Depends on exactly how it's used. See below for details.
 * Socket: Appears unaffected.
@@ -83,6 +83,21 @@ modules for working with IP addresses, networks, and netmasks.
 Here's the current state of CPAN modules, ordered roughly by their position in
 [The River of CPAN](https://neilb.org/2015/04/20/river-of-cpan.html) (which
 basically means how many modules depend on them).
+
+## [`Net-IPv4Addr`](https://metacpan.org/release/Net-IPv4Addr)
+
+{{% notice warning %}}
+**This distribution is affected by this issue. In addition, this module is
+almost certainly no longer being maintained. Emails to the author bounce.**
+{{% /notice %}}
+
+This distribution has 4 direct dependents and 12 total dependents.
+
+```
+perl -MNet::IPv4Addr=:all -E 'say $_ for ipv4_network("010.0.0.1")'
+10.0.0.0
+8
+```
 
 ## [`Net-Netmask`](https://metacpan.org/release/Net-Netmask)
 
@@ -140,21 +155,6 @@ perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
 8.0.0.1
 ```
 
-
-## [`Net-IPv4Addr`](https://metacpan.org/release/Net-IPv4Addr)
-
-{{% notice warning %}}
-**This distribution is affected by this issue. In addition, this module is
-almost certainly no longer being maintained. Emails to the author bounce.**
-{{% /notice %}}
-
-This distribution has 4 direct dependents and 12 total dependents.
-
-```
-perl -MNet::IPv4Addr=:all -E 'say $_ for ipv4_network("010.0.0.1")'
-10.0.0.0
-8
-```
 
 ## [`Data-Validate-IP`](https://metacpan.org/release/Data-Validate-IP)
 
