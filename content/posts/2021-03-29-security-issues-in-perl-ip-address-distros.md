@@ -33,6 +33,7 @@ and which modules are affected.
 
 * Net-Netmask: Vulnerable before the 2.00000 release. Upgrade now.
 * Net-CIDR-Lite: Vulnerable before the 0.22 release. Upgrade now.
+* Net-IPv4Addr: Affected.
 * Net-IPAddress-Util: Affected.
 * Data-Validate-IP: Depends on exactly how it's used. See below for details.
 * Net-CIDR: Depends on exactly how it's used. See below for details.
@@ -122,19 +123,6 @@ Can't determine ip format at /home/autarch/.perlbrew/libs/perl-5.30.1@dev/lib/pe
 	Net::CIDR::Lite::add(Net::CIDR::Lite=HASH(0x55fe55ade740), "010.0.0.0/8") called at -e line 1
 ```
 
-## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
-
-{{% notice warning %}}
-**This distribution is affected by this issue.**
-{{% /notice %}}
-
-This distribution has no dependents.
-
-```
-perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
-10.0.0.1
-```
-
 ## [`Net-IPv4Addr`](https://metacpan.org/release/Net-IPv4Addr)
 
 {{% notice warning %}}
@@ -149,6 +137,20 @@ perl -MNet::IPv4Addr=:all -E 'say $_ for ipv4_network("010.0.0.1")'
 10.0.0.0
 8
 ```
+
+## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
+
+{{% notice warning %}}
+**This distribution is affected by this issue.**
+{{% /notice %}}
+
+This distribution has no dependents.
+
+```
+perl -MNet::IPAddress::Util=IP -E 'say IP(q{010.0.0.1})'
+10.0.0.1
+```
+
 
 ## [`Data-Validate-IP`](https://metacpan.org/release/Data-Validate-IP)
 
