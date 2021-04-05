@@ -35,8 +35,8 @@ with potential security applications.** See below for more details on the bug
 and which modules are affected.
 
 * Net-IPv4Addr: Affected.
-* Net-Netmask: Vulnerable before the 2.00000 release. Upgrade now.
 * Net-CIDR-Lite: Vulnerable before the 0.22 release. Upgrade now.
+* Net-Netmask: Vulnerable before the 2.00000 release. Upgrade now.
 * Net-IPAddress-Util: Vulnerable before the 5.000 release. Upgrade now.
 * Data-Validate-IP: Depends on exactly how it's used. See below for details.
 * Net-CIDR: Depends on exactly how it's used. See below for details.
@@ -99,6 +99,22 @@ perl -MNet::IPv4Addr=:all -E 'say $_ for ipv4_network("010.0.0.1")'
 8
 ```
 
+## [`Net-CIDR-Lite`](https://metacpan.org/release/Net-CIDR-Lite)
+
+{{% notice info %}}
+**This distribution was vulnerable prior to its 0.22 release made on
+2021-04-04. Thanks to Stig Palmquist for taking this distro over and releasing
+a fix!**
+{{% /notice %}}
+
+This distribution has 24 direct dependents and 36 total dependents.
+
+```
+perl -MNet::CIDR::Lite -E 'my $c = Net::CIDR::Lite->new; $c->add("010.0.0.0/8"); say $_ for $c->list_range'
+Can't determine ip format at /home/autarch/.perlbrew/libs/perl-5.30.1@dev/lib/perl5/Net/CIDR/Lite.pm line 38.
+	Net::CIDR::Lite::add(Net::CIDR::Lite=HASH(0x55fe55ade740), "010.0.0.0/8") called at -e line 1
+```
+
 ## [`Net-Netmask`](https://metacpan.org/release/Net-Netmask)
 
 {{% notice info %}}
@@ -123,22 +139,6 @@ subnet:
 ```
 perl -MNet::Netmask -E 'say Net::Netmask->new(q{010.0.0.0/8})'
 0.0.0.0/0
-```
-
-## [`Net-CIDR-Lite`](https://metacpan.org/release/Net-CIDR-Lite)
-
-{{% notice info %}}
-**This distribution was vulnerable prior to its 0.22 release made on
-2021-04-04. Thanks to Stig Palmquist for taking this distro over and releasing
-a fix!**
-{{% /notice %}}
-
-This distribution has 24 direct dependents and 36 total dependents.
-
-```
-perl -MNet::CIDR::Lite -E 'my $c = Net::CIDR::Lite->new; $c->add("010.0.0.0/8"); say $_ for $c->list_range'
-Can't determine ip format at /home/autarch/.perlbrew/libs/perl-5.30.1@dev/lib/perl5/Net/CIDR/Lite.pm line 38.
-	Net::CIDR::Lite::add(Net::CIDR::Lite=HASH(0x55fe55ade740), "010.0.0.0/8") called at -e line 1
 ```
 
 ## [`Net-IPAddress-Util`](https://metacpan.org/release/Net-IPAddress-Util)
