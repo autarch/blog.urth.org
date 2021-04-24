@@ -25,11 +25,14 @@ So this week I will go into more detail on exactly why I had to do this.
 
 ## Series Links
 
-* Part 1: [Introduction to the project and generating Rust with
-  Perl]({{<relref
-  "2021-03-14-writing-a-postgres-sql-pretty-printer-in-rust-part-1" >}})
+* Part 1: [Introduction to the project and generating Rust with Perl]({{<
+  relref "2021-03-14-writing-a-postgres-sql-pretty-printer-in-rust-part-1"
+  >}})
 * Part 1.5: **More about enum wrappers and serde's externally tagged enum
   representation**
+* Part 2: [How I'm testing the pretty printer and how I generate tests from
+  the Postgres docs]({{< relref
+  "2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2" >}})
 
 ## A Tagged Enum Example
 
@@ -295,15 +298,16 @@ turn into a string.
 
 ## Next up
 
-Here's the list of what I wanted to cover in future posts.
+Here's a list of what I want to cover in future posts.
 
 * Diving into the Postgres grammar to understand the AST.
-* How I'm approaching tests for this project, and how I generate test cases
-  from the Postgres documentation.
+* [How I'm approaching tests for this project, and how I generate test cases
+  from the Postgres documentation]({{< relref
+  "2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2" >}}).
 * The benefits of Rust pattern-matching for working with ASTs.
-* How terrible my solution to generating SQL in the pretty printer is, and how
-  I wonder if there's a better way to do this.
-* How the proc macro in the `bitflags_serde_int` crate works.
+* How terrible my initial solution to generating SQL in the pretty printer is,
+  and how I fixed it (once I actually fix it).
+* How the proc macro in the `bitflags_serde_int` crate works[^2].
 * Who knows what else?
 
 [Stay tuned](/index.xml) for more posts in the future.
@@ -311,3 +315,6 @@ Here's the list of what I wanted to cover in future posts.
 
 [^1]: Ok, technically I *could* do that, but that would involve parsing the
     JSON and rewriting it in order to ... make it easier to parse?
+
+[^2]: Edit 2021-04-24: Nope, not gonna write about this. It turns out I was
+    reimplementing the already existing `#[serde(transparent)]` feature.

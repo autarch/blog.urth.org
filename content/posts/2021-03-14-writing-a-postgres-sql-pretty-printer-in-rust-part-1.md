@@ -22,6 +22,9 @@ know.
 * Part 1.5: [More about enum wrappers and Serde's externally tagged enum
   representation]({{< relref
   "2021-03-21-writing-a-postgres-sql-pretty-printer-in-rust-part-1-5" >}})
+* Part 2: [How I'm testing the pretty printer and how I generate tests from
+  the Postgres docs]({{< relref
+  "2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2" >}})
 
 ## Why?
 
@@ -285,12 +288,13 @@ This post is already quite long, but there are many other things I've learned
 while working on this project that I plan to write about, including:
 
 * Diving into the Postgres grammar to understand the AST.
-* How I'm approaching tests for this project, and how I generate test cases
-  from the Postgres documentation.
+* [How I'm approaching tests for this project, and how I generate test cases
+  from the Postgres documentation]({{< relref
+  "2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2" >}}).
 * The benefits of Rust pattern-matching for working with ASTs.
 * How terrible my solution to generating SQL in the pretty printer is, and how
   I wonder if there's a better way to do this.
-* How the proc macro in the `bitflags_serde_int` crate works.
+* How the proc macro in the `bitflags_serde_int` crate works[^6].
 * Who knows what else?
 
 [^1]: Rust turned out to be a great fit for this project. More on that in a
@@ -309,3 +313,6 @@ while working on this project that I plan to write about, including:
     you're not forced to deal with all possible Node types.
 
 [^5]: More than a bit. Really, really gross.
+
+[^6]: Edit 2021-04-24: Nope, not gonna write about this. It turns out I was
+    reimplementing the already existing `#[serde(transparent)]` feature.
