@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2021-04-24T13:00:33-05:00
 url: /2021/04/24/writing-a-postgres-sql-pretty-printer-in-rust-part-2
+discuss:
+    - site: "/r/rust"
+      uri: "https://www.reddit.com/r/rust/comments/mxsko0/writing_a_postgres_sql_pretty_printer_in_rust/"
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/mxskm6/writing_a_postgres_sql_pretty_printer_in_rust/"
 ---
 
 It's been a few weeks since my last post on this project. I was distracted by
