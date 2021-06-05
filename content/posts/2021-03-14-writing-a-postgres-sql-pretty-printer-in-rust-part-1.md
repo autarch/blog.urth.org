@@ -260,13 +260,14 @@ it. The implementation is just regular Rust code that takes either its
 type, struct field, etc.). Either way, the macro implementation returns a new
 AST of Rust code that is effectively inlined in place of the macro.
 
-Procedural macros are incredibly powerful, and I [wrote one to change how
+Procedural macros are incredibly powerful, and I ~~[wrote one to change how
 bitflags are
-serialized](https://github.com/houseabsolute/pg-pretty/tree/master/bitflags_serde_int),
+serialized](https://github.com/houseabsolute/pg-pretty/tree/master/bitflags_serde_int)
 so that serde expects these flags to be integers during deserialization,
-rather than expecting a JSON object like `{ "bits": 42 }`. The [bitflags
-crate](https://lib.rs/crates/bitflags) itself is a proc macro, so it's macros
-all the way down.
+rather than expecting a JSON object like `{ "bits": 42 }`~~ later realized
+that `serde` already did what I needed, so I didn't need to write that
+wrapper. The [bitflags crate](https://lib.rs/crates/bitflags) itself is a proc
+macro, ~~so it's macros all the way down~~.
 
 But a procedural macro that parses arbitrary JSON files to generate Rust code
 seems a bit gross[^5]. And right now I find myself constantly referring to the
