@@ -68,29 +68,32 @@ So this function does two things, validation _and_ categorization, but the
 return value lumps these things together. You cannot tell by its return value
 whether the address was invalid or if it was valid but not private.
 
+The `is_public_ipv4` function has the same problem. It does both validation
+and categorization in one call.
+
 This is a very subtle point, and it's easy to miss when you're using this
 module. It would be very easy to introduce a security issue with this
 code[^1]:
 
 ```perl
-if ( !is_private_ipv4($some_addr) ) {
-    send_public_data($some_addr);
-} else {
+if ( !is_public_ipv4($some_addr) ) {
     send_private_data($some_addr);
+} else {
+    send_public_data($some_addr);
 }
 ```
 
-If this is given `010.0.0.1` it returns false, which means we send it private
-data. So how should this be written? We need to validate first:
+If `is_public_ipv4` is given `010.0.0.1` it returns false, which means we send
+private data. So how should this be written? We need to validate first:
 
 ```perl
 die "Invalid IPv4: $some_addr"
     unless is_ipv4($some_addr);
 
-if ( !is_private_ipv4($some_addr) ) {
-    send_public_data($some_addr);
-} else {
+if ( !is_public_ipv4($some_addr) ) {
     send_private_data($some_addr);
+} else {
+    send_public_data($some_addr);
 }
 ```
 
@@ -112,17 +115,17 @@ doing categorization.
 There are various ways to do this, but an OO interface makes this trivial:
 
 ```perl
-if ( !IPv4->new($some_addr)->is_private ) {
-    send_public_data($some_addr);
-} else {
+if ( !IPv4->new($some_addr)->is_public ) {
     send_private_data($some_addr);
+} else {
+    send_public_data($some_addr);
 }
 ```
 
 If the `IPv4->new` call throws an exception on invalid data, then this code is
 perfectly safe[^2]. There is no way to use this API to categorize invalid
-data. So even the person who wrote this terrible logic ("if not private send
-public?" WTF?!) will be prevented from doing more damage.
+data. So even the person who wrote this terrible logic ("if not public send
+private?" WTF?!) will be prevented from doing more damage.
 
 Another approach would be to have `is_private_ipv4` throw an exception if
 given invalid data. That way it has three "return values", true (valid and
@@ -138,18 +141,18 @@ it as hard as you can to do the wrong thing with your API[^3].
     obvious logic errors? I can wait for you to stop laughing before we
     continue.
 
-[^2]: At least it's safe if every address that's _not_ private is public. This
-    isn't true for IPv4 (or IPv6), but sending public data to a link-local or
+[^2]: At least it's safe if every address that's _not_ public is private. This
+    isn't true for IPv4 (or IPv6), but sending private data to a link-local or
     loopback address is probably(?) okay.
 
 [^3]: Though nothing can stop the truly clueless developer. Someone could
     still write this:
 
     ```perl
-    if ( !eval { IPv4->new($some_addr)->is_private } ) {
-        send_public_data($some_addr);
-    } else {
+    if ( !eval { IPv4->new($some_addr)->is_public } ) {
         send_private_data($some_addr);
+    } else {
+        send_public_data($some_addr);
     }
     ```
 
