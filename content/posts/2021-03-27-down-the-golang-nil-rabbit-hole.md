@@ -287,8 +287,8 @@ emulates using `reflect`.
 
 So there's quite a few cases around one or both arguments being invalid that
 need handling. And there are MANY other methods with the same issues to
-consider, including things like `d.Map()` and `d.Struct`, all of which should
-handle an invalid value properly.
+consider, including things like `d.Map()` and `d.Struct()`, all of which
+should handle an invalid value properly.
 
 ## What Does This Look Like in Other Languages?
 
