@@ -70,7 +70,7 @@ The actual config for how to execute this tool lives in the external repo. For e
   types: [file, yaml]
 ```
 
-This config tells pre-commit how to execute yamllint, and on what types of file. The `language: python` bit tells pre-commit that this plugin needs python. The pre-commit tool supports many languages, including Perl, Go, Ruby, JS (Node), Rust, and more. And not only does pre-commit know how to _execute_ these plugins, but it also knows how to install their dependencies and how to sequester those deps into a virtualenv-like system. So for Ruby it will use [rbenv][23] and install all of the gems a tool depends on in an rbenv for just that tool.
+This config tells pre-commit how to execute yamllint, and on what types of files. The `language: python` bit tells pre-commit that this plugin needs python. The pre-commit tool supports many languages, including Perl, Go, Ruby, JS (Node), Rust, and more. And not only does pre-commit know how to _execute_ these plugins, but it also knows how to install their dependencies and how to sequester those deps into a virtualenv-like system. So for Ruby it will use [rbenv][23] and install all of the gems a tool depends on in an rbenv for just that tool.
 
 Mind blown! The pre-commit project itself maintains a huge number of plugin definitions, and some tools include pre-commit config in their repo directly.
 
