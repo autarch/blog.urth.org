@@ -31,7 +31,7 @@ Adding individual tools to your config can range from simple to painful to impos
 
 In the past, adding support for a new tool that did not have a plugin meant writing a new Perl class, and ideally distributing that class on CPAN. If you look at a lot of these plugins, you'll see that they're usually incredibly trivial. Many of them simply take a filename as input and run a command on it via `system`, then pass or fail based on the exit status of the command. I was getting quite sick of writing these, so in version 0.71, released in September of 2018, I added two new plugins [GenericValidator][14] and [GenericTransformer][15]. These two plugins let you configure many linters (Validator) and formatters (Transformer) solely through your `tidyall.ini` config file.
 
-Out of the box, tidyall includes support for a number of tools, mostly Perl-related. That said, the tools supported by the core are often outdated for other ecosystem. For example, it supports three JS tools, none of which are eslint, though there is [a plugin on CPAN for it][16], and it'd be easy enough to configure as a GenericValidator.
+Out of the box, tidyall includes support for a number of tools, mostly Perl-related. That said, the tools supported by the core are often outdated for other ecosystems. For example, it supports three JS tools, none of which are eslint, though there is [a plugin on CPAN for it][16], and it'd be easy enough to configure as a GenericValidator.
 
 With tidyall you can have it run in parallel on multiple files at once. This must be enabled from the command line with the `-j/--jobs` flag, and you must have [Parallel::ForkManager][17] installed.
 
