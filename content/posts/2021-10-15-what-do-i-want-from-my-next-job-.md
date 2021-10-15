@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2021-10-15T10:25:12-05:00
 url: /2021/10/15/what-do-i-want-from-my-next-job-
+discuss:
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/q8wced/what_do_i_want_from_my_next_job/"
+    - site: "Hacker News"
+      uri: "https://news.ycombinator.com/item?id=28882493"
 ---
 
 I'm currently enjoying [being unemployed]({{< relref
