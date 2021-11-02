@@ -171,7 +171,7 @@ being profitable, so they're basically just a scam to funnel VC[^2] money to
 founders, or from early VCs to later VCs[^3].
 
 In my personal life, I've sworn off all food delivery services, and I'm doing
-my best to avoid "rideshare" (what you sharing?) services too.
+my best to avoid "rideshare"[^4] services too.
 
 I specify "non-professionals" because there are also gig products aimed at
 professionals, like graphic designers, software developers, etc. I'm not sure
@@ -180,7 +180,7 @@ product that was actually a net win for everyone involved.
 
 ### What Else?
 
-I feel like I'm probably missing some other field. I haven't seen any MLM[^4]
+I feel like I'm probably missing some other field. I haven't seen any MLM[^5]
 companies advertising for developers, but that would be a hard no if it came
 up.
 
@@ -211,4 +211,6 @@ feedback there.
 [^3]: Though given how much funding goes into these companies, the VCs must
     think there is a way to make money here.
 
-[^4]: MLM = multi-level marketing
+[^4]: Why is this called "rideshare"? What is being shared?
+
+[^5]: MLM = multi-level marketing
