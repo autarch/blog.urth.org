@@ -96,6 +96,8 @@ More generally, I'd really like to do something where I can learn something
 new. Building yet another REST app in a dynamic language or Go does not feel
 very exciting at this stage in my career.
 
+Also, I won't do Java (other JVM languages are fine) or PHP.
+
 ## Company Size and Stage
 
 In my career so far, I've found that I've most enjoyed working for a small
@@ -190,6 +192,7 @@ My hard requirements are:
 
 * A 4 day week (or less).
 * 5+ weeks of PTO.
+* No Java or PHP.
 * No companies in the unacceptable fields I've mentioned.
 * I want to do a significant amount of IC work, even if I'm in a management
   position.
