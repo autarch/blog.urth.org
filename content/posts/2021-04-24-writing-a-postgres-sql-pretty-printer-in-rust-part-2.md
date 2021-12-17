@@ -225,9 +225,9 @@ pub struct SelectStmt {
 ```
 
 Besides having many more fields than `RangeVar`, most of those fields are
-other types of ast nodes. In fact, of these are a boxed `Node` or a `List`,
-which is a `Vec<Node>`. One field, `values_lists`, is a `Vec<List>`! A `Node`
-is an enum which can be _any_ AST node[^7].
+other types of ast nodes. In fact, many of these are a boxed `Node` or a
+`List`, which is a `Vec<Node>`. One field, `values_lists`, is a `Vec<List>`! A
+`Node` is an enum which can be _any_ AST node[^7].
 
 So how exactly do we produce the various `SelectStmt` structs that we'd want
 to feed into `format_select_stmt` for testing? The structs themselves have no
