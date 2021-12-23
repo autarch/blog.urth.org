@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2021-12-22T23:18:15-06:00
 url: /2021/12/22/working-with-musicbrainz-name-data
+discuss:
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/rmo2ei/working_with_musicbrainz_name_data/"
 ---
 
 Since leaving my job last October I've been working on various personal
