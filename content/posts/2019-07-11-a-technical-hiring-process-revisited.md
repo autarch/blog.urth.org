@@ -95,7 +95,7 @@ Expect some attrition during this part of the process. Some people will simply n
 
 ### Homework Alternatives and Exemptions
 
-Many of the best candidates will have significant portolios of open source or example projects available. Should you let them submit an existing project instead of doing the homework? At MaxMind we said "no" and at ActiveState we said "yes". There are good arguments for both, but nowadays I lean think "yes" is the right answer. If you do allow this make sure to provide some guidelines for what qualifies. Here's what we say for the [ActiveState homework][13]:
+Many of the best candidates will have significant portolios of open source or example projects available. Should you let them submit an existing project instead of doing the homework? At MaxMind we said "no" and at ActiveState we said "yes". There are good arguments for both, but nowadays I think "yes" is the right answer. If you do allow this make sure to provide some guidelines for what qualifies. Here's what we say for the [ActiveState homework][13]:
 
 > #### **Requesting an Exemption**
 > 
