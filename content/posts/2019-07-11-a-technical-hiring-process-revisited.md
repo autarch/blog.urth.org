@@ -45,7 +45,7 @@ Management always hates this for a variety of reasons I don't agree with. I lost
 
 In the job description, provide details about the technologies you use, your development practices, and about the rest of the team they'll be working with. Don't just say "it's a great place to work." **Be specific!** This is an opportunity to convince good people to apply. Generic platitudes of "doing excellent work" and "valuing teamwork" don't cut it.
 
-On the diversity and inclusion front, I've read some suggestions that certain types of language can discourage some people from applying. In particular, language with very aggressive words like "killer developer" or "we work hard and play hard" can discourage women. I don't know how well this is supported by research[^1], but I can say that _I myself_ find these sorts of phrases very off-putting.
+On the diversity and inclusion front, I've read some suggestions that certain types of language can discourage some people from applying. In particular, language with very aggressive words like "killer developer" or "we work hard and play hard" can discourage womenfrom applying. I don't know how well this is supported by research[^1], but I can say that _I myself_ find these sorts of phrases very off-putting.
 
 There are a [number of tools][7] that provide some help with this. You paste in your job description and they give you some writing feedback. I'm happy to say that the job descriptions I wrote for ActiveState do pretty well on this front. Try out [Kat Matfield's free Gender Decoder for Job Ads][8] with your posting. At the very least it will give you something to think about.
 
