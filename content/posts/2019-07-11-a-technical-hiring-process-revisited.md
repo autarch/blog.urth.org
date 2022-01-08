@@ -133,7 +133,7 @@ I'm a fan of fewer interviews with more people. This is a good time saver and ge
 
 I used to assign a note-taker who recorded the person's responses (at least in paraphrase). I thought this might be useful later, but I've reconsidered. I rarely looked back at these notes. It might make sense to note a few things, but recording all their responses is a lot of (distracting) work for someone that didn't seem to produce much value.
 
-For this interview, I typically have a group of people closest to the position participating, which should be 2-3 people on the team you're hiring for, plus their manager. If you have a small team you can have all of their future coworkers present and have 4 people or less that's great. But don't bring 10 people to an interview. That's just weird and off-putting.
+For this interview, I typically have a group of people closest to the position participating, which should be 2-3 people on the team you're hiring for, plus their manager. If you have a small team such that you can have all of their future coworkers present and have 4 people or less that's great. But don't bring 10 people to an interview. That's just weird and off-putting.
 
 Start the interview with introductions from all people present. Then try to set the tone by explaining the plan for the interview in terms of what types of questions you'll be asking, your goals for the interview, and when they will be able to ask questions (which you **must** allow a non-trivial amount of time for).
 
