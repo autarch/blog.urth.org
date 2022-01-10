@@ -17,6 +17,11 @@ new position until some time in 2022, but I've been thinking about what I want
 from next position. There are many things I'd *like*, but what are my
 priorities?
 
+**Update 2022: The more I've thought about this the more I've realized that I
+can achieve my goal of working less by aiming for higher compensaion *now* in
+order to be able work less in the future. All of which is to say that I'm no
+longer committed to find a job with a 4-day week.**
+
 This post is my attempt to organize my own thoughts about this so I can be
 more careful and systematic when I start looking for my next position.
 
