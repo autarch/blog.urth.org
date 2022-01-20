@@ -6,6 +6,9 @@ date: 2022-01-08T10:26:12-06:00
 url: /2022/01/08/my-pdf-resume-script
 ---
 
+**Edit 2022-01-19: I've since [moved the script to a public
+repo](https://github.com/autarch/houseabsolute.com/tree/master/resume).**
+
 I only want to have [one canonical resume](https://houseabsolute.com/resume/),
 and I want to keep it on my personal website. That makes it trivial to update,
 and anyone with the link can see the latest version at all times.
