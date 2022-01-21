@@ -21,7 +21,7 @@ resume. Most want a document of some kind. I didn't want to maintain a second
 copy as a Google Doc or something like that, so I wrote [a script to transform
 the web version to a
 PDF](https://gist.github.com/autarch/4b3d04bb08639eb0413c7bde8d9b65ce). ~~Here's
-a copy of the PDF version.
+a copy of the PDF version~~.
 
 When I first looked into doing this I was afraid it would be a lot of
 work. Fortunately, it turned out to be super easy[^1].  It's in Perl, of
