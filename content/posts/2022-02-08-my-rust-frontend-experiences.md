@@ -22,7 +22,6 @@ more time coding than I did at work[^1].
     src="/image/crumb.png"
     alt="The artists list in my webapp"
     caption="This almost looks like a real app but don't be fooled. Half the buttons don't work yet."
-
 %}}
 
 My goal was always to build a backend that could support multiple frontends,
