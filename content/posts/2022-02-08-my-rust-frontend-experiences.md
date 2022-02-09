@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2022-02-08T17:11:40-06:00
 url: /2022/02/08/my-rust-frontend-experiences
+discuss:
+    - site: "/r/rust"
+      uri: "https://www.reddit.com/r/rust/comments/snzb8d/my_rust_frontend_experiences/"
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/snzbhj/my_rust_frontend_experiences/"
 ---
 
 As [I mentioned in a previous post]({{< relref
