@@ -16,7 +16,7 @@ has evolved.
 
 **TLDR:**
 
-* Top tier TC _or_ a 4 day week, and both would be ideal (but unlikely).
+* Top tier TC[^2] _or_ a 4 day week, and both would be ideal (but unlikely).
 * 5+ weeks of PTO.
 * Yes++ to Rust. No Java or PHP.
 * No companies in certain fields like crypto.
@@ -73,7 +73,7 @@ that. But I think it's realistic to aim to retire in my late 50's or early
 60's.
 
 But I'd still consider a 4-day week too, with the expectation that the highest
-TC[^2] jobs will probably require 5 day weeks.
+TC jobs will probably require 5 day weeks.
 
 ## PTO
 
