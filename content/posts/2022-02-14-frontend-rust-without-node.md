@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2022-02-14T11:40:55-06:00
 url: /2022/02/14/frontend-rust-without-node
+discuss:
+    - site: "/r/rust"
+      uri: "https://www.reddit.com/r/rust/comments/ssghyx/frontend_rust_without_node/"
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/ssgi8n/frontend_rust_without_node/"
 ---
 
 When I started [my frontend Rust project]({{< relref
