@@ -33,7 +33,9 @@ EOF
 }
 
 sub slug {
-    return lc(shift) =~ s/[^a-z0-9]+/-/gr;
+    my $slug = lc(shift) =~ s/[^a-z0-9]+/-/gr;
+    $slug =~ s/-+$//;
+    return $slug;
 }
 
 main(@ARGV);
