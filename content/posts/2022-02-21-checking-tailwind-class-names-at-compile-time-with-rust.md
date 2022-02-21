@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2022-02-21T10:07:18-06:00
 url: /2022/02/21/checking-tailwind-class-names-at-compile-time-with-rust
+discuss:
+  - site: "/r/rust"
+    uri: "https://www.reddit.com/r/rust/comments/sxx7gm/checking_tailwind_class_names_at_compile_time/"
+  - site: "/r/programming"
+    uri: "https://www.reddit.com/r/programming/comments/sxx7om/checking_tailwind_class_names_at_compile_time/"
 ---
 
 At the end of [my last post, "Frontend Rust Without Node"]({{< relref
