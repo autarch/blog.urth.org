@@ -14,7 +14,7 @@ discuss:
 At the end of [my last post, "Frontend Rust Without Node"]({{< relref
 "2022-02-14-frontend-rust-without-node.md" >}}), I talked about my big issue
 with using [Tailwind CSS](https://tailwindcss.com/). **It has a huge number of
-classes, I can't remember their names, so I often typed them incorrect. This
+classes, I can't remember their names, so I often typed them incorrectly. This
 made it difficult to figure out why my styling wasn't doing what I thought.**
 
 {{< aside >}}
