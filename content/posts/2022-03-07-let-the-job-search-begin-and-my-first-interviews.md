@@ -75,6 +75,9 @@ approach.
 Now, I don't _know_ that I failed (yet), but I don't think I made a great
 impression.
 
+**Edit @ 14:45pm my time: They chose not to move forward. No surprise. But
+it's great that they're so quick to follow up.**
+
 And that's where I'm at. I have a long list of bookmarks for companies that I
 might want to apply at, so I'm going through those now and figuring out where
 to apply first.
