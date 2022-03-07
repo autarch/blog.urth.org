@@ -45,7 +45,7 @@ with the world.
 So far I've had two interviews.
 
 My first was last Wednesday (March 2) with
-[Wallarroo](https://www.wallaroo.ai/). This went well ... up until the
+[Wallaroo](https://www.wallaroo.ai/). This went well ... up until the
 interviewer told me that they expect people to work 45-50 hours per week. So I
 withdrew my application immediately.
 
