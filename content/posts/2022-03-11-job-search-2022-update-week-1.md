@@ -28,6 +28,7 @@ scoop at various places:
 - David Golden
 - Dylan Martin
 - Emily Shea
+- Heidi Gider
 - Joelle Maslak
 - Jordan Adler
 - Karen Etheridge
