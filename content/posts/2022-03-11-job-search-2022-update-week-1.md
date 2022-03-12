@@ -46,8 +46,8 @@ always a huge boost for an applicant.
 
 {{< aside >}}
 
-I had a bit of a rant about recruiters here, but this was getting long, so I
-may release that as a DLC for this post.
+I had a bit of a rant about recruiters here, but this was getting long. I may
+release that as a DLC for this post.
 
 {{< /aside >}}
 
