@@ -5,7 +5,7 @@ type: post
 date: 2019-07-11T18:45:16+00:00
 url: /2019/07/11/a-technical-hiring-process-revisited/
 ---
-**Hey,** [**ActiveState is hiring many people, and all of our engineering positions are remote-friendly!**][1] **If you like what I say here,** [**maybe you'd like to apply for one of those positions**][2]**?**
+~~**Hey,** [**ActiveState is hiring many people, and all of our engineering positions are remote-friendly!**][1] **If you like what I say here,** [**maybe you'd like to apply for one of those positions**][2]**?**~~
 
 Two years ago I wrote a post based on a talk I gave at [The Perl Conference 2017][3] titled _How to Make Your Technical Hiring Process Suck at Least 20% Less_. The video recording for that talk never worked out. However, in 2018 [I gave the talk again and it was recorded][4].
 
@@ -29,7 +29,7 @@ The hiring process starts before you receive any resumes! Step one is to get eve
 >
 > This developer will work closely with front-end developers and product management to coordinate on new features and bug fixes. They will also work with sales in a sales engineering role to understand customer requests and help sales scope quotes for implementation of these requests.
 
-You don't have to actually write this out, but you see the idea. From this write up the hiring team can get a sense of what we're looking for. We want someone with strong back-end development skills who we think can learn unusual languages quickly. They should have experience on web apps. They also need excellent communication skills and have to be able to work productively with non-technical people. Finally, if they can bring Dev Ops skills to the company that would be a big plus.
+You don't have to actually write this out, but you see the idea. From this write up the hiring team can get a sense of what we're looking for. We want someone with strong back-end development skills who we think can learn unusual languages quickly. They should have experience with web apps. They also need excellent communication skills and have to be able to work productively with non-technical people. Finally, if they can bring Dev Ops skills to the company that would be a big plus.
 
 There's no mention of domain knowledge, so presumably we think we can teach this person what they need to know in that regard.
 
