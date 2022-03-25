@@ -86,10 +86,12 @@ Everything I've read on negotiation says "don't give a minimum or a range that
 you'd accept." One blog post I read suggested saying something like "I'd
 prefer to discuss that later in the process after we discover if this is a
 good fit."  I've tried saying that in some cases but it feels pretty
-inauthentic for me. Instead, I've moved to saying "I won't give you a number
-no matter how much you say you need one because that would be poor negotiation
-on my part." I'm just terminally blunt[^1]. But no one I've said that to has
-seemed upset or offended.
+inauthentic for me. I don't like telling someone a lie that they know is a lie
+just because for some reason it's considered crass to speak the thing that we
+both know is the truth. Instead, I've moved to saying "I won't give you a
+number no matter how much you say you need one because that would be poor
+negotiation on my part."[^1]. But no one I've said that to has seemed upset
+or offended.
 
 For the record, here are some of the posts/articles I've read on negotiation:
 
@@ -121,5 +123,3 @@ solid prospects based on my interviews so far. I'll see how things go this
 week and if I get a lot more rejections, I'll probably end up applying to more
 places. But even managing the number of responses I've had so far is a lot to
 deal with. Interviews are exhausting!
-
-[^1]: To which everyone who knows me that's reading this is saying "no shit."
