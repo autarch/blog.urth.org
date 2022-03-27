@@ -115,6 +115,11 @@ CircleCI, this is totally reasonable, but I don't want to do it. So I withdrew
 my application. I feel bad about this because I should have asked the
 recruiter before I interviewed with their VP of Engineering.
 
+Finally, I spoke with the CEO of Optic. They have a pretty interesting product
+focused on making it easy to review REST API changes in a similar way as we
+now review code changes. I have another interview with an engineer there
+scheduled for next week.
+
 That's it for job search updates. I'm still getting a lot of recruiter
 contacts on LinkedIn and some emails too, but at this point I'm telling them
 I'm too busy for more interviews. I just checked and saw a message from
