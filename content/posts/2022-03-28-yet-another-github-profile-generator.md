@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2022-03-28T10:09:46-05:00
 url: /2022/03/28/yet-another-github-profile-generator
+discuss:
+  - site: "/r/rust"
+    uri: "https://www.reddit.com/r/rust/comments/tqdtyd/yet_another_github_profile_generator_written_in/"
+  - site: "/r/programming"
+    uri: "https://www.reddit.com/r/programming/comments/tqduh3/yet_another_github_profile_generator/"
 ---
 
 A number of the companies I've been interviewing with are using
