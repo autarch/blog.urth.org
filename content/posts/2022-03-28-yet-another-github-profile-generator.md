@@ -9,6 +9,8 @@ discuss:
     uri: "https://www.reddit.com/r/rust/comments/tqdtyd/yet_another_github_profile_generator_written_in/"
   - site: "/r/programming"
     uri: "https://www.reddit.com/r/programming/comments/tqduh3/yet_another_github_profile_generator/"
+  - site: "Hacker News"
+    uri: "https://blog.urth.org/2022/03/28/yet-another-github-profile-generator/"
 ---
 
 A number of the companies I've been interviewing with are using
