@@ -109,8 +109,8 @@ for the user and one for the org.
 I used [the `graphql_client` crate](https://lib.rs/crates/graphql_client) to
 make these requests. At first, I used its macros to generate code at compile
 time from my queries. But the huge downside of this is that it doesn't play
-very nicely with code completion. The generate structs are quite complex, and
-the only way for me to know what fields they contained was to use
+very nicely with code completion. The generated structs are quite complex, and
+the only way for me to find out what fields they contained was to use
 [`cargo-expand`](https://github.com/dtolnay/cargo-expand). But that didn't
 help with code completion.
 
@@ -137,6 +137,19 @@ stats collection code. But that would have the same code completion problems,
 and that feels way over-engineered. I think what would be ideal would be a way
 to tell the `graphql-client` codegen that these two types are the same
 type. But that's a PR for another day.
+
+{{< aside >}}
+
+*Edit 2022-04-02*: The _other_ other way was to write a set of `impl From<...>
+for ...` traits to convert from one type to another. [I ended up doing
+this](https://github.com/autarch/autarch/blob/master/src/convert.rs) as I did
+more work on my profile generator. Writing this code was tedious, and keeping
+it up to date will _also_ be tedious, but the resulting code is a lot simpler
+than the other two approaches I considered. Overall this is a win since the
+stats gathering code was the most complex code in this project and not
+repeating it helps eliminate a lot of silly bugs.
+
+{{< /aside >}}
 
 The final piece to make it all work is [a simple GitHub Actions workflow that
 runs the
