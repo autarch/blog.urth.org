@@ -60,8 +60,9 @@ in Europe. That's very reasonable.
 
 I talked to a recruiter at Fastly, and we agreed that it made the most sense
 to move me forward with one of the three positions I applied for first. That
-means I have to talk to a different recruiter first who handles that team. He
-reached out for my available times so hopefully that will happen next week.
+means I have to talk to a different recruiter first who handles that
+team. They reached out for my available times so hopefully that will happen
+next week.
 
 LogDNA wins the Speedy Scheduling Award, as I got through all of their
 interviews this week. It sounds like a good place to work, it's a product
@@ -84,7 +85,7 @@ interviews next Monday and Tuesday next week.
 
 I heard back from OneSignal and had a quick interview with the hiring manager
 for the position. It sounds like they're doing a lot of Rust, which is
-appealing. The interview went well, and she sent me one of those "pick an
+appealing. The interview went well, and they sent me one of those "pick an
 interview slot" links from Lever. So I went and picked one for 4:00 PM, not
 realizing that it was showing me US Pacific times! Oh, the irony. But
 seriously, Lever, maybe use another thing I worked on, MaxMind's [GeoIP
@@ -109,10 +110,10 @@ week that's already starting to get packed with interviews.
 Onna asked me when I was available to meet with some folks from their team in
 Spain, asking if I was available at 7:00 or 8:00 AM my time. That's when I
 realized I hadn't asked about work hours in either of my first two
-conversations there. So I emailed the recruiter there and asked. He said that
-they'd want me to be available every day from 9:00-12:00. Again, just like
-CircleCI, this is totally reasonable, but I don't want to do it. So I withdrew
-my application. I feel bad about this because I should have asked the
+conversations there. So I emailed the recruiter there and asked. They said
+that they'd want me to be available every day from 9:00-12:00. Again, just
+like CircleCI, this is totally reasonable, but I don't want to do it. So I
+withdrew my application. I feel bad about this because I should have asked the
 recruiter before I interviewed with their VP of Engineering.
 
 Finally, I spoke with the CEO of Optic. They have a pretty interesting product
