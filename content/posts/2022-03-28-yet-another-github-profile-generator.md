@@ -10,7 +10,7 @@ discuss:
   - site: "/r/programming"
     uri: "https://www.reddit.com/r/programming/comments/tqduh3/yet_another_github_profile_generator/"
   - site: "Hacker News"
-    uri: "https://blog.urth.org/2022/03/28/yet-another-github-profile-generator/"
+    uri: "https://news.ycombinator.com/item?id=30886620"
 ---
 
 A number of the companies I've been interviewing with are using
