@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2022-04-19T10:57:22-05:00
 url: /2022/04/19/software-job-search-2022-retrospective-coding-challenges
+discuss:
+  - site: "Hacker News"
+    uri: "https://news.ycombinator.com/item?id=31085291"
 ---
 
 I did a lot of coding and design challenges during my recent job search! A lot
