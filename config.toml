@@ -10,7 +10,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 hasCJKLanguage = false
 paginate = 10
 rssLimit = 50
-googleAnalytics = "UA-1805706-3"
 enableGitInfo = true
 
 PygmentsCodeFences = true
