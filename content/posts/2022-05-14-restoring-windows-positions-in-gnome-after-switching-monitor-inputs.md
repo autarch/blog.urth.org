@@ -1,9 +1,9 @@
 ---
-title: Restoring Windows Positions in GNOME After Switching Monitor Inputs
+title: Restoring Window Positions in GNOME After Switching Monitor Inputs
 author: Dave Rolsky
 type: post
 date: 2022-05-14T14:05:58-05:00
-url: /2022/05/14/restoring-windows-positions-in-gnome-after-switching-monitor-inputs
+url: /2022/05/14/restoring-window-positions-in-gnome-after-switching-monitor-inputs
 ---
 
 I suspect that this title makes no sense to most people, so here's the background.
