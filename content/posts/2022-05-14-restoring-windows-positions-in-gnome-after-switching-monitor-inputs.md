@@ -4,6 +4,11 @@ author: Dave Rolsky
 type: post
 date: 2022-05-14T14:05:58-05:00
 url: /2022/05/14/restoring-window-positions-in-gnome-after-switching-monitor-inputs
+discuss:
+    - site: "/r/programming"
+      uri: "https://www.reddit.com/r/programming/comments/uptkgf/restoring_window_positions_in_gnome_after/"
+    - site: "Hacker News"
+      uri: "https://news.ycombinator.com/item?id=31383892"
 ---
 
 I suspect that this title makes no sense to most people, so here's the background.
