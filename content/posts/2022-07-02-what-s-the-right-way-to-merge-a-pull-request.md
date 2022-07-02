@@ -69,8 +69,9 @@ PR. I would be open to doing this if someone really cared about getting that
 
 So what do you think? If enough people told me they wanted this I would start
 offering that when people submit a PR. Or maybe there's another approach I
-haven't though of?[^3] You can [email me](mailto:autarch@urth.org) or discuss
-this on /r/programming. (see below).
+haven't though of?[^3] You can [email me](mailto:autarch@urth.org) or [discuss
+this on
+/r/programming](https://www.reddit.com/r/programming/comments/vq1p3x/whats_the_right_way_to_merge_a_pull_request/).
 
 
 [^1]: hurr durr
