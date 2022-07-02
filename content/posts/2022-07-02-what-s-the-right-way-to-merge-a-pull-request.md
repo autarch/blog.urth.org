@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2022-07-02T15:58:02-05:00
 url: /2022/07/02/what-s-the-right-way-to-merge-a-pull-request
+discuss:
+  - site: "/r/programming"
+    uri: "https://www.reddit.com/r/programming/comments/vq1p3x/whats_the_right_way_to_merge_a_pull_request/"
 ---
 
 I've received a lot of pull requests over the years. But recently, I've been
@@ -67,7 +70,7 @@ PR. I would be open to doing this if someone really cared about getting that
 So what do you think? If enough people told me they wanted this I would start
 offering that when people submit a PR. Or maybe there's another approach I
 haven't though of?[^3] You can [email me](mailto:autarch@urth.org) or discuss
-this on /r/programming (see below).
+this on /r/programming. (see below).
 
 
 [^1]: hurr durr
