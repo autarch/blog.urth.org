@@ -23,7 +23,7 @@ sub main {
 
     $file->spew_utf8( sprintf( <<'EOF', $title, $date, $url ) );
 ---
-title: %s
+title: "%s"
 author: Dave Rolsky
 type: post
 date: %s
