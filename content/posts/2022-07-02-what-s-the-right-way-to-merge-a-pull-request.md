@@ -15,10 +15,10 @@ a [comment from
 /u/nik9000](https://www.reddit.com/r/programming/comments/vq1p3x/comment/ien5oaw/?utm_source=share&utm_medium=web2x&context=3)
 pointed me at what I think is the best solution.**
 
-GitHub has recently added a feature where the PR submitter can allow me to
-push directly to their fork. This means I can effectively edit their PR
-directly by checking it out and force pushing back to _their_ fork of the
-repo!
+GitHub has a feature where the PR submitter can allow me to push directly to
+their fork. This means I can effectively edit their PR directly by checking it
+out and force pushing back to _their_ fork of the repo! Apparently this has
+existed for a while but I didn't notice it.
 
 Thanks again to [/u/nik9000](https://www.reddit.com/user/nik9000/) for
 pointing this out.
