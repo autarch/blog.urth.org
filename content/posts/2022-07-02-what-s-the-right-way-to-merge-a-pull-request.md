@@ -9,6 +9,48 @@ discuss:
     uri: "https://www.reddit.com/r/programming/comments/vq1p3x/whats_the_right_way_to_merge_a_pull_request/"
 ---
 
+**Edit: In [the discussion on
+/r/programming](https://www.reddit.com/r/programming/comments/vq1p3x/whats_the_right_way_to_merge_a_pull_request/)
+a [comment from
+/u/nik9000](https://www.reddit.com/r/programming/comments/vq1p3x/comment/ien5oaw/?utm_source=share&utm_medium=web2x&context=3)
+pointed me at what I think is the best solution.**
+
+GitHub has recently added a feature where the PR submitter can allow me to
+push directly to their fork. This means I can effectively edit their PR
+directly by checking it out and force pushing back to _their_ fork of the
+repo!
+
+Thanks again to [/u/nik9000](https://www.reddit.com/user/nik9000/) for
+pointing this out.
+
+So I made a new saved reply on GitHub that I will use for all future PRs I
+receive. Here's the content:
+
+{{< aside >}}
+
+Hi, thanks for your PR! I'm pretty finicky about my projects (see [this blog
+post](https://blog.urth.org/2022/07/02/what-s-the-right-way-to-merge-a-pull-request/)
+for details), so I rarely merge a PR as-is. I can move forward on your PR in
+one of two ways:
+
+1. I check it out locally, fiddle with it as needed, merge it locally, and
+   simply close this PR. This will preserve at least one commit with your name
+   on it, but the PR will show up as closed in your GitHub stats.
+2. If you enable me to push directly to your fork, I can do my fiddling, then
+   force push to your fork and merge the resulting PR. Again, this will
+   preserve at least one commit with your name on it, but you _also_ get
+   credit for the PR merge in your GitHub stats. The only downside is that I
+   will be force pushing directly to your fork.
+
+Please let me know which approach you'd prefer. If I don't hear from you
+before I get around to working on this PR I'll go with option #1.
+
+Thanks again for your contribution!
+
+{{< /aside >}}
+
+----
+
 I've received a lot of pull requests over the years. But recently, I've been
 thinking about whether I merge them the right way.
 
