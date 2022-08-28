@@ -73,7 +73,7 @@ That seems a bit more sensible. I've written a lot of Perl, but I haven't
 worked on many of my Perl projects for a while.
 
 I also noticed some weirdness with the count of PRs written and merged. When I
-run the profile generate locally I get a higher number than when it runs in
+run the profile generator locally I get a higher number than when it runs in
 GitHub Actions. That's presumably because running it locally I run it with a
 GitHub API token that has access to private repos, so it sees private MongoDB
 repos.
