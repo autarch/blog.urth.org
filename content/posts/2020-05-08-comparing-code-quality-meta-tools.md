@@ -74,7 +74,7 @@ This config tells pre-commit how to execute yamllint, and on what types of files
 
 Mind blown! The pre-commit project itself maintains a huge number of plugin definitions, and some tools include pre-commit config in their repo directly.
 
-It's also worth noting that you can configure which files a plugin runs on locally. The yamllint config above just says it operates on YAML files, but you can narrow that done to specific parts of your project.
+It's also worth noting that you can configure which files a plugin runs on locally. The yamllint config above just says it operates on YAML files, but you can narrow that down to specific parts of your project.
 
 All of this is very cool but there is one big downside. You're at the mercy of the person who makes this remote repo for much of the tool's config. For one small example, the [golangci-lint repo's plugin config][24] says to run `golangci-lint run --fix`. If you didn't want the `--fix` flag you have to find [another repo that defines a golangci-lint hook][25] instead.
 
