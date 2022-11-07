@@ -84,9 +84,9 @@ mode](https://emacs-lsp.github.io/lsp-mode/) to turn Emacs into a proper IDE.
 
 Why do companies use this tool? I don't know. Looking at the feature list, it
 doesn't seem like it does anything all that amazing. Pretty much every company
-was using used Zoom for interviews, and you can share your screen with
-Zoom. CoderPad _does_ let the interviewer type as well, but there are
-solutions to that, like the [VS Code Live Share
+was using Zoom for interviews, which let syou share your screen. CoderPad
+_does_ let the interviewer type as well, but there are solutions to that, like
+the [VS Code Live Share
 extension](https://code.visualstudio.com/learn/collaboration/live-share) or
 the Chrome Remote Desktop extension.
 
