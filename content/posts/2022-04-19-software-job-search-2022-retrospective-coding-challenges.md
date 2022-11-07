@@ -93,7 +93,7 @@ the Chrome Remote Desktop extension.
 At the very least, I'd like to see more companies offer candidates a choice of
 environments. Of all the companies I interviewed with, only OneSignal _didn't
 only_ use CoderPad (or Google's internal thing). For one of the challenges we
-used CoderPad, and then for the other, I shared my screen. This was slightly
+used CoderPad, and then for the other I shared my screen. This was slightly
 awkward since I was using Zoom's in-browser version, but its screen sharing is
 broken if you try to share your whole screen[^1], but I needed to share
 multiple apps (Emacs and a terminal), so I had to quickly install the Zoom
@@ -192,12 +192,11 @@ spent more time on it than was needed because of this.
 
 As I mentioned in a previous post, I really liked how Optic structured their
 challenge. They're a remote company trying to work largely asynchronously, and
-the challenge reflects this. The challenge started with an invite to a fresh
-Git repo that included the instructions as well as some existing code. The
-challenge involved extending an existing service in the repo with some
-functionality, though you could do this by writing a new service for just the
-new bits of the API. They also invited me to a Slack channel just for this
-challenge.
+the challenge reflects this. It started with an invite to a fresh Git repo
+that included the instructions as well as some existing code. The work
+involved extending an existing service in the repo with some functionality,
+though you could do this by writing a new service for just the new bits of the
+API. They also invited me to a Slack channel just for this challenge.
 
 They encouraged me to treat this like I would if I was actually working
 there. So rather than just taking the instructions and working in isolation, I
