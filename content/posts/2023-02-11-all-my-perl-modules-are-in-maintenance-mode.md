@@ -8,7 +8,8 @@ url: /2023/02/11/all-my-perl-modules-are-in-maintenance-mode
 
 This is probably obvious to anyone paying attention to my CPAN releases over
 the past few years, but in case it's not, I wanted to state this
-clearly. **All of my Perl modules are in maintenance mode.**
+clearly. **All of [my Perl modules](https://metacpan.org/author/DROLSKY) are
+in maintenance mode.**
 
 Why? I no longer do any professional work with Perl, and I haven't done any
 since 2017 or so. All of my most enjoyable personal projects are in
