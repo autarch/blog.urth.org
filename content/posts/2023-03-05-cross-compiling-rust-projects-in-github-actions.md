@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2023-03-05T15:28:32-06:00
 url: /2023/03/05/cross-compiling-rust-projects-in-github-actions
+discuss:
+  - site: "/r/rust"
+    uri: "https://www.reddit.com/r/rust/comments/11jgkdv/cross_compiling_rust_projects_in_github_actions/"
 ---
 
 {{< aside >}}
