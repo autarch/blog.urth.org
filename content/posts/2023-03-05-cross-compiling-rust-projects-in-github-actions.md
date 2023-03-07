@@ -31,7 +31,7 @@ Replacing some of what I used from `actions-rs` was pretty easy:
   `actions-rs/audit`.
 
 But what about [`actions-rs/cargo`](https://github.com/actions-rs/cargo)? You'd think that running
-cargo wouldn't even _need_ an action, and you'd be right. Except that this action doesn't just run
+`cargo` wouldn't even _need_ an action, and you'd be right. Except that this action doesn't just run
 `cargo`. If you set its `use-cross` parameter to true it uses
 [`cross`](https://github.com/rust-embedded/cross) to do the build instead of `cargo`, making it
 trivial to cross-compile a Rust project.
