@@ -1,0 +1,21 @@
+I'll add my 2 cents. Why not?
+
+I think folks saying that features or libraries or FFI or whatnot are the issue are missing the point. Why doesn't Perl have those features or libraries or great FFI? Why _does_ Python have them?
+
+If you go back 20-25 years, I think we'd see the that the two languages were in relatively similar states. Since then, Python has pulled ahead. So what made that happen?
+
+This is simple. Python was already increasing its user base all those years ago, while Perl was not doing so at the same rate (note that I think Perl _was_ increasing at least through 2010 or so).
+
+But since all the nice features we're talking about came _after_ that time, I think there must have been something else that caused people to pick Python over Perl. It can't have been features!
+
+So what was it? I'm not sure. I can come up with a few ideas.
+
+1. The Perl community (and p5p especially) could be quite toxic back then. It took a long time for p5p to adopt even the most minimal standards of behavior. But maybe Python was just as bad back then too? I can't say.
+2. Random luck. Someone with influence at Google liked Python more than Perl so it became the blessed scripting language there. Google was a huge influence on other companies in the early 2000s. This is my "butterfly effect" theory.
+3. Python really is easier to learn and grow with. I personally don't enjoy Python that much but I've only written it recently, after 20+ years of Perl, so my experience is definitely not representative.
+
+Or maybe some combo of the 3? Some other thing entirely?
+
+But whatever it is, I think it happened 20-25 years ago. Anything that happened in the last 10-15 years seems like an effect to me, not a cause.
+
+That all said, I wonder what Python's future looks like. Most of my work these days is in Go or Rust. When I have to write Python I _really_ miss having a modern(-ish in the case of Go) type system. I honestly can't imagine going back to an untyped language in the future. Type systems used to require a lot of toil, but with modern type inferencing and LSP support, types are great!
