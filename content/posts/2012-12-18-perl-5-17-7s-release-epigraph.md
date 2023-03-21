@@ -5,7 +5,7 @@ type: post
 date: 2012-12-18T22:37:50+00:00
 url: /2012/12/18/perl-5-17-7s-release-epigraph/
 ---
-Continuing a tradition that I'm hoping other release managers will pick up (some have so far, but not all), here's some notes about the epigraph I included with the email announcing Perl 5.17.7. The epigraph itself is from R. Scott Bakker's _The Darkness That Comes Before_, which is the first in a somewhat grim speculative fiction trilogy called _The Prince of Nothing_. One of the main characters is a sort of intellectual warrior-philopsopher monk (this is bad description but it's very hard to summarize this character) who underwent very intense mental and phyisical training as a child. The epigraph is a description of some of that training.
+Continuing a tradition that I'm hoping other release managers will pick up (some have so far, but not all), here's some notes about the epigraph I included with the email announcing Perl 5.17.7. The epigraph itself is from R. Scott Bakker's _The Darkness That Comes Before_, which is the first in a somewhat grim speculative fiction trilogy called _The Prince of Nothing_. One of the main characters is a sort of intellectual warrior-philopsopher monk (this is bad description but it's very hard to summarize this character) who underwent very intense mental and physical training as a child. The epigraph is a description of some of that training.
 
 > No thought.  
 > The boy extinguished. Only a place.  
