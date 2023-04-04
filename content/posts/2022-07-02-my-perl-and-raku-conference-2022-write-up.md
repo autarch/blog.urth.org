@@ -235,7 +235,7 @@ filters
 [Watch it on YouTube](https://youtu.be/oHUIbWjphnU)
 
 I was never a fan of [`SQL::Abstract`](https://metacpan.org/pod/SQL::Abstract)
-because I find its API arbitrary and confusing. But apparently, it's also
+because I find its API arbitrary and confusing. But apparently it's also
 really slow.
 
 ### Dispatches from Raku - Daniel Sockwell
