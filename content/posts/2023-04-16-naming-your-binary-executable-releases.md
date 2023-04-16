@@ -6,7 +6,7 @@ date: 2023-04-16T17:50:12-05:00
 url: /2023/04/16/naming-your-binary-executable-releases
 discuss:
     - site: "Hacker News"
-      uri: "https://blog.urth.org/2023/04/16/naming-your-binary-executable-releases/"
+      uri: "https://news.ycombinator.com/item?id=35595021"
     - site: "/r/programming"
       uri: "https://www.reddit.com/r/programming/comments/12osmk9/naming_your_binary_executable_releases/"
 ---
