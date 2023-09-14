@@ -171,7 +171,7 @@ Here are the highlights:
    But OpenSSL fails to compile in an msys shell on Windows!
 
 And that's really it. I've extracted the generic bits and turned it into a reusable action called
-[Build Rust Projects with Cross](https://github.com/marketplace/actions/build-rust-projects-with-cross).x
+[Build Rust Projects with Cross](https://github.com/marketplace/actions/build-rust-projects-with-cross).
 
 You can see it in use in
 [the release job for `ubi`](https://github.com/houseabsolute/ubi/blob/master/.github/workflows/ci.yml#L50-L220).
