@@ -85,7 +85,7 @@ Here are all of his names in the MB data:
 | **Aliases** |
 | Kenichi Asai | Asai, Kenichi | en (primary) | Artist name |
 | 浅井健一 | あさいけんいち | ja (primary) | Artist name |
-| The sortable name here is the Kanji (Chinese characters) written entirely in Hiragana[^5] in order to make the pronunciation clear. This is how 
+| The sortable name here is the Kanji (Chinese characters) written entirely in Hiragana[^5] in order to make the pronunciation clear. 
 | 浅井&nbsp;健一 | あさい&nbsp;けんいち | ja | Artist name |
 | This one differs from the previous one by having a space between the family and personal names, which is not how Japanese is typically written. |
 | Asai Ken'ichi	| | | Search hint |
