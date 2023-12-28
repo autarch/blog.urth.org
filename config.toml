@@ -5,7 +5,7 @@ preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 hasCJKLanguage = false
 paginate = 10
@@ -48,6 +48,8 @@ defaultContentLanguage = "en"
   since = "2007"
   rssFullContent = true
   mainSections = ["post"]
+
+  author.name = "Dave Rolsky"
 
   description = "Unsubstantiated Opinions and Meaningless Blather"
 
