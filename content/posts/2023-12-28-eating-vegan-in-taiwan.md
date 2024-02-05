@@ -27,9 +27,14 @@ some of this advice won't be necessary, because you can just ask food vendors qu
 ## Tourists in Taiwan
 
 People in Taiwan are generally quite friendly with visitors. If you learn even a little Mandarin,
-people will make an effort to communicate with you. Sometimes they'll even try English, but the
+people will make an effort to communicate with you. ~~Sometimes they'll even try English, but the
 average worker in a restaurant or store probably speaks little to no English (or if they do they're
-not comfortable _speaking_ it, though they may understand some of what you say).
+not comfortable _speaking_ it, though they may understand some of what you say).~~
+
+Edit February, 2024: I've realized that there's very much a generational divide here in regards to
+English. Many younger people (< 40 or so) I've encounted in stores are willing to try speaking
+English than on my first trips to Taiwan. Older people still do not speak English. That said, you're
+still going to have a better experience as a vegan if you don't rely on English.
 
 ## Do You Need to Speak Mandarin to Eat Vegan in Taiwan?
 
@@ -83,9 +88,9 @@ but I imagine it's decent.
 Install the Google Translate
 [Android app](https://play.google.com/store/apps/details?id=com.google.android.apps.translate) or
 [iPhone app](https://apps.apple.com/us/app/google-translate/id414706506). This app is fantastic! You
-can use it for near real-time voice translations. You can also use to point your camera at written
-text to get a translation. In my recent experience this reasonable well on menus, and I'm able to
-"read" a Chinese menu, though see below for more detail on understanding menus.
+can point your camera at written text to get a translation, and in my recent experience this
+reasonably well on menus. I'm able to "read" a Chinese menu using the app, though see below for more
+detail on understanding menus.
 
 The Google Translate app also does real time (ish) audio translation, so you can have (slow)
 conversations with people in Chinese. That said, if a restaurant is very busy the staff may not be
