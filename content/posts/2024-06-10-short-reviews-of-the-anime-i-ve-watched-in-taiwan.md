@@ -232,7 +232,7 @@ were just slightly peckish.
 ## That Time I Got Reincarnated as a Slime
 
 This is the first of four increasingly ridiculous premises for an isekai that I've watched. The
-premise in the title. It's actually _very_ well done, and not what I expected based on the title.
+premise is in the title. It's actually _very_ well done, and not what I expected based on the title.
 It's got a huge and complex world full of political intrigue, and the show goes to a lot of
 unexpected places.
 
