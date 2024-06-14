@@ -5,7 +5,10 @@ type: post
 date: 2012-04-17T10:44:38+00:00
 url: /2012/04/17/git-age-report/
 ---
-At work we have some git repos that were converted from CVS originally created back in 2002 or so. A lot of the things in these repos is cruft and could be deleted. I wrote a little git command to report the most recent commit date for each thing in the current directory.
+
+At work we have some git repos that were converted from CVS originally created back in 2002 or so. A
+lot of the things in these repos is cruft and could be deleted. I wrote a little git command to
+report the most recent commit date for each thing in the current directory.
 
 ```perl
 #!/usr/bin/env perl
@@ -46,11 +49,14 @@ Nice one anonymous! I golfed it down and replaced ack with find:
 `find . -maxdepth 1 -type f |xargs -I {} git log -1 -format="%ai {}" "{}"`
 
 **Matt Lawrence, on 2012-04-23 07:21, said:**  
-Those one-liners don't solve the original problem. The entries should be sorted by date and directories should not be skipped.
+Those one-liners don't solve the original problem. The entries should be sorted by date and
+directories should not be skipped.
 
 `ls -p | xargs -I {} git log -1 -format="%ai {}" "{}" | sort -r`
 
-This one sorts by date and marks directories with a slash (like the original). Note that the original script would have mis-sorted dates earlier than 9th Sep 2001 because of string sort on unix time, but the earliest expected date was after that anyway.
+This one sorts by date and marks directories with a slash (like the original). Note that the
+original script would have mis-sorted dates earlier than 9th Sep 2001 because of string sort on unix
+time, but the earliest expected date was after that anyway.
 
 **Dave Rolsky, on 2012-04-23 09:06, said:**  
 Just to clarify, the only directories my code skips are '.' and '..'

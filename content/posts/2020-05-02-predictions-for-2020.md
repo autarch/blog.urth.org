@@ -5,25 +5,41 @@ type: post
 date: 2020-05-02T16:42:19+00:00
 url: /2020/05/02/predictions-for-2020/
 ---
-One of my favorite bloggers, Scott Alexander of [Slate Star Codex][1], regularly publishes predictions for the year. Here are [his predictions for 2020][2]. I thought it'd be fun to make some predictions of my own, following the same rules and a similar format. In 2021 I'll rate my predictive success and maybe make some more predictions.
 
-Rules (copied from SSC): all predictions are about what will be true on January 1, 2021. I’m using the full 0 – 100 range in making predictions this year, but they’ll be flipped and judged as 50 – 100 in the rating stage.
+One of my favorite bloggers, Scott Alexander of [Slate Star Codex][1], regularly publishes
+predictions for the year. Here are [his predictions for 2020][2]. I thought it'd be fun to make some
+predictions of my own, following the same rules and a similar format. In 2021 I'll rate my
+predictive success and maybe make some more predictions.
 
-So if I predict a bunch of things are 90% likely, then come 2021 if 9 out of 10 of them are true, then my predictions were very accurate. If I predict a bunch of things as 60% likely, then if 9 out of 10 are true, I was _less_ accurate. If that's confusing it'll all make sense in 2021 when I review these. I will not make any predictions at 0% or 100%. Instead my range will be 5% to 95%, but mostly in increments of 10.
+Rules (copied from SSC): all predictions are about what will be true on January 1, 2021. I’m using
+the full 0 – 100 range in making predictions this year, but they’ll be flipped and judged as 50 –
+100 in the rating stage.
+
+So if I predict a bunch of things are 90% likely, then come 2021 if 9 out of 10 of them are true,
+then my predictions were very accurate. If I predict a bunch of things as 60% likely, then if 9 out
+of 10 are true, I was _less_ accurate. If that's confusing it'll all make sense in 2021 when I
+review these. I will not make any predictions at 0% or 100%. Instead my range will be 5% to 95%, but
+mostly in increments of 10.
 
 ### Politics and Economy
 
-  1. Joe Biden is the Democratic nominee come November voting: 95%
-  2. Trump is the Republican nominee: 95%
-  3. November election proceeds normally: 95%
-      * By "normally" I simply mean that the election occurs on the scheduled day in all 50 states. I think states may also expand voting by mail, but no state will cancel or postpone the election. I do expect some states to use the pandemic as an excuse for _even more_ voter suppression, but sadly that fits the definition of "normal" in the US.
-  4. Trump wins the November election: 60%
-  5. Democrats maintain control of the House: 80%
-  6. Republicans maintain control of the Senate: 70%
-      * This is mostly based on which states are having senatorial elections this year. Nearly all of them are Republican strongholds.
-  7. US GDP for 2020 is down by at least 30% year over year compared to 2019: 80%
+1. Joe Biden is the Democratic nominee come November voting: 95%
+2. Trump is the Republican nominee: 95%
+3. November election proceeds normally: 95%
+   - By "normally" I simply mean that the election occurs on the scheduled day in all 50 states. I
+     think states may also expand voting by mail, but no state will cancel or postpone the election.
+     I do expect some states to use the pandemic as an excuse for _even more_ voter suppression, but
+     sadly that fits the definition of "normal" in the US.
+4. Trump wins the November election: 60%
+5. Democrats maintain control of the House: 80%
+6. Republicans maintain control of the Senate: 70%
+   - This is mostly based on which states are having senatorial elections this year. Nearly all of
+     them are Republican strongholds.
+7. US GDP for 2020 is down by at least 30% year over year compared to 2019: 80%
 
-At the beginning of the year, I would've given Trump a 95% re-election chance against Biden, and 90% against Sanders. I think if I were to do these predictions this coming August, I'd probably predict an even lower chance of Trump winning based on current trends.
+At the beginning of the year, I would've given Trump a 95% re-election chance against Biden, and 90%
+against Sanders. I think if I were to do these predictions this coming August, I'd probably predict
+an even lower chance of Trump winning based on current trends.
 
 ### Coronavirus
 
@@ -87,7 +103,8 @@ At the beginning of the year, I would've given Trump a 95% re-election chance ag
   </li>
 </ol>
 
-When I talk about Minnesota's stay at home orders, I'm _not_ including social distancing orders like we had starting on March 17.
+When I talk about Minnesota's stay at home orders, I'm _not_ including social distancing orders like
+we had starting on March 17.
 
 ### Personal
 
@@ -151,21 +168,33 @@ When I talk about Minnesota's stay at home orders, I'm _not_ including social di
 
 ### Longer Term Predictions
 
-Coronavirus has gotten me thinking a lot about the future. A lot of this is because I keep seeing people on social media make hilarious (to me) statements about how coronavirus will change everything. We'll rethink capitalism. We'll establish single payer health care. Trump's supporters will realize he sucks. Everyone will go vegan to lower pandemic risk.
+Coronavirus has gotten me thinking a lot about the future. A lot of this is because I keep seeing
+people on social media make hilarious (to me) statements about how coronavirus will change
+everything. We'll rethink capitalism. We'll establish single payer health care. Trump's supporters
+will realize he sucks. Everyone will go vegan to lower pandemic risk.
 
-My prediction is that none of these things will happen. Humanity will learn very little from this crisis, and Americans will learn even less.
+My prediction is that none of these things will happen. Humanity will learn very little from this
+crisis, and Americans will learn even less.
 
 So here's some predictions for the next five years and 7 months, to be evaluated at the end of 2025.
 
-  1. The US has invested more in pandemic preparation: 90%
-  2. This investment is done well enough to be meaningful, per the evaluation of experts in the fields of epidemiology and public health: 30%
-      * This will be a really hard one to judge. If I were more ambitious I'd try to establish a panel of judges right now, but I'm too lazy.
-  3. The pandemic resulted in significant changes to the US re: capitalism vs social democracy: 5%
-      * This could be a major overhaul of the unemployment system, some sort of federal universal basic income (not a one time check), or a major change to the costs of higher education, as well as other things I'm not thinking of yet. Note that state-by-state changes will not count unless at least 2/3 of states have made similar changes.
-  4. The US has a universal health care system that results in coverage for all _and_ significantly lower costs (to a level on par with other developed countries in Europe and Asia): 5%
-      * We might have some sort of half-assed opt-in Medicare for All plan, but health care costs will continue to go up at an alarming rate and many people will still lack coverage.
-  5. Political polarization in the US is significantly reduced, per public polling: 10%
-      * Again, I'm too lazy to pick the exact measurement in advance, but I'll look at some set of 1+ polls on this topic that have been done in the same way from at least 2020 to 2025.
+1. The US has invested more in pandemic preparation: 90%
+2. This investment is done well enough to be meaningful, per the evaluation of experts in the fields
+   of epidemiology and public health: 30%
+   - This will be a really hard one to judge. If I were more ambitious I'd try to establish a panel
+     of judges right now, but I'm too lazy.
+3. The pandemic resulted in significant changes to the US re: capitalism vs social democracy: 5%
+   - This could be a major overhaul of the unemployment system, some sort of federal universal basic
+     income (not a one time check), or a major change to the costs of higher education, as well as
+     other things I'm not thinking of yet. Note that state-by-state changes will not count unless at
+     least 2/3 of states have made similar changes.
+4. The US has a universal health care system that results in coverage for all _and_ significantly
+   lower costs (to a level on par with other developed countries in Europe and Asia): 5%
+   - We might have some sort of half-assed opt-in Medicare for All plan, but health care costs will
+     continue to go up at an alarming rate and many people will still lack coverage.
+5. Political polarization in the US is significantly reduced, per public polling: 10%
+   - Again, I'm too lazy to pick the exact measurement in advance, but I'll look at some set of 1+
+     polls on this topic that have been done in the same way from at least 2020 to 2025.
 
- [1]: https://slatestarcodex.com/
- [2]: https://slatestarcodex.com/2020/04/29/predictions-for-2020/
+[1]: https://slatestarcodex.com/
+[2]: https://slatestarcodex.com/2020/04/29/predictions-for-2020/

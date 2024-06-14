@@ -5,10 +5,10 @@ type: post
 date: 2023-04-16T17:50:12-05:00
 url: /2023/04/16/naming-your-binary-executable-releases
 discuss:
-    - site: "Hacker News"
-      uri: "https://news.ycombinator.com/item?id=35595021"
-    - site: "/r/programming"
-      uri: "https://www.reddit.com/r/programming/comments/12osmk9/naming_your_binary_executable_releases/"
+  - site: "Hacker News"
+    uri: "https://news.ycombinator.com/item?id=35595021"
+  - site: "/r/programming"
+    uri: "https://www.reddit.com/r/programming/comments/12osmk9/naming_your_binary_executable_releases/"
 ---
 
 [My universal binary installer tool, `ubi`](https://github.com/houseabsolute/ubi), has to deal with
@@ -82,4 +82,5 @@ please don't skip this. It will _still_ be useful for tools like `ubi` to have t
 filename. And who knows, you might end up expanding the set of covered platforms in the future.
 
 [^1]: I'm mostly _against_ making the world less weird, but I'll compromise for machine readability.
+
 [^2]: I am definitely _not_ an alien or a dog in a human suit and I can prove it. Woof.

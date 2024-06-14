@@ -5,17 +5,24 @@ type: post
 date: 2018-03-22T15:11:19+00:00
 url: /2018/03/22/my-perl-conference-tutorials/
 ---
+
 I'm doing two tutorials this year at [The Perl Conference!][1]
 
-On Thursday, June 21 I'll be offering my [Introduction to Moose][2] course once again. If you want learn more about using Moose this is a great opportunity. I'd also note that most of what I cover applies to Moo, so what you'll learn is useful in many situations.
+On Thursday, June 21 I'll be offering my [Introduction to Moose][2] course once again. If you want
+learn more about using Moose this is a great opportunity. I'd also note that most of what I cover
+applies to Moo, so what you'll learn is useful in many situations.
 
-On Friday, June 22 I'm bringing back my [Introduction to Go][3] course. I did this in 2015 and then put it on the shelf as I wasn't doing so much Go for a while. But now I'm knee deep in Go again so it seemed like a good time to bring the course back. This course is aimed at folks who know another language (like Perl, for example) but don't know anything about Go.
+On Friday, June 22 I'm bringing back my [Introduction to Go][3] course. I did this in 2015 and then
+put it on the shelf as I wasn't doing so much Go for a while. But now I'm knee deep in Go again so
+it seemed like a good time to bring the course back. This course is aimed at folks who know another
+language (like Perl, for example) but don't know anything about Go.
 
 Both courses cost $165, which is a great deal in my humble opinion.
 
-You can [purchase your tutorial tickets through Eventbrite][4], along with your ticket to the main portion of the conference. I hope to see you there!
+You can [purchase your tutorial tickets through Eventbrite][4], along with your ticket to the main
+portion of the conference. I hope to see you there!
 
- [1]: https://perlconference.us/tpc-2018-slc/
- [2]: https://perlconference.us/tpc-2018-slc/session/introduction-to-moose/
- [3]: https://perlconference.us/tpc-2018-slc/session/introduction-to-go/
- [4]: https://www.eventbrite.com/e/the-perl-conference-in-salt-lake-city-2018-tickets-41850611305
+[1]: https://perlconference.us/tpc-2018-slc/
+[2]: https://perlconference.us/tpc-2018-slc/session/introduction-to-moose/
+[3]: https://perlconference.us/tpc-2018-slc/session/introduction-to-go/
+[4]: https://www.eventbrite.com/e/the-perl-conference-in-salt-lake-city-2018-tickets-41850611305

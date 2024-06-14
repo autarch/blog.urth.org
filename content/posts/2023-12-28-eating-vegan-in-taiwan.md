@@ -261,6 +261,7 @@ marry one. That's pretty extreme but you may want to consider this option if you
 finding vegan food in Taiwan.
 
 [^1]: I will explain why this phrase is useful below.
+
 [^2]:
     A great demonstration of how deontological ethics fails without some consequentialism to go with
     it.
