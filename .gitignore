@@ -1,4 +1,5 @@
 /.hugo_build.lock
 /.log
+/node_modules
 /public
 /resources/_gen

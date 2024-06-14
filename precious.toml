@@ -1,0 +1,37 @@
+exclude = ["node_modules/**/*", "themes/**/*"]
+
+[commands.prettier]
+type = "both"
+include = ["**/*.md", "**/*.yml"]
+cmd = [
+    "./node_modules/.bin/prettier",
+    "--no-config",
+    "--prose-wrap",
+    "always",
+    "--print-width",
+    "100",
+]
+lint_flags = "--check"
+tidy_flags = "--write"
+ok_exit_codes = 0
+lint_failure_exit_codes = 1
+ignore_stderr = "Code style issues"
+
+[commands.omegasort-gitignore]
+type = "both"
+include = "**/.gitignore"
+cmd = ["omegasort", "--sort=path", "--unique"]
+lint_flags = "--check"
+tidy_flags = "--in-place"
+ok_exit_codes = 0
+lint_failure_exit_codes = 1
+expect_stderr = true
+
+[commands.taplo]
+type = "both"
+include = "**/*.toml"
+cmd = ["taplo", "format", "--option", "indent_string=    ", "--option", "column_width=100"]
+lint_flags = "--check"
+ok_exit_codes = 0
+lint_failure_exit_codes = 1
+ignore_stderr = "INFO taplo.+"
