@@ -1,11 +1,9 @@
 baseURL = "https://blog.urth.org/"
 languageCode = "en-us"
 title = "House Absolute(ly Pointless)"
-preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
-disableKinds = ["taxonomy"]
 
 hasCJKLanguage = false
 paginate = 10
