@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2024-10-27T15:49:39-05:00
 url: /2024/10/27/my-new-github-action-for-releasing-rust-projects
+discuss:
+  - site: "/r/rust"
+    uri: "https://new.reddit.com/r/rust/comments/1gdlc7n/my_new_github_action_for_releasing_rust_projects/"
 ---
 
 A while back I created a [new GitHub Action for releasing Rust projects](https://github.com/marketplace/actions/release-rust-project-binaries-as-github-releases). This works nicely with my [Rust Cross Action](https://github.com/marketplace/actions/build-rust-projects-with-cross) to let me automate away most of the toil from releasing new versions of my Rust CLI tools like [`precious`](https://github.com/houseabsolute/precious), [`ubi`](https://github.com/houseabsolute/ubi), and [`omegasort`](https://github.com/houseabsolute/omegasort).
