@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2024-12-21T22:20:50-06:00
 url: /2024/12/21/my-actions-rust-cross-action-now-has-built-in-caching
+discuss:
+  - site: "/r/rust"
+    uri: "https://www.reddit.com/r/rust/comments/1hjrcd3/my_actionsrustcross_action_now_has_builtin_caching/"
 ---
 
 I just release v1.0.0 Beta 1 of [my `actions-rust-cross` GitHub Action](https://github.com/houseabsolute/actions-rust-cross/tree/v1.0.0-beta1). The big headline feature in this release is integration with the [`Swatinem/rust-cache`](https://github.com/Swatinem/rust-cache) action. This will include the `target` you provide to `actions-rust-cross` as part of the cache key, which from my testing means that it only caches the compilation output relevant to the target platform.
