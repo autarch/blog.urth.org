@@ -51,9 +51,9 @@ I've received a lot of pull requests over the years. But recently, I've been thi
 I merge them the right way.
 
 When I wrote my [my GitHub profile generator]({{< relref
-"2022-03-28-yet-another-github-profile-generator.md" >}}), one of the stats I had it generate was how
-many of my pull requests were merged. [My profile](https://github.com/autarch) currently says I've created
-562 PRs, of which 420[^1] have been merged.
+"2022-03-28-yet-another-github-profile-generator.md" >}}), one of the stats I had it generate was
+how many of my pull requests were merged. [My profile](https://github.com/autarch) currently says
+I've created 562 PRs, of which 420[^1] have been merged.
 
 But in fact _more_ than 420 have been merged in some form. It's just that for some of them, the
 maintainer fiddled a bit with the submission and merged it locally via the CLI, then closed the PR.

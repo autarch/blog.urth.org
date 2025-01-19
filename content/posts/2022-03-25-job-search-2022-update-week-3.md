@@ -65,12 +65,12 @@ still, good job, LogDNA!
 
 I met with the Lead at MongoDB for the team I'd applied to and we did a live coding exercise. I know
 I've said these are the worst in [my writing on
-hiring]({{< relref "2019-07-11-a-technical-hiring-process-revisited.md" >}}), but ironically this was
-fine for me. I didn't find it too stressful because the task at hand was something very relevant to my
-actual experience, not a I-will-never-do-this-at-work CS problem. Also, it was a collaborative interaction,
-as opposed to someone just observing me. And finally, I was explicitly told to go ahead and Google things
-(unlike my Google interview, more irony). So it went fine. I'm scheduled for several more hours of interviews
-next Monday and Tuesday next week.
+hiring]({{< relref "2019-07-11-a-technical-hiring-process-revisited.md" >}}), but ironically this
+was fine for me. I didn't find it too stressful because the task at hand was something very relevant
+to my actual experience, not a I-will-never-do-this-at-work CS problem. Also, it was a collaborative
+interaction, as opposed to someone just observing me. And finally, I was explicitly told to go ahead
+and Google things (unlike my Google interview, more irony). So it went fine. I'm scheduled for
+several more hours of interviews next Monday and Tuesday next week.
 
 I heard back from OneSignal and had a quick interview with the hiring manager for the position. It
 sounds like they're doing a lot of Rust, which is appealing. The interview went well, and they sent

@@ -140,8 +140,8 @@ from my original predictions post.
    - **Yup. [I did this one]({{< relref
      "2020-12-05-twenty-years-of-monthly-cpan-releases.md" >}}).**
 1. My weight is 210 pounds or below and has been since November 1: 70%
-   - See [I Weigh Way Less]({{< relref "2020-02-11-i-weigh-way-less.md" >}}) for more than you ever wanted
-     to know about this topic. For reference I was at 216 last time I weighed myself.
+   - See [I Weigh Way Less]({{< relref "2020-02-11-i-weigh-way-less.md" >}}) for more than you ever
+     wanted to know about this topic. For reference I was at 216 last time I weighed myself.
    - **Yup. My weight has been around 201-204 most times that I've checked over the past few months.
      There were a couple of days where it dipped below 200, but that was very temporary. I'm pretty
      happy with where I've gotten to. I don't know how I'd lose significantly more weight at this

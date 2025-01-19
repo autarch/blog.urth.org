@@ -7,8 +7,9 @@ url: /2022/02/11/what-do-i-want-from-my-next-job-2022-edition
 ---
 
 The [last time I wrote about this]({{< relref
-"2021-10-15-what-do-i-want-from-my-next-job-.md" >}}) was 8 days after I left my last position, at [ActiveState](https://www.activestate.com/).
-Since writing that post, I've continued to think about what I want, and my thinking has evolved.
+"2021-10-15-what-do-i-want-from-my-next-job-.md" >}}) was 8 days after I left my last position, at
+[ActiveState](https://www.activestate.com/). Since writing that post, I've continued to think about
+what I want, and my thinking has evolved.
 
 ---
 

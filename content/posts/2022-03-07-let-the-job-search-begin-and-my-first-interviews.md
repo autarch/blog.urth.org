@@ -58,11 +58,11 @@ redo my work using X.
 
 I've already [written a fair bit about interviewing]({{< relref
 "2019-07-11-a-technical-hiring-process-revisited.md" >}}) and the issues with live coding exercises.
-If I'd been doing this on my own with less time pressure, I think I would've hit on X in a reasonable
-time frame. But in a live 45-minute window it felt like either I picked the right approach immediately
-or I failed. I don't think that's a great screening tool, since it has a lot of false negatives. But
-the top employers like Google do just fine with a lot of false negatives, so it makes sense that they'd
-stick with this approach.
+If I'd been doing this on my own with less time pressure, I think I would've hit on X in a
+reasonable time frame. But in a live 45-minute window it felt like either I picked the right
+approach immediately or I failed. I don't think that's a great screening tool, since it has a lot of
+false negatives. But the top employers like Google do just fine with a lot of false negatives, so it
+makes sense that they'd stick with this approach.
 
 Now, I don't _know_ that I failed (yet), but I don't think I made a great impression.
 

@@ -7,9 +7,9 @@ url: /2020/12/19/the-covid-urth-org-rube-goldberg-machine
 ---
 
 My last post was about my [local COVID tracker tool]({{< relref
-"2020-12-12-my-local-covid-stats-tracker" >}}). While it worked well, I found having to re-run the `report.pl`
-script every time I wanted an update annoying. Plus, I wanted to share this on Facebook, but I have non-technical
-friends who would not be able to run it for themselves.
+"2020-12-12-my-local-covid-stats-tracker" >}}). While it worked well, I found having to re-run the
+`report.pl` script every time I wanted an update annoying. Plus, I wanted to share this on Facebook,
+but I have non-technical friends who would not be able to run it for themselves.
 
 So I decided to put up a hosted version, but I challenged myself. I wanted it to run entirely on
 someone else's machines. And I didn't want to pay for it.

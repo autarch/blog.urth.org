@@ -1,16 +1,9 @@
-exclude = ["node_modules/**/*", "themes/**/*"]
+exclude = ["themes/**/*"]
 
 [commands.prettier]
 type = "both"
 include = ["**/*.md", "**/*.yml"]
-cmd = [
-    "./node_modules/.bin/prettier",
-    "--no-config",
-    "--prose-wrap",
-    "always",
-    "--print-width",
-    "100",
-]
+cmd = ["prettier", "--no-config", "--prose-wrap", "always", "--print-width", "100"]
 lint_flags = "--check"
 tidy_flags = "--write"
 ok_exit_codes = 0
@@ -26,6 +19,14 @@ tidy_flags = "--in-place"
 ok_exit_codes = 0
 lint_failure_exit_codes = 1
 expect_stderr = true
+
+[commands.typos]
+type = "lint"
+include = "**/*"
+cmd = "typos"
+invoke = "once"
+ok-exit-codes = 0
+lint-failure-exit-codes = 2
 
 [commands.taplo]
 type = "both"

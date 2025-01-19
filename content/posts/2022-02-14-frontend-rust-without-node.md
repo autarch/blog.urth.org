@@ -12,10 +12,10 @@ discuss:
 ---
 
 When I started [my frontend Rust project]({{< relref
-"2022-02-08-my-rust-frontend-experiences.md" >}}), I used a [Seed](https://seed-rs.org/) project [starter template](https://github.com/seed-rs/seed-quickstart-webpack)
-that included [Tailwind](https://tailwindcss.com/), [webpack](https://webpack.js.org/), some more JS
-frontend dev stuff, and some [TypeScript](https://www.typescriptlang.org/) glue code that launches the
-app.
+"2022-02-08-my-rust-frontend-experiences.md" >}}), I used a [Seed](https://seed-rs.org/) project
+[starter template](https://github.com/seed-rs/seed-quickstart-webpack) that included
+[Tailwind](https://tailwindcss.com/), [webpack](https://webpack.js.org/), some more JS frontend dev
+stuff, and some [TypeScript](https://www.typescriptlang.org/) glue code that launches the app.
 
 This was a _lot_ of stuff. Stuff for me to install. Stuff for me to run. Stuff for me to (not)
 understand. So. Much. Stuff!

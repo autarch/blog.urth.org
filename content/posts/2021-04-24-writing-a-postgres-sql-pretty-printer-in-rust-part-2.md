@@ -12,10 +12,10 @@ discuss:
 ---
 
 It's been a few weeks since my last post on this project. I was distracted by [Go
-reflection]({{< relref "2021-03-27-down-the-golang-nil-rabbit-hole" >}}) and [security issues
-with Perl IP address modules]({{< relref
-"2021-03-29-security-issues-in-perl-ip-address-distros" >}}). But now I can get back to my Postgres SQL
-pretty printer project[^1].
+reflection]({{< relref "2021-03-27-down-the-golang-nil-rabbit-hole" >}}) and [security issues with
+Perl IP address modules]({{< relref
+"2021-03-29-security-issues-in-perl-ip-address-distros" >}}). But now I can get back to my Postgres
+SQL pretty printer project[^1].
 
 One of the challenges for this project has been figuring out the best way to test it. I tried a
 standard unit test approach before giving up and settling on integration testing instead, so in this

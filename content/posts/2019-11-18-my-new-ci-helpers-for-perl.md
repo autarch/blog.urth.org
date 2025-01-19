@@ -49,11 +49,11 @@ means that some of my projects take several hours to finish a single build. [See
 DateTime.pm for an example][3]. It took just under 2 hours and 41 minutes!~~
 
 [_Edit 2019-12-25_: I was looking at the wrong number in travis. The 2 hour, 41 minute time is the
-total amount of machine time, but it doesn't account for parallelism. Travis is also
-reporting another time of 5 minutes, 41 seconds. But clearly the run took longer than that. I think
-that may be because one of the jobs was restarted, so now it just reports that job. Looking at other
-DateTime builds I see run times of around 33 minutes. I don't know that this includes time waiting
-in the queue, however, which can be substantial if you kick off multiple builds.]
+total amount of machine time, but it doesn't account for parallelism. Travis is also reporting
+another time of 5 minutes, 41 seconds. But clearly the run took longer than that. I think that may
+be because one of the jobs was restarted, so now it just reports that job. Looking at other DateTime
+builds I see run times of around 33 minutes. I don't know that this includes time waiting in the
+queue, however, which can be substantial if you kick off multiple builds.]
 
 And that's just on Linux. I really want to be testing on Windows and macOS too. But adding that to
 my Travis builds is just going to make builds even slower.
@@ -84,9 +84,9 @@ I **love** [CircleCI][4]. I think from a feature standpoint it is hands down **t
 option. We use it at `$work` and it's great. There are a number of things I like about it. Starting
 up Docker containers is blazing fast, usually under 10 seconds, whereas Azure takes anywhere ~~from
 30-60 seconds~~ [_Edit 2020-04-25: as of 2020 it looks like Azure takes 20-22 seconds to start a
-container_]. It also supports SSHing into a build environment **on all three platforms**, which greatly
-reduces the pain of debugging CI issues. And their [orb system][5] for sharing templates and tasks is
-really nicely done.
+container_]. It also supports SSHing into a build environment **on all three platforms**, which
+greatly reduces the pain of debugging CI issues. And their [orb system][5] for sharing templates and
+tasks is really nicely done.
 
 **But** their FOSS offering is quite anemic. Their pricing model is based on a credit system, where
 each minute of build time costs a certain number of credits based on OS and underlying VM size. FOSS

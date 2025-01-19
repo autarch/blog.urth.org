@@ -12,9 +12,9 @@ discuss:
 ---
 
 As [I mentioned in a previous post]({{< relref
-"2021-12-22-working-with-musicbrainz-name-data.md" >}}), I've been working on a music player for a while
-as a fun side project. Though since I've been jobless this has actually been my primary project, and
-I've probably spent more time coding than I did at work[^1].
+"2021-12-22-working-with-musicbrainz-name-data.md" >}}), I've been working on a music player for a
+while as a fun side project. Though since I've been jobless this has actually been my primary
+project, and I've probably spent more time coding than I did at work[^1].
 
 {{%
     figure

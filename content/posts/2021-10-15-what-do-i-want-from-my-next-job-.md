@@ -12,9 +12,9 @@ discuss:
 ---
 
 I'm currently enjoying [being unemployed]({{< relref
-"2021-10-07-let-the-funemployment-begin" >}}), and I won't be looking for a new position until some time
-in 2022, but I've been thinking about what I want from next position. There are many things I'd _like_,
-but what are my priorities?
+"2021-10-07-let-the-funemployment-begin" >}}), and I won't be looking for a new position until some
+time in 2022, but I've been thinking about what I want from next position. There are many things I'd
+_like_, but what are my priorities?
 
 **Update 2022: The more I've thought about this the more I've realized that I can achieve my goal of
 working less by aiming for higher compensaion _now_ in order to be able work less in the future. All

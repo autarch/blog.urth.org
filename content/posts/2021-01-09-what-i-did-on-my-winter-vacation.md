@@ -43,8 +43,9 @@ which will happen later this year, after some renovations to our part of the dup
 
 I've [posted about this]({{< relref
 "2020-12-12-my-local-covid-stats-tracker.md" >}}) a [couple times]({{< relref
-"2020-12-19-my-new-rube-goldberg-machine.md" >}}) already. I made an update to track more counties, as
-well as to add a graph [showing the seven-day new case average per 10,000 people](https://covid.urth.org).
+"2020-12-19-my-new-rube-goldberg-machine.md" >}}) already. I made an update to track more counties,
+as well as to add a graph
+[showing the seven-day new case average per 10,000 people](https://covid.urth.org).
 
 The new graph by population made it clear that the counties near me were doing _worse_ than the
 state as a whole. The original graph, showing just the raw count of new cases, made it look like the

@@ -22,7 +22,8 @@ So it's basically been a month for all of these now.
 This past week also had quite a few interviews, as well as some interesting developments that
 started on Saturday, April 2. That day, someone shared [my blog post about my GitHub profile
 generator]({{< relref
-"2022-03-28-yet-another-github-profile-generator.md" >}}) on [Hacker News](https://news.ycombinator.com/item?id=30886620)[^1].
+"2022-03-28-yet-another-github-profile-generator.md" >}}) on
+[Hacker News](https://news.ycombinator.com/item?id=30886620)[^1].
 
 A hiring manager at Meta (aka Facebook) saw this post, realized I was in the midst of my job search,
 and reached out to me to see if I was interested in talking to them. I had kind of ruled Meta out

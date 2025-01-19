@@ -451,8 +451,8 @@ I'll never typo a class name again. Hah!
     tool is and how it's used.
 
 [^2]:
-    Which you can automate with [Trunk](https://trunkrs.dev/). See my ["Frontend Rust Without
-    Node" post]({{< relref
+    Which you can automate with [Trunk](https://trunkrs.dev/). See my ["Frontend Rust Without Node"
+    post]({{< relref
     "2022-02-14-frontend-rust-without-node.md" >}}) for example code.
 
 [^3]:

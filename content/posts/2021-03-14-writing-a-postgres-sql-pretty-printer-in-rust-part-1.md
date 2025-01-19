@@ -20,8 +20,8 @@ learned about Rust and Postgres SQL, as well as some things I still don't know.
 - Part 1: **Introduction to the project and generating Rust with Perl**
 - Part 1.5: [More about enum wrappers and Serde's externally tagged enum representation]({{< relref
   "2021-03-21-writing-a-postgres-sql-pretty-printer-in-rust-part-1-5" >}})
-- Part 2: [How I'm testing the pretty printer and how I generate tests from the
-  Postgres docs]({{< relref
+- Part 2: [How I'm testing the pretty printer and how I generate tests from the Postgres
+  docs]({{< relref
   "2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2" >}})
 
 ## Why?
@@ -32,7 +32,8 @@ just because of code formatting is not okay. Making them manually fiddle with fo
 good use of their time (or mine).
 
 This is why we have linters, tidiers, and [meta code quality tools]({{< relref
-"2020-05-08-comparing-code-quality-meta-tools.md" >}}) like [my precious](https://github.com/houseabsolute/precious).
+"2020-05-08-comparing-code-quality-meta-tools.md" >}}) like
+[my precious](https://github.com/houseabsolute/precious).
 
 Combine these with a commit hook and CI checks for code cleanliness, and I never have to reject a PR
 for formatting. Instead, it gets auto-"rejected" by `git commit` or CI, and I'm off the hook.
@@ -258,8 +259,8 @@ This post is already quite long, but there are many other things I've learned wh
 project that I plan to write about, including:
 
 - Diving into the Postgres grammar to understand the AST.
-- [How I'm approaching tests for this project, and how I generate test cases from the
-  Postgres documentation]({{< relref
+- [How I'm approaching tests for this project, and how I generate test cases from the Postgres
+  documentation]({{< relref
   "2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2" >}}).
 - The benefits of Rust pattern-matching for working with ASTs.
 - How terrible my solution to generating SQL in the pretty printer is, and how I wonder if there's a

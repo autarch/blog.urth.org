@@ -26,8 +26,8 @@ So this week I will go into more detail on exactly why I had to do this.
 - Part 1: [Introduction to the project and generating Rust with Perl]({{< relref
   "2021-03-14-writing-a-postgres-sql-pretty-printer-in-rust-part-1" >}})
 - Part 1.5: **More about enum wrappers and serde's externally tagged enum representation**
-- Part 2: [How I'm testing the pretty printer and how I generate tests from the
-  Postgres docs]({{< relref
+- Part 2: [How I'm testing the pretty printer and how I generate tests from the Postgres
+  docs]({{< relref
   "2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2" >}})
 
 ## A Tagged Enum Example
@@ -282,8 +282,7 @@ AST that I can then turn into a string.
 Here's a list of what I want to cover in future posts.
 
 - Diving into the Postgres grammar to understand the AST.
-- [How I'm approaching tests for this project, and how I generate test cases from the
-  Postgres
+- [How I'm approaching tests for this project, and how I generate test cases from the Postgres
   documentation]({{< relref "2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2" >}}).
 - The benefits of Rust pattern-matching for working with ASTs.
 - How terrible my initial solution to generating SQL in the pretty printer is, and how I fixed it
