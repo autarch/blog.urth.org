@@ -205,10 +205,10 @@ Google Maps is used widely by Taiwanese people, so there's a lot of reviews for 
 also the most accurate resource I've found for determining whether a business in still in operation.
 
 You may want to use [Happy Cow](https://www.happycow.net/asia/taiwan/). From what I can tell, Happy
-Cow is mostly updated by English-speaking people who don't live here long, so it's often out of
-date, with many listings for places that are closed, while missing many great options. I would
-recommend that you always look a place up on Google Maps to confirm that it still exists before
-going there. Happy Cow is also often wrong about vegetarian versus vegan.
+Cow is mostly updated by English-speaking people, most of whom are here for relatively short periods
+of time, so it's often out of date, with many listings for places that are closed, while missing
+many great options. I would recommend that you always look a place up on Google Maps to confirm that
+it still exists before going there. Happy Cow is also often wrong about vegetarian versus vegan.
 
 If you Google for "vegan food in Taiwan" you'll find a lot of blog posts. Again, these are often
 quite out of date. Confirm that the places mentioned still exist before going there!
@@ -233,8 +233,8 @@ first.
 
 Unlike in the US, convenience stores here in Taiwan actually have good food! A lot of them have
 vegan items. That said, from what I've read online, even if an item has English "vegan" or
-"plant-based" on the label, it may not actually be vegan. You can use Google Translate on the
-ingredients to double check.
+"plant-based" on the label, it may not actually be vegan (though it's probably vegetarian). You can
+use Google Translate on the ingredients to double check.
 
 ## Advice About Specific Food Items
 
