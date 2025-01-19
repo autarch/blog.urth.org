@@ -54,8 +54,8 @@ good anime. This is a very sweet show about some kids in high school and their r
 also notable for including a trans character and not making this a focus of the show. She's just
 there. I haven't really seen that before.
 
-**Rating : 4** (I'm tempted to say 4.5 but then I might well use a scale of 1-10, which I don't want
-to do, so 4 it is.)
+**Rating : 4** (I'm tempted to say 4.5 but then I might as well use a scale of 1-10, which I don't
+want to do, so 4 it is.)
 
 ## A Sign of Affection
 
