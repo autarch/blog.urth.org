@@ -23,9 +23,9 @@ annoying because what I'd really like to see in many cases is a Latin transcript
 translation instead of the original. For reference, a transcription is a phonetic representation of
 a name.
 
-I prefer to see a transcribed name like ["Ryokushaka"](https://www.ryokushaka.com/) instead of "緑黄
-色社会". I also prefer the transcription over the translation, "Green Yellow Society". But it's nice
-to be able to _see_ the Japanese name as well, especially if I'm trying to search the web for
+I prefer to see a transcribed name like ["Ryokushaka"](https://www.ryokushaka.com/) instead of
+"緑黄色社会". I also prefer the transcription over the translation, "Green Yellow Society". But it's
+nice to be able to _see_ the Japanese name as well, especially if I'm trying to search the web for
 information about the artist or search YouTube for videos.
 
 So what I really want is a tool that can handle multiple canonical values for each name or title,
@@ -65,23 +65,24 @@ the family name.
 
 Here are all of his names in the MB data:
 
+<!-- prettier-ignore-start -->
+<!-- prettier absolutely butchers this table -->
 | **Name**                                                                                    | **Sortable name** | **Locale**   | **Alias type** |
 | ------------------------------------------------------------------------------------------- | ----------------- | ------------ | -------------- |
 | **Primary name**                                                                            |
-| 浅井健一                                                                                    | Asai, Kenichi     |
+| 浅井健一                                                                                     | Asai, Kenichi     |
 | As I noted, MB has a policy of always using a Latin script sortable name for primary names. |
 | **Aliases**                                                                                 |
 | Kenichi Asai                                                                                | Asai, Kenichi     | en (primary) | Artist name    |
 | 浅井健一                                                                                    | あさいけんいち    | ja (primary) | Artist name    |
-
-| The sortable name here is the Kanji (Chinese characters) written entirely in Hiragana[^5] in order
-to make the pronunciation clear. | 浅井&nbsp;健一 | あさい&nbsp;けんいち | ja | Artist name | | This
-one differs from the previous one by having a space between the family and personal names, which is
-not how Japanese is typically written. | | Asai Ken'ichi | | | Search hint | | An alternate Latin
-transcription of his personal name. There are many different Romanization systems for Japanese. | |
-Benzie | ベンジー | | Artist name | | A nickname of his, which as far as I can tell is not used for
-any music credits, so this should probably be a Search hint instead | | **Artist credits** | | Asai
-Kenichi | | Kenichi Asai | | Santana feat. Kenichi Asai | | 浅井健一 |
+| The sortable name here is the Kanji (Chinese characters) written entirely in Hiragana[^5] in order to make the pronunciation clear. |
+| 浅井&nbsp;健一 | あさい&nbsp;けんいち | ja | Artist name |
+| This one differs from the previous one by having a space between the family and personal names, which is not how Japanese is typically written. |
+| Asai Ken'ichi | | | Search hint | | An alternate Latin transcription of his personal name. There are many different Romanization systems for Japanese. |
+| Benzie | ベンジー | | Artist name | | A nickname of his, which as far as I can tell is not used for any music credits, so this should probably be a Search hint instead |
+| **Artist credits** |
+| Asai Kenichi | | Kenichi Asai | | Santana feat. Kenichi Asai | | 浅井健一 |
+<!-- prettier-ignore-end -->
 
 Wow, that's a lot names! But we can see that there's a number of duplicates.
 
@@ -92,8 +93,8 @@ So the question is how to take that list and boil it down to the following eleme
 - A transcribed name if the real name is not in Latin script.
 - A translated name if the real name is not in Latin script _and_ the real name is not a personal
   name. In other words, it doesn't make sense to "translate" 浅井健一 (Kenichi Asai), which is a
-  personal name. But it _does_ make sense to translate a band name, for example translating 緑黄色社
-  会 into "Green Yellow Society".
+  personal name. But it _does_ make sense to translate a band name, for example
+  translating 緑黄色社会 into "Green Yellow Society".
 
 The answer, of course, is to use a whole bunch of heuristics, because this is impossible to get 100%
 right, especially since the source data can be incorrect and incomplete. There's not a lot of
