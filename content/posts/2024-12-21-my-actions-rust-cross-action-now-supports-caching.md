@@ -9,7 +9,7 @@ discuss:
     uri: "https://www.reddit.com/r/rust/comments/1hjrcd3/my_actionsrustcross_action_now_has_builtin_caching/"
 ---
 
-I just release v1.0.0 Beta 1 of
+I just released v1.0.0 Beta 1 of
 [my `actions-rust-cross` GitHub Action](https://github.com/houseabsolute/actions-rust-cross/tree/v1.0.0-beta1).
 The big headline feature in this release is integration with the
 [`Swatinem/rust-cache`](https://github.com/Swatinem/rust-cache) action. This will include the
