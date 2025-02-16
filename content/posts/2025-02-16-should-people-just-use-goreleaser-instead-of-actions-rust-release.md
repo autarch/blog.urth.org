@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2025-02-16T16:25:57-06:00
 url: /2025/02/16/should-people-just-use-goreleaser-instead-of-actions-rust-release
+discuss:
+  - site: "/r/rust"
+    uri: "https://www.reddit.com/r/rust/comments/1ir4l9f/should_people_just_use_goreleaser_instead_of/"
 ---
 
 I'm cross-posting this from
