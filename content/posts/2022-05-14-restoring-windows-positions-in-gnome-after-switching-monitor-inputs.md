@@ -332,7 +332,7 @@ by [MortimerErnest](https://www.reddit.com/user/MortimerErnest/), which links to
 Reading that script made it quite obvious how I could use the Gnome JS API for my own problem.
 
 [^1]:
-    Well, more than four, because I also have a NAS, a network router, a Nintendo Switch, a PS5 in
+    Well, more than four, because I also have a NAS, a network router, a Nintendo Switch, a PS4 in
     the closet, an iPad mini in the same closet, and a Raspberry Pi I bought over a year ago with
     which I intended to build an LCD panel clock, though I've not done so yet. And my phone is also
     a computer. This is a very normal number of computers to have.
