@@ -7,7 +7,7 @@ url: /2025/04/02/my-azure-pipelines-tooling-is-dead
 ---
 
 Many years ago, in the glory days of 2019, when I was young and carefree, with the wind in my hair
-and all the youthful joy of the world in my soul, I wrote
+and all the youthful joy of the world in my soul, I
 [created my `ci-perl-helpers` project for testing Perl modules in Azure Pipelines](/2019/11/18/my-new-ci-helpers-for-perl/).
 Why Azure Pipelines? Well, at the time, GitHub Actions didn't support caching, and it was generally
 immature.
