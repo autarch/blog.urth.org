@@ -10,6 +10,8 @@ Have you ever tried to tell me what to do, only to find I ignored you? Well, now
 
 MongoDB is hiring a Lead Engineer to lead the Verification and Correctness team within Cluster to Cluster Synchronization. You will be leading and coaching a team of engineers who are working to make migration of MongoDB clusters easy, fast, and reliable for our customers, as well as work with product managers and program managers to specify, prioritize and deliver new features that delight our users.
 
+**This role can be based out of our New York City office or remotely in North America.**
+
 That's my team, so your dreams of making me your servant can finally come true[^1]! [Apply today](https://grnh.se/0ef999ff1us)!
 
 
