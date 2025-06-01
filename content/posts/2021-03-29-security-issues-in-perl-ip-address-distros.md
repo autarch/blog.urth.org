@@ -26,6 +26,8 @@ _Edit on 2021-04-05 01:21(ish) UTC:_ Net-CIDR-Lite 0.22 contains a remediation.
 
 _Edit on 2021-04-05 19:30(ish) UTC:_ Net-IPAddress-Util 5.000 contains a remediation.
 
+_Edit on 2025-06-01 23:30(ish) UTC:_ Net-CIDR 0.25 contains a remediation.
+
 {{% notice warning %}} **TLDR: Some Perl modules for working with IP addresses and netmasks have
 bugs with potential security applications.** See below for more details on the bug and which modules
 are affected.
@@ -162,8 +164,7 @@ context!**
 
 ## [`Net-CIDR`](https://metacpan.org/release/Net-CIDR)
 
-{{% notice info %}} **This distribution is affected, but it has a function to validate CIDR strings
-that you should use before calling any other functions.** {{% /notice %}}
+{{% notice info %}} **This distribution was vulnerable prior to its 0.25 release made on 2025-05-23.** {{% /notice %}}
 
 This distribution has 17 direct dependents and 25 total dependents.
 
