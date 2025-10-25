@@ -681,7 +681,7 @@ here, particularly around version numbers interfering with architecture detectio
 
 So how well did it do?
 
-Well, on the plus side, it did spot a few real bugs. On minus side, it was wrong a lot. Let's go
+Well, on the plus side, it did spot a few real bugs. On the minus side, it was wrong a lot. Let's go
 through each bug in detail.
 
 ## 1. **Android Detection Too Broad, Linux ARM64 Confusion**
