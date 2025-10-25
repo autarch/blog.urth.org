@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2025-10-25T10:37:44-05:00
 url: /2025/10/25/how-good-is-claude-at-finding-bugs-in-my-code
+discuss:
+  - site: "/r/rust"
+    uri: "https://www.reddit.com/r/programming/comments/1ofvo8c/how_good_is_claude_at_finding_bugs_in_my_code/?"
 ---
 
 I recently tried using Claude to look at [my `ubi` project](https://github.com/houseabsolute/ubi/)
