@@ -773,8 +773,7 @@ this.
 This is a bit weird. The title doesn't match the bug description. But the title is wrong. Ubi _does_
 have a fallback if the 64-bit filter removes everything.
 
-Then the actual bug description seems to be about the issue #4, that the 64-bit filter is too
-permissive.
+Then the actual bug description seems to be about issue 4, that the 64-bit filter is too permissive.
 
 ## 14. **Zip and 7z Archives Don't Track Executability**
 
