@@ -748,7 +748,9 @@ that information!
 ## 9. **Sorting Tiebreaker is Arbitrary**
 
 Maybe? The suggestion to prefer an asset with a libc in the name over one without isn't bad. I
-wouldn't call this a _bug_, since it works as designed, but
+wouldn't call this a _bug_, since it works as designed, but this could be improved. That said, I'm
+not sure how often this matters. I haven't had any bug reports where changing this behavior would
+improve `ubi` for someone.
 
 ## 10. **Partial Match Case Sensitivity**
 
