@@ -226,8 +226,10 @@ There are also some directory/map sites in Chinese:
 Again, I recommend you double check any listing you find against Google Maps, which is the most up
 to date resource I've found for whether a business is closed or not.
 
-**Note that Google Maps is often wrong about the hours of operation.** If you can, it's good to call
-first.
+**Note that Google Maps is often wrong about the hours of operation.** Many small restaurants have
+random days off during the month. A lot of them will post a calendar image to Facebook or Instagram
+each month with the days they're closed marked on it. I highly recommend checking out these posts
+for both the days they're closed and their actual hours of operation.
 
 ### Convenience Stores
 
@@ -241,7 +243,7 @@ use Google Translate on the ingredients to double check.
 - Stinky tofu - This may not be vegan. Animal products are often used to start the fermentation
   process, including animal blood or dairy, so even a "vegetarian stinky tofu" vendor may not be
   vegan. You'll have to ask.
-- Scallion pancakes - Some of these are made with lard instead of vegetable shortening.
+- Scallion pancakes - These are often made with lard, but some are made with vegetable shortening.
 - Anything deep fried or boiled. This may be cooked in the same oil or water as non-vegan food if
   the vendor serves non-vegan items.
 - Bubble tea - Even though oat milk is common at coffee shops it's rarely found at bubble tea shops,
