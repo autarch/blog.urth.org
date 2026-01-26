@@ -6,6 +6,8 @@ date: 2023-12-28T11:45:00+08:00
 url: /2023/12/28/eating-vegan-in-taiwan
 ---
 
+_Last Updated: January, 2026_
+
 This is a post on finding vegan food in Taiwan, with some context on the history of vegetarian food
 here. It's _not_ a list of vegan restaurants. Instead, it's a meta-post about navigating Taiwan as a
 vegan.
@@ -23,6 +25,33 @@ vegan who's not fluent in the local language.
 
 This post assumes you don't speak Mandarin or read any Chinese characters. If that's not true, then
 some of this advice won't be necessary, because you can just ask food vendors questions in Mandarin.
+
+## Google Maps Lists
+
+I maintain custom Google Maps lists of vegan and vegan-friendly restaurants for various locations in
+Taiwan. These are most up to date right before I visit Taiwan and while I'm here. They're less up to
+date at other times. Most of these lists were last updated between December, 2025 and
+February, 2026. When I'm in Taiwan, I'm mostly in Kaohsiung, so that list is always the most up to
+date.
+
+- [Taipei](https://maps.app.goo.gl/9kcgj6rJU6t6xuhC8) - includes some places in New Taipei City.
+- [TPE airport](https://maps.app.goo.gl/NwG4XxTf81G1SjUE8) - the airport itself, not the surrounding
+  area in Taoyuan
+- [Taoyuan](https://maps.app.goo.gl/T6H6KAnf1sfRz7Dd7)
+- [Taichung](https://maps.app.goo.gl/hWYfWXCyCe7qxj297)
+- [Kaohsiung](https://maps.app.goo.gl/ruTwzMYQVns2V7yV8)
+- [Hualien](https://maps.app.goo.gl/PoPQP85JHcyR12wE9)
+- [Alishan](https://maps.app.goo.gl/av3ZRfG71fGKULbe9)
+
+These lists do not cover _every_ vegan-friendly place. There are literally tens of thousands of
+vegetarian restaurants in Taiwan, and almost all of them have vegan food. Instead, I've tried to
+include:
+
+- Restaurants which are 100% vegan, particularly those with food options outside the typical
+  Taiwanese fare.
+- Bakeries, ice cream shops, and other dessert places that I like.
+- Interesting vegetarian and non-veg places that are vegan-friendly.
+- Places I've eaten at that I really liked.
 
 ## Tourists in Taiwan
 
@@ -48,9 +77,9 @@ or in an easy to access place on your phone to show people. Learn to read and pr
 [Pinyin](https://en.wikipedia.org/wiki/Pinyin) so you can say these phrases with the proper tones.
 Without the tones people may not understand you.
 
-- "I am vegan" - 我吃純素 - Wǒ chī chún sù (literally "I eat pure vegetarian")
+- "I am vegan" - 我吃全素 - Wǒ chī chúan sù (literally "I eat complete vegetarian")
   - Note that this doesn't _exactly_ mean vegan as we use the term. You should follow up with the
-    phrases below to tell them you don't eat eggs or dairy.
+    phrases below to tell them you don't eat eggs or dairy just to be sure.
 - "I don't eat eggs" - 我不吃蛋 - Wǒ bù chī dàn
 - "I don't eat milk, butter, cheese" - 我不吃牛奶、奶油起司 - Wǒ bù chī niúnǎi, nǎiyóu qǐ sī
 - "I eat garlic and onions"[^1] - 我吃大蒜和洋蔥 - Wǒ chī dàsuàn hé yángcōng
@@ -158,14 +187,15 @@ instead. The commonly used characters are:
 
 - Has dairy - 奶食 (more literally translated as "milk vegetarian")
 - Has eggs - 蛋食 (more literally translated as "egg vegetarian")
-- Vegan - 純素 (more literally translated as "pure vegetarian")
-- Contains ingredients from the garlic/onion family - 植物五辛素
+- Vegan - 全素 (more literally "complete vegetarian") or 純素 (more literally "pure vegetarian")
+- Contains ingredients from the garlic/onion family - 植物五辛素 (more literally "five pungent herbs
+  vegetarian")
   - A dish with this marker may _also_ contain eggs or dairy.
 
 You may also see the word "vegan" written in English. In my experience this is generally accurate on
 menus. However, on food packaging this may not be correct. See
 [this blog post on Taiwanese food labeling](https://vegantaiwan.blogspot.com/2009/06/new-vegetarian-labelling-coming-in.html)
-for much more detail.
+for much more detail. I also go into this below.
 
 Some fancier non-veg restaurants label vegetarian items with a green leaf or some other green icon.
 But most non-veg restaurants have no such labels. The only way to find out if they have vegan food
@@ -190,11 +220,33 @@ say "fried rice" (in Chinese), but that fried rice might contain chopped mock ha
 There's really no good way to handle this except with a more detailed conversation in Chinese (using
 Google Translate) or by only eating at 100% vegan places.
 
+## The English Word "Vegan" in Taiwan
+
+The way that Taiwanese restaurants and food vendors use the English word "vegan" can be extremely
+confusing. In general, when it used as a _label_, either on a menu or on product packaging, along
+with the Chinese "全素", the item in question is vegan.
+
+However, the word "vegan" is _also_ used in food _names_. An example would be a product called
+something like "Vegan Sweet and Sour Chicken". While these products like this are usually
+vegetarian, they are often _not_ vegan, and may have a label like "蛋食" (vegetarian with eggs). I'm
+not sure why this happens, but my guess is that people are using Google Translate, and I don't think
+it does a great job of picking between "vegan" and "vegetarian".
+
+Why are the labels correct? Because most of the people who look at them are Taiwanese people who are
+eating vegetarian or vegan food for religious reasons. This is a big deal, so food vendors don't
+screw it up. But those people don't look at _product names in English_ order to determine whether
+they're suitable for their religious restrictions, so the English names are confusing.
+
+Note that according to
+[this blog post on Taiwanese food labeling](https://vegantaiwan.blogspot.com/2009/06/new-vegetarian-labelling-coming-in.html),
+7-11 has used "純素" as a _label_ on items that aren't even vegetarian. Wow, so confusing. But in my
+experience "全素" is still safe.
+
 ## Finding Places to Eat
 
 In my experience, the best tool for finding places to eat is Google Maps. Simply searching for
 "vegan food near me" or "vegan food Taipei" finds a ton of places, including both vegan and
-vegetarian options. You can also search for "素食".
+vegetarian options. You can also search for "素食" (vegetarian) or "全素" and "純素" (vegan).
 
 However, I would note that Google's categorization of places as either "vegan restaurant" or
 "vegetarian restaurant" is quite random. It's wrong in both ways, marking vegan places as vegetarian
@@ -234,9 +286,13 @@ for both the days they're closed and their actual hours of operation.
 ### Convenience Stores
 
 Unlike in the US, convenience stores here in Taiwan actually have good food! A lot of them have
-vegan items. That said, from what I've read online, even if an item has English "vegan" or
-"plant-based" on the label, it may not actually be vegan (though it's probably vegetarian). You can
-use Google Translate on the ingredients to double check.
+vegan items. But see my section above about the use of the word "vegan", and
+[this blog post on Taiwanese food labeling](https://vegantaiwan.blogspot.com/2009/06/new-vegetarian-labelling-coming-in.html)
+for more details.
+
+FamilyMart has multiple flavors of delicious vegan rice balls. They also offer frozen food products
+and instant noodles. I think they will prepare these for you in the store and you can eat there.
+7-11 also has some similar items, but I haven't seen vegan rice balls there.
 
 ## Advice About Specific Food Items
 
@@ -244,10 +300,13 @@ use Google Translate on the ingredients to double check.
   process, including animal blood or dairy, so even a "vegetarian stinky tofu" vendor may not be
   vegan. You'll have to ask.
 - Scallion pancakes - These are often made with lard, but some are made with vegetable shortening.
+- Sticky rice - Sometimes made with lard.
 - Anything deep fried or boiled. This may be cooked in the same oil or water as non-vegan food if
   the vendor serves non-vegan items.
 - Bubble tea - Even though oat milk is common at coffee shops it's rarely found at bubble tea shops,
   sadly. But bubble tea shops in Taiwan have many milk-free options.
+- Coffee and tea - If you go to a coffee shop as opposed to a bubble tea shop, many of them have oat
+  milk for lattes and tea drinks. Starbucks has multiple plant milk options. Louisa has oat milk.
 
 ## Other Resources
 
