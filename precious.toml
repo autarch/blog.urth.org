@@ -20,9 +20,10 @@ lint_failure_exit_codes = 1
 ignore-stderr = ["The .+ file is not sorted", "The .+ file is not unique"]
 
 [commands.typos]
-type = "lint"
+type = "both"
 include = "**/*"
 cmd = "typos"
+tidy_flags = "--write-changes"
 invoke = "once"
 ok-exit-codes = 0
 lint-failure-exit-codes = 2

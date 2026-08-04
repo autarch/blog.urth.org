@@ -1,0 +1,105 @@
+# Per-file allow lists. Each type scopes its words to the posts that need
+# them, so the rest of those files stays spell-checked.
+#
+# Two gotchas: globs match the file name, not the path, so they must be
+# **/<name>. And .typos.toml appears in every glob because this file quotes
+# the words it allows.
+
+[type.sql-pretty-printer-posts]
+extend-glob = [
+    "**/2021-03-14-writing-a-postgres-sql-pretty-printer-in-rust-part-1.md",
+    "**/2021-04-24-writing-a-postgres-sql-pretty-printer-in-rust-part-2.md",
+    ".typos.toml",
+]
+[type.sql-pretty-printer-posts.extend-words]
+# Abbreviated Rust and SQL identifiers shown in code blocks.
+inh = "inh"
+larg = "larg"
+
+[type.tailwind-post]
+extend-glob = [
+    "**/2022-02-21-checking-tailwind-class-names-at-compile-time-with-rust.md",
+    ".typos.toml",
+]
+[type.tailwind-post.extend-words]
+# A Rust identifier in a code block, and a class name deliberately misspelled
+# to demonstrate catching names that do not exist at compile time.
+siz = "siz"
+hiddden = "hiddden"
+
+[type.musicbrainz-post]
+extend-glob = ["**/2021-12-22-working-with-musicbrainz-name-data.md", ".typos.toml"]
+[type.musicbrainz-post.extend-words]
+# Kenichi Asai, the person used as the worked example.
+Asai = "Asai"
+
+[type.perl-conference-posts]
+extend-glob = [
+    "**/2017-02-01-the-perl-conference-cfp-is-open.md",
+    "**/2011-07-10-perl-5-core-principles.md",
+    ".typos.toml",
+]
+[type.perl-conference-posts.extend-words]
+# Ricardo Signes, named in both posts.
+Signes = "Signes"
+
+[type.intro-to-moose-post]
+extend-glob = ["**/2017-05-17-intro-to-moose-at-the-perl-conference.md", ".typos.toml"]
+[type.intro-to-moose-post.extend-words]
+# Eventbrite: typos splits the name and flags the second half on its own.
+Brite = "Brite"
+
+[type.dist-zilla-post]
+extend-glob = ["**/2010-05-25-distzilla-pros-and-cons.md", ".typos.toml"]
+[type.dist-zilla-post.extend-words]
+# "bleading edge" is the Perl pun on blead, the development branch.
+bleading = "bleading"
+
+# --- Words left as written, scoped to the file each appears in ---
+
+[type.catalyst-post]
+extend-glob = ["**/2009-08-02-how-i-use-catalyst.md", ".typos.toml"]
+[type.catalyst-post.extend-words]
+# Deliberate wordplay in a heading: Configuration File (Mis)Handling.
+Mis = "Mis"
+
+[type.git-age-report-post]
+extend-glob = ["**/2012-04-17-git-age-report.md", ".typos.toml"]
+[type.git-age-report-post.extend-words]
+# The prefix of "mis-sorted"; typos tokenizes on the hyphen.
+mis = "mis"
+
+[type.renaming-type-post]
+extend-glob = ["**/2012-10-14-renaming-type.md", ".typos.toml"]
+[type.renaming-type-post.extend-words]
+# Deliberate phonetic spellings offered as alternatives to "type".
+Tipe = "Tipe"
+
+[type.google-plus-post]
+extend-glob = ["**/2011-07-22-google-plus-circles-dont-solve-my-problem.md", ".typos.toml"]
+[type.google-plus-post.extend-words]
+# Inside a direct quotation from Robert Rothenberg.
+Scipt = "Scipt"
+
+# The remaining entries are inside reader comments. They are other people's
+# words, so they stay exactly as written.
+
+[type.scaling-post]
+extend-glob = ["**/2008-10-09-you-dont-need-to-scale.md", ".typos.toml"]
+[type.scaling-post.extend-words]
+requets = "requets"
+
+[type.automated-tests-post]
+extend-glob = ["**/2010-02-16-the-purpose-of-automated-tests.md", ".typos.toml"]
+[type.automated-tests-post.extend-words]
+sould = "sould"
+
+[type.core-version-support-post]
+extend-glob = ["**/2010-11-15-perl-core-version-support-part-2.md", ".typos.toml"]
+[type.core-version-support-post.extend-words]
+ot = "ot"
+
+[type.system-perl-post]
+extend-glob = ["**/2011-10-01-why-do-people-use-the-system-perl.md", ".typos.toml"]
+[type.system-perl-post.extend-words]
+efford = "efford"
