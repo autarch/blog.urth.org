@@ -1,14 +1,13 @@
 exclude = ["themes/**/*"]
 
-[commands.prettier]
+[commands.oxfmt]
 type = "both"
-include = ["**/*.md", "**/*.yml"]
-cmd = ["prettier", "--no-config", "--prose-wrap", "always", "--print-width", "100"]
-lint_flags = "--check"
-tidy_flags = "--write"
-ok_exit_codes = 0
-lint_failure_exit_codes = 1
-ignore_stderr = "Code style issues"
+include = ["**/*.md", "**/*.yml", "**/*.toml"]
+cmd = ["oxfmt"]
+lint-flags = "--check"
+tidy-flags = "--write"
+ok-exit-codes = 0
+lint-failure-exit-codes = 1
 
 [commands.omegasort-gitignore]
 type = "both"
@@ -27,12 +26,3 @@ cmd = "typos"
 invoke = "once"
 ok-exit-codes = 0
 lint-failure-exit-codes = 2
-
-[commands.taplo]
-type = "both"
-include = "**/*.toml"
-cmd = ["taplo", "format", "--option", "indent_string=    ", "--option", "column_width=100"]
-lint_flags = "--check"
-ok_exit_codes = 0
-lint_failure_exit_codes = 1
-ignore_stderr = "INFO taplo.+"

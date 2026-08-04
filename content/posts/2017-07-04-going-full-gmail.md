@@ -39,7 +39,7 @@ Next approach, copy all my mbox files locally, fire up Thunderbird, and use the 
 extension to import each mbox file. Problem #4, it can't handle very large (1+GB) mbox files. It
 just truncates them. Solution #2, use [a gross awk solution][1] that seems to make some mistakes,
 but is good enough. Then connect Thunderbird to gmail and copy emails from the Local Folders to
-Gmail. It's *super* slow but it does work. Of course, if one of the emails has attachments larger
+Gmail. It's _super_ slow but it does work. Of course, if one of the emails has attachments larger
 than 25MB Thunderbird dies mid-import without telling me which message failed. Solution #3, create a
 Thunderbird filter to find all messages with large attachments and delete the attachments before
 doing the import.
@@ -51,7 +51,7 @@ Google would want to make it easy to switch to their services but I think they'r
 Enterprise Outlook users.
 
 I'm also trying to move all my Google stuff (drive, photos, etc.) to my new account, which of course
-Google *also* does not make easy. Am I really the first person trying to move from a gmail presence
+Google _also_ does not make easy. Am I really the first person trying to move from a gmail presence
 to a custom domain hosted in G Suites? Really? Why are you so half-assed, Google?
 
 On the plus side, once I'm done, I'll have a halfway decent email reader to use.

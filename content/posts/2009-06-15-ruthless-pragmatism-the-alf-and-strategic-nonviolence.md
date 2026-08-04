@@ -33,7 +33,8 @@ or any of the other things I associate with pragmatism.
 
 Pattrice says that the ALF has cost animal abuse industries millions of dollars through their
 vandalism and animal releases over the years of their existence. So how much is "millions"? [In
-2002, The FBI testified before Congress that the ALF and ELF combined had caused $43 million in
+2002, The FBI testified before Congress that the ALF and ELF combined had caused
+$43 million in
 damage since 1996][2]. From my reading online, it seems like ELF is more damaging in their
 activities, but let's be generous and split it. That means that the ALF is doing approximately $20
 million in damage (in the US) every five years.
@@ -42,16 +43,22 @@ The first question, then, is does this damage raise the cost of doing business? 
 most effective thing that these activists could be doing?
 
 I think the first question is relatively easy to answer. In the _US alone in 2006_, the [mink "crop"
-sold for approximately $136 million][3] at auction. [Looking back at previous years][4], wholesale
-mink pelt values at auction were more than $1 billion from 1998-2007.
+sold for approximately
+$136 million][3] at auction. [Looking back at previous years][4], wholesale
+mink pelt values at auction were more than $1
+billion from 1998-2007.
 
-So we have an industry making $1 billion in 10 years (in the US alone) **at wholesale**! The retail
-amounts are even more staggering. Retail fur sales were $1.34 billion in 2007 alone.
+So we have an industry making
+$1 billion in 10 years (in the US alone) **at wholesale**! The retail
+amounts are even more staggering. Retail fur sales were $1.34
+billion in 2007 alone.
 
-So given those numbers, is it reasonable to think that the ALF's generously estimated $40 million in
-the same time period had an impact on the fur industry? I don't think so. Even if all $40 million in
-damage had been taken just by mink "farmers" (which it wasn't), that's less than 5% of their income.
-Unless their margins are ridiculously low, it's hard to imagine this being a major problem.
+So given those numbers, is it reasonable to think that the ALF's generously estimated
+$40 million in
+the same time period had an impact on the fur industry? I don't think so. Even if all $40
+million in damage had been taken just by mink "farmers" (which it wasn't), that's less than 5% of
+their income. Unless their margins are ridiculously low, it's hard to imagine this being a major
+problem.
 
 Even if this caused a 5% increase in retail costs, fur coats are a luxury good. Luxury goods have a
 lot of price elasticity, and a 5% increase in price may have a 0% impact on sales! And given the 10x

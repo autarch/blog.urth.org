@@ -278,7 +278,7 @@ users find modules like [Moose](http://search.cpan.org/~drolsky/Moose-1.18/) whi
 its job, cannot be found when you search for [CPAN](http://search.cpan.org/) for OOP :)
 
 **Peter Rabbitson, on 2010-11-02 07:39, said:**  
- _... Modern Perl, probably Catalyst, Moose, and DBIC..._
+_... Modern Perl, probably Catalyst, Moose, and DBIC..._
 
 Why not Fey::ORM? ;)
 

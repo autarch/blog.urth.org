@@ -35,7 +35,8 @@ So please stop asking for a Moose book, and just read the one that already exist
 
 **chromatic, on 2009-02-15 15:52, said:**  
 Please note that the ridiculously low hourly wage for authors is, in large part, due to the
-ridiculously broken compensation model of most publishers. A book that sells for $40 may earn the
+ridiculously broken compensation model of most publishers. A book that sells for
+$40 may earn the
 author $2 for each copy sold and the publisher $14.
 
 Do publishers really contribute seven times as much value to the book as writers?

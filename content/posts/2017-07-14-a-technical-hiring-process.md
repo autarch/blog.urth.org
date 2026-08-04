@@ -6,8 +6,8 @@ date: 2017-07-14T19:34:36+00:00
 url: /2017/07/14/a-technical-hiring-process/
 ---
 
-At [The Perl Conference 2017][1], I gave a talk titled *How to Make Your Technical Hiring Process
-Suck at Least 20% Less*. A Bold goal, I know!
+At [The Perl Conference 2017][1], I gave a talk titled _How to Make Your Technical Hiring Process
+Suck at Least 20% Less_. A Bold goal, I know!
 
 Unfortunately, the video from that talk did not come out. The [slides are available][2] (hit "s" for
 my notes), but even with the speaker notes there's a lot missing, since I mostly knew what I wanted
@@ -175,7 +175,7 @@ of weighted categories. This produced a numeric rating from each interview and a
 
 My feeling after having done many, many interviews is that trying to make this process too
 scientific won't achieve much. What generally happens is either that everyone agrees the candidate
-is awesome, agrees that they're *not* awesome, or is ambivalent. It's incredibly rare to have people
+is awesome, agrees that they're _not_ awesome, or is ambivalent. It's incredibly rare to have people
 divided on awesome versus not awesome, so attempting to tease out degrees of good vs bad with
 numeric ratings may not achieve much.
 

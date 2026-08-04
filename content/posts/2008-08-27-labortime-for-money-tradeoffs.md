@@ -12,9 +12,11 @@ how to exploit this dynamic is a key to success.
 
 I'm thinking specifically of [the conference we just put on][1]. We got a _lot_ of food donations.
 We served breakfast and lunch for two days to around 180 people. Amazingly, we were able to do this
-for a mere $9.17 per person per day! Contrast that to catering, which is at least twice that much.
+for a mere
+$9.17 per person per day! Contrast that to catering, which is at least twice that much.
 Also factor in that because we didn't have catering, we provided our own (biodegradable) plates,
-cups, and flatware, which I included in the $9.17 figure.
+cups, and flatware, which I included in the $9.17
+figure.
 
 We were able to cut our costs in half, but it didn't come for free. We had several volunteers who
 spent time contacting restaurants and markets to get donations. Of course, because we didn't have a

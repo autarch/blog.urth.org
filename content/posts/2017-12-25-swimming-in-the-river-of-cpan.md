@@ -48,7 +48,7 @@ That would be pretty bad!
 But what if I change Specio's API? Well, as long as the tests pass, that's unlikely to cause
 problems. There are only 14 distributions directly using Specio in any fashion. I maintain 11 of
 them as primary owner, and one of those is deprecated and has no deps anyway. So making a breaking
-change to the Specio API is unlikely to cause any trouble as long as I *also* update my own modules
+change to the Specio API is unlikely to cause any trouble as long as I _also_ update my own modules
 that use Specio as needed.
 
 Conversely, I will basically never be able to break the public DateTime API without causing massive
@@ -62,5 +62,4 @@ distribution in the future.
 
 [1]: http://neilb.org/2015/04/20/river-of-cpan.html
 [2]: https://metacpan.org/release/Specio
-
 [3]: https://metacpan.org/requires/distribution/Specio?sort=[[2,1]]

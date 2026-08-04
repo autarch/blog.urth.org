@@ -34,8 +34,10 @@ I'd really like to give the class myself, and I am trying to figure out if there
 Twin Cities, MN area. I'd reserve a conference room at a hotel or on the UMN campus in Minneapolis
 or St Paul for the class, and I'm hoping to do this some time in August or September.
 
-Normally, a one-day training session like this would run about $500 per person, but since this would
-be my first time actually giving the class, the rate would be a mere $120 per person.
+Normally, a one-day training session like this would run about
+$500 per person, but since this would
+be my first time actually giving the class, the rate would be a mere $120
+per person.
 
 In return, I want each attendee to commit to answering a short survey I'll give them after the class
 so I can get feedback on the class and my teaching. So there is a small price for the discount ;)

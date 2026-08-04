@@ -74,7 +74,7 @@ options = ""
 
 [params.sequenceDiagrams]
 enable = true
-options = ""  # default: "{theme: 'simple'}"
+options = "" # default: "{theme: 'simple'}"
 
 [params.search.google]
 enable = true

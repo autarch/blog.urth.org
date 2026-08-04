@@ -66,7 +66,7 @@ an even lower chance of Trump winning based on current trends.
       </li>
     </ul>
   </li>
-  
+
   <li>
     A generally available therapy exists that reduces mortality by 30% or greater: 60%<ul>
       <li>
@@ -74,7 +74,7 @@ an even lower chance of Trump winning based on current trends.
       </li>
     </ul>
   </li>
-  
+
   <li>
     I have had coronavirus: 40%<ul>
       <li>
@@ -82,7 +82,7 @@ an even lower chance of Trump winning based on current trends.
       </li>
     </ul>
   </li>
-  
+
   <li>
     I am hospitalized for coronavirus: 5%
   </li>
@@ -93,7 +93,7 @@ an even lower chance of Trump winning based on current trends.
       </li>
     </ul>
   </li>
-  
+
   <li>
     Fatality rate in the US is estimated at less than 1% in retrospect, excluding any newly developed treatments from #13: 70%<ul>
       <li>
@@ -119,7 +119,7 @@ we had starting on March 17.
       </li>
     </ul>
   </li>
-  
+
   <li>
     I have released at least <a href="http://neilb.org/cpan-regulars/">one CPAN module every month for 20 years</a>: 80%
   </li>
@@ -130,7 +130,7 @@ we had starting on March 17.
       </li>
     </ol>
   </li>
-  
+
   <li>
     My weight is 200 pounds or below and has been since November 1: 10%
   </li>
@@ -141,7 +141,7 @@ we had starting on March 17.
       </li>
     </ul>
   </li>
-  
+
   <li>
     <span style="font-size: 1.0625rem;">I have a bouldering wall in my garage: 80%</span>
   </li>
@@ -152,7 +152,7 @@ we had starting on March 17.
       </li>
     </ul>
   </li>
-  
+
   <li>
     I'm still vegan: 95%<ul>
       <li>
@@ -160,7 +160,7 @@ we had starting on March 17.
       </li>
     </ul>
   </li>
-  
+
   <li>
     I spend time in Taiwan this year (whether on vacation or as a temporary move): 10%
   </li>

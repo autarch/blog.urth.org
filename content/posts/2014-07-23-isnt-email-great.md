@@ -29,11 +29,12 @@ I see overloading as something best done in very limited circumstances, such as 
 truly is meant to exactly mimic a built-in type and users should be able to use them interchangeably
 without even knowing they have an object. A solid example just from the last few days on the
 rose-db-object@googlegroups.com mailing list is that Perl's Math::BigInt and such objects overload
-stringification, so if you want a string of an integer, saying ".$foo just works regardless of
-whether $foo is a native integer or a BigInt object. The use case was where an application using
-Rose::DB::Object was returning Math::BigInt objects on 32-bit platforms and native Perl integers on
-64-bit platforms, and using the stringification overload was the simplest way for the application to
-have clean portable code.
+stringification, so if you want a string of an integer, saying
+".$foo just works regardless of
+whether $foo is a native integer or a BigInt object. The use case was
+where an application using Rose::DB::Object was returning Math::BigInt objects on 32-bit platforms
+and native Perl integers on 64-bit platforms, and using the stringification overload was the
+simplest way for the application to have clean portable code.
 
 **Caleb Cushing, on 2014-07-23 16:26, said:**  
 this reminds me of why I decided to quit looking for perl work and moved to being a java programmer.

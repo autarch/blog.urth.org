@@ -8,8 +8,8 @@ url: /2017/08/27/first-release-upon-an-unsuspecting-world/
 
 For as long as I can remember, I've been using the phrase "First release upon an unsuspecting world"
 as the Changes entry for the first release of all my CPAN modules. Thinking about this, I cannot
-remember where this came from. I don't *think* that I invented it, but maybe I did. I do have an
-idea every once in a while. But I *feel* like I got the idea from someone or something else.
+remember where this came from. I don't _think_ that I invented it, but maybe I did. I do have an
+idea every once in a while. But I _feel_ like I got the idea from someone or something else.
 
 A quick Google search didn't up much except links to my own Changes files. So maybe I did invent
 this?

@@ -128,12 +128,13 @@ His remaining recommendations remain pretty solid in 2011.
 
 > "Don't use lvalue accessors"
 >
-> Indeed. I think the lvalue feature was a waste of time. Really, is writing $object->foo = 42 so
+> Indeed. I think the lvalue feature was a waste of time. Really, is writing
+> $object->foo = 42 so
 > much better than $object->foo(42)? I don't get it.
 
-Well, lvalue allows niceties like
-$object->foo++ or $object->foo //= 1 (which is arguably much better than $object->foo($object->foo+1)
-or $object->foo(1) if !defined($object->foo)). That's why other languages have properties.
+Well, lvalue allows niceties like $object->foo++ or $object->foo //= 1 (which is arguably much
+better than $object->foo($object->foo+1) or $object->foo(1) if !defined($object->foo)). That's why
+other languages have properties.
 
 **Dave Rolsky, on 2011-03-23 20:56, said:**  
 @Steven: If you're using Moose you can get some of that from the Native Traits feature, so you end

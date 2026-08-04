@@ -186,8 +186,7 @@ DateTime) - would he put that additional code into a class in application scope 
 
 **Zbigniew Lukasiak, on 2011-04-05 09:18, said:**  
 In my opinion dealing with parameters is request scope work - that is it is convenient to write code
-like
-$self->day in all the calculations instead of passing $day as a method parameter everywhere.
+like $self->day in all the calculations instead of passing $day as a method parameter everywhere.
 That is the main difficulty in writing form handlers - if you have application scope, immutable
 $form -
 then you cannot have $form->day.
