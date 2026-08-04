@@ -37,9 +37,10 @@ new-fangled editor with powerful new-fangled libraries. Bah, kids today and thei
 ## Comments
 
 **Micheal McEvoy, on 2009-02-17 13:55, said:**  
-I agree. When I learned to prgram in MS Windows (Windows 3.11 was the current version), my professor
-would not allow us to use the Borland Windows Libraries. We had to roll our own. While in the real
-world, you wouldn't do this, it at least gave us an idea of what was going on in that "black box".
+I agree. When I learned to program in MS Windows (Windows 3.11 was the current version), my
+professor would not allow us to use the Borland Windows Libraries. We had to roll our own. While in
+the real world, you wouldn't do this, it at least gave us an idea of what was going on in that
+"black box".
 
 I do just about everything in Emacs, I cringe at badly designed and implemented "drag and drop"
 applications. It's just bad business practice, but that is why we are in the current economic

@@ -62,7 +62,7 @@ get q{}
 
 We are able to entirely eliminate the do-nothing sub that was needed just to declare a RESTful URI.
 When you declare a method for an HTTP action, `CatalystX::Routes` makes sure all the necessary bits
-are declared behing the scene.
+are declared behind the scene.
 
 (That `get q{}` is used to declare a chain end point with the same URI as the mid point it chains
 from.)
@@ -97,7 +97,7 @@ With `CatalystX::Routes`, you declare actions using regular Perl code, which mea
 variables, loops, and so on to make it easy to generate actions.
 
 For example, in one of my controllers, I had several RESTful entities with a very similar set of
-actions (view a collection, view an individual entity, `POST` a new entitiy, `PUT` an update, etc.)
+actions (view a collection, view an individual entity, `POST` a new entity, `PUT` an update, etc.)
 
 ```perl
 for my $type ( qw( donation note ) ) {

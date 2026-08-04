@@ -74,7 +74,7 @@ I ignore the system perl.
 **alex.hartmaier, on 2011-10-02 05:29, said:**  
 We need to reach those people that are using the distro Perl and ask them why they do.  
 Maybe a poll is a good start.  
-I think as someone gets more and more into Perl the likelyhood that (s)he compiles his/her own Perl
+I think as someone gets more and more into Perl the likelihood that (s)he compiles his/her own Perl
 rises.  
 Maybe we're trying to hard to fix a problem that doesn't even exist (or is much smaller than we
 think).
@@ -82,7 +82,7 @@ think).
 I've used the distros Perl for almost ten years just because it worked and also because everything
 was Perl 5.8.  
 I even switched distro (from RedHat to Debian) because of RHEL3's unicode broken 5.8.1.  
-It never came to my mind that compiling my own Perl takes so litte time and effort.
+It never came to my mind that compiling my own Perl takes so little time and effort.
 
 Currently I'm in the process of getting all my boxes upgraded to Debian 6 to be able to do Perl and
 module upgrades on my dev box and spread them to the different prod boxes using git.
@@ -188,16 +188,16 @@ Using system Perl isn't the only problem...
 My problem, is that the systems where I'm currently developing Perl, are mostly very old Solaris,
 for witch I found no pre-compiled versions of Perl, that I may use without requesting to the system
 administrator. The system administrator fears replacing the older versions that he makes me
-availlable (the system and a other little younger), and refuses installing further more Perl
+available (the system and a other little younger), and refuses installing further more Perl
 versions.
 
-Also I can't build my own newest Perl, because I'm missing dependecies (that I also can't install).
+Also I can't build my own newest Perl, because I'm missing dependencies (that I also can't install).
 
 Other problem is that this machines are isolated from the Internet. And don't have an internal CPAN
 mirror...
 
 Operating System upgrade is not an option. We have a huge code base (15 years of work on the same
-systems, writen in C, Java, Bash, ksh, tcsh, Perl, PHP, and others) of critical applications. And
+systems, written in C, Java, Bash, ksh, tcsh, Perl, PHP, and others) of critical applications. And
 just the efford for re-testing all the code, would take us to a stand still and cost millions. So
 I'm stuck with this old versions of Perl.
 

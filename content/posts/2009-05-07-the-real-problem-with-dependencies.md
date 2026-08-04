@@ -95,7 +95,7 @@ CPAN is the length of time it takes to build some of the larger modules (especia
 The best solution I can see is working with the OS people for the various Linuxes to make sure
 important modules are in their package system (and are updated frequently) and creating a binary
 package system like ActiveState's ppm for the OSes that don't have (decent) package systems. But
-that is a lot of non-trival work. It even has legal issues (if I remember correctly ActiveState
+that is a lot of non-trivial work. It even has legal issues (if I remember correctly ActiveState
 stopped distributing some DBD::\* modules because of legal threats from Oracle and the like).
 
 It would be nice to be able to say
@@ -104,7 +104,7 @@ It would be nice to be able to say
 
 and have CPAN install a binary version for my OS without running any tests. Or
 
-    cpan> o conf binary prefered
+    cpan> o conf binary preferred
 
 and have it install a binary version of a module if it exists or build it if it doesn't. Or
 

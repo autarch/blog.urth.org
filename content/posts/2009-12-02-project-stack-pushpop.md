@@ -14,7 +14,7 @@ the roadblock is a gap in my understanding. I don't know how to do what I want i
 way, so I need to learn more about a tool, or just experiment with ways to approach the problem.
 
 I push a new project onto the stack and off I go. I don't know how deep the stack is now. There's
-probably items that were on ther elong ago that have already been forgotten.
+probably items that were on there long ago that have already been forgotten.
 
 Here's an example of where I am in my stack right now:
 
@@ -42,7 +42,7 @@ making ACT run on mod_perl2 so I can upgrade my server from Dapper to Hardy. I'v
 that one off for a while, at least, but it keeps nagging at me.
 
 My capacity for adding projects to my stack is simultaneously impressive and disturbing. There's no
-problem so compelling that it can't be superceded by a new problem uncovered in the course of
+problem so compelling that it can't be superseded by a new problem uncovered in the course of
 solving the original.
 
 [1]: http://www.vegguide.org

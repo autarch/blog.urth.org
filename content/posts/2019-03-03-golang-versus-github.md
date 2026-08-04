@@ -82,7 +82,7 @@ In that repo add a new remote that points to your repository.
 
 Branch and make changes as usual.
 
-But now push the branch to the remote instread of the origin.
+But now push the branch to the remote instead of the origin.
 
 No need to change import paths.
 
@@ -97,7 +97,7 @@ That is a good solution. Here is giteas docs regarding forking
 **Matthew Persico, on 2019-03-04 16:37, said:**  
 The best thing to do is to STOP USING GITHUB AS A FREAKING PACKAGING SYSTEM!. Not directed at you,
 obviously, but really, can we teach all these whipper snappers that the Internet should be used as a
-REFERENCE, not as a resource in the critcal path of execution?
+REFERENCE, not as a resource in the critical path of execution?
 
 **Dave Rolsky, on 2019-03-04 17:23, said:**  
 Well, yeah, but that's Go for you. And I don't think Rob Pike or Ken Thompson really qualify as

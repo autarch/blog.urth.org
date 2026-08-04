@@ -12,7 +12,7 @@ First, let's talk about Markdown. Markdown is yet another wiki-esque format for 
 text. What makes Markdown stand out is it's emphasis on usability and "natural" usage. It's syntax
 is based on things people have been doing to "mark up" plain text email for years.
 
-For example, if you wanted to list some items in a plain text email, you'd wite something like:
+For example, if you wanted to list some items in a plain text email, you'd write something like:
 
 ```markdown
 - List item 1

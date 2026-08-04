@@ -119,7 +119,7 @@ In my opinion this naturally leads to multiple tracks of documentation:
 Within each track you find a different set of underlying assumptions about the reader, his/her
 purpose for reading, and preexisting knowledge.
 
-Your post here seems a good first step toward getting the commuity to decide exactly what these
+Your post here seems a good first step toward getting the community to decide exactly what these
 assumptions are (then ideally, rewriting and reorganizing the docs accordingly).
 
 That's my 20-second projected approach to this question anyhow. I'm curious to see where you're

@@ -61,9 +61,9 @@ average worker in a restaurant or store probably speaks little to no English (or
 not comfortable _speaking_ it, though they may understand some of what you say).~~
 
 Edit February, 2024: I've realized that there's very much a generational divide here in regards to
-English. Many more younger people (< 40 or so) I've encounted in stores are willing to try speaking
-English than on my first trips to Taiwan. Older people still do not speak English. That said, you're
-still going to have a better experience as a vegan if you don't rely on English.
+English. Many more younger people (< 40 or so) I've encountered in stores are willing to try
+speaking English than on my first trips to Taiwan. Older people still do not speak English. That
+said, you're still going to have a better experience as a vegan if you don't rely on English.
 
 ## Do You Need to Speak Mandarin to Eat Vegan in Taiwan?
 

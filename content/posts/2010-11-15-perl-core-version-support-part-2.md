@@ -67,7 +67,7 @@ captures.
 
 So what's new in Perl since the 5.8 series? Well, first, let's remember that there's more to Perl
 than Perl-level features. The XS API has changed a lot since Perl 5.8.x. Writing XS code that
-accomodates older Perls can be painful to impossible, depending on what you want to do. If you're
+accommodates older Perls can be painful to impossible, depending on what you want to do. If you're
 lucky it just means diving into the source of a newer Perl and figuring out what a new function
 does, then writing a compatibility shim for older Perls. That's what [Devel::PPPort][4] is for, but
 it doesn't cover everything.
@@ -123,8 +123,8 @@ On the other hand just the other day I wanted to use a module at a client. The m
 As this is a small company without strict corporate rules I considered installing my own version of
 perl 5.12 but I after building it and after installing some of the modules I needed I got stuck. I
 needed DBD::Pg and it wanted some external package - pg_config I think. That would have required the
-installation of some packages. At that point I gave up and decieded I will try to get by without
-that specific module.
+installation of some packages. At that point I gave up and decided I will try to get by without that
+specific module.
 
 Of course you and other authors are totally entitled to require whatever dependencies you want. I
 can't come to complain ot demand anything as I am not paying you. Nor do I thnk this company will

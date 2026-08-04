@@ -40,7 +40,7 @@ REST, and makes the code even more crufty with conditionals.
 
 I think the main reason people like to combine POST/PUT/DELETE handling and HTML generation is to
 make it easier to give feedback to the user. If the submission is unsuccessful, we want to show the
-same form to the user with some error messages ("password is required"). When the submisson is
+same form to the user with some error messages ("password is required"). When the submission is
 successful we want to give them feedback about that ("your comment has been accepted and is pending
 review").
 

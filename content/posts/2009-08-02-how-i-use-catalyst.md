@@ -47,7 +47,7 @@ available from inside an instantiated webapp via `$c->config`. This is wrong, wr
 
 ### How I Do It Instead
 
-I always write my own app-specific config module. This module will use a CPAN module for the actualy
+I always write my own app-specific config module. This module will use a CPAN module for the actual
 reading of files. I like to stick with a simple format, so [Config::INI][6] works nicely, but that's
 a small detail.
 

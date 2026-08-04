@@ -108,7 +108,7 @@ sounds like a bunch of mid-teen boys in a hooters bar), she states flatly that a
 venue is unacceptable and that it should be sorted out properly. That's not unreasonable, and
 doesn't need the sugar coating you suggest.
 
-Apeiron could have cleared it up in 1 sentance, saying it was clearly a joke, and would never
+Apeiron could have cleared it up in 1 sentence, saying it was clearly a joke, and would never
 happen, but instead decided to pick a fight. He's known to pick fights and be obnoxious, so why is
 he still an op? Why is it ok for perl irc to be a cesspool, why is it ok for people to be spoken to
 in private repeatedly and their behaviour never addressed?
@@ -166,7 +166,7 @@ the participants because I know that the full story isn't out there, and \_\_wil
 
 **ether (Karen Etheridge), on 2013-05-19 00:35, said:**
 
-> Apeiron could have cleared it up in 1 sentance, saying it was clearly a joke, and would never
+> Apeiron could have cleared it up in 1 sentence, saying it was clearly a joke, and would never
 > happen, but instead decided to pick a fight.
 
 FWIW, this had been said previously, multiple times, before the log transcript began. She wasn't

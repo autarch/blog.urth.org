@@ -50,7 +50,7 @@ them.
 **dams, on 2014-08-25 11:21, said:**  
 FWIW, we asked ourselves the same question with Dancer. Granted, it's a completely different
 project, but they share some similarities: Log::Dispatch has a core + core extensions, and then
-extensions as seperate modules maintained by the author, then external extensions maintained by the
+extensions as separate modules maintained by the author, then external extensions maintained by the
 community. Dancer has the same things with Plugins, serializer, etc.
 
 The conclusion is : you \*really\* want to go with Log::Dispatch3.

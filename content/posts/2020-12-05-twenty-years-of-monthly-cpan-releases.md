@@ -11,7 +11,7 @@ I did it!
 For the last twenty years I've uploaded at least one new release to [CPAN](https://cpan.org) every
 month. How do I know? Neil Bowers has been keeping track on his
 [CPAN Regular Releasers](https://neilb.org/cpan-regulars/) page for quite some time. I've had the
-montly release quite a long time there.
+monthly release quite a long time there.
 
 The second place for monthly release streaks is
 [Chris Williams (BINGOS)](https://metacpan.org/author/BINGOS), at 177 months, which is 14 years and
@@ -37,7 +37,7 @@ end of each month to check if I had done a release that month.
 My first releases were actually under a different CPAN ID, "PGRIMES", not "DROLSKY". I got my start
 with the online world by dialing in to BBS's way back in the 80s, using a 300 baud modem with my
 Commodore 64. At that time, no one used their real names a BBS. Instead, they used pseudonyms (mine
-was embarassingly childish and I'm not going to tell you what it was). I was so used to using
+was embarrassingly childish and I'm not going to tell you what it was). I was so used to using
 pseudonyms that I continued to do so early on with the Internet (my first email address was grimes @
 waste.org). And I still do, to some degree. It's why my email is "autarch@urth.org", though
 "dave@urth.org" works as well, and I use the latter in any professional context, like

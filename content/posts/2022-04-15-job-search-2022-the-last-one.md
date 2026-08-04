@@ -103,7 +103,7 @@ about this on the hiring side at past employers as well.
 
 I think more companies need to figure out how to make hiring their top priority for the people
 involved. There's no reason not to try to schedule all the interviews in the space of a week. If
-there's a take home assigment involved, you should give candidates a reasonable amount of time (one
+there's a take home assignment involved, you should give candidates a reasonable amount of time (one
 week is a good baseline), but then schedule everything else quickly once that's done. This is
 especially true with a candidate like me who is jobless. I had plenty of free time to interview, and
 would've loved to go faster everywhere.

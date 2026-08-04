@@ -150,7 +150,7 @@ subject are not available for free.
 
 Alternatives I can think of to the current system for example would be to contract establish members
 of the community to work on things they have no previous interest on. Like you on XML (totally
-random and inapropriate example of course ;-). This way the extrinsic motivation does not replace
+random and inappropriate example of course ;-). This way the extrinsic motivation does not replace
 the intrinsic one. Plus you get exposure to technologies you would not necessarily learn by
 yourself, the community gets a fresh eye on the problem and we know from your history that you write
 quality code. This or any other alternative scheme (like the fix-bugs-for-a-reward scheme that Nick
@@ -429,7 +429,7 @@ By that I mean, get people to hackathons or conferences?
 That might not interfere with the motivations just the increased productivity that can come from
 face to face communication with folks.
 
-The TPF can then rethink giving grants for code prodution then.
+The TPF can then rethink giving grants for code production then.
 
 Giving grants for documentation might still have value and need though.
 

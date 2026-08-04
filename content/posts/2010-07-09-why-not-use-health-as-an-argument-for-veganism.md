@@ -48,7 +48,7 @@ Health arguments are a distraction from the real key issue, animal suffering. An
 factory farms is undeniable and easily proved. It doesn't take a Ph.D. to understand that being
 crammed in a tiny cage unable to move is torture. Few people in the general public will argue the
 opposite. An argument based on animal suffering appeals to the fundamental empathy all of us
-possess, and doesn't require statistics or studies to suport it.
+possess, and doesn't require statistics or studies to support it.
 
 [1]: http://www.exploreveg.org
 [2]: http://rawfoodsos.com/2010/07/07/the-china-study-fact-or-fallac/

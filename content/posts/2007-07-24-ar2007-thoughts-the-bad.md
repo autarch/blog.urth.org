@@ -83,7 +83,7 @@ topics, times, and speaking order by themselves.
 
 This discourages a sense of ownership, and I think it contributed to the poor quality of many
 presentations. When people are given both power and responsibility together, they will rise to the
-occassion and give it their best effort. When you take this away, it's easy to be discouraged.
+occasion and give it their best effort. When you take this away, it's easy to be discouraged.
 
 This sort of scheduling also doesn't serve attendees very well. They don't know what individual
 speakers will talk about, they can't easily hop between sessions, and they can't "follow" their

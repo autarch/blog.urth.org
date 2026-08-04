@@ -229,7 +229,7 @@ so it's time to whip up that backend and get back to the UI work.
     enemy of the good, and I want to get a good enough version going so I can work on other things.
 
 [^8]:
-    If a word contains a hypen I will also split that up and check the subparts to see if they're
+    If a word contains a hyphen I will also split that up and check the subparts to see if they're
     words. This would handle something like "Green-Yellow", which isn't a word, but is clearly made
     of words.
 

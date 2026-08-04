@@ -52,7 +52,7 @@ web apps what [SpamAssassin][10] does for email.
 
 ## [Pg::CLI][11]
 
-This distro provides simple Perl OO wrappers around several of the Postgres command line utilties.
+This distro provides simple Perl OO wrappers around several of the Postgres command line utilities.
 For now, it only supports `psql`, `pg_dump`, and `pg_config`. Patches to add support for other
 utilities are welcome.
 
@@ -140,7 +140,7 @@ Net::Mollom module. It's free for small size things. The nice thing about using 
 is that it can learn as it goes and my spam protection benefits from what it learns from other
 people's content.
 
-Also, for process managment stuff that you had Emplacken doing, you might want to look at Ubic
+Also, for process management stuff that you had Emplacken doing, you might want to look at Ubic
 (<http://search.cpan.org/perldoc?Ubic>). I haven't used it myself, but it looks pretty nice.
 
 **Rob N, on 2010-12-24 03:19, said:**  

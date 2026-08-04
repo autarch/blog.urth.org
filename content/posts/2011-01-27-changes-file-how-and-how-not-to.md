@@ -53,7 +53,7 @@ We separate changes into broad categories that help our readers. The categories 
 "NEW FEATURES", "ENHANCEMENTS", "BUG FIXES", and occasionally "OTHER". These categories are always
 presented in that order.
 
-The most imporant part of the ordering is that API changes (anything which breaks backwards
+The most important part of the ordering is that API changes (anything which breaks backwards
 compatibility) are _always_ listed first. The order of the next three is debatable, but that matters
 less. What's important is that we break them down into useful categories. If you're a Moose user
 who's been waiting for a specific bug fix, it's easy to figure out whether the new release fixes

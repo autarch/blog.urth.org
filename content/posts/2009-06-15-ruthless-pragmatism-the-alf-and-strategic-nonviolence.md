@@ -23,7 +23,7 @@ have to both reduce demand _and_ raise the costs of doing (animal abuse) busines
 
 I agree with this as well, but with some caveats.
 
-Pattrice praised both the ALF as well as welfare legistation like Prop 2. It's true, both do raise
+Pattrice praised both the ALF as well as welfare legislation like Prop 2. It's true, both do raise
 the costs of doing business. The welfare legislation also has a real impact on actual animals, and
 so is worthy in and of itself (as long as there's not something even more useful we could be doing).
 
@@ -75,7 +75,7 @@ make us look bad, and make it hard to get people to listen to us. But that's a s
 argument.
 
 A more solid argument is that the costs to the ALF activists themselves are very, very high. Any
-activist who is involved in a significantly damaging action wil become a high-priority target for
+activist who is involved in a significantly damaging action will become a high-priority target for
 law enforcement. The most likely outcome is that they will be caught, turned into witnesses against
 their cohorts, and/or put in jail for long periods of time. Either way, they are no longer able to
 be activists for a significant period of time, and they are certainly not able to repeat their ALF

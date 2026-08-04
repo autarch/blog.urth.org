@@ -355,8 +355,8 @@ perl/cpan needs some "distributions", just like linux has.
 some people prefer solving problems using this set of  
 toos/modules. some prefer other set.
 
-i don't mind several cpans, if each has clear rules i can accept or deny and look for somethig else,
-if each is consistent and verified. than i can choose the one i feel good with.
+i don't mind several cpans, if each has clear rules i can accept or deny and look for something
+else, if each is consistent and verified. than i can choose the one i feel good with.
 
 so cpan is good as a starting point. now some arbitrary decision should be made, which subset of
 cpan modules should be user for solving problems in selected areas and polishing of those modules

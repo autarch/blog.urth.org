@@ -212,7 +212,7 @@ The Perl 6 object model borrowed and learned a lot from Ruby, Moose, etc, yes?
 @Jon: It's more like Moose borrowed a lot from Perl 6. Stevan worked on the Perl 6 OO design before
 creating Moose, and Moose embodies a lot of that work.
 
-The Perl 6 OO design in turn draws on many sources, most notably CLOS, but also Smalltalk and other
+The Perl 6 OO design in turn draws on many sources, most notably CLOSE, but also Smalltalk and other
 languages.
 
 **Eric Strom, on 2011-04-27 16:01, said:**  

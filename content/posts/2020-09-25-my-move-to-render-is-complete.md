@@ -35,7 +35,7 @@ But with Render I needed to make the presentations repo part of the houseabsolut
 thought was to use git submodules, but this didn't work. The problem is that the presentations dir
 has a ton of symlinks. Most of my presentations use [reveal.js](https://revealjs.com/) (v3 or v4).
 Instead of copying the JS and CSS from reveal to each presentation directory, I just have one copy
-of reveal.js in the repo (well, one v3 and one v4) and symlink into it from the directory contaning
+of reveal.js in the repo (well, one v3 and one v4) and symlink into it from the directory containing
 each presentation.
 
 I tried getting Hugo to treat this all as static content, but it mostly (entirely?) skips symlinks.

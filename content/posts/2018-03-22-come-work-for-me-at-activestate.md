@@ -16,7 +16,7 @@ excited about its potential and the growth potential of the company. We're just 
 there will be a lot of green field dev work going forward.
 
 We're using some Perl for tooling, but Go is the language of choice for the core services that make
-up the application. We're also using fun cutting edge tech like Docker, Kuberenetes, Mesos, etc. So
+up the application. We're also using fun cutting edge tech like Docker, Kubernetes, Mesos, etc. So
 there's lots to learn as well (for me as much as anyone).
 
 You can read [the full job description on the ActiveState website][1]. Feel free to comment here or

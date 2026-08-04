@@ -27,7 +27,7 @@ and "incorrect code". This is further compounded by the fact that Rakudo's error
 rough.
 
 I think if I had more than a few hours to devote to this, I could probably pick it up pretty
-quickly. A few days hacking on Perl 6 with blead Rakudo woud give me a better idea of how to
+quickly. A few days hacking on Perl 6 with blead Rakudo would give me a better idea of how to
 interpret Rakudo's error messages, and a better sense of what parts of Perl 6 are actually
 supported.
 

@@ -45,7 +45,7 @@ if (
 ```
 
 That's a disgusting mouthful of gibberish. The turd cherry on top of that shit sundae of code is
-that the only way to accomodate overloading is to explicitly check for it. This completely violates
+that the only way to accommodate overloading is to explicitly check for it. This completely violates
 the purpose of overloading, making things transparently act like builtin types!
 
 There are alternatives. For example, I could check for a `Path::Class::File` object and use Moose's

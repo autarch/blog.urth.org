@@ -33,7 +33,7 @@ says that they need me to enter hours in their system too. Not only that, but to
 said hours are approved, I'm supposed to go into the StaffSource webapp after a timesheet is
 approved there, take a screenshot, and email it to StaffSource.
 
-Apparently StaffSouce and/or TechPeople are too incompetent to make their systems talk to each
+Apparently StaffSource and/or TechPeople are too incompetent to make their systems talk to each
 other, or even just give each other access to their systems. After all, it's their contracts and
 terrible apps that make this silliness necessary, so why should I be doing all the work.
 

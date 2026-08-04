@@ -7,7 +7,7 @@ url: /2011/12/11/compact-with-ish-statement-for-coffeescript/
 ---
 
 I've been playing with [CoffeeScript][1] (CS) lately, and I really like it. JavaScript (JS) is full
-of annoyances that make coding more tedious and error-prone that it needs to be. CofeeScript does a
+of annoyances that make coding more tedious and error-prone that it needs to be. CoffeeScript does a
 good job of fixing many of those annoyances.
 
 CS doesn't provide anything like JS's `with` block. That makes sense, because `with` in JS is
