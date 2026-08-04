@@ -1,4 +1,4 @@
-exclude = ["themes/**/*"]
+exclude = ["static/image", "themes/**/*"]
 
 [commands.oxfmt]
 type = "both"
