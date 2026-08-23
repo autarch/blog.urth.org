@@ -4,6 +4,9 @@ author: Dave Rolsky
 type: post
 date: 2026-08-23T09:22:02-07:00
 url: /2026/08/23/actions-rust-release-v1-released
+discuss:
+  - site: "/r/rust"
+    uri: "https://www.reddit.com/r/rust/comments/1vwgu5t/actionsrustrelease_v1_released/?"
 ---
 
 I just released [v1.0.0](https://github.com/houseabsolute/actions-rust-release/releases/tag/v1.0.0)
