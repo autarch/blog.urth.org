@@ -44,5 +44,5 @@ non-trial version (along with a new DateTime to go with it) in a few weeks if no
 found.
 
 [1]: http://cldr.unicode.org/
-[2]: http://patch.codes/
+[2]: https://novapatch.ie/
 [3]: https://metacpan.org/release/DROLSKY/DateTime-Locale-0.93-TRIAL
